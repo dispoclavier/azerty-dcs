@@ -1,7 +1,7 @@
 #                      Scope: Part 1 of Compose.yml
 #                       Date: See Compose.yml
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.1.0+0.5" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+0.6" # See #   End of line comments
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
 #                Description: Multicharacter, multikey and dead key configuration
@@ -269,7 +269,7 @@
 #   For development, maintenance and reference, UnicodeData.txt is formatted by
 #   the script format-UnicodeData-txt.pl.
 #   https://www.unicode.org/Public/UCD/latest/ucd/UnicodeData.txt
-#   https://github.com/dispoclavier/azerty-complet/blob/main/linux-chromeos/outils/format-UnicodeData-txt.pl
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/outils/format-UnicodeData-txt.pl
 #
 #   The URL scheme used for the Unicode Code Charts is consistent with tbe
 #   omission of the plus sign in X11 keysyms.
@@ -956,11 +956,11 @@
 #
 #   The "build" number makes sense because this file is also the source code of
 #   the dead key content for Windows.
-#   https://github.com/dispoclavier/azerty-complet/blob/main/linux-chromeos/compose/readme.md
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/readme.md
 #   See #                 Legal note:
 #
 #   Version v1.0.0 was released on 2023-07-14T0423+0200.
-#   https://github.com/dispoclavier/azerty-complet/releases/tag/v1.0.0
+#   https://github.com/dispoclavier/azerty-dcs/releases/tag/v1.0.0
 #
 #
 # # Output of keyboard layout variant descriptor
@@ -1051,9 +1051,9 @@
 #   plain text, this file needs to be split into three partials maxing at 2GB,
 #   due to a file size restriction in GitHub’s web interface on github.com (not
 #   on github.dev).
-#   https://github.com/dispoclavier/azerty-complet/blob/main/linux-chromeos/compose/compose-1.yml
-#   https://github.com/dispoclavier/azerty-complet/blob/main/linux-chromeos/compose/compose-2.yml
-#   https://github.com/dispoclavier/azerty-complet/blob/main/linux-chromeos/compose/compose-3.yml
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-1.yml
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-2.yml
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-3.yml
 #
 #   The colon alignment in column 100 is based on longest multikey sequences
 #   in terms of string length.
@@ -1115,7 +1115,7 @@
 #   See #*# COMPOSE
 #   See ### Dead keys
 #   See ### Group dead key introduction
-#   https://github.com/dispoclavier/azerty-complet/tree/main/linux-chromeos/outils
+#   https://github.com/dispoclavier/azerty-dcs/tree/main/linux-chromeos/outils
 #
 #   Polytonic Greek is documented in an extra table since version 6.1.1 when it
 #   was included in the transpilation.
@@ -1163,7 +1163,7 @@
 #
 #   Many characters supported by multikey in this section are also supported by
 #   dead keys, but for maintainability these are not cross-referenced.
-#   https://github.com/dispoclavier/azerty-complet/commit/aa5147813f7872b2d3fe7faca6b3f6a5c6fd2ca6
+#   https://github.com/dispoclavier/azerty-dcs/commit/aa5147813f7872b2d3fe7faca6b3f6a5c6fd2ca6
 #
 #
 #^# Legacy ordinal indicators
@@ -1756,7 +1756,8 @@
 #
 #   Only Roman numerals not intended for CJK and other vertical text, and not
 #   decomposable and thus not discouraged in Latin text are supported, except
-#   the Claudian letter "Ↄ" U2183 (and "ↄ" U2184) supported in *dead_reversed.
+#   the Claudian letter "Ↄ" U2183 (and "ↄ" U2184) supported in *dead_reversed
+#   UEFD6.
 #   https://en.wikipedia.org/wiki/Numerals_in_Unicode#Roman_numerals
 #   See #*# REVERSED
 #
@@ -3842,7 +3843,7 @@
 #
 #   Input sequences are based on Latin names and on French names and mostly are
 #   four characters long, for conflictless consistency. Ultimately however, any
-#   redundant characters are cropped for a streamlined user experience and also
+#   redundant characters are dropped for a streamlined user experience and also
 #   to avoid superfluous dead keys on Windows.
 #   See #   Streamlining
 #   See #   Conflictlessness check
@@ -5647,7 +5648,7 @@
 #   Intuitivity and efficiency are key, with the stress on efficiency, so that
 #   a sequence may appear truncated because the output is already clear before
 #   a pattern is finished, as for "⦭" U29AD, "⦫" U29AB, "⦮" U29AE, "⦯" U29AF.
-#   Redundant characters are cropped, even as many as for "⤐" U2910, both for
+#   Redundant characters are dropped, even as many as for "⤐" U2910, both for
 #   a streamlined user experience and to avoid superfluous dead keys on Windows
 #   where composition is implemented using chained dead keys. In XCompose, by
 #   contrast, useless trailing multikey sequence constituents are only revealed
@@ -5665,7 +5666,7 @@
 #   have both the streamlined sequences for convenience, and the long sequences
 #   for intuitivity.
 #
-#   Sequences streamlined by cropping non-critical input besides trailing space
+#   Sequences streamlined by dropping non-critical input besides trailing space
 #   are duplicated full-length and commented out for the record, right above
 #   the streamlined sequences, in case some of them need to be restored later
 #   to prevent conflicts with new sequences (as it happened for "⊟" U229F,
@@ -5823,9 +5824,9 @@
 #   "∏" U220F  P    |  "∐" U2210  CP                    P%
 #
 #   While for turned, the regular trailing transform is percent, consistently
-#   with the leading transform of *dead_turned multikey equivalent, for ease of
-#   input, the trailing transform for turned may also be backslash, if this is
-#   available, like for "∧" U2227, "⋀" U22C0.
+#   with the leading transform of *dead_turned UEFD5 multikey equivalent, for
+#   ease of input, the trailing transform for turned may also be backslash, if
+#   this is available, like for "∧" U2227, "⋀" U22C0.
 #
 #
 #   Brackets and lozenges
@@ -7620,8 +7621,9 @@
 <Multi_key><underscore><greater>                                                           <space> : "⋝" U22DD # EQUAL TO OR GREATER-THAN
 <Multi_key><underscore><greater>                                                    <nobreakspace> : "⋝" U22DD # EQUAL TO OR GREATER-THAN
 #
-#   In the sequences for "⋞" U22DE, "⋟" U22DF, the second parenthesis is not
-#   cropped, so as to prevent an excess parenthesis when both are pressed.
+#   In the sequences for "⋞" U22DE, "⋟" U22DF, the second parenthesis, although
+#   non-critical, is not dropped, so as to prevent an extra parenthesis output
+#   whenever both are pressed.
 #
 <Multi_key><underscore><less><parenright><parenleft>                                               : "⋞" U22DE # EQUAL TO OR PRECEDES
 <Multi_key><underscore><less><parenleft><parenright>                                               : "⋞" U22DE # EQUAL TO OR PRECEDES
@@ -8977,7 +8979,7 @@
 #   an arrow stem and head. With respect to "⦤" U29A4, "⦥" U29A5 and to prevent
 #   conflicts with "₍" U208D and "₎" U208E, a horizontal leg is minus, like a
 #   horizontal arrow stem, not underscore. For efficiency, the trailing slash
-#   of "⦫" U29AB is cropped, and so are the trailing less and backslash of
+#   of "⦫" U29AB is dropped, and so are the trailing less and backslash of
 #   "⦭" U29AD, the trailing greater of "⦮" U29AE, and the bar of "⦯" U29AF.
 #   See #   Angle symbols
 #   See #   Streamlining
@@ -9041,7 +9043,7 @@
 #   Consistently, "⦽" U29BD is parsed as « ¦O<! » rather than « ¦O^| » that was
 #   an intuitive option by lack of the rules making « ¦O<! » more predictable.
 #   The other way around for intuitivity is prevented from screwing up the
-#   simple up arrow "↑" U2191 and can therefore be streamlined by cropping it
+#   simple up arrow "↑" U2191 and can therefore be streamlined by truncating it
 #   to the same length.
 #   See #   Arrows and harpoons
 #   See #   Parsing order
@@ -10414,9 +10416,8 @@
 #
 # # Hebrew presentation form in block FB00 used in mathematics
 #
-#   As a matter of cropping the descending arm of the plus sign out of
-#   staurophobia or whatever, an alternative plus sign has been encoded,
-#   although this may also be done at font level.
+#   As a matter of truncating the descending arm of the plus sign out of
+#   staurophobia or whatever, an alternative plus sign has been encoded.
 #   (download URL) https://ejournal.ust.ac.id/index.php/LOGOS/article/view/3414/2653
 #   https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode#Characters_in_other_blocks
 #   https://en.wikipedia.org/wiki/Alphabetic_Presentation_Forms
@@ -10436,7 +10437,7 @@
 #   See # # B04 greater
 #   See # # B06 grave
 #   See # # B09 colon
-#   https://github.com/dispoclavier/azerty-complet/commit/b72a8e5752e39e1c82c920dacdd54b93ca145ef7
+#   https://github.com/dispoclavier/azerty-dcs/commit/b72a8e5752e39e1c82c920dacdd54b93ca145ef7
 #
 #   The design of this sequence is consistent with "ℵ" U2135, "ℶ" U2136,
 #   "ℷ" U2137, "ℸ" U2138.

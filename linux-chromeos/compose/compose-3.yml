@@ -61,7 +61,7 @@
 #   https://www.frathwiki.com/Circumflex
 #
 #   For maintainability, these overridden sequences have been removed.
-#   https://github.com/dispoclavier/azerty-complet/commit/f1d465e92b885ae0659bfaa5d3d418f18b7f2b13
+#   https://github.com/dispoclavier/azerty-dcs/commit/f1d465e92b885ae0659bfaa5d3d418f18b7f2b13
 #
 #   Cross-platform compatibility is full on MacOS, but only partial on Windows,
 #   that is able to support only lowercase, and only digrams, provided that the
@@ -234,20 +234,34 @@
 #
 #   Making invisible characters visible
 #
-#   For a smoother user experience, invisible characters mapped on live keys
-#   except U200B have a visible alias that displays when the circumflex dead
-#   key is pressed before, because this is the most outstanding and easiest
-#   accessible dead key on all French keyboard layouts.
+#   For a smoother user experience, invisible characters mapped on live keys,
+#   except "​" U200B (used as a base character for the diacritic, alongside
+#   space), have a visible alias that displays when the circumflex dead key is
+#   pressed before, because this is the most outstanding and easiest accessible
+#   dead key on all French keyboard layouts.
 #
 #   This feature is extended to include the three confusable mid-height dots
 #   "·" U00B7, "‧" U2027 and "⋅" U22C5.
 #
-#   On Windows however, limited to a single UTF-16 code unit output, this can
-#   only be about hinting the semantics. For this purpose, minus the hyphen
-#   hints the soft hyphen for an invisible character, and the hyphenation point
-#   for a mid-height dot. Likewise, a pipe stands both for the middle dot and
-#   for the cursive non-joiner, depending on the visibility of the live key
-#   output.
+#   On Windows however, due to the defective DEADTRANS macro limited to one
+#   single UTF-16 code unit output, this can only be about hinting the
+#   semantics. For this purpose, the ASCII hyphen "-" U002D hints the soft
+#   hyphen "­" U00AD for an invisible character, and the hyphenation point
+#   "‧" U2027 for a mid-height dot. Likewise, a pipe "|" U007C stands for both
+#   the cursive non-joiner "" U200C and the middle dot "·" U00B7, depending on
+#   the visibility of the live key output. Among the live key mid-height dots,
+#   only the dot operator "⋅" U22C5 does not share its representative "×" U00D7
+#   with any other character.
+#
+#   "&" U0026 AMPERSAND           ➔ "‍" U200D ZERO WIDTH JOINER
+#   "+" U002B PLUS SIGN           ➔ "⁤" U2064 INVISIBLE PLUS
+#   "," U002C COMMA               ➔ "⁣" U2063 INVISIBLE SEPARATOR
+#   "-" U002D HYPHEN-MINUS        ➔ "­" U00AD SOFT HYPHEN
+#   "-" U002D HYPHEN-MINUS        ➔ "‧" U2027 HYPHENATION POINT
+#   "|" U007C VERTICAL LINE       ➔ "‌" U200C ZERO WIDTH NON-JOINER
+#   "|" U007C VERTICAL LINE       ➔ "·" U00B7 MIDDLE DOT
+#   "×" U00D7 MULTIPLICATION SIGN ➔ "⋅" U22C5 DOT OPERATOR
+#   "☺" U263A WHITE SMILING FACE  ➔ "️" UFE0F VARIATION SELECTOR-16 emoji variation selector
 #
 <dead_circumflex>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
 <Multi_key><less>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
@@ -495,40 +509,40 @@
 <Multi_key><less>                                                                          <U0186> : "Ɔ̂" # U0186 U0302 LATIN CAPITAL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
 <dead_circumflex>                                                                          <U0254> : "ɔ̂" # U0254 U0302 LATIN SMALL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
 <Multi_key><less>                                                                          <U0254> : "ɔ̂" # U0254 U0302 LATIN SMALL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
-<dead_circumflex>                                                                          <U00AD> : "trait_d’union_conditionnel_(césure_conditionnelle_avec_trait_d’union)" #
-<Multi_key><less>                                                                          <U00AD> : "trait_d’union_conditionnel_(césure_conditionnelle_avec_trait_d’union)" #
+<dead_circumflex>                                                                          <U00AD> : "trait_d’union_conditionnel" # SOFT HYPHEN
+<Multi_key><less>                                                                          <U00AD> : "trait_d’union_conditionnel" # SOFT HYPHEN
 #@<dead_circumflex>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
 #@<Multi_key><less>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
-<dead_circumflex>                                                                          <U00B7> : "point médian \"·\""
-<Multi_key><less>                                                                          <U00B7> : "point médian \"·\""
+<dead_circumflex>                                                                          <U00B7> : "point médian \"·\"" # MIDDLE DOT
+<Multi_key><less>                                                                          <U00B7> : "point médian \"·\"" # MIDDLE DOT
 #@<dead_circumflex>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
 #@<Multi_key><less>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
-<dead_circumflex>                                                                          <U200C> : "antiliant" #
-<Multi_key><less>                                                                          <U200C> : "antiliant" #
+<dead_circumflex>                                                                          <U200C> : "antiliant" # ZERO WIDTH NON-JOINER
+<Multi_key><less>                                                                          <U200C> : "antiliant" # ZERO WIDTH NON-JOINER
 #@<dead_circumflex>                                                                        <U200C> : "|" U007C # VERTICAL LINE
 #@<Multi_key><less>                                                                        <U200C> : "|" U007C # VERTICAL LINE
-<dead_circumflex>                                                                          <U200D> : "liant" #
-<Multi_key><less>                                                                          <U200D> : "liant" #
+<dead_circumflex>                                                                          <U200D> : "liant" # ZERO WIDTH JOINER
+<Multi_key><less>                                                                          <U200D> : "liant" # ZERO WIDTH JOINER
 #@<dead_circumflex>                                                                        <U200D> : "&" U0026 # AMPERSAND
 #@<Multi_key><less>                                                                        <U200D> : "&" U0026 # AMPERSAND
-<dead_circumflex>                                                                          <U2027> : "point d’hyphénation \"‧\""
-<Multi_key><less>                                                                          <U2027> : "point d’hyphénation \"‧\""
+<dead_circumflex>                                                                          <U2027> : "point d’hyphénation \"‧\"" # HYPHENATION POINT
+<Multi_key><less>                                                                          <U2027> : "point d’hyphénation \"‧\"" # HYPHENATION POINT
 #@<dead_circumflex>                                                                        <U2027> : "-" U002D # HYPHEN-MINUS
 #@<Multi_key><less>                                                                        <U2027> : "-" U002D # HYPHEN-MINUS
-<dead_circumflex>                                                                          <U2063> : "séparateur_invisible" #
-<Multi_key><less>                                                                          <U2063> : "séparateur_invisible" #
+<dead_circumflex>                                                                          <U2063> : "séparateur_invisible" # INVISIBLE SEPARATOR
+<Multi_key><less>                                                                          <U2063> : "séparateur_invisible" # INVISIBLE SEPARATOR
 #@<dead_circumflex>                                                                        <U2063> : "," U002C # COMMA
 #@<Multi_key><less>                                                                        <U2063> : "," U002C # COMMA
-<dead_circumflex>                                                                          <U2064> : "“signe_plus”_invisible" #
-<Multi_key><less>                                                                          <U2064> : "“signe_plus”_invisible" #
+<dead_circumflex>                                                                          <U2064> : "signe_plus_invisible" # INVISIBLE PLUS
+<Multi_key><less>                                                                          <U2064> : "signe_plus_invisible" # INVISIBLE PLUS
 #@<dead_circumflex>                                                                        <U2064> : "+" U002B # PLUS SIGN
 #@<Multi_key><less>                                                                        <U2064> : "+" U002B # PLUS SIGN
-<dead_circumflex>                                                                          <U22C5> : "opérateur point \"⋅\""
-<Multi_key><less>                                                                          <U22C5> : "opérateur point \"⋅\""
+<dead_circumflex>                                                                          <U22C5> : "opérateur point \"⋅\"" # DOT OPERATOR
+<Multi_key><less>                                                                          <U22C5> : "opérateur point \"⋅\"" # DOT OPERATOR
 #@<dead_circumflex>                                                                        <U22C5> : "×" U00D7 # MULTIPLICATION SIGN
 #@<Multi_key><less>                                                                        <U22C5> : "×" U00D7 # MULTIPLICATION SIGN
-<dead_circumflex>                                                                          <UFE0F> : "style_émoji_(sélecteur_de_variante)" #
-<Multi_key><less>                                                                          <UFE0F> : "style_émoji_(sélecteur_de_variante)" #
+<dead_circumflex>                                                                          <UFE0F> : "style_émoji_(sélecteur_de_variante)" # VARIATION SELECTOR-16 emoji variation selector
+<Multi_key><less>                                                                          <UFE0F> : "style_émoji_(sélecteur_de_variante)" # VARIATION SELECTOR-16 emoji variation selector
 #@<dead_circumflex>                                                                        <UFE0F> : "☺" U263A # WHITE SMILING FACE
 #@<Multi_key><less>                                                                        <UFE0F> : "☺" U263A # WHITE SMILING FACE
 #
@@ -3511,7 +3525,7 @@
 #
 # # GRAVE&ACUTE&GRAVE
 #
-#   As this dead key exists for "᷈" U1DC8 only, it is streamlined by cropping
+#   As this dead key exists for "᷈" U1DC8 only, it is streamlined by dropping
 #   the base characters.
 #   See # # Single-character dead keys
 #
@@ -3797,9 +3811,9 @@
 #   The cedilla above is the turned comma above, per Unicode informative alias.
 #
 #   As this dead key exists for "̒" U0312 only, it would be streamlined by
-#   cropping the base characters, but it is not, in order to ensure a smooth
+#   dropping the base characters, but it is not, in order to ensure a smooth
 #   user experience when the dead key is pressed one time more so as to output
-#   its Windows dead character "ç" used as an identifier.
+#   its Windows dead character "ç" for the purpose of identifying the dead key.
 #   See # # Single-character dead keys
 #   See # # Dead characters
 #
@@ -9612,7 +9626,7 @@
 #   Group 5 of the base alphabet: Latin letters and symbols (continued)
 #
 #   Click letters have extensive, case insensitive support here in group 5, as
-#   well as in the tilde-and-ampersand dead key as a more specific alternative.
+#   well as in the tilde-and-braceright dead key as a more specific alternative.
 #   See # # TILDE&BRACERIGHT
 #
 <UEFD0><5>                                                                                     <A> : "Ꜣ" UA722 # LATIN CAPITAL LETTER EGYPTOLOGICAL ALEF
