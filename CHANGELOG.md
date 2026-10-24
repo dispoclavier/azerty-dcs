@@ -140,7 +140,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 		* Ajouter "𝽡" U+1DF61 (dans le groupe 1). compose-2.yml [49de9f2](https://github.com/dispoclavier/azerty-dcs/commit/49de9f2a699de0ec7fe1890acecfec507c98865e)
 		* Ajouter "𝾐" U+1DF90 (dans le groupe 1). compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-dcs/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
 	* Rond en chef : Ajouter "꭭" U+AB6D. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
-	* Accent circonflexe : Déboguer "·" U+00B7, "‧" U+2027, "⋅" U+22C5.
+	* Accent circonflexe : Déboguer "·" U+00B7, "‧" U+2027, "⋅" U+22C5. compose-2.yml [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
 	* Hatchek et accent aigu : Ajouter "᫬" U+1AEC. compose-2.yml [5a35ff6](https://github.com/dispoclavier/azerty-dcs/commit/5a35ff6105e9c00847d2f36547fe84c8aed09e82)
 	* Accent grave > Double accent grave : Ajouter "᫮" U+1AEE par "_". ibidem
 	* Cédille :
@@ -157,8 +157,8 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 	* Raccourcir les descripteurs des dispositions de clavier sous Linux. compose-1.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Mouvoir le JSON dans un fichier. outils/settings.json [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e), [3beeabb](https://github.com/dispoclavier/azerty-dcs/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f), [6958e94](https://github.com/dispoclavier/azerty-dcs/commit/6958e94507d0d19547836e338adfd7ab9e9a0e73)
 	* Déboguer la taille de fichier. compose-2.yml, compose-3.yml [fb0a349](https://github.com/dispoclavier/azerty-dcs/commit/fb0a34937cd9c038c089b0b786c547b87d6234e3), generate-deadkey-tables.pl [8fd4f48](https://github.com/dispoclavier/azerty-dcs/commit/8fd4f48e1029aae695ba34e278de587dc9c83feb)
-	* Corriger le nom de "​" U+200B en "ESPACE INVISIBLE".
-	* Corriger des annotations. compose-1.yml, compose-2.yml, compose-3.yml [54bc0b9](https://github.com/dispoclavier/azerty-dcs/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884)
+	* Corriger le nom de "​" U+200B en "ESPACE INVISIBLE". ressource/Udescripteurs.txt [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
+	* Corriger des annotations. compose-1.yml, compose-2.yml, compose-3.yml [54bc0b9](https://github.com/dispoclavier/azerty-dcs/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884), [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
 	* Corriger le journal des modifications. CHANGELOG.md [1f7e36d](https://github.com/dispoclavier/azerty-dcs/commit/1f7e36dd0102d8939aa11c348b956208deabd94a), [bad275d](https://github.com/dispoclavier/azerty-dcs/commit/bad275df45f67c5f0297155875b0b375267140f2)
 * Builds :
 
