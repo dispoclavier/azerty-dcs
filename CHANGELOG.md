@@ -34,7 +34,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 	* Simplifier les séquences de "ʩ" U+02A9. ibidem
 	* Compléter les séquences de "ʤ" U+02A4, "ʧ" U+02A7. ibidem
 	* Redonder "ʥ" U+02A5. ibidem
-	* Redonder "ꭦ" U+AB66, "ꭧ" U+AB67, "𝼀" U+1DF00, "𝼅" U+1DF05, "𝼒" U+1DF12, "𝼗" U+1DF17, "𝼙" U+1DF19, "𝼜" U+1DF1C.
+	* Redonder "ꭦ" U+AB66, "ꭧ" U+AB67, "𝼀" U+1DF00, "𝼅" U+1DF05, "𝼒" U+1DF12, "𝼗" U+1DF17, "𝼙" U+1DF19, "𝼜" U+1DF1C. compose-1.yml [204af1b](https://github.com/dispoclavier/azerty-dcs/commit/204af1be45c5e0fb3afe300549a9c0e95a08fd00)
 * Transformations :
 	* Groupes des lettres :
 		* Ajouter "꟝" U+A7DD dans le groupe 4 de "V" à la place de "℣" U+2123, qui va dans le groupe 4 de "U" à la place de "Ɯ" U+019C, qui est dans le groupe 2 de "M". compose-3.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
@@ -108,11 +108,11 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 			* Ajouter "𝽰" U+1DF70, "𝽺" U+1DF7A, "𝽻" U+1DF7B. compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-dcs/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 			* Fioriture et tourné : Ajouter "𝽗" U+1DF57. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-dcs/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 	* Crochet rétroflexe :
-		* Compléter la prise en charge de "𝼅" U+1DF05.
-		* Corriger la prise en charge de "𝼅" U+1DF05, "𝼙" U+1DF19.
+		* Compléter la prise en charge de "𝼅" U+1DF05. compose-2.yml [204af1b](https://github.com/dispoclavier/azerty-dcs/commit/204af1be45c5e0fb3afe300549a9c0e95a08fd00)
+		* Corriger la prise en charge de "𝼅" U+1DF05, "𝼙" U+1DF19. ibidem
 		* Crochet palatal :
-			* Supprimer "ɚ" U+025A, qui est dans crosse.
-			* Corriger la prise en charge de "𝼒" U+1DF12, "𝼗" U+1DF17.
+			* Supprimer "ɚ" U+025A, qui est dans crosse. ibidem
+			* Corriger la prise en charge de "𝼒" U+1DF12, "𝼗" U+1DF17. ibidem
 			* Ajouter "𝼯" U+1DF2F, "𝼱" U+1DF31, "𝼳" U+1DF33, "𝼴" U+1DF34, "𝼵" U+1DF35, "𝼻" U+1DF3B, "𝼼" U+1DF3C, "𝼽" U+1DF3D. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-dcs/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f), [faf42af](https://github.com/dispoclavier/azerty-dcs/commit/faf42afc24d1e89772b026fe55b94ccb27d7330f)
 			* Supprimer "ꭒ" U+AB52, qui va dans crosse. ibidem
 			* Supprimer "ʄ" U+0284, qui est dans crosse. ibidem
@@ -163,7 +163,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 	* Mouvoir le JSON dans un fichier. outils/settings.json [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e), [3beeabb](https://github.com/dispoclavier/azerty-dcs/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f), [6958e94](https://github.com/dispoclavier/azerty-dcs/commit/6958e94507d0d19547836e338adfd7ab9e9a0e73)
 	* Déboguer la taille de fichier. compose-2.yml, compose-3.yml [fb0a349](https://github.com/dispoclavier/azerty-dcs/commit/fb0a34937cd9c038c089b0b786c547b87d6234e3), generate-deadkey-tables.pl [8fd4f48](https://github.com/dispoclavier/azerty-dcs/commit/8fd4f48e1029aae695ba34e278de587dc9c83feb)
 	* Corriger le nom de "​" U+200B en "ESPACE INVISIBLE". ressource/Udescripteurs.txt [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
-	* Corriger des annotations. compose-1.yml, compose-2.yml, compose-3.yml [54bc0b9](https://github.com/dispoclavier/azerty-dcs/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884), [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
+	* Corriger des annotations. compose-1.yml, compose-2.yml, compose-3.yml [54bc0b9](https://github.com/dispoclavier/azerty-dcs/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884), [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86), [204af1b](https://github.com/dispoclavier/azerty-dcs/commit/204af1be45c5e0fb3afe300549a9c0e95a08fd00)
 	* Corriger le journal des modifications. CHANGELOG.md [1f7e36d](https://github.com/dispoclavier/azerty-dcs/commit/1f7e36dd0102d8939aa11c348b956208deabd94a), [bad275d](https://github.com/dispoclavier/azerty-dcs/commit/bad275df45f67c5f0297155875b0b375267140f2)
 * Builds :
 
