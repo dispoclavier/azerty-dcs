@@ -34,6 +34,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 	* Simplifier les séquences de "ʩ" U+02A9. ibidem
 	* Compléter les séquences de "ʤ" U+02A4, "ʧ" U+02A7. ibidem
 	* Redonder "ʥ" U+02A5. ibidem
+	* Redonder "ꭦ" U+AB66, "ꭧ" U+AB67, "𝼀" U+1DF00, "𝼅" U+1DF05, "𝼒" U+1DF12, "𝼗" U+1DF17, "𝼙" U+1DF19, "𝼜" U+1DF1C.
 * Transformations :
 	* Groupes des lettres :
 		* Ajouter "꟝" U+A7DD dans le groupe 4 de "V" à la place de "℣" U+2123, qui va dans le groupe 4 de "U" à la place de "Ɯ" U+019C, qui est dans le groupe 2 de "M". compose-3.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
@@ -107,7 +108,11 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 			* Ajouter "𝽰" U+1DF70, "𝽺" U+1DF7A, "𝽻" U+1DF7B. compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-dcs/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 			* Fioriture et tourné : Ajouter "𝽗" U+1DF57. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-dcs/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 	* Crochet rétroflexe :
+		* Compléter la prise en charge de "𝼅" U+1DF05.
+		* Corriger la prise en charge de "𝼅" U+1DF05, "𝼙" U+1DF19.
 		* Crochet palatal :
+			* Supprimer "ɚ" U+025A, qui est dans crosse.
+			* Corriger la prise en charge de "𝼒" U+1DF12, "𝼗" U+1DF17.
 			* Ajouter "𝼯" U+1DF2F, "𝼱" U+1DF31, "𝼳" U+1DF33, "𝼴" U+1DF34, "𝼵" U+1DF35, "𝼻" U+1DF3B, "𝼼" U+1DF3C, "𝼽" U+1DF3D. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-dcs/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f), [faf42af](https://github.com/dispoclavier/azerty-dcs/commit/faf42afc24d1e89772b026fe55b94ccb27d7330f)
 			* Supprimer "ꭒ" U+AB52, qui va dans crosse. ibidem
 			* Supprimer "ʄ" U+0284, qui est dans crosse. ibidem

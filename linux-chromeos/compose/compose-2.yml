@@ -350,7 +350,9 @@
 #   braceleft as a multikey equivalent of dead_hook, while taking advantage of
 #   the brace symmetry to alleviate the overloaded dead_hook, by adding the new
 #   *dead_retroflexhook UEFD4 dead key, with braceright as a multikey
-#   equivalent.
+#   equivalent. The upside is that the hook has visual precedence over the
+#   retroflex hook and is mapped on the easier key, consistently with its
+#   importance in the African reference alphabet.
 #
 #   * Key D09, level 4: dead_hook « ¦{ »
 #
@@ -358,14 +360,14 @@
 #        See #*# HOOK
 #     ** Press 2 × for curl, crossed-tail, loop, hook tail, squirrel tail
 #        See #^# CURL
-#     ** Press 3 × for flourish, mid-height left hook, pigtail at bottom, “curl”
+#     ** Press 3 × for flourish, mid-height left hook, pigtail at bottom, hook tail, “curl”
 #        See #^# FLOURISH
 #
 #   * Key D10, level 4: *dead_retroflexhook UEFD4 « ¦} »
 #
 #     ** Press 1 × for retroflex hook, right hook, hook, hook tail, squirrel tail, tail
 #        See #*# RETROFLEX_HOOK
-#     ** Press 2 × for palatal hook, hook ("ɚ" U025A)
+#     ** Press 2 × for palatal hook
 #        See #^# PALATAL_HOOK
 #     ** Press 3 × for swash tail (or the tail and palatal hook "𝼷" U1DF37)
 #        See #^# SWASH_TAIL
@@ -732,10 +734,15 @@
 #
 # # Lenient dead key press
 #
-#   When dead keys are chained, dead keys virtualized by multiple press may be
-#   abbreviated to single press so as to streamline the user experience.
+#   When dead keys are chained, dead keys virtualized by double or triple press
+#   may be abbreviated to single or double press so as to streamline the user
+#   experience.
 #   See #   Lenient dead key press
 #   See # # INVERTED&CURL
+#
+#   The streamlined, “un-screwed-up” user experience is set as a design goal.
+#   See #   Streamlining
+#   See # # Symbols for multikey
 #
 #
 # # Lenient group selection
@@ -750,23 +757,18 @@
 #   dead key, empty lower groups are used for redundant mappings of characters
 #   expected in higher groups, so as to not require activating the exact group.
 #
-#   This is part of the streamlined, “un-screwed-up” user experience set as an
-#   implicit design goal.
-#   See #   Streamlining
-#   See # # Symbols for multikey
-#
 #
 # # Quotation mark input method
 #
-#   A complete set of current curly quotes is input on unshifted keys, thanks
-#   to the fact that both the involved dead keys and the base characters have
-#   base level mappings.
+#   A complete set of curly quotes is input on unshifted keys, thanks to the
+#   fact that both the involved dead keys and the base characters are mapped at
+#   level 1.
 #
 #   This is part of the dead key enhancement based on considering each dead key
 #   a group selector activating the "<dead key> group": "circumflex group", or
 #   "dead_circumflex group", for example.
 #
-#   Common quotation marks:
+#   Common quotation marks:                              single, double
 #
 #       Circumflex:   turned high    opening or closing   U2018, U201C
 #       See #*# CIRCUMFLEX
@@ -783,7 +785,7 @@
 #       Grave accent: reversed high  opening              U201B, U201F
 #       See #*# GRAVE
 #
-#       Double grave, or diaeresis + grave:    reversed low      U2E42
+#       Double grave, or diaeresis&grave: reversed low           U2E42
 #       See #^# DOUBLE_GRAVE
 #       See # # DIAERESIS&GRAVE
 #
@@ -10282,7 +10284,7 @@
 <dead_hook>                                                                                    <D> : "Ɗ" U018A # LATIN CAPITAL LETTER D WITH HOOK
 <Multi_key><braceleft>                                                                         <D> : "Ɗ" U018A # LATIN CAPITAL LETTER D WITH HOOK
 <dead_hook>                                                                                    <d> : "ɗ" U0257 # LATIN SMALL LETTER D WITH HOOK
-<Multi_key><braceleft>                                                                         <d> : "ɗ" U0257 # LATIN SMALL LETTER D WITH HOOK
+#   Multikey conflicts with "ʥ" U02A5.                                                         <d> : "ɗ" U0257 # LATIN SMALL LETTER D WITH HOOK
 <dead_hook>                                                                                    <e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
 <Multi_key><braceleft>                                                                         <e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
 <dead_hook>                                                                                    <F> : "Ƒ" U0191 # LATIN CAPITAL LETTER F WITH HOOK
@@ -10580,7 +10582,7 @@
 <dead_hook><dead_hook>                                                                         <D> : "ʥ" U02A5 # LATIN SMALL LETTER DZ DIGRAPH WITH CURL
 <Multi_key><braceleft><braceleft>                                                              <D> : "ʥ" U02A5 # LATIN SMALL LETTER DZ DIGRAPH WITH CURL
 <dead_hook><dead_hook>                                                                         <d> : "ȡ" U0221 # LATIN SMALL LETTER D WITH CURL
-<Multi_key><braceleft><braceleft>                                                              <d> : "ȡ" U0221 # LATIN SMALL LETTER D WITH CURL
+#   Multikey conflicts with "ʥ" U02A5.                                                         <d> : "ȡ" U0221 # LATIN SMALL LETTER D WITH CURL
 <dead_hook><dead_hook>                                                                         <G> : "ꬼ" UAB3C # LATIN SMALL LETTER ENG WITH CROSSED-TAIL
 <Multi_key><braceleft><braceleft>                                                              <G> : "ꬼ" UAB3C # LATIN SMALL LETTER ENG WITH CROSSED-TAIL
 <dead_hook><dead_hook>                                                                         <g> : "ꬶ" UAB36 # LATIN SMALL LETTER SCRIPT G WITH CROSSED-TAIL
@@ -10797,22 +10799,41 @@
 <Multi_key><braceleft><braceleft>                                            <numbersign><KP_1><s> : "𝾖" U1DF96 # LATIN SMALL LETTER LONG S WITH TOP LOOP
 #
 #
+# # CURL&TURNED
+#   Lenient dead key press
+#
+<dead_hook><dead_hook><UEFD5>                                                                  <r> : "𝽗" U1DF57 # LATIN SMALL LETTER TURNED R WITH MID-HEIGHT LEFT HOOK
+<Multi_key><braceleft><braceleft><percent>                                                     <r> : "𝽗" U1DF57 # LATIN SMALL LETTER TURNED R WITH MID-HEIGHT LEFT HOOK
+<dead_hook><UEFD5><dead_hook>                                                                  <r> : "𝽗" U1DF57 # LATIN SMALL LETTER TURNED R WITH MID-HEIGHT LEFT HOOK
+<Multi_key><braceleft><percent><braceleft>                                                     <r> : "𝽗" U1DF57 # LATIN SMALL LETTER TURNED R WITH MID-HEIGHT LEFT HOOK
+<UEFD5><dead_hook><dead_hook>                                                                  <r> : "𝽗" U1DF57 # LATIN SMALL LETTER TURNED R WITH MID-HEIGHT LEFT HOOK
+<Multi_key><percent><braceleft><braceleft>                                                     <r> : "𝽗" U1DF57 # LATIN SMALL LETTER TURNED R WITH MID-HEIGHT LEFT HOOK
+#
+#
 #^# FLOURISH
-#   flourish, mid-height left hook, pigtail at bottom, curl
+#   flourish, mid-height left hook, pigtail at bottom, hook tail, “curl”
 #   dead_hook triple press
 #   Multikey: ¦{{{
 #
-#   This needs to support FLOURISH, as Unicode 18.0 adds "𝽳" U1DF73 LATIN SMALL
-#   LETTER O WITH CURL and its capital, actually featuring a flourish.
+#   The flourish and the mid-height left hook are merged in a single dead key
+#   thanks to their empty intersection.
+#   See # # Hook, hook above and retroflex hook
+#
+#   The pigtail on "𝽰" U1DF70 LATIN SMALL LETTER I WITH PIGTAIL AT BOTTOM is a
+#   flourish, too.
+#
+#   So is the hook tail on "𝽺" U1DF7A, "𝽻" U1DF7B, the better as the single
+#   press hook slot is taken by "ꭒ" UAB52.
+#
+#   This also supports a so-called curl, because Unicode 18.0 adds
+#   "𝽳" U1DF73 LATIN SMALL LETTER O WITH CURL and its capital, actually
+#   featuring a genuine flourish, not a “curl”.
+#   https://www.unicode.org/charts/PDF/Unicode-18.0/U180-1DF00.pdf
 #   https://share.google/aimode/dtpGRBWI08fWbCuib
 #
 #   Unicode 18.0 also adds "𝽗" U1DF57 as yet another a mid-height left hook
 #   featuring letter (though a turned "𝼨" U1DF28).
-#
-#   The pigtail on "𝽰" U1DF70 LATIN SMALL LETTER I WITH PIGTAIL AT BOTTOM is a
-#   flourish, too. So is the hook tail on "𝽺" U1DF7A, "𝽻" U1DF7B, the better as
-#   the single press hook slot is taken by "ꭒ" UAB52.
-#   See # # Hook, hook above and retroflex hook
+#   See # # FLOURISH&TURNED
 #
 #
 #   Diacritic
@@ -11000,13 +11021,13 @@
 <UEFD4>                                                                                        <D> : "Ɖ" U0189 # LATIN CAPITAL LETTER AFRICAN D
 <Multi_key><braceright>                                                                        <D> : "Ɖ" U0189 # LATIN CAPITAL LETTER AFRICAN D
 <UEFD4>                                                                                        <d> : "ɖ" U0256 # LATIN SMALL LETTER D WITH TAIL
-<Multi_key><braceright>                                                                        <d> : "ɖ" U0256 # LATIN SMALL LETTER D WITH TAIL
+#   Multikey conflicts with "𝼙" U1DF19.                                                        <d> : "ɖ" U0256 # LATIN SMALL LETTER D WITH TAIL
 <UEFD4>                                                                                        <e> : "ᶒ" U1D92 # LATIN SMALL LETTER E WITH RETROFLEX HOOK
 <Multi_key><braceright>                                                                        <e> : "ᶒ" U1D92 # LATIN SMALL LETTER E WITH RETROFLEX HOOK
 <UEFD4>                                                                                        <i> : "ᶖ" U1D96 # LATIN SMALL LETTER I WITH RETROFLEX HOOK
 <Multi_key><braceright>                                                                        <i> : "ᶖ" U1D96 # LATIN SMALL LETTER I WITH RETROFLEX HOOK
 <UEFD4>                                                                                        <l> : "ɭ" U026D # LATIN SMALL LETTER L WITH RETROFLEX HOOK
-<Multi_key><braceright>                                                                        <l> : "ɭ" U026D # LATIN SMALL LETTER L WITH RETROFLEX HOOK
+#   Multikey conflicts with "𝼅" U1DF05.                                                        <l> : "ɭ" U026D # LATIN SMALL LETTER L WITH RETROFLEX HOOK
 <UEFD4>                                                                                        <n> : "ɳ" U0273 # LATIN SMALL LETTER N WITH RETROFLEX HOOK
 <Multi_key><braceright>                                                                        <n> : "ɳ" U0273 # LATIN SMALL LETTER N WITH RETROFLEX HOOK
 <UEFD4>                                                                                        <o> : "𝼛" U1DF1B # LATIN SMALL LETTER O WITH RETROFLEX HOOK
@@ -11028,7 +11049,7 @@
 <UEFD4>                                                                                        <T> : "Ʈ" U01AE # LATIN CAPITAL LETTER T WITH RETROFLEX HOOK
 <Multi_key><braceright>                                                                        <T> : "Ʈ" U01AE # LATIN CAPITAL LETTER T WITH RETROFLEX HOOK
 <UEFD4>                                                                                        <t> : "ʈ" U0288 # LATIN SMALL LETTER T WITH RETROFLEX HOOK
-<Multi_key><braceright>                                                                        <t> : "ʈ" U0288 # LATIN SMALL LETTER T WITH RETROFLEX HOOK
+#   Multikey conflicts with "ꭧ" UAB67.                                                        <t> : "ʈ" U0288 # LATIN SMALL LETTER T WITH RETROFLEX HOOK
 <UEFD4>                                                                                        <u> : "ᶙ" U1D99 # LATIN SMALL LETTER U WITH RETROFLEX HOOK
 <Multi_key><braceright>                                                                        <u> : "ᶙ" U1D99 # LATIN SMALL LETTER U WITH RETROFLEX HOOK
 <UEFD4>                                                                                        <v> : "ⱱ" U2C71 # LATIN SMALL LETTER V WITH RIGHT HOOK
@@ -11039,6 +11060,8 @@
 #
 # # RETROFLEX_HOOK&GROUP_1
 #   Lenient group selection
+#
+#   See # # RETROFLEX_HOOK&GROUP_5
 #
 <UEFD4>                                                                                 <UEFD0><a> : "ᶐ" U1D90 # LATIN SMALL LETTER ALPHA WITH RETROFLEX HOOK
 <Multi_key><braceright>                                                            <numbersign><a> : "ᶐ" U1D90 # LATIN SMALL LETTER ALPHA WITH RETROFLEX HOOK
@@ -11052,6 +11075,8 @@
 <Multi_key><braceright>                                                            <numbersign><e> : "ᶓ" U1D93 # LATIN SMALL LETTER OPEN E WITH RETROFLEX HOOK
 <UEFD4>                                                                                 <UEFD0><L> : "𝼅" U1DF05 # LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK
 <Multi_key><braceright>                                                            <numbersign><L> : "𝼅" U1DF05 # LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK
+<UEFD4>                                                                                 <UEFD0><l> : "𝼅" U1DF05 # LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK
+<Multi_key><braceright>                                                            <numbersign><l> : "𝼅" U1DF05 # LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK
 <UEFD4>                                                                                 <UEFD0><K> : "𝼊" U1DF0A # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
 <Multi_key><braceright>                                                            <numbersign><K> : "𝼊" U1DF0A # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
 <UEFD4>                                                                                 <UEFD0><k> : "𝼊" U1DF0A # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
@@ -11069,9 +11094,12 @@
 #
 #
 # # RETROFLEX_HOOK&GROUP_2
+#   Lenient group selection
 #
-<UEFD4>                                                                          <UEFD0><UEFD0><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<Multi_key><braceright>                                                <numbersign><numbersign><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
+#   See # # RETROFLEX_HOOK&GROUP_5
+#
+<UEFD4>                                                                          <UEFD0><UEFD0><d> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
+<Multi_key><braceright>                                                <numbersign><numbersign><d> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
 <UEFD4>                                                                          <UEFD0><UEFD0><e> : "ᶕ" U1D95 # LATIN SMALL LETTER SCHWA WITH RETROFLEX HOOK
 <Multi_key><braceright>                                                <numbersign><numbersign><e> : "ᶕ" U1D95 # LATIN SMALL LETTER SCHWA WITH RETROFLEX HOOK
 <UEFD4>                                                                          <UEFD0><UEFD0><L> : "𝼅" U1DF05 # LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK
@@ -11089,13 +11117,10 @@
 #
 #
 # # RETROFLEX_HOOK&GROUP_3
+#   Lenient group selection
 #
-<UEFD4>                                                                              <UEFD0><3><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<Multi_key><braceright>                                                         <numbersign><3><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<UEFD4>                                                                           <UEFD0><KP_3><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<Multi_key><braceright>                                                      <numbersign><KP_3><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<UEFD4>                                                                   <UEFD0><UEFD0><UEFD0><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<Multi_key><braceright>                                    <numbersign><numbersign><numbersign><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
+#   See # # RETROFLEX_HOOK&GROUP_5
+#
 <UEFD4>                                                                              <UEFD0><3><e> : "ᶓ" U1D93 # LATIN SMALL LETTER OPEN E WITH RETROFLEX HOOK
 <Multi_key><braceright>                                                         <numbersign><3><e> : "ᶓ" U1D93 # LATIN SMALL LETTER OPEN E WITH RETROFLEX HOOK
 <UEFD4>                                                                           <UEFD0><KP_3><e> : "ᶓ" U1D93 # LATIN SMALL LETTER OPEN E WITH RETROFLEX HOOK
@@ -11141,13 +11166,14 @@
 #
 #
 # # RETROFLEX_HOOK&GROUP_4
+#   Lenient group selection
 #
-<UEFD4>                                                                              <UEFD0><4><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<Multi_key><braceright>                                                         <numbersign><4><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<UEFD4>                                                                           <UEFD0><KP_4><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<Multi_key><braceright>                                                      <numbersign><KP_4><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<UEFD4>                                                            <UEFD0><UEFD0><UEFD0><UEFD0><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<Multi_key><braceright>                        <numbersign><numbersign><numbersign><numbersign><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
+#   The digraph with retroflex hook "𝼅" U1DF05 is supported here because the
+#   undiacriticized "ɮ" U026E is supported in group 4.
+#   See #+# GROUP_4
+#
+#   See # # RETROFLEX_HOOK&GROUP_5
+#
 <UEFD4>                                                                              <UEFD0><4><e> : "ᶕ" U1D95 # LATIN SMALL LETTER SCHWA WITH RETROFLEX HOOK
 <Multi_key><braceright>                                                         <numbersign><4><e> : "ᶕ" U1D95 # LATIN SMALL LETTER SCHWA WITH RETROFLEX HOOK
 <UEFD4>                                                                           <UEFD0><KP_4><e> : "ᶕ" U1D95 # LATIN SMALL LETTER SCHWA WITH RETROFLEX HOOK
@@ -11200,14 +11226,12 @@
 #
 # # RETROFLEX_HOOK&GROUP_5
 #
-<UEFD4>                                                                              <UEFD0><5><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<Multi_key><braceright>                                                         <numbersign><5><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<UEFD4>                                                                           <UEFD0><KP_5><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<Multi_key><braceright>                                                      <numbersign><KP_5><D> : "𝼙" U1DF19 # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
-<UEFD4>                                                                              <UEFD0><5><L> : "𝼅" U1DF05 # LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK
-<Multi_key><braceright>                                                         <numbersign><5><L> : "𝼅" U1DF05 # LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK
-<UEFD4>                                                                           <UEFD0><KP_5><L> : "𝼅" U1DF05 # LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK
-<Multi_key><braceright>                                                      <numbersign><KP_5><L> : "𝼅" U1DF05 # LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK
+#   The digraphs with retroflex hook "ꭧ" UAB67 and "𝼜" U1DF1C as well as the
+#   retroflex click with retroflex hook "𝼊" U1DF0A are supported here because
+#   the undiacriticized "ʦ" U02A6, "ʧ" U02A7 and "ǃ" U01C3 are supported in
+#   group 5.
+#   See #+# GROUP_5
+#
 <UEFD4>                                                                              <UEFD0><5><K> : "𝼊" U1DF0A # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
 <Multi_key><braceright>                                                         <numbersign><5><K> : "𝼊" U1DF0A # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
 <UEFD4>                                                                           <UEFD0><KP_5><K> : "𝼊" U1DF0A # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
@@ -11246,7 +11270,7 @@
 #
 #
 #^# PALATAL_HOOK
-#   palatal hook, hook
+#   palatal hook
 #   *dead_retroflexhook UEFD4 double press
 #   Multikey: ¦}}
 #
@@ -11259,11 +11283,8 @@
 #   ("𝼹" U+1DF39), the palatal hook is supported in double press of retroflex
 #   hook instead of double press of hook.
 #
-#   This also supports "ɚ" U025A LATIN SMALL LETTER SCHWA WITH HOOK for
-#   convenience.
-#
 #   By lack of anything more to the point, the spacing modifier slot is
-#   populated with "˽" U02FD MODIFIER LETTER SHELF, as the shelf’s right edge
+#   populated with "˽" U02FD MODIFIER LETTER SHELF, as the shelf’s right tip
 #   matches the combining diacritic’s shape.
 #
 <UEFD4><UEFD4>                                                                             <space> : "̡" U0321 # COMBINING PALATALIZED HOOK BELOW
@@ -11281,9 +11302,7 @@
 <UEFD4><UEFD4>                                                                                 <c> : "ꞔ" UA794 # LATIN SMALL LETTER C WITH PALATAL HOOK
 <Multi_key><braceright><braceright>                                                            <c> : "ꞔ" UA794 # LATIN SMALL LETTER C WITH PALATAL HOOK
 <UEFD4><UEFD4>                                                                                 <d> : "ᶁ" U1D81 # LATIN SMALL LETTER D WITH PALATAL HOOK
-<Multi_key><braceright><braceright>                                                            <d> : "ᶁ" U1D81 # LATIN SMALL LETTER D WITH PALATAL HOOK
-<UEFD4><UEFD4>                                                                                 <e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<Multi_key><braceright><braceright>                                                            <e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
+#   Multikey conflicts with "𝼒" U1DF12.                                                        <d> : "ᶁ" U1D81 # LATIN SMALL LETTER D WITH PALATAL HOOK
 <UEFD4><UEFD4>                                                                                 <f> : "ᶂ" U1D82 # LATIN SMALL LETTER F WITH PALATAL HOOK
 <Multi_key><braceright><braceright>                                                            <f> : "ᶂ" U1D82 # LATIN SMALL LETTER F WITH PALATAL HOOK
 <UEFD4><UEFD4>                                                                                 <g> : "ᶃ" U1D83 # LATIN SMALL LETTER G WITH PALATAL HOOK
@@ -11331,8 +11350,6 @@
 <Multi_key><braceright><braceright>                                                <numbersign><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
 <UEFD4><UEFD4>                                                                          <UEFD0><d> : "𝼯" U1DF2F # LATIN SMALL LETTER ETH WITH PALATAL HOOK
 <Multi_key><braceright><braceright>                                                <numbersign><d> : "𝼯" U1DF2F # LATIN SMALL LETTER ETH WITH PALATAL HOOK
-<UEFD4><UEFD4>                                                                          <UEFD0><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<Multi_key><braceright><braceright>                                                <numbersign><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
 <UEFD4><UEFD4>                                                                          <UEFD0><f> : "𝼳" U1DF33 # LATIN SMALL LETTER PHI WITH PALATAL HOOK
 <Multi_key><braceright><braceright>                                                <numbersign><f> : "𝼳" U1DF33 # LATIN SMALL LETTER PHI WITH PALATAL HOOK
 <UEFD4><UEFD4>                                                                          <UEFD0><g> : "𝼱" U1DF31 # LATIN SMALL LETTER GAMMA WITH PALATAL HOOK
@@ -11354,13 +11371,16 @@
 #
 #
 # # PALATAL_HOOK&GROUP_2
+#   Lenient group selection
+#
+#   See # # PALATAL_HOOK&GROUP_5
 #
 <UEFD4><UEFD4>                                                                   <UEFD0><UEFD0><b> : "𝼻" U1DF3B # LATIN SMALL LETTER BETA WITH PALATAL HOOK
 <Multi_key><braceright><braceright>                                    <numbersign><numbersign><b> : "𝼻" U1DF3B # LATIN SMALL LETTER BETA WITH PALATAL HOOK
 <UEFD4><UEFD4>                                                                   <UEFD0><UEFD0><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
 <Multi_key><braceright><braceright>                                    <numbersign><numbersign><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<UEFD4><UEFD4>                                                                   <UEFD0><UEFD0><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<Multi_key><braceright><braceright>                                    <numbersign><numbersign><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
+<UEFD4><UEFD4>                                                                   <UEFD0><UEFD0><d> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
+<Multi_key><braceright><braceright>                                    <numbersign><numbersign><d> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
 <UEFD4><UEFD4>                                                                   <UEFD0><UEFD0><f> : "𝼳" U1DF33 # LATIN SMALL LETTER PHI WITH PALATAL HOOK
 <Multi_key><braceright><braceright>                                    <numbersign><numbersign><f> : "𝼳" U1DF33 # LATIN SMALL LETTER PHI WITH PALATAL HOOK
 <UEFD4><UEFD4>                                                                   <UEFD0><UEFD0><g> : "𝼱" U1DF31 # LATIN SMALL LETTER GAMMA WITH PALATAL HOOK
@@ -11376,19 +11396,10 @@
 #
 #
 # # PALATAL_HOOK&GROUP_3
+#   Lenient group selection
 #
-<UEFD4><UEFD4>                                                                       <UEFD0><3><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<Multi_key><braceright><braceright>                                             <numbersign><3><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<UEFD4><UEFD4>                                                                    <UEFD0><KP_3><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<Multi_key><braceright><braceright>                                          <numbersign><KP_3><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<UEFD4><UEFD4>                                                            <UEFD0><UEFD0><UEFD0><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<Multi_key><braceright><braceright>                        <numbersign><numbersign><numbersign><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<UEFD4><UEFD4>                                                                       <UEFD0><3><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<Multi_key><braceright><braceright>                                             <numbersign><3><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<UEFD4><UEFD4>                                                                    <UEFD0><KP_3><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<Multi_key><braceright><braceright>                                          <numbersign><KP_3><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<UEFD4><UEFD4>                                                            <UEFD0><UEFD0><UEFD0><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<Multi_key><braceright><braceright>                        <numbersign><numbersign><numbersign><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
+#   See # # PALATAL_HOOK&GROUP_5
+#
 <UEFD4><UEFD4>                                                                       <UEFD0><3><T> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
 <Multi_key><braceright><braceright>                                             <numbersign><3><T> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
 <UEFD4><UEFD4>                                                                    <UEFD0><KP_3><T> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
@@ -11398,19 +11409,10 @@
 #
 #
 # # PALATAL_HOOK&GROUP_4
+#   Lenient group selection
 #
-<UEFD4><UEFD4>                                                                       <UEFD0><4><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<Multi_key><braceright><braceright>                                             <numbersign><4><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<UEFD4><UEFD4>                                                                    <UEFD0><KP_4><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<Multi_key><braceright><braceright>                                          <numbersign><KP_4><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<UEFD4><UEFD4>                                                     <UEFD0><UEFD0><UEFD0><UEFD0><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<Multi_key><braceright><braceright>            <numbersign><numbersign><numbersign><numbersign><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<UEFD4><UEFD4>                                                                       <UEFD0><4><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<Multi_key><braceright><braceright>                                             <numbersign><4><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<UEFD4><UEFD4>                                                                    <UEFD0><KP_4><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<Multi_key><braceright><braceright>                                          <numbersign><KP_4><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<UEFD4><UEFD4>                                                     <UEFD0><UEFD0><UEFD0><UEFD0><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
-<Multi_key><braceright><braceright>            <numbersign><numbersign><numbersign><numbersign><e> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
+#   See # # PALATAL_HOOK&GROUP_5
+#
 <UEFD4><UEFD4>                                                                       <UEFD0><4><T> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
 <Multi_key><braceright><braceright>                                             <numbersign><4><T> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
 <UEFD4><UEFD4>                                                                    <UEFD0><KP_4><T> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
@@ -11421,14 +11423,18 @@
 #
 # # PALATAL_HOOK&GROUP_5
 #
-<UEFD4><UEFD4>                                                                       <UEFD0><5><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<Multi_key><braceright><braceright>                                             <numbersign><5><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<UEFD4><UEFD4>                                                                    <UEFD0><KP_5><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
-<Multi_key><braceright><braceright>                                          <numbersign><KP_5><D> : "𝼒" U1DF12 # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
+#   The digraph with palatal hook "𝼗" U1DF17 is supported here because the
+#   undiacriticized "ʧ" U02A7 is supported in group 5.
+#   See #+# GROUP_5
+#
 <UEFD4><UEFD4>                                                                       <UEFD0><5><T> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
 <Multi_key><braceright><braceright>                                             <numbersign><5><T> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
 <UEFD4><UEFD4>                                                                    <UEFD0><KP_5><T> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
 <Multi_key><braceright><braceright>                                          <numbersign><KP_5><T> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
+<UEFD4><UEFD4>                                                                       <UEFD0><5><t> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
+<Multi_key><braceright><braceright>                                             <numbersign><5><t> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
+<UEFD4><UEFD4>                                                                    <UEFD0><KP_5><t> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
+<Multi_key><braceright><braceright>                                          <numbersign><KP_5><t> : "𝼗" U1DF17 # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
 #
 #
 #^# SWASH_TAIL
@@ -11877,7 +11883,7 @@
 <dead_invertedbreve>                                                                           <F> : "𝼀" U1DF00 # LATIN SMALL LETTER FENG DIGRAPH WITH TRILL
 <Multi_key><parenleft>                                                                         <F> : "𝼀" U1DF00 # LATIN SMALL LETTER FENG DIGRAPH WITH TRILL
 <dead_invertedbreve>                                                                           <f> : "𝼀" U1DF00 # LATIN SMALL LETTER FENG DIGRAPH WITH TRILL
-<Multi_key><parenleft>                                                                         <f> : "𝼀" U1DF00 # LATIN SMALL LETTER FENG DIGRAPH WITH TRILL
+#   Multikey conflicts with itself.                                                            <f> : "𝼀" U1DF00 # LATIN SMALL LETTER FENG DIGRAPH WITH TRILL
 <dead_invertedbreve>                                                                           <G> : "⁐" U2050 # CLOSE UP
 <Multi_key><parenleft>                                                                         <G> : "⁐" U2050 # CLOSE UP
 <dead_invertedbreve>                                                                           <g> : "⁐" U2050 # CLOSE UP

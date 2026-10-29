@@ -5066,12 +5066,13 @@
 # # Cross-platform compatibility
 #
 #   Implementing the group selector as a dead key rather than a modifier key
-#   avoids breaking user experience across platforms, as Windows unsupports
-#   the ISO group selector modifier key combination Shift + AltGr, but supports
-#   7 + 1 modifiers, and Apple has broken its technote TN2056 around 2015 after
-#   previously allowing to use left Option as an extra modifier. (This was used
-#   by the German Neo ergonomic keyboard layout, to that extent that since the
-#   dedicated left Option shift state was broken, Neo emulates it using
+#   avoids breaking user experience across platforms, as Windows does not
+#   support the ISO group selector modifier key combination Shift + AltGr, but
+#   does support 7 modifiers (8 minus the one used by the KANA lock toggle),
+#   and Apple broke its Technical Note TN2056 around 2015 after previously
+#   allowing to use the left Option key as an extra modifier. (This was used
+#   by the German Neo ergonomic keyboard layout, to such an extent that since
+#   the dedicated left Option shift state was broken, Neo emulates it using
 #   Takayama Fumihiko’s Karabiner-Elements.)
 #   https://karabiner-elements.pqrs.org/
 #
