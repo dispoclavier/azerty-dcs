@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Update                                   7.1.0+0.9 Sun 2026-11-01T1724+0100
 * Update                                   7.1.0+0.8 Thu 2026-10-29T1703+0200
 * Update                                   7.1.0+0.5 Tue 2026-10-20T2102+0200
 * Update                                   7.1.0+0.4 Sat 2026-10-17T1149+0200
@@ -5522,7 +5523,7 @@
 /*<!group>                                                         */ DEADTRANS( L';'	,0x2460	,0x02D0	,0x0000), // ';' ➔ "ː" U+02D0 MODIFIER LETTER TRIANGULAR COLON
 /*<!group>                                                         */ DEADTRANS( L'/'	,0x2460	,0x2718	,0x0000), // '/' ➔ "✘" U+2718 HEAVY BALLOT X
 /*<!group>                                                         */ DEADTRANS( L'~'	,0x2460	,0x2243	,0x0000), // '~' ➔ "≃" U+2243 ASYMPTOTICALLY EQUAL TO math
-/*<!group>                                                         */ DEADTRANS( L'_'	,0x2460	,0x2215	,0x0000), // '_' ➔ "∕" U+2215 DIVISION SLASH math
+/*<!group>                                                         */ DEADTRANS( L'_'	,0x2460	,0x29F8	,0x0000), // '_' ➔ "⧸" U+29F8 BIG SOLIDUS math
 /*<!group><0>                                                      */ DEADTRANS( 0x26AA	,0x2469	,0x23FA	,0x0000), // '⚪' ➔ "⏺" U+23FA BLACK CIRCLE FOR RECORD emoji, record button
 /*<!group><0>                                                      */ DEADTRANS( L'&'	,0x2469	,0x26D4	,0x0000), // '&' ➔ "⛔" U+26D4 NO ENTRY emoji
 /*<!group><0>                                                      */ DEADTRANS( L'\''	,0x2469	,0x265F	,0x0000), // ''' ➔ "♟" U+265F BLACK CHESS PAWN emoji
@@ -9239,6 +9240,7 @@
 /*<!reversed>                                                      */ DEADTRANS( L'2'	,0x1D19	,0x27CD	,0x0000), // '2' ➔ "⟍" U+27CD MATHEMATICAL FALLING DIAGONAL
 /*<!reversed>                                                      */ DEADTRANS( L'3'	,0x1D19	,0x29F5	,0x0000), // '3' ➔ "⧵" U+29F5 REVERSE SOLIDUS OPERATOR
 /*<!reversed>                                                      */ DEADTRANS( L'4'	,0x1D19	,0x2216	,0x0000), // '4' ➔ "∖" U+2216 SET MINUS
+/*<!reversed>                                                      */ DEADTRANS( L'5'	,0x1D19	,0xFF3C	,0x0000), // '5' ➔ "＼" U+FF3C FULLWIDTH REVERSE SOLIDUS
 /*<!reversed>                                                      */ DEADTRANS( L'7'	,0x1D19	,0x29A5	,0x0000), // '7' ➔ "⦥" U+29A5 REVERSED ANGLE WITH UNDERBAR
 /*<!reversed>                                                      */ DEADTRANS( L'A'	,0x1D19	,0xDF6A	,0x0000), // High surrogate: D837; 'A' ➔ "𝽪" U+1DF6A LATIN CAPITAL LETTER PHONOTYPIC ROUNDTOP A
 /*<!reversed>                                                      */ DEADTRANS( L'a'	,0x1D19	,0xDF6B	,0x0000), // High surrogate: D837; 'a' ➔ "𝽫" U+1DF6B LATIN SMALL LETTER PHONOTYPIC ROUNDTOP A
@@ -9385,6 +9387,7 @@
 /*<!stroke>                                                        */ DEADTRANS( L'2'	,0x00F8	,0x27CB	,0x0000), // '2' ➔ "⟋" U+27CB MATHEMATICAL RISING DIAGONAL
 /*<!stroke>                                                        */ DEADTRANS( L'3'	,0x00F8	,0x2044	,0x0000), // '3' ➔ "⁄" U+2044 FRACTION SLASH
 /*<!stroke>                                                        */ DEADTRANS( L'4'	,0x00F8	,0x2215	,0x0000), // '4' ➔ "∕" U+2215 DIVISION SLASH
+/*<!stroke>                                                        */ DEADTRANS( L'5'	,0x00F8	,0xFF0F	,0x0000), // '5' ➔ "／" U+FF0F FULLWIDTH SOLIDUS
 /*<!stroke>                                                        */ DEADTRANS( L'A'	,0x00F8	,0x023A	,0x0000), // 'A' ➔ "Ⱥ" U+023A LATIN CAPITAL LETTER A WITH STROKE
 /*<!stroke>                                                        */ DEADTRANS( L'a'	,0x00F8	,0x2C65	,0x0000), // 'a' ➔ "ⱥ" U+2C65 LATIN SMALL LETTER A WITH STROKE
 /*<!stroke>                                                        */ DEADTRANS( L'b'	,0x00F8	,0x0180	,0x0000), // 'b' ➔ "ƀ" U+0180 LATIN SMALL LETTER B WITH STROKE (lenient)

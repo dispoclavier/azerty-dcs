@@ -6173,20 +6173,20 @@
 #   See # # C01 numbersign
 #
 #
-#	  	A	Z	E	R	T	Y	U	I	O	P	Q	S	D	F	G	H	J	K	L	M	W	X	C	V	B	N	,		.		/	\	Espace	
-#	  	^	%	€	\	~	@	_	&	{	}	#	$	(	)	-	+	|	'	[	]	/	*	<	>	=	`	,	?	.	;	:	!	␣	⍽
-#	1	⚠	☆	★	√	≃	◌	∕	•	Ω	π	☐	␣	⌀	➔	⁃	±	†	ʼ	⟨	⟩	✘	✗	✓	✔	≡	ʻ	❤	¿	‧	ː	⋅	¡	EMSP	MQSP
-#	2	♿	⚡	∈	∛	≈	⚫	⊂	◦	∅	☮	☑	⍽	∂	➜	➖	➕	‡	ˈ	❰	❱	➗	✖	⩽	⩾	≙	∧	♥	⁇	∙	ˑ	꞉	‼	ENSP	NQSP
-#	3	⚛	↯	∋	∜	≅	⚪	⊃	‣	∐	∏	☒	∑	☹	☺	☻	∓	⁂	ˌ	❮	❯	÷	×	✂	✅	≠	∨	♣	❔	ꞏ	⋯	⋮	❕	3/MSP	3/MSP
-#	4	∀	∄	∃	♻	⛺	●	∪	⬝	⭕	⛱	▪	☀	∆	♀	♨	⊎	⁑	⁎	⦜	♂	▫	❌	✀	►	≜	¬	♦	❓	⋅	⁛	⁞	❗	4/MSP	4/MSP
-#	5	∠	☇	⚕	☢	☥	○	∩	∫	⛈	☔	◾	⛑	∇	⛲	⛐	☤	♔	♚	∟	☣	◽	⭐	◀	▶	⚖	⛄	♠	⁈	·	⏳	⌚	⁉	MMSP	MMSP
-#	6	✈	☈	✍	♼	☎	❍	⤴	∬	▢	☂	◼	⛷	⤵	⚽	☪	☝	♕	♛	⦝	Ⓜ	◻	❇	⏪	⏩	⚾	☃		☿		⌛	⏱	⚠	6/MSP	6/MSP
-#	7	⚓	⚮	✉	♽	☏	⚬	⚭	∭	⚯	⛸	⬛	⛵	✡	⛴	⛳	⛫	♖	♜	☨	⏯	⬜	✨	⏮	⏭	⛹	❆		♁		⧗	⏰	❣	FSP	FSP
-#	8	⚗	†	⛪	⛯	⚙	☯	⚱	ℹ	☦	⛽	⮽	⛩	☸	✊	⛼	⛬	♗	♝	✝	✋	⛆	✴	⚰	✌	⛓	⛅		♃		⧖	⏲	❢	PSP	PSP
-#	9	♈	♉	♊	♋	♌	♍	♎	♏	♐	♑	♒	♓	↪	↩	➟	✚	♘	♞	⚜	⛰	⛎	✳	☄	➸	☕	☁		♄		⸫	∴	∵	TSP	TSP
-#	10	⎋	〽	⌦	⌫	⛾ 	⏺	※	⛔	❂	⸿	⏹	§	⚚	⎍	‐	⁜	♙	♟	◊	⏸	〰	❎	⋈	➲	⚘	⯀		♅		⸪	⋰	⋱	WNJ	WJ
-#	11	‸	‰	⏏	®	™	⁁	⏫	∞	⚒	¶ 	♯	☉	☾	☽	−	✙	∣	▲	❒	❐	➰	☧	©	⮊	♭	♮	⚑	♆	⁖	⸙	¦	⟰	HSP	HSP
-#	12	ª	‱	〃	∖	☘	❖	⏬	♾	º	⛏	⚧	✒	⁀	‿	⁒	﬩	∥	▼	❑	❏	➿	∗	✏	⛛	⚔	⟂	⚐	♇	⁘	⌘	‖	⌨	IDSP	IDSP
+#	  	A	Z	E	R	T	Y	U	I	O	P	Q	S	D	F	G	H	J	K	L	M	W	X	C	V	B	N	,		.		/	\	Espace		
+#	  	^	%	€	\	~	@	_	&	{	}	#	$	(	)	-	+	|	'	[	]	/	*	<	>	=	`	,	?	.	;	:	!	␣	⍽	
+#	1	⚠	☆	★	√	≃	◌	⧸	•	Ω	π	☐	␣	⌀	➔	∓	±	†	ʼ	⟨	⟩	✘	✗	✓	✔	≡	ʻ	❤	¿	‧	ː	⋅	¡	EMSP	MQSP	
+#	2	♿	⚡	∈	∛	≈	⚫	⊂	◦	∅	☮	☑	⍽	∂	➜	➖	➕	‡	ˈ	❰	❱	➗	✖	⩽	⩾	≙	∧	♥	⁇	∙	ˑ	꞉	‼	ENSP	NQSP	
+#	3	⚛	↯	∋	∜	≅	⚪	⊃	‣	∐	∏	☒	∑	☹	☺	☻	✚	⁂	ˌ	❮	❯	÷	×	✂	✅	≠	∨	♣	❔	ꞏ	⋯	⋮	❕	3/MSP	3/MSP	
+#	4	∀	∄	∃	♻	⛺	●	∪	⬝	⭕	⛱	▪	☀	∆	♀	♨	⊎	⁑	⁎	⦜	♂	▫	❌	✀	►	≜	¬	♦	❓	⋅	⁛	⁞	❗	4/MSP	4/MSP	
+#	5	∠	☇	⚕	☢	☥	○	∩	∫	⛈	☔	◾	⛑	∇	⛲	⛐	☤	♔	♚	∟	☣	◽	⭐	◀	▶	⚖	⛄	♠	⁈	·	⏳	⌚	⁉	MMSP	MMSP	
+#	6	✈	☈	✍	♼	☎	❍	⤴	∬	▢	☂	◼	⛷	⤵	⚽	☪	☝	♕	♛	⦝	Ⓜ	◻	❇	⏪	⏩	⚾	☃		☿		⌛	⏱	⚠	6/MSP	6/MSP	
+#	7	⚓	⚮	✉	♽	☏	⚬	⚭	∭	⚯	⛸	⬛	⛵	✡	⛴	⛳	⛫	♖	♜	☨	⏯	⬜	✨	⏮	⏭	⛹	❆		♁		⧗	⏰	❣	FSP	FSP	
+#	8	⚗	†	⛪	⛯	⚙	☯	⚱	ℹ	☦	⛽	⮽	⛩	☸	✊	⛼	⛬	♗	♝	✝	✋	⛆	✴	⚰	✌	⛓	⛅		♃		⧖	⏲	❢	PSP	PSP	
+#	9	♈	♉	♊	♋	♌	♍	♎	♏	♐	♑	♒	♓	↪	↩	⁃	➟	♘	♞	⚜	⛰	⛎	✳	☄	➸	☕	☁		♄		⸫	∴	∵	TSP	TSP	
+#	10	⎋	〽	⌦	⌫	⛾ 	⏺	※	⛔	❂	⸿	⏹	§	⚚	⎍	‐	⁜	♙	♟	◊	⏸	〰	❎	⋈	➲	⚘	⯀		♅		⸪	⋰	⋱	WNJ	WJ	
+#	11	‸	‰	⏏	®	™	⁁	⏫	∞	⚒	¶ 	♯	☉	☾	☽	−	✙	∣	▲	❒	❐	➰	☧	©	⮊	♭	♮	⚑	♆	⁖	⸙	¦	⟰	HSP	HSP	 
+#	12	ª	‱	〃	∖	☘	❖	⏬	♾	º	⛏	⚧	✒	⁀	‿	⁒	﬩	∥	▼	❑	❏	➿	∗	✏	⛛	⚔	⟂	⚐	♇	⁘	⌘	‖	⌨	IDSP	IDSP	
 #
 #
 #
@@ -6736,8 +6736,12 @@
 #
 # # D07 underscore
 #
-<UEFD0>                                                                               <underscore> : "∕" U2215 # DIVISION SLASH math
-<Multi_key><numbersign>                                                               <underscore> : "∕" U2215 # DIVISION SLASH math
+#   The use of "∕" U2215 in filenames as a popular workaround backfires due to
+#   negative kerning in Segoe UI fonts, whereas "⧸" U29F8 looks better and is
+#   therefore picked to prevent widespread disappointment.
+#
+<UEFD0>                                                                               <underscore> : "⧸" U29F8 # BIG SOLIDUS math
+<Multi_key><numbersign>                                                               <underscore> : "⧸" U29F8 # BIG SOLIDUS math
 <UEFD0><UEFD0>                                                                        <underscore> : "⊂" U2282 # SUBSET OF math
 <Multi_key><numbersign><numbersign>                                                   <underscore> : "⊂" U2282 # SUBSET OF math
 <UEFD0><3>                                                                            <underscore> : "⊃" U2283 # SUPERSET OF math
@@ -10282,7 +10286,7 @@
 #
 #   Group 6 of the base alphabet: Greek letters
 #
-#   This group, using the mnemonic of the Greek dead key in column 6, letter Y
+#   This group, using the mnemonic of the Greek dead key in column 06, letter Y
 #   or Greek i (i grec in French), is an alternative Greek letter input method.
 #   It may be used where the Greek letter dead key is missing and so, polytonic
 #   Greek and the circled dead key are not supported.

@@ -39,6 +39,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 	* Groupes des lettres :
 		* Ajouter "꟝" U+A7DD dans le groupe 4 de "V" à la place de "℣" U+2123, qui va dans le groupe 4 de "U" à la place de "Ɯ" U+019C, qui est dans le groupe 2 de "M". compose-3.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 		* Ajouter "꭬" U+AB6C dans le groupe 5 de "R" à la place de "ꭅ" U+AB45, qui va dans le groupe 4 de "R" à la place de "℟" U+211F, qui va dans le groupe 4 de "I" à la place de "ℹ" U+2139, qui est dans le groupe 4 de "i". ibidem
+	* Groupes des symboles : Groupes de "_" : Groupe 1 : Redonder "⧸" U+29F8 à la place de "∕" U+2215.
 	* Exposant :
 		* Redonder "⁄" U+2044. compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-dcs/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
 		* Exposant et tourné :
@@ -74,6 +75,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 		* Tourné et rayé : Ajouter "𝼾" U+1DF3E, "𝽐" U+1DF50. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-dcs/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 	* Double accent aigu : Ajouter "᫯" U+1AEF par "_". compose-2.yml [5a35ff6](https://github.com/dispoclavier/azerty-dcs/commit/5a35ff6105e9c00847d2f36547fe84c8aed09e82)
 	* Réfléchi :
+		* Ajouter "＼" U+FF3C par "5".
 		* Ajouter "𝽪" U+1DF6A à la place de "⦥" U+29A5, qui va par "7". compose-2.yml [0f05e25](https://github.com/dispoclavier/azerty-dcs/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
 		* Ajouter "𝽫" U+1DF6B à la place de "ꬱ" U+AB31, qui va en composition. ibidem
 		* Ajouter "𝽦" U+1DF66, "𝽬" U+1DF6C, "𝽭" U+1DF6D. compose-2.yml [70d7839](https://github.com/dispoclavier/azerty-dcs/commit/70d7839a6b5c5eadacf6f950b754de2a6e24a14d), kbdeadtrans-deadkeys.c [49de9f2](https://github.com/dispoclavier/azerty-dcs/commit/49de9f2a699de0ec7fe1890acecfec507c98865e)
@@ -142,6 +144,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 		* Ajouter "꟢" U+A7E2 à la place de "ꭆ" U+AB46, qui va dans indice-ou-petite-capitale et macron. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 		* Ajouter "𝽱" U+1DF71, "𝾀" U+1DF80, "𝾁" U+1DF81 (dans les groupes 2 et 3). compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-dcs/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 	* Barré :
+		* Ajouter "／" U+FF0F par "5".
 		* Ajouter "𝽡" U+1DF61 (dans le groupe 1). compose-2.yml [49de9f2](https://github.com/dispoclavier/azerty-dcs/commit/49de9f2a699de0ec7fe1890acecfec507c98865e)
 		* Ajouter "𝾐" U+1DF90 (dans le groupe 1). compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-dcs/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
 	* Rond en chef : Ajouter "꭭" U+AB6D. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)

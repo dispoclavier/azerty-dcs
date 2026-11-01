@@ -110,13 +110,19 @@
 #   "^" and "_" need to be freed up for super- and subscript/smallcap, applying
 #   the parentheses-breve scheme to circumflex and hacek, macron and diaeresis.
 #   For example, new-school multikey sequences include « ¦^ » for superscript,
-#   « ¦> » for hacek, « ¦< » for circumflex accent, « ¦| » for macron, « ¦: »
-#   for diaeresis, « ¦" » for the double acute accent, an acute diaeresis.
+#   « ¦< » for circumflex accent, w« ¦> » for hacek, « ¦| » for macron, « ¦: »
+#   for diaeresis, following the logic that many multikey equivalents match
+#   diacritics rotated 90° to the left. By contrast, « ¦" » becomes a multikey
+#   equivalent of the double acute accent (an acute diaeresis), consistently
+#   with the longstanding « ¦' » for acute accent.
 #
-#   Another reason to adopt new-school is that in en_US.UTF-8/Compose, <comma>
-#   is used for both dead_cedilla and dead_ogonek, resulting in a conflict on E
-#   that en_US.UTF-8/Compose works around by using <cedilla> instead of <comma>
-#   in the multikey sequences yielding "Ȩ" U0228 and "ȩ" U0229.
+#   Another reason to adopt new-school is that in en_US.UTF-8/Compose, the
+#   comma is used for both dead_cedilla and dead_ogonek, resulting in a
+#   conflict on "E", that en_US.UTF-8/Compose works around by using cedilla
+#   instead of comma in the multikey sequences yielding "Ȩ" U0228 and
+#   "ȩ" U0229, that would otherwise conflict with "Ę" U0118 and "ę" U0119.
+#   Obviously this workaround defeats the point in supporting multikey
+#   equivalents, supposed to be available in plain ASCII.
 #
 #   Yet another reason is that en_US.UTF-8/Compose, using dead_hook both for
 #   hook and hook above, is unable to support "Ƴ" U01B3 LATIN CAPITAL LETTER Y
@@ -6023,13 +6029,16 @@
 #
 #   Digits yield mathematical backslashes "∖" U2216, "⟍" U27CD, "⧵" U29F5,
 #   "⧹" U29F9. The digit is consistent with the number of leading spaces of
-#   multikey sequences, and #0 is duplicated on #4 for convenience.
+#   multikey sequences, #0 is duplicated on #4 for convenience, and the
+#   fullwidth "＼" UFF3C is supported too, as #5, in case a space-padded
+#   backslash meets special requirements:
 #
 #       0  "∖" U2216
 #       1  "⧹" U29F9
 #       2  "⟍" U27CD
 #       3  "⧵" U29F5
 #       4  "∖" U2216
+#       5  "＼" UFF3C
 #
 #   This is a part of the design of math sequences.
 #   See #   Outsourcing to dead keys
@@ -6105,6 +6114,10 @@
 <Multi_key><backslash>                                                                         <4> : "∖" U2216 # SET MINUS
 <UEFD6>                                                                                     <KP_4> : "∖" U2216 # SET MINUS
 <Multi_key><backslash>                                                                      <KP_4> : "∖" U2216 # SET MINUS
+<UEFD6>                                                                                        <5> : "＼" UFF3C # FULLWIDTH REVERSE SOLIDUS
+<Multi_key><backslash>                                                                         <5> : "＼" UFF3C # FULLWIDTH REVERSE SOLIDUS
+<UEFD6>                                                                                     <KP_5> : "＼" UFF3C # FULLWIDTH REVERSE SOLIDUS
+<Multi_key><backslash>                                                                      <KP_5> : "＼" UFF3C # FULLWIDTH REVERSE SOLIDUS
 <UEFD6>                                                                                        <7> : "⦥" U29A5 # REVERSED ANGLE WITH UNDERBAR
 <Multi_key><backslash>                                                                         <7> : "⦥" U29A5 # REVERSED ANGLE WITH UNDERBAR
 <UEFD6>                                                                                     <KP_7> : "⦥" U29A5 # REVERSED ANGLE WITH UNDERBAR
@@ -10198,10 +10211,12 @@
 #   dead_hook
 #   Multikey: ¦{
 #
-#   This key is dedicated to literacy as opposed to specialist scientific
-#   usages. Therefore it precedes the linguistics-centered *dead_retroflexhook
-#   (Multikey: ¦}), although in shape-based mnemonics, *dead_retroflexhook
-#   matches the bottom tip of a left brace.
+#   This dead key is centered on literacy, as it supports letters with hook in
+#   the African Reference Alphabet. It contrasts with the linguistics-centered
+#   *dead_retroflexhook UEFD4 « ¦} », that it precedes visually (on the layout
+#   map) and ergonomically (D09 "O" is more convenient than D10 "P"), although
+#   when considering shape-based mnemonics, the retroflex hook matches the
+#   bottom tip of a left brace.
 #   See # # Hook, hook above and retroflex hook
 #
 #   In character names, the hook has various designations. Straightforwardly,
@@ -10214,18 +10229,16 @@
 #
 #   Tone bars
 #
-#   This includes tone bars, because there is no room in dead_tilde (with
-#   alphabetic mnemonic) and in dead_abovedot (with graphic mnemonic), with
-#   some far-fetched mnemonic based on "O", mapped like "{" on D09. Tone bars
-#   also have dedicated multikey support.
+#   This includes tone bars, with some far-fetched mnemonic based on "O",
+#   mapped like "{" on D09, as there is no room for tone bars in dead_tilde
+#   (with alphabetic mnemonic) nor in dead_abovedot (with graphic mnemonic).
+#   Tone bars also have dedicated multikey support.
 #   See #^# Tone bars
 #
 #
 #   Flower punctuation
 #
-#   Followed by period, dead_hook yields "⁕" U2055 FLOWER PUNCTUATION MARK with
-#   a mnemonic both semantic based on sentence-ending period and flower, and
-#   graphic based on keycap "I".
+#   Followed by period, dead_hook yields "⁕" U2055 FLOWER PUNCTUATION MARK.
 #   See #*# BREVE
 #
 #
@@ -12070,14 +12083,15 @@
 #   Half rings
 #
 #   "˒" U02D2 MODIFIER LETTER CENTRED RIGHT HALF RING is mapped to
-#   unconflicting and case insensitive "c", with its left counterpart
-#   in dead_invertedbreve.
+#   unconflicting and case insensitive "c", with its left counterpart in
+#   dead_invertedbreve, following the logic that multikey equivalents match
+#   diacritics rotated 90° to the left.
 #   See #*# INVERTED_BREVE
+#   See # # Introducing new-school input composition
 #
 #   "ʾ" U02BE MODIFIER LETTER RIGHT HALF RING is mapped to case insensitive
-#   "d", with its left counterpart "ʿ" U02BF in dead_invertedbreve.
-#
-#   Raised half rings "ʿ" U02BF and "ʾ" U02BE are in group 1 of "l" and "m",
+#   "d", with its left counterpart "ʿ" U02BF in dead_invertedbreve. These
+#   raised half rings "ʿ" U02BF and "ʾ" U02BE are in group 1 of "l" and "m",
 #   too.
 #   See #+# GROUP_1
 #
@@ -15840,13 +15854,16 @@
 #
 #   Digits yield mathematical slashes "⁄" U2044, "∕" U2215, "⟋" U27CB,
 #   "⧸" U29F8. The digit is consistent with the number of leading spaces of
-#   multikey sequences, and #0 is duplicated on #4 for convenience.
+#   multikey sequences, #0 is duplicated on #4 for convenience, and the
+#   fullwidth "／" UFF0F is supported too, as #5, in case a space-padded
+#   slash meets special requirements:
 #
 #       0  "∕" U2215
 #       1  "⧸" U29F8
 #       2  "⟋" U27CB
 #       3  "⁄" U2044
 #       4  "∕" U2215
+#       5  "／" UFF0F
 #
 #   This is a part of the design of math sequences.
 #   See #   Outsourcing to dead keys
@@ -15908,6 +15925,10 @@
 <Multi_key><slash>                                                                             <4> : "∕" U2215 # DIVISION SLASH
 <dead_stroke>                                                                               <KP_4> : "∕" U2215 # DIVISION SLASH
 <Multi_key><KP_Divide>                                                                      <KP_4> : "∕" U2215 # DIVISION SLASH
+<dead_stroke>                                                                                  <5> : "／" UFF0F # FULLWIDTH SOLIDUS
+<Multi_key><slash>                                                                             <5> : "／" UFF0F # FULLWIDTH SOLIDUS
+<dead_stroke>                                                                               <KP_5> : "／" UFF0F # FULLWIDTH SOLIDUS
+<Multi_key><KP_Divide>                                                                      <KP_5> : "／" UFF0F # FULLWIDTH SOLIDUS
 <dead_stroke>                                                                                  <A> : "Ⱥ" U023A # LATIN CAPITAL LETTER A WITH STROKE
 <Multi_key><slash>                                                                             <A> : "Ⱥ" U023A # LATIN CAPITAL LETTER A WITH STROKE
 <dead_stroke>                                                                                  <a> : "ⱥ" U2C65 # LATIN SMALL LETTER A WITH STROKE
