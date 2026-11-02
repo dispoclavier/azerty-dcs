@@ -4,15 +4,11 @@ Le fichier Compose.yml contient les chaînes de caractères pour touches vives e
 
 Ce fichier n’est pas au format YAML. L’extension ".yml" sert à la coloration syntaxique, et sous Windows elle facilite l’ouverture.
 
-Le contenu de Compose.yml est réparti sur les trois fichiers compose-1.yml, compose-2.yml et compose-3.yml pour la mise en ligne sur GitHub. Ces partiels ne dépassent pas 2 Mo afin de bénéficier des fonctionnalités de github.com, absentes de github.dev qui affiche Compose.yml en entier.
+Le contenu de Compose.yml est dupliqué dans les trois fichiers compose-1.yml, compose-2.yml et compose-3.yml. Ces partiels ne dépassent pas 2 Mo afin de bénéficier des fonctionnalités de github.com, absentes de github.dev qui affiche Compose.yml en entier.
 
-* compose-1.yml : séquences de composition dédiées, grec sauf la touche morte grec-ou-cerclé ;
-* compose-2.yml : touches mortes sauf touche morte groupe et jusqu’à rond en chef ;
-* compose-3.yml : touches mortes à partir d’accent circonflexe et touche morte groupe.
-
-Le fichier d’un seul tenant Compose.yml dans ce dossier est mis à jour en parallèle.
-
-Les paquetages distribués dont le nom commence par "Un-nouvel-AZERTY-Linux-" contiennent aussi une copie de Compose.yml, placée à la racine.
+* compose-1.yml : séquences de composition dédiées, grec sauf touche morte grec-ou-cerclé
+* compose-2.yml : touches mortes jusqu’à rond en chef sauf touche morte groupe
+* compose-3.yml : touches mortes à partir d’accent circonflexe et touche morte groupe
 
 ## Versionnage
 
