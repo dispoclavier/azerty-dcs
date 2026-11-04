@@ -1073,7 +1073,7 @@
 #   to be easily accessible on live keys instead, while all others are only a
 #   small subset of the characters in use, and dead key multiple press is used
 #   to virtualize other useful dead keys, and to provide shortcuts to some.
-#   See #^# HACEK input facility by CIRCUMFLEX
+#   See #^# HACEK and GROUP_1 input facilities by CIRCUMFLEX
 #   See #^# MACRON input facility by DIAERESIS
 #   See #^# COMBINING_ABOVE
 #   See #^# INVERTED
@@ -3979,8 +3979,8 @@
 #
 #   The diacritic replicates the scheme used for combining below with "̿" U033F
 #   as the exact counterpart of "̳" U0333, while "﹌" UFE4C as a spacing clone
-#   is less fortunate than "‗" U2017. Anyway, its single counterpart "﹋" UFE4B
-#   is supported, too, with underscore as a base character.
+#   is less fortunate than "‗" U2017. Its single counterpart "﹋" UFE4B is
+#   supported, too, with underscore as a base character.
 #   See #^# COMBINING_BELOW
 #
 <UEFD1><UEFD1>                                                                             <space> : "̿" U033F # COMBINING DOUBLE OVERLINE
@@ -13209,9 +13209,9 @@
 #
 #   Spacing modifier letters
 #
-#   Instead of a non-existing spacing clone of "̛" U031B, "ꜚ" UA71A is picked,
-#   based on the horn’s shape, although this is a Chinantec tone mark, but a
-#   spacing modifier letter anyway.
+#   As there is no spacing clone of "̛" U031B, "ꜚ" UA71A is picked instead,
+#   based on the horn’s shape, the better as this Chinantec tone mark is a
+#   spacing modifier letter.
 #
 #   The other Chinantec tone marks "ꜗ" UA717, "ꜘ" UA718, "ꜙ" UA719 are in
 #   dead_abovedot, and the full set has dedicated multikey support.
@@ -13738,8 +13738,7 @@
 #   For ease of access, and in an attempt to meet potential user expectations,
 #   the macron dead key is also activatable by dead_diaeresis double press,
 #   extending the logic that multiple dead key presses transform diacritics,
-#   to include the idea that a double press may also join the two dots, if
-#   that is a better option with respect to usability.
+#   to include the idea that a double press may also join the two dots.
 #
 #   Chaining is only supported with the group dead key.
 #

@@ -105,13 +105,13 @@
 #   See DIN 2137-01:2023-08
 #   See E DIN 2137-1:2020-11
 #
-#   In en_US.UTF-8/Compose, that the “superscript digits by dead_circumflex”
-#   feature comes from, the superscript dead key is missing, consistently with
-#   keysymdef.h lacking a *dead_superscript or equivalent keysym.
+#   In en_US.UTF-8/Compose, that the superscript digits by <dead_circumflex>
+#   feature comes from, the superscript dead key is missing, due to keysymdef.h
+#   lacking a *dead_superscript or equivalent keysym.
 #   See # # Notes on Unicode support
 #   See # # Introducing new-school input composition
 #
-#   Anyway, the multikey equivalents of this way to input superscript digits
+#   However, the multikey equivalents of this way to input superscript digits
 #   cannot be supported, due to conflicts with "❤" U2764 as of "³" U00B3, or
 #   with the less frequent "♥" U2665, as of "⁸" U2078 if using the new sequence
 #   <Multi_key><less><8> introduced for the support of "♥" U2665.
@@ -838,19 +838,20 @@
 <Multi_key><section><less>                                                                     <o> : "ộ" U1ED9 # LATIN SMALL LETTER O WITH CIRCUMFLEX AND DOT BELOW
 #
 #
-#^# HACEK input facility by CIRCUMFLEX
+#^# HACEK and GROUP_1 input facilities by CIRCUMFLEX
 #   dead_circumflex double press
 #   Multikey: ¦<<
 #
 #   For ease of access, and in an attempt to meet potential user expectations,
 #   the hacek dead key is also activatable by dead_circumflex double press,
 #   extending the logic that multiple dead key presses shift diacritics around,
-#   to include the idea that a double press may also turn the diacritic, if
-#   that is a better option with respect to usability.
+#   to consider that they may also turn them, except for "a", "A" and "o", "O",
+#   duplicating the group 1.
 #
 #   For maintainability of the code, and usability of the documentation, this
 #   dead key content is grouped in a single place.
 #   See #*# HACEK
+#   See #+# GROUP_1
 #   See # # Notes about documentation
 #
 #
@@ -1186,7 +1187,9 @@
 #   For ease of access, and in an attempt to meet potential user expectations,
 #   the hacek dead key is also activatable by dead_circumflex double press,
 #   extending the logic that multiple dead key presses shift diacritics around,
-#   to consider that they may also turn them.
+#   to consider that they may also turn them, except for "a", "A" and "o", "O",
+#   duplicating the group 1.
+#   See #+# GROUP_1
 #
 #   Chaining is only supported with the group dead key.
 #
@@ -1319,12 +1322,8 @@
 <Multi_key><less><less>                                                                     <KP_9> : "₉" U2089 # SUBSCRIPT NINE
 <dead_caron>                                                                                   <A> : "Ǎ" U01CD # LATIN CAPITAL LETTER A WITH CARON
 <Multi_key><greater>                                                                           <A> : "Ǎ" U01CD # LATIN CAPITAL LETTER A WITH CARON
-<dead_circumflex><dead_circumflex>                                                             <A> : "Ǎ" U01CD # LATIN CAPITAL LETTER A WITH CARON
-<Multi_key><less><less>                                                                        <A> : "Ǎ" U01CD # LATIN CAPITAL LETTER A WITH CARON
 <dead_caron>                                                                                   <a> : "ǎ" U01CE # LATIN SMALL LETTER A WITH CARON
 <Multi_key><greater>                                                                           <a> : "ǎ" U01CE # LATIN SMALL LETTER A WITH CARON
-<dead_circumflex><dead_circumflex>                                                             <a> : "ǎ" U01CE # LATIN SMALL LETTER A WITH CARON
-<Multi_key><less><less>                                                                        <a> : "ǎ" U01CE # LATIN SMALL LETTER A WITH CARON
 <dead_caron>                                                                                   <C> : "Č" U010C # LATIN CAPITAL LETTER C WITH CARON
 <Multi_key><greater>                                                                           <C> : "Č" U010C # LATIN CAPITAL LETTER C WITH CARON
 <dead_circumflex><dead_circumflex>                                                             <C> : "Č" U010C # LATIN CAPITAL LETTER C WITH CARON
@@ -1403,12 +1402,8 @@
 <Multi_key><less><less>                                                                        <n> : "ň" U0148 # LATIN SMALL LETTER N WITH CARON
 <dead_caron>                                                                                   <O> : "Ǒ" U01D1 # LATIN CAPITAL LETTER O WITH CARON
 #   Multikey conflicts with "⥁" U2941.                                                         <O> : "Ǒ" U01D1 # LATIN CAPITAL LETTER O WITH CARON
-<dead_circumflex><dead_circumflex>                                                             <O> : "Ǒ" U01D1 # LATIN CAPITAL LETTER O WITH CARON
-<Multi_key><less><less>                                                                        <O> : "Ǒ" U01D1 # LATIN CAPITAL LETTER O WITH CARON
 <dead_caron>                                                                                   <o> : "ǒ" U01D2 # LATIN SMALL LETTER O WITH CARON
 #   Multikey conflicts with "⥁" U2941.                                                         <o> : "ǒ" U01D2 # LATIN SMALL LETTER O WITH CARON
-<dead_circumflex><dead_circumflex>                                                             <o> : "ǒ" U01D2 # LATIN SMALL LETTER O WITH CARON
-<Multi_key><less><less>                                                                        <o> : "ǒ" U01D2 # LATIN SMALL LETTER O WITH CARON
 <dead_caron>                                                                                   <R> : "Ř" U0158 # LATIN CAPITAL LETTER R WITH CARON
 <Multi_key><greater>                                                                           <R> : "Ř" U0158 # LATIN CAPITAL LETTER R WITH CARON
 <dead_circumflex><dead_circumflex>                                                             <R> : "Ř" U0158 # LATIN CAPITAL LETTER R WITH CARON
@@ -4493,8 +4488,7 @@
 #   For ease of access, and in an attempt to meet potential user expectations,
 #   the macron dead key is also activatable by dead_diaeresis double press,
 #   extending the logic that multiple dead key presses transform diacritics,
-#   to include the idea that a double press may also join the two dots, if
-#   that is a better option with respect to usability.
+#   to include the idea that a double press may also join the two dots.
 #
 #   For maintainability of the code, and usability of the documentation, this
 #   dead key content is grouped in a single place.
@@ -5352,7 +5346,7 @@
 #   dollar sign and generic currency sign as printed on keycaps are supported
 #   altogether, and even the equals sign on E12 and the ampersand on E01. But
 #   it stops here, and this fully works on unremapped layouts only, assuming
-#   that remapping defeats the point in backward compatibility anyway.
+#   that remapping defeats the point in backward compatibility.
 #
 #   * "«" U00AB and "»" U00BB are referred to as "less-than/greater-than double
 #     angle quotation marks", as they are always similar in shape to two
@@ -8729,10 +8723,21 @@
 #   https://forums.steinberg.net/t/versicle-and-response-symbols/729230
 #   See #^# Abbreviations, Units and Legal Symbols
 #
+#
+#   Shortcut
+#
+#   As "Œ" U0152, "œ" U0153 is heavily used in French, and "Æ" U00C6, "æ" U00E6
+#   is also used in French, these are also in <dead_circumflex> double press.
+#   See #^# HACEK and GROUP_1 input facilities by CIRCUMFLEX
+#
 <UEFD0>                                                                                        <A> : "Æ" U00C6 # LATIN CAPITAL LETTER AE
 <Multi_key><numbersign>                                                                        <A> : "Æ" U00C6 # LATIN CAPITAL LETTER AE
+<dead_circumflex><dead_circumflex>                                                             <A> : "Æ" U00C6 # LATIN CAPITAL LETTER AE
+<Multi_key><less><less>                                                                        <A> : "Æ" U00C6 # LATIN CAPITAL LETTER AE
 <UEFD0>                                                                                        <a> : "æ" U00E6 # LATIN SMALL LETTER AE
 <Multi_key><numbersign>                                                                        <a> : "æ" U00E6 # LATIN SMALL LETTER AE
+<dead_circumflex><dead_circumflex>                                                             <a> : "æ" U00E6 # LATIN SMALL LETTER AE
+<Multi_key><less><less>                                                                        <a> : "æ" U00E6 # LATIN SMALL LETTER AE
 <UEFD0>                                                                                        <B> : "Ɖ" U0189 # LATIN CAPITAL LETTER AFRICAN D
 <Multi_key><numbersign>                                                                        <B> : "Ɖ" U0189 # LATIN CAPITAL LETTER AFRICAN D
 <UEFD0>                                                                                        <b> : "ɖ" U0256 # LATIN SMALL LETTER D WITH TAIL
@@ -8787,8 +8792,12 @@
 <Multi_key><numbersign>                                                                        <n> : "ɲ" U0272 # LATIN SMALL LETTER N WITH LEFT HOOK
 <UEFD0>                                                                                        <O> : "Œ" U0152 # LATIN CAPITAL LIGATURE OE
 <Multi_key><numbersign>                                                                        <O> : "Œ" U0152 # LATIN CAPITAL LIGATURE OE
+<dead_circumflex><dead_circumflex>                                                             <O> : "Œ" U0152 # LATIN CAPITAL LIGATURE OE
+<Multi_key><less><less>                                                                        <O> : "Œ" U0152 # LATIN CAPITAL LIGATURE OE
 <UEFD0>                                                                                        <o> : "œ" U0153 # LATIN SMALL LIGATURE OE
 <Multi_key><numbersign>                                                                        <o> : "œ" U0153 # LATIN SMALL LIGATURE OE
+<dead_circumflex><dead_circumflex>                                                             <o> : "œ" U0153 # LATIN SMALL LIGATURE OE
+<Multi_key><less><less>                                                                        <o> : "œ" U0153 # LATIN SMALL LIGATURE OE
 <UEFD0>                                                                                        <P> : "·" U00B7 # MIDDLE DOT
 <Multi_key><numbersign>                                                                        <P> : "·" U00B7 # MIDDLE DOT
 <UEFD0>                                                                                        <p> : "·" U00B7 # MIDDLE DOT

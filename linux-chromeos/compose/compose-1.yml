@@ -1,7 +1,7 @@
 #                      Scope: Part 1 of Compose.yml
 #                       Date: See Compose.yml
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.1.0+0.9" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+0.10" # See #   End of line comments
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
 #                Description: Multicharacter, multikey and dead key configuration
@@ -281,7 +281,7 @@
 #
 #   All lines containing a compose sequence also contain a comment before the
 #   end of line, for safety, as it happened that sequences without a trailing
-#   numbersign were ignored, and appending a hash fixed the bug. Anyway, EOL
+#   numbersign were ignored, and appending a hash fixed the bug. However, EOL
 #   comments are specified as optional.
 #   https://www.x.org/releases/X11R7.5/doc/man/man5/Compose.5.html
 #
@@ -325,8 +325,10 @@
 #
 #   For readability, inline literal multikey sequences are bracketed with
 #   French-style (no-break thin) space padded double angle quotation marks,
-#   because quotedbl, grave, period, comma and other ASCII symbols likely to
-#   occur next to multikey sequences, may also be part of multikey seqences.
+#   because <quotedbl>, <grave>, <period>, <comma> and other ASCII symbols
+#   likely to occur next to multikey sequences, may also be part of multikey
+#   seqences.
+#
 #   The padding space is NBTSP for convenience and consistency. By contrast,
 #   the plus sign after modifier key notations is not NBTSP-padded (although
 #   it normally should be), for maintainability/searchability, and assuming
@@ -975,11 +977,16 @@
 #   convenience.
 #   See #   End of line comments
 #
-<UEFA1> : "Français France disposition de clavier semi-automatique – kbfrFRs " #
-<UEFA2> : "Breton et français disposition de clavier semi-automatique – kbbrFRs " #
-<UEFA3> : "Polynésie française disposition de clavier semi-automatique – kbfrPFs " #
-<UEFA4> : "Afrique francophone disposition de clavier semi-automatique – kbfrAFs " #
-<UEFA5> : "Français Belgique disposition de clavier semi-automatique – kbfrBEs " #
+#<UEFA1> : "Français France disposition de clavier semi-automatique – kbfrFRs " #
+<UEFA1> : "Français France semi-automatique – kbfrFRs " #
+#<UEFA2> : "Breton et français disposition de clavier semi-automatique – kbbrFRs " #
+<UEFA2> : "Breton et français semi-automatique – kbbrFRs " #
+#<UEFA3> : "Polynésie française disposition de clavier semi-automatique – kbfrPFs " #
+<UEFA3> : "Polynésie française semi-automatique – kbfrPFs " #
+#<UEFA4> : "Afrique francophone disposition de clavier semi-automatique – kbfrAFs " #
+<UEFA4> : "Afrique francophone semi-automatique – kbfrAFs " #
+#<UEFA5> : "Français Belgique disposition de clavier semi-automatique – kbfrBEs " #
+<UEFA5> : "Français Belgique semi-automatique – kbfrBEs " #
 #<UEFA6> : "Canadien multilingue disposition de clavier semi-automatique – kbfrCAms " #
 <UEFA6> : "Canadien multilingue semi-automatique – kbfrCAms " #
 #<UEFA7> : "Français Canada disposition de clavier semi-automatique – kbfrCAs " #
@@ -1030,33 +1037,35 @@
 #   as it is used — and has been designed — in France.
 #   https://xorg.freedesktop.org/releases/current/doc/libX11/i18n/compose/en_US.UTF-8.html
 #
-#   The undocumented maximum number of keysyms as stated in VSCode is nine. Any
-#   longer sequences are going to be ignored by the compiler.
-#
 #
 # # Design of multikey sequences
 #
-#   Anyway, brevity is key, to that extent that non-critical elements are cut
-#   off, resulting in truncated sequences for the sake of streamlining the user
-#   experience, even if they are formally counter-intuitive.
+#   The sequence length limit reportedly varies by software, but 9 keysyms is a
+#   safe maximum.
+#
+#   Brevity is key. Non-critical elements are omitted.
 #   See #^# Western Zodiacal Signs
 #   See # # Design of math sequences
 #   See #   Streamlining
 #   See #   Conflictlessness check
 #
+#   The resulting truncated sequences may be less intuitive and thus less
+#   memorable.
+#   See # # Notes about documentation
+#
 #
 # # Notes for maintenance
 #
 #   For display in browsers as full-fledged web pages rather than merely in
-#   plain text, this file needs to be split into three partials maxing at 2GB,
-#   due to a file size restriction in GitHub’s web interface on github.com (not
-#   on github.dev).
+#   plain text, the content of this file needs to be duplicated in 3 partials
+#   maxing at 2GB, due to a file size restriction in GitHub’s web interface on
+#   github.com (not on github.dev).
 #   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-1.yml
 #   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-2.yml
 #   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-3.yml
 #
 #   The colon alignment in column 100 is based on longest multikey sequences
-#   in terms of string length.
+#   in terms of keysym string length.
 #   See # # SUPERSCRIPT&CURL&GROUP_4
 #   See "𐞉" U10789
 #   See "𐞫" U107AB
@@ -1070,12 +1079,13 @@
 #   See # # Maintenance of letter groups
 #
 #   Lines starting with "#@" provide Windows-specific alternative output, as
-#   this file is mainly the source code for the XCompose-to-C transpiler and
-#   for HTML dead key tables.
+#   this file is also the source code for the XCompose-to-C transpiler and for
+#   dead key and multikey HTML tables.
 #   See # # Notes about documentation
 #
-#   Column 80 is usually empty, and comment lines are no longer than
-#   75 characters (plus the leading "#   ").
+#   At comment lines without a URL, column 80 is usually empty (except for
+#   commented-out sequences), as comments are no longer than 75 characters
+#   (plus the leading "#   ").
 #
 #
 #   Conflictlessness check
@@ -1091,13 +1101,13 @@
 #          ^([^\s]+)\s.+\n\1(<|\s)
 #
 #   Sortability and readability may then be further improved using the
-#   follow-up replaceruleset "improveXComposeSortability", where dead
+#   follow-up replaceruleset "improveXComposeSortability", where proposed dead
 #   keysyms missing from keysymdef.h replace the generic private use keysyms,
-#   all dead keysyms are prefixed with an exclam so as to be sorted before
-#   letters and digits, as well as before ASCII symbols prefixed with a percent
-#   sign, some more letters get intuitive keysyms, and ordinary space and U200B
-#   as well as nobreakspace and U202F are grouped conveniently and sorted last
-#   by the means of a prepended asciitilde.
+#   all dead keysyms are prefixed with "!" so as to be sorted before letters
+#   and digits, as well as before ASCII symbols prefixed with "%", some more
+#   letters get intuitive keysyms, and ordinary <space> and <U200B> as well as
+#   <nobreakspace> and <U202F> are grouped conveniently and sorted last by the
+#   means of a prepended "~".
 #   See outils/settings.json
 #   See # # Dead keys not included in keysymdef.h
 #
@@ -2040,8 +2050,21 @@
 #   For convenience, Shift may add a bar, called a stroke.
 #   See #*# BAR
 #
+#       <i> : "ʖ" U0296
+#       <I> : "ƾ" U01BE
+#       <r> : "ʕ" U0295
+#       <R> : "ʢ" U02A2
+#       <u> : "ʔ" U0294
+#       <U> : "ʡ" U02A1
+#
 #   Sequences for modifier letters include the superscript trigger asciicircum.
 #   See #*# SUPERSCRIPT
+#
+#       <asciicircum><r> : "ˁ" U02C1 
+#       <asciicircum><R> : "𐞴" U107B4
+#       <asciicircum><s> : "ˤ" U02E4
+#       <asciicircum><u> : "ˀ" U02C0 
+#       <asciicircum><U> : "𐞳" U107B3
 #
 <Multi_key><7>                                                                                 <7> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
 <Multi_key><KP_7>                                                                           <KP_7> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
@@ -2825,10 +2848,10 @@
 #
 #   As a consequence, keyboard layout design should not take this extra hyphen
 #   U2010 seriously, in order to prevent adverse effects when attempting to
-#   support it on live key or by a premium dead key such as group 1 of minus.
+#   support it on live key or by a premium dead key such as group 1 of <minus>.
 #   There, "∓" U2213 MINUS-OR-PLUS SIGN is supported instead, while HYPHEN is
 #   in group 10, almost like the outdated legacy ordinal indicators "ª" U00AA,
-#   "º" U00BA are in group 12 of asciicircum and braceleft, respectively.
+#   "º" U00BA are in group 12 of <asciicircum> and <braceleft>, respectively.
 #   See #^# Legacy ordinal indicators
 #   See # # C05 minus
 #   See # # D01 asciicircum
@@ -5749,9 +5772,9 @@
 #   Both ASCII space and Latin-1 no-break space are supported as terminating
 #   space, the no-break space because in French mode, it is mapped at level 3,
 #   in synergy with the ASCII symbols, that are likely to occur at the end of
-#   math symbol multikey sequences; even if not, " " U00A0 is supported anyway,
-#   for consistency and maintainability and with respect to a following number
-#   that may need to be connected to the symbol by a no-break space.
+#   math symbol multikey sequences; even if not, " " U00A0 is supported for
+#   consistency and maintainability and with respect to a following number that
+#   may need to be connected to the symbol by a no-break space.
 #
 #
 #   Leading space
@@ -5779,7 +5802,9 @@
 #   conflict with a dead key equivalent. Examples included "≪" U226A, "≫" U226B
 #   and "⋘" U22D8. More extensively ruling out dead key multikey equivalents
 #   helps since v6.2.5 make some of these math sequences more streamlined again.
-#   Windows is unable to support the multikey equivalents anyway.
+#   As Windows is unable to support the multikey equivalents due to keyboard
+#   layout driver file size restrictions, the resulting incompleteness does not
+#   alter the user experience.
 #   See windows/outils/dead-key-convert.pl # Multikey
 #
 #
@@ -6331,13 +6356,13 @@
 #   These are primarily supported by the dead keys dedicated to superscripts
 #   and subscripts, not included in keysymdef.h but required for full Unicode
 #   support.
-#
-#   Unlike half of the below, the multikey equivalents in super/subscript are
-#   not space terminated. Anyway, they work the other way around, resulting in
-#   an order insensitivity beneficial to UX. However, some are commented out
-#   due to conflicts with other multikey equivalents.
 #   See #*# SUPERSCRIPT
 #   See #*# SUBSCRIPT
+#
+#   Unlike half of the below, the multikey equivalents in super/subscript are
+#   not space terminated. As they work the other way around, they result in a
+#   beneficial order insensitivity. However, some are commented out due to
+#   conflicts with other multikey equivalents.
 #   See #   Order sensitivity
 #
 <Multi_key><plus><asciicircum>                                                                     : "⁺" U207A # SUPERSCRIPT PLUS SIGN
