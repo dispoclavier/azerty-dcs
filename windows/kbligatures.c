@@ -8,7 +8,8 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
-* Permutate mod# 14 and 15 on B07, B08     7.1.0+0.0 Tue 2026-10-20T0803+0200
+* No 2nd leading space in version string   7.1.0+0.7 Tue 2026-10-27T1837+0200
+* Permutate mod# 14 and 15 on B07, B08     7.1.0+0.5 Tue 2026-10-20T0803+0200
 * Update levels 7 and 8                    7.0.0.0.6 Sat 2026-09-05T1036+0200
 * Move U1F642 and U1F614 on C02 and C05    7.0.0.0.0 Tue 2026-07-21T0647+0200
 * Debug modification ##6..7 of VK_SPACE    6.2.8.0.0 Tue 2026-03-24T1840+0100
@@ -31,8 +32,7 @@
 
 // static ALLOC_SECTION_LDATA LIGATURE16 aLigature[] = {
 
-  {VK_ESCAPE, 2, ' ', ' ', 'v', '_', '7', '.', '1', '.', '0', '+', '0', WCH_NONE, WCH_NONE, WCH_NONE, WCH_NONE, WCH_NONE},
-  // The first code unit of long multiunit ligatures may not be output, hence the leading spaces.
+  {VK_ESCAPE, 2, ' ', 'v', '_', '7', '.', '1', '.', '0', '+', '0', WCH_NONE, WCH_NONE, WCH_NONE, WCH_NONE, WCH_NONE, WCH_NONE},
 
   /*****************************************************************************\
   * Ligature array

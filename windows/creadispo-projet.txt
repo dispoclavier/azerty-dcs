@@ -1,27 +1,24 @@
 Encodage OEM 850
-Propriétés du projet azertycomplet
+Propriétés du projet AZERTY DCS
 -------------------------------------------------------------------------------------------
-Fichier datant du 08/06/2026, 16:57:49
-Pour un projet multiple, listez les noms en-dessous du 3e trait, un par ligne.
-Le nom est le nom de fichier ;  dans la Barre des langues l’utilisateur lit la description.
-Ajoutez un point-virgule et la description, par exemple :  kbdnom;Clavier pour Claude
-N’utilisez pas de point-virgule par ailleurs, car il est pris pour un séparateur.
-Pour une reconnaissance correcte des diacrités français ce fichier doit être en OEM 850.
-Si l’édition des ressources est active, la description est celle figurant au fichier .RC.
-N’effacez ni ligne ni caractères avant les signes "=" car la lecture dépend de la position.
+Pour un projet multiple, lister les noms à partir de la ligne 14, un par ligne.
+Syntaxe :     nom;description
+nom :         nom de fichier en 8 caractères ASCII maximum
+description : partie descriptive du nom de dossier des pilotes et de leurs installateurs
+Les descriptions affichées dans la Barre des langues sont définies dans les fichiers .RC.
 -------------------------------------------------------------------------------------------
-                      Nom du projet ou du produit=azertycomplet
+                      Nom du projet ou du produit=AZERTY_DCS
         Nom de l’éventuelle source header commune=kbcommon
 -----------------------------------------------------------------------------------------
-kbfrdcs1;Français_DCS
-kbfrdcs2;Français_DCS_clone
-kbbrFRs1;Breton
-kbbrFRs2;Breton_clone
-kbfrAFs1;Afrique
-kbfrAFs2;Afrique_clone
-kbfrFRs1;France
-kbfrFRs2;France_clone
-kbfrPFs1;Polynésie
-kbfrPFs2;Polynésie_clone
-kbfrFRr1;Redisposée
-kbfrFRr2;Redisposée_clone
+kbfrdcs1;AZERTY_DCS
+kbfrdcs2;AZERTY_DCS_clone
+kbfrFRs1;AZERTY_DCS_retouché
+kbfrFRs2;AZERTY_DCS_retouché_clone
+kbbrFRs1;Breton_DCS_retouché
+kbbrFRs2;Breton_DCS_retouché_clone
+kbfrAFs1;Afrique_DCS_retouché
+kbfrAFs2;Afrique_DCS_retouché_clone
+kbfrPFs1;Polynésie_DCS_retouché
+kbfrPFs2;Polynésie_DCS_retouché_clone
+kbfrFRr1;DCS_redisposé
+kbfrFRr2;DCS_redisposé_clone

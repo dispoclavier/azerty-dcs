@@ -8,8 +8,9 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Enhance circumflex dead key             7.1.0+0.10 Wed 2026-11-04T1352+0100
 * Update                                   7.1.0+0.9 Sun 2026-11-01T1724+0100
-* Update                                   7.1.0+0.8 Thu 2026-10-29T1703+0200
+* Update                                   7.1.0+0.8 Thu 2026-10-29T1703+0100
 * Update                                   7.1.0+0.5 Tue 2026-10-20T2102+0200
 * Update                                   7.1.0+0.4 Sat 2026-10-17T1149+0200
 * Update                                   7.1.0+0.3 Fri 2026-10-16T1931+0200
@@ -83,7 +84,6 @@
 * all at level 4 (Shift + AltGr).
 *
 \*****************************************************************************/
-
 /*<!abovedot><!abovedot>                                           */ DEADTRANS( 0x1E57	,0x1E57	,0x02C8	,0x0001), // Virtual dead key’s intermediate chain link
 /*<!abovedot><!abovedot><!acute>                                   */ DEADTRANS( 0x00E1	,0x02C8	,0x02C7	,0x0001), // Virtual dead key’s intermediate chain link
 /*<!abovedot><!abovedot><!acute><!grave>                           */ DEADTRANS( 0x00F2	,0x02C7	,0x02B7	,0x0001), // Virtual dead key’s intermediate chain link
@@ -3044,8 +3044,8 @@
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'7'	,0x01CD	,0x2087	,0x0000), // '7' ➔ "₇" U+2087 SUBSCRIPT SEVEN
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'8'	,0x01CD	,0x2088	,0x0000), // '8' ➔ "₈" U+2088 SUBSCRIPT EIGHT
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'9'	,0x01CD	,0x2089	,0x0000), // '9' ➔ "₉" U+2089 SUBSCRIPT NINE
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'A'	,0x01CD	,0x01CD	,0x0000), // 'A' ➔ "Ǎ" U+01CD LATIN CAPITAL LETTER A WITH CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'a'	,0x01CD	,0x01CE	,0x0000), // 'a' ➔ "ǎ" U+01CE LATIN SMALL LETTER A WITH CARON
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'A'	,0x01CD	,0x00C6	,0x0000), // 'A' ➔ "Æ" U+00C6 LATIN CAPITAL LETTER AE
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'a'	,0x01CD	,0x00E6	,0x0000), // 'a' ➔ "æ" U+00E6 LATIN SMALL LETTER AE
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'C'	,0x01CD	,0x010C	,0x0000), // 'C' ➔ "Č" U+010C LATIN CAPITAL LETTER C WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'c'	,0x01CD	,0x010D	,0x0000), // 'c' ➔ "č" U+010D LATIN SMALL LETTER C WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'D'	,0x01CD	,0x010E	,0x0000), // 'D' ➔ "Ď" U+010E LATIN CAPITAL LETTER D WITH CARON
@@ -3065,8 +3065,8 @@
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'l'	,0x01CD	,0x013E	,0x0000), // 'l' ➔ "ľ" U+013E LATIN SMALL LETTER L WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'N'	,0x01CD	,0x0147	,0x0000), // 'N' ➔ "Ň" U+0147 LATIN CAPITAL LETTER N WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'n'	,0x01CD	,0x0148	,0x0000), // 'n' ➔ "ň" U+0148 LATIN SMALL LETTER N WITH CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'O'	,0x01CD	,0x01D1	,0x0000), // 'O' ➔ "Ǒ" U+01D1 LATIN CAPITAL LETTER O WITH CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'o'	,0x01CD	,0x01D2	,0x0000), // 'o' ➔ "ǒ" U+01D2 LATIN SMALL LETTER O WITH CARON
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'O'	,0x01CD	,0x0152	,0x0000), // 'O' ➔ "Œ" U+0152 LATIN CAPITAL LIGATURE OE
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'o'	,0x01CD	,0x0153	,0x0000), // 'o' ➔ "œ" U+0153 LATIN SMALL LIGATURE OE
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'R'	,0x01CD	,0x0158	,0x0000), // 'R' ➔ "Ř" U+0158 LATIN CAPITAL LETTER R WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'r'	,0x01CD	,0x0159	,0x0000), // 'r' ➔ "ř" U+0159 LATIN SMALL LETTER R WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'S'	,0x01CD	,0x0160	,0x0000), // 'S' ➔ "Š" U+0160 LATIN CAPITAL LETTER S WITH CARON

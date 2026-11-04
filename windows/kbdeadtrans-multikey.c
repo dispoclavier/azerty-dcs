@@ -8,8 +8,9 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Unchanged multikey                      7.1.0+0.10 Wed 2026-11-04T1356+0100
 * Update                                   7.1.0+0.9 Sun 2026-11-01$1725+0100
-* Update                                   7.1.0+0.8 Thu 2026-10-29T1705+0200
+* Update                                   7.1.0+0.8 Thu 2026-10-29T1705+0100
 * Update                                   7.1.0+0.5 Tue 2026-10-20T2103+0200
 * Update                                   7.1.0+0.4 Sat 2026-10-17T1151+0200
 * Update                                   7.1.0+0.3 Fri 2026-10-16T1932+0200

@@ -7,10 +7,10 @@ rem  La mise à niveau vers Unicode de l’interpréteur de commandes Windows es
 ::  nom          creadispo
 ::  description  programme de commandes en batch pour l’interpréteur cmd.exe de Windows
 ::               utilisant le KbdUTool 3.40 du Microsoft Keyboard Layout Creator 1.4
-::  version      1.9.4
-::  date         2026-09-06T0540+0200 (1.8.3 : 2018-03-15T1954+0100)
+::  version      1.9.5
+::  date         2026-11-04T2203+0100 (1.8.3 : 2018-03-15T1954+0100)
 ::  contact      dev[arobase]dispoclavier.com
-::  dépôt        https://github.com/dispoclavier/nouvel-azerty/blob/main/windows/outils/creadispo.cmd
+::  dépôt        https://github.com/dispoclavier/azerty-dcs/blob/main/windows/outils/creadispo.cmd
 ::
 ::  Licensed under the Apache License, Version 2.0 (the "License");
 ::  you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ rem  La mise à niveau vers Unicode de l’interpréteur de commandes Windows es
 :: Paramètres d’exécution de ce script
 setlocal EnableExtensions EnableDelayedExpansion
 :: titre de la fenêtre de cmd.exe
-title Creadispo  1.9.0
+title Creadispo  1.9.5
 color 13
 rem  Cette couleur introduit la transition du fond noir par défaut vers le fond blanc.
 rem  Les couleurs d’affichage sont personnalisables dans les préférences de ce script.
@@ -2012,8 +2012,8 @@ pause && goto readprojectprops && goto :eof
 :: Lecture du fichier des propriétés du projet :
 :readprojectprops
 set /a index=-3
-for /f "skip=12 usebackq tokens=1* delims=; eol=" %%I in ("creadispo-projet.txt") do (
-    set "entry[!index!][0]=%%~I"
+for /f "skip=9 usebackq tokens=1* delims=; eol=" %%I in ("creadispo-projet.txt") do (
+    set "entry[!index!][0]=%%~I"  
     set "entry[!index!][1]=%%~J"
     set /a index += 1
 )
@@ -2152,7 +2152,7 @@ echo    Afin que le header commun soit pris en compte, il doit être inclus dans
 echo    [au moins] une des autres sources, .C ou .H peu importe.
 echo.
 echo    Mais je ne trouve aucune de ces sources, ce qui signifie que les sources
-echo    utilisées seront celle que KbdUTool va fraîchement générer pour l’occasion.
+echo    utilisées seront celles que KbdUTool va fraîchement générer pour l’occasion.
 echo.
 echo           Ces sources ne contiendront aucune inclusion de %cmheader%.H.
 echo.
@@ -3223,12 +3223,12 @@ echo.
 :: Initialise la boucle pour multiprojets (marche aussi pour un monoprojet) :
 set /a cycle=0 & set /a totnbroa=0
 if not defined projectname goto versionnext
-set idirproject="%projectname%_v%version%_(installation)"
+set idirproject="%projectname%_%version%_installation"
 mkdir %idirproject%
-set comidirproject="%projectname%_v%version%_(compilinstallation)"
+set comidirproject="%projectname%_%version%_compilinstallation"
 mkdir %comidirproject%
 if "%aready%" equ "oui" (
-	set bakdirproject="(a) %projectname% v%version%"
+	set bakdirproject="archive_%projectname%_%version%"
 	mkdir !bakdirproject!
 )
 echo  J’ai créé les surdossiers de %projectname%.
@@ -3245,7 +3245,7 @@ echo  C’est la disposition %name% dont je vais m’occuper maintenant.
 call :locksources
 
 :: Commence le dossier de compilinstallation contenant les sources :
-set comidirname="%name%%sep%%description% v%version% compilinstallation"
+set comidirname="%name%%sep%%description%_%version%_compilinstallation"
 mkdir %comidirname%
 echo  J’ai créé le dossier %comidirname%,
 copy %name%.klc %comidirname%\%name%.klc
@@ -3274,7 +3274,7 @@ echo  Les sources dans le dossier sont au complet.
 :: Pack d’installation :
 :versioncompile
 :: Fait compiler et emballe les pilotes (avec une copie de sauvegarde) :
-set idirname="%name%%sep%%description%-%version%-installation"
+set idirname="%name%%sep%%description%_%version%_installation"
 mkdir %idirname%
 echo  J’ai créé le dossier %idirname%.
 
