@@ -150,7 +150,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 	* Rond en chef : Ajouter "꭭" U+AB6D. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Accent circonflexe :
 		* Déboguer "·" U+00B7, "‧" U+2027, "⋅" U+22C5. compose-3.yml [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
-		* Double frappe : Redonder "Æ" U+00C6, "æ" U+00E6, "Œ" U+0152, "œ" U+0153 à la place de "Ǎ" U+01CD, "ǎ" U+01CE, "Ǒ" U+01D1, "ǒ" U+01D2, qui sont dans hatchek. compose-3.yml [959f22c](https://github.com/dispoclavier/azerty-dcs/commit/959f22c2ba5e88c1aaa314ab1151841eb5a87227)
+		* Double frappe : Redonder "Æ" U+00C6, "æ" U+00E6, "Œ" U+0152, "œ" U+0153 à la place de "Ǎ" U+01CD, "ǎ" U+01CE, "Ǒ" U+01D1, "ǒ" U+01D2, qui sont dans hatchek. compose-3.yml [959f22c](https://github.com/dispoclavier/azerty-dcs/commit/959f22c2ba5e88c1aaa314ab1151841eb5a87227), kbdeadtrans-deadkeys.c [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
 	* Hatchek et accent aigu : Ajouter "᫬" U+1AEC. compose-3.yml [5a35ff6](https://github.com/dispoclavier/azerty-dcs/commit/5a35ff6105e9c00847d2f36547fe84c8aed09e82)
 	* Accent grave > Double accent grave : Ajouter "᫮" U+1AEE par "_". ibidem
 	* Cédille :
@@ -163,7 +163,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 		* Déboguer le transpilateur. dead-key-convert.pl [9f245c6](https://github.com/dispoclavier/azerty-dcs/commit/9f245c6cf933865afc50f450e99201daa7b46218), [0dc2d32](https://github.com/dispoclavier/azerty-dcs/commit/0dc2d3214afd7c30a0a059926351260a6522646b)
 		* Mouvoir le transpilateur de linux-chromeos/outils/ à windows/outils/. dead-key-convert.pl [d6924ec](https://github.com/dispoclavier/azerty-dcs/commit/d6924ecc352f0f935ea22d57afd3c63a45dcabeb)
 * Installation :
-	* Sous Windows : Corriger les noms de dossier des pilotes de disposition pour Windows. creadispo.cmd, creadispo-projet.txt
+	* Sous Windows : Corriger les noms de dossier des pilotes de disposition pour Windows. creadispo.cmd, creadispo-projet.txt [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
 * Documentation :
 	* Corriger la note de la préversion de l’AZERTY DCS. Note-de-version.md [e0d4748](https://github.com/dispoclavier/azerty-dcs/commit/e0d4748bc41d2ec98522fc1c59af4bf64f5ac65b), [70fcf5b](https://github.com/dispoclavier/azerty-dcs/commit/70fcf5bf730678e46365107fd15e40b5c56f67cf), [68e2be5](https://github.com/dispoclavier/azerty-dcs/commit/68e2be512131b5a376f4510f21c84441a11767b9), [bcb61d0](https://github.com/dispoclavier/azerty-dcs/commit/bcb61d04dfe356c0147ae9b355a811bba152e0b0), [f77c94d](https://github.com/dispoclavier/azerty-dcs/commit/f77c94d004e2b51ec158f0e5556fb3318f75c60b)
 	* Raccourcir les descripteurs des dispositions de clavier pour Linux. compose-1.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e), [959f22c](https://github.com/dispoclavier/azerty-dcs/commit/959f22c2ba5e88c1aaa314ab1151841eb5a87227)
@@ -175,7 +175,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 	* Déboguer, corriger et mettre à jour la note du contenu des touches mortes. linux-chromeos/compose/readme.md [ee883c0](https://github.com/dispoclavier/azerty-dcs/commit/ee883c04381848b3ff1cd3b31aa68fa8a63517f1), [7161591](https://github.com/dispoclavier/azerty-dcs/commit/71615916e684caa94cb668b18b05316c0adbbdcb)
 	* Corriger le journal des modifications. CHANGELOG.md [1f7e36d](https://github.com/dispoclavier/azerty-dcs/commit/1f7e36dd0102d8939aa11c348b956208deabd94a), [bad275d](https://github.com/dispoclavier/azerty-dcs/commit/bad275df45f67c5f0297155875b0b375267140f2)
 * Builds :
-	* 7.1.0+0
+	* 7.1.0+0 [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
 	* 7.1.0+1
 
 ## 7.0.1 (projet)
