@@ -1,7 +1,7 @@
 # START_additions_XCompose_Dispoclavier (please do not delete this keyword - ne pas effacer ce mot-clé s.v.p.)
-#                       Date: 2026-11-04T0916+0100
+#                       Date: 2026-11-05T2147+0100
 #                    Version: See # # Output of version number
-<UEFA0>                     : "version 7.1.0+0.10" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+1.0" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
@@ -33542,13 +33542,15 @@
 #   Shortcut
 #
 #   For ease of access, and in an attempt to meet potential user expectations,
-#   the hacek dead key is also activatable by dead_circumflex double press,
-#   extending the logic that multiple dead key presses shift diacritics around,
-#   to consider that they may also turn them, except for "a", "A" and "o", "O",
-#   duplicating the group 1.
+#   a subset of the hacek dead key output is also supported by dead_circumflex
+#   double press, extending the logic that multiple dead key presses shift
+#   diacritics around, to consider that they may also turn them.
+#
+#   The other base letters, notably "a", "A" and "o", "O", are used to
+#   duplicate the letter group 1.
 #   See #+# GROUP_1
 #
-#   Chaining is only supported with the group dead key.
+#   Chaining is supported only with the group dead key.
 #
 #   For portability, the full dead key content is supported, as well as
 #   multikey, even though that does not make sense.
@@ -33715,24 +33717,14 @@
 <Multi_key><less><less>                                                                        <g> : "ǧ" U01E7 # LATIN SMALL LETTER G WITH CARON
 <dead_caron>                                                                                   <H> : "Ȟ" U021E # LATIN CAPITAL LETTER H WITH CARON
 <Multi_key><greater>                                                                           <H> : "Ȟ" U021E # LATIN CAPITAL LETTER H WITH CARON
-<dead_circumflex><dead_circumflex>                                                             <H> : "Ȟ" U021E # LATIN CAPITAL LETTER H WITH CARON
-<Multi_key><less><less>                                                                        <H> : "Ȟ" U021E # LATIN CAPITAL LETTER H WITH CARON
 <dead_caron>                                                                                   <h> : "ȟ" U021F # LATIN SMALL LETTER H WITH CARON
 <Multi_key><greater>                                                                           <h> : "ȟ" U021F # LATIN SMALL LETTER H WITH CARON
-<dead_circumflex><dead_circumflex>                                                             <h> : "ȟ" U021F # LATIN SMALL LETTER H WITH CARON
-<Multi_key><less><less>                                                                        <h> : "ȟ" U021F # LATIN SMALL LETTER H WITH CARON
 <dead_caron>                                                                                   <I> : "Ǐ" U01CF # LATIN CAPITAL LETTER I WITH CARON
 <Multi_key><greater>                                                                           <I> : "Ǐ" U01CF # LATIN CAPITAL LETTER I WITH CARON
-<dead_circumflex><dead_circumflex>                                                             <I> : "Ǐ" U01CF # LATIN CAPITAL LETTER I WITH CARON
-<Multi_key><less><less>                                                                        <I> : "Ǐ" U01CF # LATIN CAPITAL LETTER I WITH CARON
 <dead_caron>                                                                                   <i> : "ǐ" U01D0 # LATIN SMALL LETTER I WITH CARON
 <Multi_key><greater>                                                                           <i> : "ǐ" U01D0 # LATIN SMALL LETTER I WITH CARON
-<dead_circumflex><dead_circumflex>                                                             <i> : "ǐ" U01D0 # LATIN SMALL LETTER I WITH CARON
-<Multi_key><less><less>                                                                        <i> : "ǐ" U01D0 # LATIN SMALL LETTER I WITH CARON
 <dead_caron>                                                                                   <j> : "ǰ" U01F0 # LATIN SMALL LETTER J WITH CARON
 <Multi_key><greater>                                                                           <j> : "ǰ" U01F0 # LATIN SMALL LETTER J WITH CARON
-<dead_circumflex><dead_circumflex>                                                             <j> : "ǰ" U01F0 # LATIN SMALL LETTER J WITH CARON
-<Multi_key><less><less>                                                                        <j> : "ǰ" U01F0 # LATIN SMALL LETTER J WITH CARON
 <dead_caron>                                                                                   <K> : "Ǩ" U01E8 # LATIN CAPITAL LETTER K WITH CARON
 <Multi_key><greater>                                                                           <K> : "Ǩ" U01E8 # LATIN CAPITAL LETTER K WITH CARON
 <dead_circumflex><dead_circumflex>                                                             <K> : "Ǩ" U01E8 # LATIN CAPITAL LETTER K WITH CARON
@@ -33787,36 +33779,20 @@
 <Multi_key><less><less>                                                                        <t> : "ť" U0165 # LATIN SMALL LETTER T WITH CARON
 <dead_caron>                                                                                   <U> : "Ǔ" U01D3 # LATIN CAPITAL LETTER U WITH CARON
 <Multi_key><greater>                                                                           <U> : "Ǔ" U01D3 # LATIN CAPITAL LETTER U WITH CARON
-<dead_circumflex><dead_circumflex>                                                             <U> : "Ǔ" U01D3 # LATIN CAPITAL LETTER U WITH CARON
-<Multi_key><less><less>                                                                        <U> : "Ǔ" U01D3 # LATIN CAPITAL LETTER U WITH CARON
 <dead_caron>                                                                                   <u> : "ǔ" U01D4 # LATIN SMALL LETTER U WITH CARON
 <Multi_key><greater>                                                                           <u> : "ǔ" U01D4 # LATIN SMALL LETTER U WITH CARON
-<dead_circumflex><dead_circumflex>                                                             <u> : "ǔ" U01D4 # LATIN SMALL LETTER U WITH CARON
-<Multi_key><less><less>                                                                        <u> : "ǔ" U01D4 # LATIN SMALL LETTER U WITH CARON
 <dead_caron>                                                                                   <W> : "᫏" U1ACF # COMBINING DOUBLE CARON
 <Multi_key><greater>                                                                           <W> : "᫏" U1ACF # COMBINING DOUBLE CARON
-<dead_circumflex><dead_circumflex>                                                             <W> : "᫏" U1ACF # COMBINING DOUBLE CARON
-<Multi_key><less><less>                                                                        <W> : "᫏" U1ACF # COMBINING DOUBLE CARON
 <dead_caron>                                                                                   <w> : "᫏" U1ACF # COMBINING DOUBLE CARON
 <Multi_key><greater>                                                                           <w> : "᫏" U1ACF # COMBINING DOUBLE CARON
-<dead_circumflex><dead_circumflex>                                                             <w> : "᫏" U1ACF # COMBINING DOUBLE CARON
-<Multi_key><less><less>                                                                        <w> : "᫏" U1ACF # COMBINING DOUBLE CARON
 <dead_caron>                                                                                   <X> : "Ɛ̌" # U0190 U030C LATIN CAPITAL LETTER OPEN E WITH CARON: Languages in Togo
 <Multi_key><greater>                                                                           <X> : "Ɛ̌" # U0190 U030C LATIN CAPITAL LETTER OPEN E WITH CARON: Languages in Togo
-<dead_circumflex><dead_circumflex>                                                             <X> : "Ɛ̌" # U0190 U030C LATIN CAPITAL LETTER OPEN E WITH CARON: Languages in Togo
-<Multi_key><less><less>                                                                        <X> : "Ɛ̌" # U0190 U030C LATIN CAPITAL LETTER OPEN E WITH CARON: Languages in Togo
 <dead_caron>                                                                                   <x> : "ɛ̌" # U025B U030C LATIN SMALL LETTER OPEN E WITH CARON: Languages in Togo
 <Multi_key><greater>                                                                           <x> : "ɛ̌" # U025B U030C LATIN SMALL LETTER OPEN E WITH CARON: Languages in Togo
-<dead_circumflex><dead_circumflex>                                                             <x> : "ɛ̌" # U025B U030C LATIN SMALL LETTER OPEN E WITH CARON: Languages in Togo
-<Multi_key><less><less>                                                                        <x> : "ɛ̌" # U025B U030C LATIN SMALL LETTER OPEN E WITH CARON: Languages in Togo
 <dead_caron>                                                                                   <Y> : "Ʊ̌" # U01B1 U030C LATIN CAPITAL LETTER UPSILON WITH CARON: Languages in Togo
 <Multi_key><greater>                                                                           <Y> : "Ʊ̌" # U01B1 U030C LATIN CAPITAL LETTER UPSILON WITH CARON: Languages in Togo
-<dead_circumflex><dead_circumflex>                                                             <Y> : "Ʊ̌" # U01B1 U030C LATIN CAPITAL LETTER UPSILON WITH CARON: Languages in Togo
-<Multi_key><less><less>                                                                        <Y> : "Ʊ̌" # U01B1 U030C LATIN CAPITAL LETTER UPSILON WITH CARON: Languages in Togo
 <dead_caron>                                                                                   <y> : "ʊ̌" # U028A U030C LATIN SMALL LETTER UPSILON WITH CARON: Languages in Togo
 <Multi_key><greater>                                                                           <y> : "ʊ̌" # U028A U030C LATIN SMALL LETTER UPSILON WITH CARON: Languages in Togo
-<dead_circumflex><dead_circumflex>                                                             <y> : "ʊ̌" # U028A U030C LATIN SMALL LETTER UPSILON WITH CARON: Languages in Togo
-<Multi_key><less><less>                                                                        <y> : "ʊ̌" # U028A U030C LATIN SMALL LETTER UPSILON WITH CARON: Languages in Togo
 <dead_caron>                                                                                   <Z> : "Ž" U017D # LATIN CAPITAL LETTER Z WITH CARON
 <Multi_key><greater>                                                                           <Z> : "Ž" U017D # LATIN CAPITAL LETTER Z WITH CARON
 <dead_circumflex><dead_circumflex>                                                             <Z> : "Ž" U017D # LATIN CAPITAL LETTER Z WITH CARON
@@ -41085,6 +41061,30 @@
 #
 #   As "Œ" U0152, "œ" U0153 is heavily used in French, and "Æ" U00C6, "æ" U00E6
 #   is also used in French, these are also in <dead_circumflex> double press.
+#   Consistently, this feature is extended to all base letters except "c", "d",
+#   "e", "g", "k", "l", "n", "r", "s", "t", "z":
+#
+#       <B> : "Ɖ" U0189
+#       <b> : "ɖ" U0256
+#       <F> : "Ƒ" U0191
+#       <f> : "ƒ" U0192
+#       <H> : "Ə" U018F
+#       <h> : "ə" U0259
+#       <I> : "Ɩ" U0196
+#       <i> : "ɩ" U0269
+#       <J> : "Ĳ" U0132
+#       <j> : "ĳ" U0133
+#       <M> : "ʔ" U0294
+#       <m> : "ʾ" U02BE
+#       <P> : "·" U00B7
+#       <p> : "·" U00B7
+#       <Q> : "Ɂ" U0241
+#       <q> : "ɂ" U0242
+#       <U> : "Ʋ" U01B2
+#       <u> : "ʋ" U028B
+#       <V> : "℣" U2123
+#       <v> : "℟" U211F
+#
 #   See #^# HACEK and GROUP_1 input facilities by CIRCUMFLEX
 #
 <UEFD0>                                                                                        <A> : "Æ" U00C6 # LATIN CAPITAL LETTER AE
@@ -41097,8 +41097,12 @@
 <Multi_key><less><less>                                                                        <a> : "æ" U00E6 # LATIN SMALL LETTER AE
 <UEFD0>                                                                                        <B> : "Ɖ" U0189 # LATIN CAPITAL LETTER AFRICAN D
 <Multi_key><numbersign>                                                                        <B> : "Ɖ" U0189 # LATIN CAPITAL LETTER AFRICAN D
+<dead_circumflex><dead_circumflex>                                                             <B> : "Ɖ" U0189 # LATIN CAPITAL LETTER AFRICAN D
+<Multi_key><less><less>                                                                        <B> : "Ɖ" U0189 # LATIN CAPITAL LETTER AFRICAN D
 <UEFD0>                                                                                        <b> : "ɖ" U0256 # LATIN SMALL LETTER D WITH TAIL
 <Multi_key><numbersign>                                                                        <b> : "ɖ" U0256 # LATIN SMALL LETTER D WITH TAIL
+<dead_circumflex><dead_circumflex>                                                             <b> : "ɖ" U0256 # LATIN SMALL LETTER D WITH TAIL
+<Multi_key><less><less>                                                                        <b> : "ɖ" U0256 # LATIN SMALL LETTER D WITH TAIL
 <UEFD0>                                                                                        <C> : "Ɔ" U0186 # LATIN CAPITAL LETTER OPEN O
 <Multi_key><numbersign>                                                                        <C> : "Ɔ" U0186 # LATIN CAPITAL LETTER OPEN O
 <UEFD0>                                                                                        <c> : "ɔ" U0254 # LATIN SMALL LETTER OPEN O
@@ -41113,24 +41117,40 @@
 <Multi_key><numbersign>                                                                        <e> : "ǝ" U01DD # LATIN SMALL LETTER TURNED E
 <UEFD0>                                                                                        <F> : "Ƒ" U0191 # LATIN CAPITAL LETTER F WITH HOOK
 <Multi_key><numbersign>                                                                        <F> : "Ƒ" U0191 # LATIN CAPITAL LETTER F WITH HOOK
+<dead_circumflex><dead_circumflex>                                                             <F> : "Ƒ" U0191 # LATIN CAPITAL LETTER F WITH HOOK
+<Multi_key><less><less>                                                                        <F> : "Ƒ" U0191 # LATIN CAPITAL LETTER F WITH HOOK
 <UEFD0>                                                                                        <f> : "ƒ" U0192 # LATIN SMALL LETTER F WITH HOOK
 <Multi_key><numbersign>                                                                        <f> : "ƒ" U0192 # LATIN SMALL LETTER F WITH HOOK
+<dead_circumflex><dead_circumflex>                                                             <f> : "ƒ" U0192 # LATIN SMALL LETTER F WITH HOOK
+<Multi_key><less><less>                                                                        <f> : "ƒ" U0192 # LATIN SMALL LETTER F WITH HOOK
 <UEFD0>                                                                                        <G> : "Ŋ" U014A # LATIN CAPITAL LETTER ENG
 <Multi_key><numbersign>                                                                        <G> : "Ŋ" U014A # LATIN CAPITAL LETTER ENG
 <UEFD0>                                                                                        <g> : "ŋ" U014B # LATIN SMALL LETTER ENG
 <Multi_key><numbersign>                                                                        <g> : "ŋ" U014B # LATIN SMALL LETTER ENG
 <UEFD0>                                                                                        <H> : "Ə" U018F # LATIN CAPITAL LETTER SCHWA
 <Multi_key><numbersign>                                                                        <H> : "Ə" U018F # LATIN CAPITAL LETTER SCHWA
+<dead_circumflex><dead_circumflex>                                                             <H> : "Ə" U018F # LATIN CAPITAL LETTER SCHWA
+<Multi_key><less><less>                                                                        <H> : "Ə" U018F # LATIN CAPITAL LETTER SCHWA
 <UEFD0>                                                                                        <h> : "ə" U0259 # LATIN SMALL LETTER SCHWA
 <Multi_key><numbersign>                                                                        <h> : "ə" U0259 # LATIN SMALL LETTER SCHWA
+<dead_circumflex><dead_circumflex>                                                             <h> : "ə" U0259 # LATIN SMALL LETTER SCHWA
+<Multi_key><less><less>                                                                        <h> : "ə" U0259 # LATIN SMALL LETTER SCHWA
 <UEFD0>                                                                                        <I> : "Ɩ" U0196 # LATIN CAPITAL LETTER IOTA
 <Multi_key><numbersign>                                                                        <I> : "Ɩ" U0196 # LATIN CAPITAL LETTER IOTA
+<dead_circumflex><dead_circumflex>                                                             <I> : "Ɩ" U0196 # LATIN CAPITAL LETTER IOTA
+<Multi_key><less><less>                                                                        <I> : "Ɩ" U0196 # LATIN CAPITAL LETTER IOTA
 <UEFD0>                                                                                        <i> : "ɩ" U0269 # LATIN SMALL LETTER IOTA
 <Multi_key><numbersign>                                                                        <i> : "ɩ" U0269 # LATIN SMALL LETTER IOTA
+<dead_circumflex><dead_circumflex>                                                             <i> : "ɩ" U0269 # LATIN SMALL LETTER IOTA
+<Multi_key><less><less>                                                                        <i> : "ɩ" U0269 # LATIN SMALL LETTER IOTA
 <UEFD0>                                                                                        <J> : "Ĳ" U0132 # LATIN CAPITAL LIGATURE IJ
 <Multi_key><numbersign>                                                                        <J> : "Ĳ" U0132 # LATIN CAPITAL LIGATURE IJ
+<dead_circumflex><dead_circumflex>                                                             <J> : "Ĳ" U0132 # LATIN CAPITAL LIGATURE IJ
+<Multi_key><less><less>                                                                        <J> : "Ĳ" U0132 # LATIN CAPITAL LIGATURE IJ
 <UEFD0>                                                                                        <j> : "ĳ" U0133 # LATIN SMALL LIGATURE IJ
 <Multi_key><numbersign>                                                                        <j> : "ĳ" U0133 # LATIN SMALL LIGATURE IJ
+<dead_circumflex><dead_circumflex>                                                             <j> : "ĳ" U0133 # LATIN SMALL LIGATURE IJ
+<Multi_key><less><less>                                                                        <j> : "ĳ" U0133 # LATIN SMALL LIGATURE IJ
 <UEFD0>                                                                                        <K> : "Ɑ" U2C6D # LATIN CAPITAL LETTER ALPHA
 <Multi_key><numbersign>                                                                        <K> : "Ɑ" U2C6D # LATIN CAPITAL LETTER ALPHA
 <UEFD0>                                                                                        <k> : "ɑ" U0251 # LATIN SMALL LETTER ALPHA
@@ -41141,8 +41161,12 @@
 <Multi_key><numbersign>                                                                        <l> : "ʿ" U02BF # MODIFIER LETTER LEFT HALF RING
 <UEFD0>                                                                                        <M> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
 <Multi_key><numbersign>                                                                        <M> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
+<dead_circumflex><dead_circumflex>                                                             <M> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
+<Multi_key><less><less>                                                                        <M> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
 <UEFD0>                                                                                        <m> : "ʾ" U02BE # MODIFIER LETTER RIGHT HALF RING
 <Multi_key><numbersign>                                                                        <m> : "ʾ" U02BE # MODIFIER LETTER RIGHT HALF RING
+<dead_circumflex><dead_circumflex>                                                             <m> : "ʾ" U02BE # MODIFIER LETTER RIGHT HALF RING
+<Multi_key><less><less>                                                                        <m> : "ʾ" U02BE # MODIFIER LETTER RIGHT HALF RING
 <UEFD0>                                                                                        <N> : "Ɲ" U019D # LATIN CAPITAL LETTER N WITH LEFT HOOK
 <Multi_key><numbersign>                                                                        <N> : "Ɲ" U019D # LATIN CAPITAL LETTER N WITH LEFT HOOK
 <UEFD0>                                                                                        <n> : "ɲ" U0272 # LATIN SMALL LETTER N WITH LEFT HOOK
@@ -41157,16 +41181,24 @@
 <Multi_key><less><less>                                                                        <o> : "œ" U0153 # LATIN SMALL LIGATURE OE
 <UEFD0>                                                                                        <P> : "·" U00B7 # MIDDLE DOT
 <Multi_key><numbersign>                                                                        <P> : "·" U00B7 # MIDDLE DOT
+<dead_circumflex><dead_circumflex>                                                             <P> : "·" U00B7 # MIDDLE DOT
+<Multi_key><less><less>                                                                        <P> : "·" U00B7 # MIDDLE DOT
 <UEFD0>                                                                                        <p> : "·" U00B7 # MIDDLE DOT
 <Multi_key><numbersign>                                                                        <p> : "·" U00B7 # MIDDLE DOT
+<dead_circumflex><dead_circumflex>                                                             <p> : "·" U00B7 # MIDDLE DOT
+<Multi_key><less><less>                                                                        <p> : "·" U00B7 # MIDDLE DOT
 <UEFD0>                                                                                        <Q> : "Ɂ" U0241 # LATIN CAPITAL LETTER GLOTTAL STOP
 <Multi_key><numbersign>                                                                        <Q> : "Ɂ" U0241 # LATIN CAPITAL LETTER GLOTTAL STOP
+<dead_circumflex><dead_circumflex>                                                             <Q> : "Ɂ" U0241 # LATIN CAPITAL LETTER GLOTTAL STOP
+<Multi_key><less><less>                                                                        <Q> : "Ɂ" U0241 # LATIN CAPITAL LETTER GLOTTAL STOP
 <UEFD0>                                                                                        <q> : "ɂ" U0242 # LATIN SMALL LETTER GLOTTAL STOP
 <Multi_key><numbersign>                                                                        <q> : "ɂ" U0242 # LATIN SMALL LETTER GLOTTAL STOP
-<UEFD0>                                                                                        <R> : "℟" U211F # RESPONSE
-<Multi_key><numbersign>                                                                        <R> : "℟" U211F # RESPONSE
-<UEFD0>                                                                                        <r> : "℟" U211F # RESPONSE
-<Multi_key><numbersign>                                                                        <r> : "℟" U211F # RESPONSE
+<dead_circumflex><dead_circumflex>                                                             <q> : "ɂ" U0242 # LATIN SMALL LETTER GLOTTAL STOP
+<Multi_key><less><less>                                                                        <q> : "ɂ" U0242 # LATIN SMALL LETTER GLOTTAL STOP
+<UEFD0>                                                                                        <R> : "˞" U02DE # MODIFIER LETTER RHOTIC HOOK
+<Multi_key><numbersign>                                                                        <R> : "˞" U02DE # MODIFIER LETTER RHOTIC HOOK
+<UEFD0>                                                                                        <r> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
+<Multi_key><numbersign>                                                                        <r> : "ɚ" U025A # LATIN SMALL LETTER SCHWA WITH HOOK
 <UEFD0>                                                                                        <S> : "ẞ" U1E9E # LATIN CAPITAL LETTER SHARP S
 <Multi_key><numbersign>                                                                        <S> : "ẞ" U1E9E # LATIN CAPITAL LETTER SHARP S
 <UEFD0>                                                                                        <s> : "ß" U00DF # LATIN SMALL LETTER SHARP S
@@ -41177,24 +41209,44 @@
 <Multi_key><numbersign>                                                                        <t> : "þ" U00FE # LATIN SMALL LETTER THORN
 <UEFD0>                                                                                        <U> : "Ʋ" U01B2 # LATIN CAPITAL LETTER V WITH HOOK
 <Multi_key><numbersign>                                                                        <U> : "Ʋ" U01B2 # LATIN CAPITAL LETTER V WITH HOOK
+<dead_circumflex><dead_circumflex>                                                             <U> : "Ʋ" U01B2 # LATIN CAPITAL LETTER V WITH HOOK
+<Multi_key><less><less>                                                                        <U> : "Ʋ" U01B2 # LATIN CAPITAL LETTER V WITH HOOK
 <UEFD0>                                                                                        <u> : "ʋ" U028B # LATIN SMALL LETTER V WITH HOOK
 <Multi_key><numbersign>                                                                        <u> : "ʋ" U028B # LATIN SMALL LETTER V WITH HOOK
+<dead_circumflex><dead_circumflex>                                                             <u> : "ʋ" U028B # LATIN SMALL LETTER V WITH HOOK
+<Multi_key><less><less>                                                                        <u> : "ʋ" U028B # LATIN SMALL LETTER V WITH HOOK
 <UEFD0>                                                                                        <V> : "℣" U2123 # VERSICLE
 <Multi_key><numbersign>                                                                        <V> : "℣" U2123 # VERSICLE
-<UEFD0>                                                                                        <v> : "℣" U2123 # VERSICLE
-<Multi_key><numbersign>                                                                        <v> : "℣" U2123 # VERSICLE
+<dead_circumflex><dead_circumflex>                                                             <V> : "℣" U2123 # VERSICLE
+<Multi_key><less><less>                                                                        <V> : "℣" U2123 # VERSICLE
+<UEFD0>                                                                                        <v> : "℟" U211F # RESPONSE
+<Multi_key><numbersign>                                                                        <v> : "℟" U211F # RESPONSE
+<dead_circumflex><dead_circumflex>                                                             <v> : "℟" U211F # RESPONSE
+<Multi_key><less><less>                                                                        <v> : "℟" U211F # RESPONSE
 <UEFD0>                                                                                        <W> : "Ʃ" U01A9 # LATIN CAPITAL LETTER ESH
 <Multi_key><numbersign>                                                                        <W> : "Ʃ" U01A9 # LATIN CAPITAL LETTER ESH
+<dead_circumflex><dead_circumflex>                                                             <W> : "Ʃ" U01A9 # LATIN CAPITAL LETTER ESH
+<Multi_key><less><less>                                                                        <W> : "Ʃ" U01A9 # LATIN CAPITAL LETTER ESH
 <UEFD0>                                                                                        <w> : "ʃ" U0283 # LATIN SMALL LETTER ESH
 <Multi_key><numbersign>                                                                        <w> : "ʃ" U0283 # LATIN SMALL LETTER ESH
+<dead_circumflex><dead_circumflex>                                                             <w> : "ʃ" U0283 # LATIN SMALL LETTER ESH
+<Multi_key><less><less>                                                                        <w> : "ʃ" U0283 # LATIN SMALL LETTER ESH
 <UEFD0>                                                                                        <X> : "Ɛ" U0190 # LATIN CAPITAL LETTER OPEN E
 <Multi_key><numbersign>                                                                        <X> : "Ɛ" U0190 # LATIN CAPITAL LETTER OPEN E
+<dead_circumflex><dead_circumflex>                                                             <X> : "Ɛ" U0190 # LATIN CAPITAL LETTER OPEN E
+<Multi_key><less><less>                                                                        <X> : "Ɛ" U0190 # LATIN CAPITAL LETTER OPEN E
 <UEFD0>                                                                                        <x> : "ɛ" U025B # LATIN SMALL LETTER OPEN E
 <Multi_key><numbersign>                                                                        <x> : "ɛ" U025B # LATIN SMALL LETTER OPEN E
+<dead_circumflex><dead_circumflex>                                                             <x> : "ɛ" U025B # LATIN SMALL LETTER OPEN E
+<Multi_key><less><less>                                                                        <x> : "ɛ" U025B # LATIN SMALL LETTER OPEN E
 <UEFD0>                                                                                        <Y> : "Ʊ" U01B1 # LATIN CAPITAL LETTER UPSILON
 <Multi_key><numbersign>                                                                        <Y> : "Ʊ" U01B1 # LATIN CAPITAL LETTER UPSILON
+<dead_circumflex><dead_circumflex>                                                             <Y> : "Ʊ" U01B1 # LATIN CAPITAL LETTER UPSILON
+<Multi_key><less><less>                                                                        <Y> : "Ʊ" U01B1 # LATIN CAPITAL LETTER UPSILON
 <UEFD0>                                                                                        <y> : "ʊ" U028A # LATIN SMALL LETTER UPSILON
 <Multi_key><numbersign>                                                                        <y> : "ʊ" U028A # LATIN SMALL LETTER UPSILON
+<dead_circumflex><dead_circumflex>                                                             <y> : "ʊ" U028A # LATIN SMALL LETTER UPSILON
+<Multi_key><less><less>                                                                        <y> : "ʊ" U028A # LATIN SMALL LETTER UPSILON
 <UEFD0>                                                                                        <Z> : "Ʒ" U01B7 # LATIN CAPITAL LETTER EZH
 <Multi_key><numbersign>                                                                        <Z> : "Ʒ" U01B7 # LATIN CAPITAL LETTER EZH
 <UEFD0>                                                                                        <z> : "ʒ" U0292 # LATIN SMALL LETTER EZH
@@ -41302,8 +41354,8 @@
 <Multi_key><numbersign><numbersign>                                                            <q> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
 <UEFD0><UEFD0>                                                                                 <R> : "˞" U02DE # MODIFIER LETTER RHOTIC HOOK
 <Multi_key><numbersign><numbersign>                                                            <R> : "˞" U02DE # MODIFIER LETTER RHOTIC HOOK
-<UEFD0><UEFD0>                                                                                 <r> : "˞" U02DE # MODIFIER LETTER RHOTIC HOOK
-<Multi_key><numbersign><numbersign>                                                            <r> : "˞" U02DE # MODIFIER LETTER RHOTIC HOOK
+<UEFD0><UEFD0>                                                                                 <r> : "ɝ" U025D # LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
+<Multi_key><numbersign><numbersign>                                                            <r> : "ɝ" U025D # LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
 <UEFD0><UEFD0>                                                                                 <S> : "Ʃ" U01A9 # LATIN CAPITAL LETTER ESH
 <Multi_key><numbersign><numbersign>                                                            <S> : "Ʃ" U01A9 # LATIN CAPITAL LETTER ESH
 <UEFD0><UEFD0>                                                                                 <s> : "ʃ" U0283 # LATIN SMALL LETTER ESH

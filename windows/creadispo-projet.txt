@@ -7,18 +7,18 @@ nom :         nom de fichier en 8 caractères ASCII maximum
 description : partie descriptive du nom de dossier des pilotes et de leurs installateurs
 Les descriptions affichées dans la Barre des langues sont définies dans les fichiers .RC.
 -------------------------------------------------------------------------------------------
-                      Nom du projet ou du produit=AZERTY_DCS
+                      Nom du projet ou du produit=AZERTY-DCS
         Nom de l’éventuelle source header commune=kbcommon
 -----------------------------------------------------------------------------------------
-kbfrdcs1;AZERTY_DCS
-kbfrdcs2;AZERTY_DCS_clone
-kbfrFRs1;AZERTY_DCS_retouché
-kbfrFRs2;AZERTY_DCS_retouché_clone
-kbbrFRs1;Breton_DCS_retouché
-kbbrFRs2;Breton_DCS_retouché_clone
-kbfrAFs1;Afrique_DCS_retouché
-kbfrAFs2;Afrique_DCS_retouché_clone
-kbfrPFs1;Polynésie_DCS_retouché
-kbfrPFs2;Polynésie_DCS_retouché_clone
-kbfrFRr1;DCS_redisposé
-kbfrFRr2;DCS_redisposé_clone
+kbfrdcs1;AZERTY-DCS
+kbfrdcs2;AZERTY-DCS-clone
+kbfrFRs1;AZERTY-DCS-retouché
+kbfrFRs2;AZERTY-DCS-retouché-clone
+kbbrFRs1;Breton-DCS-retouché
+kbbrFRs2;Breton-DCS-retouché-clone
+kbfrAFs1;Afrique-DCS-retouché
+kbfrAFs2;Afrique-DCS-retouché-clone
+kbfrPFs1;Polynésie-DCS-retouché
+kbfrPFs2;Polynésie-DCS-retouché-clone
+kbfrFRr1;DCS-redisposé
+kbfrFRr2;DCS-redisposé-clone

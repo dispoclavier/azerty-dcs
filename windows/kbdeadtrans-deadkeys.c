@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Update                                   7.1.0+1.0 Thu 2026-11-05T2155+0100
 * Enhance circumflex dead key             7.1.0+0.10 Wed 2026-11-04T1352+0100
 * Update                                   7.1.0+0.9 Sun 2026-11-01T1724+0100
 * Update                                   7.1.0+0.8 Thu 2026-10-29T1703+0100
@@ -84,6 +85,7 @@
 * all at level 4 (Shift + AltGr).
 *
 \*****************************************************************************/
+
 /*<!abovedot><!abovedot>                                           */ DEADTRANS( 0x1E57	,0x1E57	,0x02C8	,0x0001), // Virtual dead key’s intermediate chain link
 /*<!abovedot><!abovedot><!acute>                                   */ DEADTRANS( 0x00E1	,0x02C8	,0x02C7	,0x0001), // Virtual dead key’s intermediate chain link
 /*<!abovedot><!abovedot><!acute><!grave>                           */ DEADTRANS( 0x00F2	,0x02C7	,0x02B7	,0x0001), // Virtual dead key’s intermediate chain link
@@ -3046,37 +3048,54 @@
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'9'	,0x01CD	,0x2089	,0x0000), // '9' ➔ "₉" U+2089 SUBSCRIPT NINE
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'A'	,0x01CD	,0x00C6	,0x0000), // 'A' ➔ "Æ" U+00C6 LATIN CAPITAL LETTER AE
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'a'	,0x01CD	,0x00E6	,0x0000), // 'a' ➔ "æ" U+00E6 LATIN SMALL LETTER AE
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'B'	,0x01CD	,0x0189	,0x0000), // 'B' ➔ "Ɖ" U+0189 LATIN CAPITAL LETTER AFRICAN D
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'b'	,0x01CD	,0x0256	,0x0000), // 'b' ➔ "ɖ" U+0256 LATIN SMALL LETTER D WITH TAIL
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'C'	,0x01CD	,0x010C	,0x0000), // 'C' ➔ "Č" U+010C LATIN CAPITAL LETTER C WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'c'	,0x01CD	,0x010D	,0x0000), // 'c' ➔ "č" U+010D LATIN SMALL LETTER C WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'D'	,0x01CD	,0x010E	,0x0000), // 'D' ➔ "Ď" U+010E LATIN CAPITAL LETTER D WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'd'	,0x01CD	,0x010F	,0x0000), // 'd' ➔ "ď" U+010F LATIN SMALL LETTER D WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'E'	,0x01CD	,0x011A	,0x0000), // 'E' ➔ "Ě" U+011A LATIN CAPITAL LETTER E WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'e'	,0x01CD	,0x011B	,0x0000), // 'e' ➔ "ě" U+011B LATIN SMALL LETTER E WITH CARON
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'F'	,0x01CD	,0x0191	,0x0000), // 'F' ➔ "Ƒ" U+0191 LATIN CAPITAL LETTER F WITH HOOK
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'f'	,0x01CD	,0x0192	,0x0000), // 'f' ➔ "ƒ" U+0192 LATIN SMALL LETTER F WITH HOOK
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'G'	,0x01CD	,0x01E6	,0x0000), // 'G' ➔ "Ǧ" U+01E6 LATIN CAPITAL LETTER G WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'g'	,0x01CD	,0x01E7	,0x0000), // 'g' ➔ "ǧ" U+01E7 LATIN SMALL LETTER G WITH CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'H'	,0x01CD	,0x021E	,0x0000), // 'H' ➔ "Ȟ" U+021E LATIN CAPITAL LETTER H WITH CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'h'	,0x01CD	,0x021F	,0x0000), // 'h' ➔ "ȟ" U+021F LATIN SMALL LETTER H WITH CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'I'	,0x01CD	,0x01CF	,0x0000), // 'I' ➔ "Ǐ" U+01CF LATIN CAPITAL LETTER I WITH CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'i'	,0x01CD	,0x01D0	,0x0000), // 'i' ➔ "ǐ" U+01D0 LATIN SMALL LETTER I WITH CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'j'	,0x01CD	,0x01F0	,0x0000), // 'j' ➔ "ǰ" U+01F0 LATIN SMALL LETTER J WITH CARON
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'H'	,0x01CD	,0x018F	,0x0000), // 'H' ➔ "Ə" U+018F LATIN CAPITAL LETTER SCHWA
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'h'	,0x01CD	,0x0259	,0x0000), // 'h' ➔ "ə" U+0259 LATIN SMALL LETTER SCHWA
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'I'	,0x01CD	,0x0196	,0x0000), // 'I' ➔ "Ɩ" U+0196 LATIN CAPITAL LETTER IOTA
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'i'	,0x01CD	,0x0269	,0x0000), // 'i' ➔ "ɩ" U+0269 LATIN SMALL LETTER IOTA
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'J'	,0x01CD	,0x0132	,0x0000), // 'J' ➔ "Ĳ" U+0132 LATIN CAPITAL LIGATURE IJ
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'j'	,0x01CD	,0x0133	,0x0000), // 'j' ➔ "ĳ" U+0133 LATIN SMALL LIGATURE IJ
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'K'	,0x01CD	,0x01E8	,0x0000), // 'K' ➔ "Ǩ" U+01E8 LATIN CAPITAL LETTER K WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'k'	,0x01CD	,0x01E9	,0x0000), // 'k' ➔ "ǩ" U+01E9 LATIN SMALL LETTER K WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'L'	,0x01CD	,0x013D	,0x0000), // 'L' ➔ "Ľ" U+013D LATIN CAPITAL LETTER L WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'l'	,0x01CD	,0x013E	,0x0000), // 'l' ➔ "ľ" U+013E LATIN SMALL LETTER L WITH CARON
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'M'	,0x01CD	,0x0294	,0x0000), // 'M' ➔ "ʔ" U+0294 LATIN LETTER GLOTTAL STOP
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'm'	,0x01CD	,0x02BE	,0x0000), // 'm' ➔ "ʾ" U+02BE MODIFIER LETTER RIGHT HALF RING
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'N'	,0x01CD	,0x0147	,0x0000), // 'N' ➔ "Ň" U+0147 LATIN CAPITAL LETTER N WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'n'	,0x01CD	,0x0148	,0x0000), // 'n' ➔ "ň" U+0148 LATIN SMALL LETTER N WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'O'	,0x01CD	,0x0152	,0x0000), // 'O' ➔ "Œ" U+0152 LATIN CAPITAL LIGATURE OE
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'o'	,0x01CD	,0x0153	,0x0000), // 'o' ➔ "œ" U+0153 LATIN SMALL LIGATURE OE
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'P'	,0x01CD	,0x00B7	,0x0000), // 'P' ➔ "·" U+00B7 MIDDLE DOT
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'p'	,0x01CD	,0x00B7	,0x0000), // 'p' ➔ "·" U+00B7 MIDDLE DOT
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'Q'	,0x01CD	,0x0241	,0x0000), // 'Q' ➔ "Ɂ" U+0241 LATIN CAPITAL LETTER GLOTTAL STOP
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'q'	,0x01CD	,0x0242	,0x0000), // 'q' ➔ "ɂ" U+0242 LATIN SMALL LETTER GLOTTAL STOP
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'R'	,0x01CD	,0x0158	,0x0000), // 'R' ➔ "Ř" U+0158 LATIN CAPITAL LETTER R WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'r'	,0x01CD	,0x0159	,0x0000), // 'r' ➔ "ř" U+0159 LATIN SMALL LETTER R WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'S'	,0x01CD	,0x0160	,0x0000), // 'S' ➔ "Š" U+0160 LATIN CAPITAL LETTER S WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L's'	,0x01CD	,0x0161	,0x0000), // 's' ➔ "š" U+0161 LATIN SMALL LETTER S WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'T'	,0x01CD	,0x0164	,0x0000), // 'T' ➔ "Ť" U+0164 LATIN CAPITAL LETTER T WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L't'	,0x01CD	,0x0165	,0x0000), // 't' ➔ "ť" U+0165 LATIN SMALL LETTER T WITH CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'U'	,0x01CD	,0x01D3	,0x0000), // 'U' ➔ "Ǔ" U+01D3 LATIN CAPITAL LETTER U WITH CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'u'	,0x01CD	,0x01D4	,0x0000), // 'u' ➔ "ǔ" U+01D4 LATIN SMALL LETTER U WITH CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'W'	,0x01CD	,0x1ACF	,0x0000), // 'W' ➔ "᫏" U+1ACF COMBINING DOUBLE CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'w'	,0x01CD	,0x1ACF	,0x0000), // 'w' ➔ "᫏" U+1ACF COMBINING DOUBLE CARON
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'U'	,0x01CD	,0x01B2	,0x0000), // 'U' ➔ "Ʋ" U+01B2 LATIN CAPITAL LETTER V WITH HOOK
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'u'	,0x01CD	,0x028B	,0x0000), // 'u' ➔ "ʋ" U+028B LATIN SMALL LETTER V WITH HOOK
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'v'	,0x01CD	,0x211F	,0x0000), // 'v' ➔ "℟" U+211F RESPONSE
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'V'	,0x01CD	,0x2123	,0x0000), // 'V' ➔ "℣" U+2123 VERSICLE
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'W'	,0x01CD	,0x01A9	,0x0000), // 'W' ➔ "Ʃ" U+01A9 LATIN CAPITAL LETTER ESH
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'w'	,0x01CD	,0x0283	,0x0000), // 'w' ➔ "ʃ" U+0283 LATIN SMALL LETTER ESH
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'X'	,0x01CD	,0x0190	,0x0000), // 'X' ➔ "Ɛ" U+0190 LATIN CAPITAL LETTER OPEN E
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'x'	,0x01CD	,0x025B	,0x0000), // 'x' ➔ "ɛ" U+025B LATIN SMALL LETTER OPEN E
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'Y'	,0x01CD	,0x01B1	,0x0000), // 'Y' ➔ "Ʊ" U+01B1 LATIN CAPITAL LETTER UPSILON
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'y'	,0x01CD	,0x028A	,0x0000), // 'y' ➔ "ʊ" U+028A LATIN SMALL LETTER UPSILON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'Z'	,0x01CD	,0x017D	,0x0000), // 'Z' ➔ "Ž" U+017D LATIN CAPITAL LETTER Z WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'z'	,0x01CD	,0x017E	,0x0000), // 'z' ➔ "ž" U+017E LATIN SMALL LETTER Z WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( 0x00A0	,0x01CD	,0x02C7	,0x0000), // ' ' ➔ "ˇ" U+02C7 CARON
@@ -5466,8 +5485,8 @@
 /*<!group><!group>                                                 */ DEADTRANS( 0x00B7	,0x2461	,0x221B	,0x0000), // '·' ➔ "∛" U+221B CUBE ROOT math
 /*<!group><!group>                                                 */ DEADTRANS( L'Q'	,0x2461	,0x0294	,0x0000), // 'Q' ➔ "ʔ" U+0294 LATIN LETTER GLOTTAL STOP
 /*<!group><!group>                                                 */ DEADTRANS( L'q'	,0x2461	,0x0294	,0x0000), // 'q' ➔ "ʔ" U+0294 LATIN LETTER GLOTTAL STOP
+/*<!group><!group>                                                 */ DEADTRANS( L'r'	,0x2461	,0x025D	,0x0000), // 'r' ➔ "ɝ" U+025D LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
 /*<!group><!group>                                                 */ DEADTRANS( L'R'	,0x2461	,0x02DE	,0x0000), // 'R' ➔ "˞" U+02DE MODIFIER LETTER RHOTIC HOOK
-/*<!group><!group>                                                 */ DEADTRANS( L'r'	,0x2461	,0x02DE	,0x0000), // 'r' ➔ "˞" U+02DE MODIFIER LETTER RHOTIC HOOK
 /*<!group><!group>                                                 */ DEADTRANS( L'S'	,0x2461	,0x01A9	,0x0000), // 'S' ➔ "Ʃ" U+01A9 LATIN CAPITAL LETTER ESH
 /*<!group><!group>                                                 */ DEADTRANS( L's'	,0x2461	,0x0283	,0x0000), // 's' ➔ "ʃ" U+0283 LATIN SMALL LETTER ESH
 /*<!group><!group>                                                 */ DEADTRANS( L't'	,0x2461	,0x03B8	,0x0000), // 't' ➔ "θ" U+03B8 GREEK SMALL LETTER THETA
@@ -7642,8 +7661,8 @@
 /*<!group>                                                         */ DEADTRANS( 0x00B7	,0x2460	,0x221A	,0x0000), // '·' ➔ "√" U+221A SQUARE ROOT math
 /*<!group>                                                         */ DEADTRANS( L'Q'	,0x2460	,0x0241	,0x0000), // 'Q' ➔ "Ɂ" U+0241 LATIN CAPITAL LETTER GLOTTAL STOP
 /*<!group>                                                         */ DEADTRANS( L'q'	,0x2460	,0x0242	,0x0000), // 'q' ➔ "ɂ" U+0242 LATIN SMALL LETTER GLOTTAL STOP
-/*<!group>                                                         */ DEADTRANS( L'R'	,0x2460	,0x211F	,0x0000), // 'R' ➔ "℟" U+211F RESPONSE
-/*<!group>                                                         */ DEADTRANS( L'r'	,0x2460	,0x211F	,0x0000), // 'r' ➔ "℟" U+211F RESPONSE
+/*<!group>                                                         */ DEADTRANS( L'r'	,0x2460	,0x025A	,0x0000), // 'r' ➔ "ɚ" U+025A LATIN SMALL LETTER SCHWA WITH HOOK
+/*<!group>                                                         */ DEADTRANS( L'R'	,0x2460	,0x02DE	,0x0000), // 'R' ➔ "˞" U+02DE MODIFIER LETTER RHOTIC HOOK
 /*<!group>                                                         */ DEADTRANS( L's'	,0x2460	,0x00DF	,0x0000), // 's' ➔ "ß" U+00DF LATIN SMALL LETTER SHARP S
 /*<!group>                                                         */ DEADTRANS( L'S'	,0x2460	,0x1E9E	,0x0000), // 'S' ➔ "ẞ" U+1E9E LATIN CAPITAL LETTER SHARP S
 /*<!group>                                                         */ DEADTRANS( L'T'	,0x2460	,0x00DE	,0x0000), // 'T' ➔ "Þ" U+00DE LATIN CAPITAL LETTER THORN
@@ -7663,8 +7682,8 @@
 /*<!group>                                                         */ DEADTRANS( 0x00FC	,0x2460	,0x00F1	,0x0000), // 'ü' ➔ "ñ" U+00F1 LATIN SMALL LETTER N WITH TILDE shortcut for Swiss layout
 /*<!group>                                                         */ DEADTRANS( 0x00FC	,0x2460	,0x00F1	,0x0000), // 'ü' ➔ "ñ" U+00F1 LATIN SMALL LETTER N WITH TILDE shortcut for Swiss layout
 /*<!group>                                                         */ DEADTRANS( 0x00FC	,0x2460	,0x00F1	,0x0000), // 'ü' ➔ "ñ" U+00F1 LATIN SMALL LETTER N WITH TILDE shortcut for Swiss layout
+/*<!group>                                                         */ DEADTRANS( L'v'	,0x2460	,0x211F	,0x0000), // 'v' ➔ "℟" U+211F RESPONSE
 /*<!group>                                                         */ DEADTRANS( L'V'	,0x2460	,0x2123	,0x0000), // 'V' ➔ "℣" U+2123 VERSICLE
-/*<!group>                                                         */ DEADTRANS( L'v'	,0x2460	,0x2123	,0x0000), // 'v' ➔ "℣" U+2123 VERSICLE
 /*<!group>                                                         */ DEADTRANS( L'W'	,0x2460	,0x01A9	,0x0000), // 'W' ➔ "Ʃ" U+01A9 LATIN CAPITAL LETTER ESH
 /*<!group>                                                         */ DEADTRANS( L'w'	,0x2460	,0x0283	,0x0000), // 'w' ➔ "ʃ" U+0283 LATIN SMALL LETTER ESH
 /*<!group>                                                         */ DEADTRANS( L'X'	,0x2460	,0x0190	,0x0000), // 'X' ➔ "Ɛ" U+0190 LATIN CAPITAL LETTER OPEN E

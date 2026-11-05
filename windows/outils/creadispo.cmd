@@ -3274,7 +3274,7 @@ echo  Les sources dans le dossier sont au complet.
 :: Pack d’installation :
 :versioncompile
 :: Fait compiler et emballe les pilotes (avec une copie de sauvegarde) :
-set idirname="%name%%sep%%description%_%version%_installation"
+set idirname="%name%_%description%_%version%_installation"
 mkdir %idirname%
 echo  J’ai créé le dossier %idirname%.
 
