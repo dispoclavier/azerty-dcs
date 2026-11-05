@@ -1,4 +1,4 @@
-# 7.1.0-beta (2026-11-05) préversion
+# 7.1.0-beta.0 (2026-11-05) préversion
 
 ## AZERTY DCS
 
