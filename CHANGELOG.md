@@ -39,10 +39,10 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 	* Redonder "ꭦ" U+AB66, "ꭧ" U+AB67, "𝼀" U+1DF00, "𝼅" U+1DF05, "𝼒" U+1DF12, "𝼗" U+1DF17, "𝼙" U+1DF19, "𝼜" U+1DF1C. compose-1.yml [204af1b](https://github.com/dispoclavier/azerty-dcs/commit/204af1be45c5e0fb3afe300549a9c0e95a08fd00)
 * Transformations :
 	* Groupes des lettres :
-		* Redonder "℟" U+211F dans le groupe 1 de "v" à la place de "℣" U+2123, qui est dans le groupe 1 de "V".
-		* Redonder "˞" U+02DE dans le groupe 1 de "R" à la place de "℟" U+211F, qui est dans le groupe 1 de "v".
-		* Redonder "ɚ" U+025A dans le groupe 1 de "r" à la place de "℟" U+211F, qui est dans le groupe 1 de "v".
-		* Redonder "ɝ" U+025D dans le groupe 2 de "r" à la place de "˞" U+02DE, qui est dans le groupe 1 de "R".
+		* Redonder "℟" U+211F dans le groupe 1 de "v" à la place de "℣" U+2123, qui est dans le groupe 1 de "V". compose-3.yml [8e82cf0](https://github.com/dispoclavier/azerty-dcs/commit/8e82cf0599e4d9ea370f275899ede237a6eed33c)
+		* Redonder "˞" U+02DE dans le groupe 1 de "R" à la place de "℟" U+211F, qui est dans le groupe 1 de "v". ibidem
+		* Redonder "ɚ" U+025A dans le groupe 1 de "r" à la place de "℟" U+211F, qui est dans le groupe 1 de "v". ibidem
+		* Redonder "ɝ" U+025D dans le groupe 2 de "r" à la place de "˞" U+02DE, qui est dans le groupe 1 de "R". ibidem
 		* Ajouter "꟝" U+A7DD dans le groupe 4 de "V" à la place de "℣" U+2123, qui va dans le groupe 4 de "U" à la place de "Ɯ" U+019C, qui est dans le groupe 2 de "M". compose-3.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 		* Ajouter "꭬" U+AB6C dans le groupe 5 de "R" à la place de "ꭅ" U+AB45, qui va dans le groupe 4 de "R" à la place de "℟" U+211F, qui va dans le groupe 4 de "I" à la place de "ℹ" U+2139, qui est dans le groupe 4 de "i". ibidem
 	* Groupes des symboles : Groupes de "_" : Groupe 1 : Redonder "⧸" U+29F8 à la place de "∕" U+2215. compose-3.yml [8b28bc6](https://github.com/dispoclavier/azerty-dcs/commit/8b28bc6f90eab5954f5068bb47f60fd57fc7daff)
@@ -158,7 +158,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 		* Déboguer "·" U+00B7, "‧" U+2027, "⋅" U+22C5. compose-3.yml [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
 		* Double frappe :
 			* Redonder "Æ" U+00C6, "æ" U+00E6, "Œ" U+0152, "œ" U+0153 à la place de "Ǎ" U+01CD, "ǎ" U+01CE, "Ǒ" U+01D1, "ǒ" U+01D2, qui sont dans hatchek. compose-3.yml [959f22c](https://github.com/dispoclavier/azerty-dcs/commit/959f22c2ba5e88c1aaa314ab1151841eb5a87227), kbdeadtrans-deadkeys.c [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
-			* Redonder "Ɖ" U+0189 par "B", "ɖ" U+0256 par "b", "Ƒ" U+0191 par "F", "ƒ" U+0192 par "f", "Ə" U+018F par "H", "ə" U+0259 par "h", "Ɩ" U+0196 par "I", "ɩ" U+0269 par "i", "Ĳ" U+0132 par "J", "ĳ" U+0133 par "j", "ʔ" U+0294 par "M", "ʾ" U+02BE par "m", "·" U+00B7 par "P", "·" U+00B7 par "p", "Ɂ" U+0241 par "Q", "ɂ" U+0242 par "q", "Ʋ" U+01B2 par "U", "ʋ" U+028B par "u", "℣" U+2123 par "V", "℟" U+211F par "v", "Ʃ" U+01A9 par "W", "ʃ" U+0283 par "w", "Ɛ" U+0190 par "X", "ɛ" U+025B par "x", "Ʊ" U+01B1 par "Y", "ʊ" U+028A par "y".
+			* Redonder "Ɖ" U+0189 par "B", "ɖ" U+0256 par "b", "Ƒ" U+0191 par "F", "ƒ" U+0192 par "f", "Ə" U+018F par "H", "ə" U+0259 par "h", "Ɩ" U+0196 par "I", "ɩ" U+0269 par "i", "Ĳ" U+0132 par "J", "ĳ" U+0133 par "j", "ʔ" U+0294 par "M", "ʾ" U+02BE par "m", "·" U+00B7 par "P", "·" U+00B7 par "p", "Ɂ" U+0241 par "Q", "ɂ" U+0242 par "q", "Ʋ" U+01B2 par "U", "ʋ" U+028B par "u", "℣" U+2123 par "V", "℟" U+211F par "v", "Ʃ" U+01A9 par "W", "ʃ" U+0283 par "w", "Ɛ" U+0190 par "X", "ɛ" U+025B par "x", "Ʊ" U+01B1 par "Y", "ʊ" U+028A par "y". compose-3.yml [8e82cf0](https://github.com/dispoclavier/azerty-dcs/commit/8e82cf0599e4d9ea370f275899ede237a6eed33c)
 	* Hatchek et accent aigu : Ajouter "᫬" U+1AEC. compose-3.yml [5a35ff6](https://github.com/dispoclavier/azerty-dcs/commit/5a35ff6105e9c00847d2f36547fe84c8aed09e82)
 	* Accent grave > Double accent grave : Ajouter "᫮" U+1AEE par "_". ibidem
 	* Cédille :
@@ -171,7 +171,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 		* Déboguer le transpilateur. dead-key-convert.pl [9f245c6](https://github.com/dispoclavier/azerty-dcs/commit/9f245c6cf933865afc50f450e99201daa7b46218), [0dc2d32](https://github.com/dispoclavier/azerty-dcs/commit/0dc2d3214afd7c30a0a059926351260a6522646b)
 		* Mouvoir le transpilateur de linux-chromeos/outils/ à windows/outils/. dead-key-convert.pl [d6924ec](https://github.com/dispoclavier/azerty-dcs/commit/d6924ecc352f0f935ea22d57afd3c63a45dcabeb)
 * Installation :
-	* Sous Windows : Corriger les noms de dossier des pilotes de disposition pour Windows. creadispo.cmd, creadispo-projet.txt [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
+	* Sous Windows : Corriger les noms de dossier des pilotes de disposition pour Windows. creadispo.cmd, creadispo-projet.txt [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770), [8e82cf0](https://github.com/dispoclavier/azerty-dcs/commit/8e82cf0599e4d9ea370f275899ede237a6eed33c)
 * Documentation :
 	* Corriger la note de la préversion de l’AZERTY DCS. Note-de-version.md [e0d4748](https://github.com/dispoclavier/azerty-dcs/commit/e0d4748bc41d2ec98522fc1c59af4bf64f5ac65b), [70fcf5b](https://github.com/dispoclavier/azerty-dcs/commit/70fcf5bf730678e46365107fd15e40b5c56f67cf), [68e2be5](https://github.com/dispoclavier/azerty-dcs/commit/68e2be512131b5a376f4510f21c84441a11767b9), [bcb61d0](https://github.com/dispoclavier/azerty-dcs/commit/bcb61d04dfe356c0147ae9b355a811bba152e0b0), [f77c94d](https://github.com/dispoclavier/azerty-dcs/commit/f77c94d004e2b51ec158f0e5556fb3318f75c60b)
 	* Raccourcir les descripteurs des dispositions de clavier pour Linux. compose-1.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e), [959f22c](https://github.com/dispoclavier/azerty-dcs/commit/959f22c2ba5e88c1aaa314ab1151841eb5a87227)
