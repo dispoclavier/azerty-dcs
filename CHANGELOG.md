@@ -25,6 +25,7 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 Contournement du bogue de Windows au niveau 7 en mode ASCII
 
 * Disposition :
+	* Redonder "@" U+0040 au niveau 3 de E11 en mode ASCII à la place de "°" U+00B0.
 	* Permuter les niveaux 6 et 7 en mode ASCII sur les touches B07 et B08. dispocla.cpp, kbcomazerty.c, kbcomredispo.c [54bc0b9](https://github.com/dispoclavier/azerty-dcs/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884)
 * Composition :
 	* Émulation de codes Alt :
@@ -185,7 +186,10 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 * Builds :
 	* 7.1.0+0 [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
 	* 7.1.0+1 [268fc12](https://github.com/dispoclavier/azerty-dcs/commit/268fc12894b080fb7e8012bf8f1800843a148b11)
-	* 7.1.0+2
+	* 7.1.0+2 [4ba0af5](https://github.com/dispoclavier/azerty-dcs/commit/4ba0af5a51aab9fabb5556ba7640812bd70a16c0)
+	* 7.1.0+3 [f23edfc](https://github.com/dispoclavier/azerty-dcs/commit/f23edfccd21c1dbd08ac3d947b5e2684e16f5463)
+	* 7.1.0+4 [b6616a3](https://github.com/dispoclavier/azerty-dcs/commit/b6616a350a2aba8fbcc665871168fa9d85af1954)
+	* 7.1.0+5 [3fd9262](https://github.com/dispoclavier/azerty-dcs/commit/3fd92624e3025170fe8318bf218f790d124a0a13)
 
 ## 7.0.1 (projet)
 

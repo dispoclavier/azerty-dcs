@@ -1,4 +1,4 @@
-//                       Date: 2026-10-20T0746+0200
+//                       Date: 2026-11-07T1514+0100
 //        Operating file name: dispocla
 //                   Encoding: UTF-8
 //                       Type: text/XKB configuration
@@ -1154,7 +1154,7 @@ xkb_symbols "kbfrFRs" {
 	key <AE11> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
 		[                  at,           ampersand,               U1D49,        bracketright,              degree,               U207B,                   E,               minus ],
-		[                  at,           ampersand,              degree,               U208B,                   E,               U207B,              degree,               minus ]
+		[                  at,           ampersand,                  at,               U208B,                   E,               U207B,              degree,               minus ]
 	}; // U1D49 ᵉ MODIFIER LETTER SMALL E; U207B ⁻ SUPERSCRIPT MINUS; U208B ₋ SUBSCRIPT MINUS; UEFCA *️⃣ keycap star emoji
 
 	key <AE12> {
