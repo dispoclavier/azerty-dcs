@@ -185,6 +185,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 * Builds :
 	* 7.1.0+0 [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
 	* 7.1.0+1 [268fc12](https://github.com/dispoclavier/azerty-dcs/commit/268fc12894b080fb7e8012bf8f1800843a148b11)
+	* 7.1.0+2
 
 ## 7.0.1 (projet)
 
