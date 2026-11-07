@@ -16,7 +16,7 @@ Prise en charge par touches mortes pour Linux et macOS, des émojis additionnels
 
 Mise à jour pour macOS des dispositions développées pour Windows, portées sous macOS puis sous Linux, rétroportées sous Windows et complétées pour Windows et pour Linux
 
-## 7.1.0 (projet)
+## 7.1.0 (beta)
 
 Double frappe d’accent circonflexe pour les "œ" U+0153 et "æ" U+00E6 et d’autres lettres dans le groupe 1 en plus de l’hatchek des langues d’Europe
 
@@ -25,7 +25,7 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 Contournement du bogue de Windows au niveau 7 en mode ASCII
 
 * Disposition :
-	* Redonder "@" U+0040 au niveau 3 de E11 en mode ASCII à la place de "°" U+00B0.
+	* Redonder "@" U+0040 au niveau 3 de E11 en mode ASCII à la place de "°" U+00B0. dispocla.cpp, kbfrPFs-allo.c, kbbrFRs-allo.c, kbfrAFs-allo.c, kbfrFRr-allo.c, kbfrFRs-allo.c [3848955](https://github.com/dispoclavier/azerty-dcs/commit/384895532843bd8be5bec1bf1b8d206b54ff2ea7)
 	* Permuter les niveaux 6 et 7 en mode ASCII sur les touches B07 et B08. dispocla.cpp, kbcomazerty.c, kbcomredispo.c [54bc0b9](https://github.com/dispoclavier/azerty-dcs/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884)
 * Composition :
 	* Émulation de codes Alt :
