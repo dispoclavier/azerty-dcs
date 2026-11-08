@@ -26,13 +26,13 @@
 * This file only contains ligatures that do not change across layouts.
 * Ligatures particular to AZERTY are configured in kbligazerty.c.
 * Ligatures particular to QZJFGY are configured in kbligredispo.c.
-* The array is declared and initialized in the locale-specific C sources.
+* The array is declared and initialized in the locale-specific C source.
 *
 \*****************************************************************************/
 
 // static ALLOC_SECTION_LDATA LIGATURE16 aLigature[] = {
 
-  {VK_ESCAPE, 2, ' ', 'v', '_', '7', '.', '1', '.', '0', '+', '7', WCH_NONE, WCH_NONE, WCH_NONE, WCH_NONE, WCH_NONE, WCH_NONE},
+  {VK_ESCAPE, 2, ' ', 'v', '_', '7', '.', '1', '.', '0', '+', '8', WCH_NONE, WCH_NONE, WCH_NONE, WCH_NONE, WCH_NONE, WCH_NONE},
 
   /*****************************************************************************\
   * Ligature array
