@@ -8707,6 +8707,8 @@
 #   Consistently, this feature is extended to all base letters except "c", "d",
 #   "e", "g", "k", "l", "n", "r", "s", "t", "z":
 #
+#       <A> : "Æ" U00C6
+#       <a> : "æ" U00E6
 #       <B> : "Ɖ" U0189
 #       <b> : "ɖ" U0256
 #       <F> : "Ƒ" U0191
@@ -8719,6 +8721,8 @@
 #       <j> : "ĳ" U0133
 #       <M> : "ʔ" U0294
 #       <m> : "ʾ" U02BE
+#       <O> : "Œ" U0152
+#       <o> : "œ" U0153
 #       <P> : "·" U00B7
 #       <p> : "·" U00B7
 #       <Q> : "Ɂ" U0241
@@ -8727,6 +8731,12 @@
 #       <u> : "ʋ" U028B
 #       <V> : "℣" U2123
 #       <v> : "℟" U211F
+#       <W> : "Ʃ" U01A9
+#       <w> : "ʃ" U0283
+#       <X> : "Ɛ" U0190
+#       <x> : "ɛ" U025B
+#       <Y> : "Ʊ" U01B1
+#       <y> : "ʊ" U028A
 #
 #   See #^# HACEK and GROUP_1 input facilities by CIRCUMFLEX
 #

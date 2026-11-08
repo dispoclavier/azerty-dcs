@@ -1,12 +1,12 @@
 Encodage OEM 850
-Propriétés du projet AZERTY DCS
+Propriétés du projet
 -------------------------------------------------------------------------------------------
-Pour un projet multiple, lister les noms à partir de la ligne 14, un par ligne.
+Pour un projet multiple, lister les noms à partir de la ligne 13, un par ligne.
 Syntaxe :     nom;description
 nom :         nom de fichier en 8 caractères ASCII maximum
 description : partie descriptive du nom de dossier des pilotes et de leurs installateurs
 Les descriptions affichées dans la Barre des langues sont définies dans les fichiers .RC.
--------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
                       Nom du projet ou du produit=AZERTY-DCS
         Nom de l’éventuelle source header commune=kbcommon
 -----------------------------------------------------------------------------------------
@@ -14,11 +14,11 @@ kbfrdcs1;AZERTY-DCS
 kbfrdcs2;AZERTY-DCS-clone
 kbfrFRs1;AZERTY-DCS-retouché
 kbfrFRs2;AZERTY-DCS-retouché-clone
-kbbrFRs1;Breton-DCS-retouché
-kbbrFRs2;Breton-DCS-retouché-clone
-kbfrAFs1;Afrique-DCS-retouché
-kbfrAFs2;Afrique-DCS-retouché-clone
-kbfrPFs1;Polynésie-DCS-retouché
-kbfrPFs2;Polynésie-DCS-retouché-clone
-kbfrFRr1;DCS-redisposé
-kbfrFRr2;DCS-redisposé-clone
+kbbrFRs1;Breton-AZERTY-DCS
+kbbrFRs2;Breton-AZERTY-DCS-clone
+kbfrAFs1;Afrique-AZERTY-DCS
+kbfrAFs2;Afrique-AZERTY-DCS-clone
+kbfrPFs1;Polynésie-AZERTY-DCS
+kbfrPFs2;Polynésie-AZERTY-DCS-clone
+kbfrFRr1;AZERTY-DCS-redisposé
+kbfrFRr2;AZERTY-DCS-redisposé-clone
