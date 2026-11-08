@@ -1,8 +1,8 @@
-# 7.1.0-beta.1 (2026-11-06) préversion
+# 7.1.0-beta.2 (2026-11-08) préversion
 
 ## AZERTY DCS
 
-L’AZERTY zéro prise de tête est maintenant disponible en préversion. Au niveau logiciel c'est déjà fonctionnel, mais tout n’est pas complet (documentation, prise en charge d’Unicode), d’où cette « version beta » (actuellement le build 7.1.0+1).
+L’AZERTY zéro prise de tête est maintenant disponible en préversion. Au niveau logiciel c'est déjà fonctionnel, mais tout n’est pas complet (documentation, prise en charge d’Unicode), d’où cette « version beta » (actuellement le build 7.1.0+9).
 
 DCS, c’est "débogué, complété, semi-automatique".
 
