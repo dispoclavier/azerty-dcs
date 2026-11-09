@@ -1242,6 +1242,10 @@
 <Multi_key><greater>                                                                       <comma> : "ʻ" U02BB # MODIFIER LETTER TURNED COMMA
 <dead_circumflex><dead_circumflex>                                                         <comma> : "ʻ" U02BB # MODIFIER LETTER TURNED COMMA
 <Multi_key><less><less>                                                                    <comma> : "ʻ" U02BB # MODIFIER LETTER TURNED COMMA
+<dead_caron>                                                                            <question> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
+<Multi_key><greater>                                                                    <question> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
+<dead_circumflex><dead_circumflex>                                                      <question> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
+<Multi_key><less><less>                                                                 <question> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
 <dead_caron>                                                                                   <0> : "₀" U2080 # SUBSCRIPT ZERO
 <Multi_key><greater>                                                                           <0> : "₀" U2080 # SUBSCRIPT ZERO
 <dead_circumflex><dead_circumflex>                                                             <0> : "₀" U2080 # SUBSCRIPT ZERO
@@ -8649,7 +8653,7 @@
 #	J j	Ĳ ĳ	Ꞌ ꞌ	Ʝ ʝ	⁀ ‿	ǂ ǂ	Ꝝ ꝝ	̙ ◌̠	Ξ ξ	𝒥 𝒿	𝕁 𝕛	𝔍 𝔧	𝖩 𝗃
 #	K k	Ɑ ɑ	Ƙ ƙ	Kʼ ĸ	𝼊 𝼊	ǃ ǃ	Ꜭ ꜭ	Ꜯ ꜯ	Κ κ	𝒦 𝓀	𝕂 𝕜	𝔎 𝔨	𝖪 𝗄
 #	L l	ℓ ʿ	Ꟛ ꟛ	Ꝇ ꝇ	ɮ ʫ	ǁ ǁ	  ꬷ ꝲ	Ỻ ỻ	Λ λ	ℒ 𝓁	𝕃 𝕝	𝔏 𝔩	𝖫 𝗅
-#	M m	ʔ  ʾ	Ɯ ɯ	 ɰ	Ɱ ɱ	̻ ◌̼	 ꝳ	ꟿ ◌̫	Μ μ	ℳ 𝓂	𝕄 𝕞	𝔐 𝔪	𝖬 𝗆
+#	M m	ʔ ʾ	Ɯ ɯ	 ɰ	Ɱ ɱ	̻ ◌̼	 ꝳ	ꟿ ◌̫	Μ μ	ℳ 𝓂	𝕄 𝕞	𝔐 𝔪	𝖬 𝗆
 #	N n	Ɲ ɲ	Ŋ ŋ	Ƞ ƞ	ꬻ ȵ	̚ ◌͉	 ꝴ	Ꞑ ꞑ	Ν ν	𝒩 𝓃	ℕ 𝕟	𝔑 𝔫	𝖭 𝗇
 #	O o	Œ œ	Ɔ ɔ	Ȣ ȣ	Ω ⱷ	Ꟁ ꟁ	Ꞝ ꞝ	Ω ꬽ	Ο ο	𝒪 ℴ	𝕆 𝕠	𝔒 𝔬	𝖮 𝗈
 #	P p	· ·	Ƥ ƥ	Ꝓ ꝓ	Ꝕ ꝕ	͆ ◌̪	⃩ ◌̺	ʺ ʹ	Π π	𝒫 𝓅	ℙ 𝕡	𝔓 𝔭	𝖯 𝗉
@@ -8705,7 +8709,18 @@
 #   As "Œ" U0152, "œ" U0153 is heavily used in French, and "Æ" U00C6, "æ" U00E6
 #   is also used in French, these are also in <dead_circumflex> double press.
 #   Consistently, this feature is extended to all base letters except "c", "d",
-#   "e", "g", "k", "l", "n", "r", "s", "t", "z":
+#   "e", "g", "k", "l", "n", "r", "s", "t", "z".
+#
+#   As a consequence, because "ʿ" U02BF is supported in group 1 of <l> without
+#   the <dead_circumflex> double press alternative, it is in <dead_circumflex>
+#   double press by <M>, where "ʾ" U02BE is by <m>, while group 1 of <M> keeps
+#   supporting "ʔ" U0294 as a group-1 alternative to group 2 of <q> and <Q>,
+#   and <dead_circumflex> double press supports it by <question> as part of the
+#   <dead_caron> content.
+#   See #*# HACEK
+#
+#   The resulting <dead_circumflex> double press non-hatchek output by the
+#   base alphabet is:
 #
 #       <A> : "Æ" U00C6
 #       <a> : "æ" U00E6
@@ -8719,7 +8734,7 @@
 #       <i> : "ɩ" U0269
 #       <J> : "Ĳ" U0132
 #       <j> : "ĳ" U0133
-#       <M> : "ʔ" U0294
+#       <M> : "ʿ" U02BF
 #       <m> : "ʾ" U02BE
 #       <O> : "Œ" U0152
 #       <o> : "œ" U0153
@@ -8814,8 +8829,8 @@
 <Multi_key><numbersign>                                                                        <l> : "ʿ" U02BF # MODIFIER LETTER LEFT HALF RING
 <UEFD0>                                                                                        <M> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
 <Multi_key><numbersign>                                                                        <M> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
-<dead_circumflex><dead_circumflex>                                                             <M> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
-<Multi_key><less><less>                                                                        <M> : "ʔ" U0294 # LATIN LETTER GLOTTAL STOP
+<dead_circumflex><dead_circumflex>                                                             <M> : "ʿ" U02BF # MODIFIER LETTER LEFT HALF RING
+<Multi_key><less><less>                                                                        <M> : "ʿ" U02BF # MODIFIER LETTER LEFT HALF RING
 <UEFD0>                                                                                        <m> : "ʾ" U02BE # MODIFIER LETTER RIGHT HALF RING
 <Multi_key><numbersign>                                                                        <m> : "ʾ" U02BE # MODIFIER LETTER RIGHT HALF RING
 <dead_circumflex><dead_circumflex>                                                             <m> : "ʾ" U02BE # MODIFIER LETTER RIGHT HALF RING

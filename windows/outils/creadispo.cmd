@@ -1,14 +1,14 @@
-:: charset=OEM 65001 BOM
 @echo off
+:: charset=OEM 65001 BOM
 chcp 65001
-rem  La mise à niveau vers Unicode de l’interpréteur de commandes Windows est faite.
 ::
 ::  encodage     OEM 65001 (UTF-8) avec indicateur d’ordre des octets
-::  nom          creadispo
-::  description  programme de commandes en batch pour l’interpréteur cmd.exe de Windows
+::  description  script de commandes en batch pour l’interpréteur cmd.exe de Windows
 ::               utilisant le KbdUTool 3.40 du Microsoft Keyboard Layout Creator 1.4
-::  version      1.9.5
-::  date         2026-11-04T2203+0100 (1.8.3 : 2018-03-15T1954+0100)
+:: titre de la fenêtre de cmd.exe
+title Creadispo  1.9.6
+::  version      1.9.6
+::  date         2026-11-09T1610+0100
 ::  contact      dev[arobase]dispoclavier.com
 ::  dépôt        https://github.com/dispoclavier/azerty-dcs/blob/main/windows/outils/creadispo.cmd
 ::
@@ -24,10 +24,14 @@ rem  La mise à niveau vers Unicode de l’interpréteur de commandes Windows es
 ::  See the License for the specific language governing permissions and
 ::  limitations under the License.
 ::
+::  History:
+::  1.9.6 2026-11-09T1610+0100
+::  1.9.5 2026-11-04T2203+0100
+::  1.8.4 2025-07-04T1218+0200
+::  1.8.3 2018-03-15T1954+0100
+::
 :: Paramètres d’exécution de ce script
 setlocal EnableExtensions EnableDelayedExpansion
-:: titre de la fenêtre de cmd.exe
-title Creadispo  1.9.5
 color 13
 rem  Cette couleur introduit la transition du fond noir par défaut vers le fond blanc.
 rem  Les couleurs d’affichage sont personnalisables dans les préférences de ce script.

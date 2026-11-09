@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Update                                  7.1.0+10.0 Mon 2026-11-09T1519+0100
 * Update                                   7.1.0+1.0 Thu 2026-11-05T2155+0100
 * Enhance circumflex dead key             7.1.0+0.10 Wed 2026-11-04T1352+0100
 * Update                                   7.1.0+0.9 Sun 2026-11-01T1724+0100
@@ -2826,6 +2827,7 @@
 /*<!caron>                                                         */ DEADTRANS( L'('	,0x021F	,0x208D	,0x0000), // '(' ➔ "₍" U+208D SUBSCRIPT LEFT PARENTHESIS
 /*<!caron>                                                         */ DEADTRANS( L')'	,0x021F	,0x208E	,0x0000), // ')' ➔ "₎" U+208E SUBSCRIPT RIGHT PARENTHESIS
 /*<!caron>                                                         */ DEADTRANS( L'+'	,0x021F	,0x208A	,0x0000), // '+' ➔ "₊" U+208A SUBSCRIPT PLUS SIGN
+/*<!caron>                                                         */ DEADTRANS( L'?'	,0x021F	,0x0294	,0x0000), // '?' ➔ "ʔ" U+0294 LATIN LETTER GLOTTAL STOP
 /*<!caron>                                                         */ DEADTRANS( L'0'	,0x021F	,0x2080	,0x0000), // '0' ➔ "₀" U+2080 SUBSCRIPT ZERO
 /*<!caron>                                                         */ DEADTRANS( L'1'	,0x021F	,0x2081	,0x0000), // '1' ➔ "₁" U+2081 SUBSCRIPT ONE
 /*<!caron>                                                         */ DEADTRANS( L'2'	,0x021F	,0x2082	,0x0000), // '2' ➔ "₂" U+2082 SUBSCRIPT TWO
@@ -3036,6 +3038,7 @@
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'('	,0x01CD	,0x208D	,0x0000), // '(' ➔ "₍" U+208D SUBSCRIPT LEFT PARENTHESIS
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L')'	,0x01CD	,0x208E	,0x0000), // ')' ➔ "₎" U+208E SUBSCRIPT RIGHT PARENTHESIS
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'+'	,0x01CD	,0x208A	,0x0000), // '+' ➔ "₊" U+208A SUBSCRIPT PLUS SIGN
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'?'	,0x01CD	,0x0294	,0x0000), // '?' ➔ "ʔ" U+0294 LATIN LETTER GLOTTAL STOP
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'0'	,0x01CD	,0x2080	,0x0000), // '0' ➔ "₀" U+2080 SUBSCRIPT ZERO
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'1'	,0x01CD	,0x2081	,0x0000), // '1' ➔ "₁" U+2081 SUBSCRIPT ONE
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'2'	,0x01CD	,0x2082	,0x0000), // '2' ➔ "₂" U+2082 SUBSCRIPT TWO
@@ -3070,8 +3073,8 @@
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'k'	,0x01CD	,0x01E9	,0x0000), // 'k' ➔ "ǩ" U+01E9 LATIN SMALL LETTER K WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'L'	,0x01CD	,0x013D	,0x0000), // 'L' ➔ "Ľ" U+013D LATIN CAPITAL LETTER L WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'l'	,0x01CD	,0x013E	,0x0000), // 'l' ➔ "ľ" U+013E LATIN SMALL LETTER L WITH CARON
-/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'M'	,0x01CD	,0x0294	,0x0000), // 'M' ➔ "ʔ" U+0294 LATIN LETTER GLOTTAL STOP
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'm'	,0x01CD	,0x02BE	,0x0000), // 'm' ➔ "ʾ" U+02BE MODIFIER LETTER RIGHT HALF RING
+/*<!circumflex><!circumflex>                                       */ DEADTRANS( L'M'	,0x01CD	,0x02BF	,0x0000), // 'M' ➔ "ʿ" U+02BF MODIFIER LETTER LEFT HALF RING
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'N'	,0x01CD	,0x0147	,0x0000), // 'N' ➔ "Ň" U+0147 LATIN CAPITAL LETTER N WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'n'	,0x01CD	,0x0148	,0x0000), // 'n' ➔ "ň" U+0148 LATIN SMALL LETTER N WITH CARON
 /*<!circumflex><!circumflex>                                       */ DEADTRANS( L'O'	,0x01CD	,0x0152	,0x0000), // 'O' ➔ "Œ" U+0152 LATIN CAPITAL LIGATURE OE
