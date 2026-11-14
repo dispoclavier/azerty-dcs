@@ -24,8 +24,7 @@ Mise à jour pour macOS des dispositions développées pour Windows, portées so
 			* Redonder "ʿ" U+02BF par "M" à la place de "ʔ" U+0294, redondé par "?". compose-3.yml [e09fad0](https://github.com/dispoclavier/azerty-dcs/commit/e09fad05957133582a5bafa80d18d86ea01fba72)
 	* Hatchek :
 		* Redonder "ʔ" U+0294 par "?". ibidem
-* Builds :
-	* 7.1.0+10 [e09fad0](https://github.com/dispoclavier/azerty-dcs/commit/e09fad05957133582a5bafa80d18d86ea01fba72)
+* Build : 7.1.0+10 [e09fad0](https://github.com/dispoclavier/azerty-dcs/commit/e09fad05957133582a5bafa80d18d86ea01fba72)
 
 ## 7.1.0-beta.2 (2026-11-08)
 
@@ -35,8 +34,7 @@ Mise à jour pour macOS des dispositions développées pour Windows, portées so
 	* Sous Windows :
 		* Corriger les métadonnées dans les pilotes de disposition. kbbrFRs1.RC, kbbrFRs2.RC, kbfrAFs1.RC, kbfrAFs2.RC, kbfrdcs1.RC, kbfrdcs2.RC, kbfrFRr1.RC, kbfrFRr2.RC, kbfrFRs1.RC, kbfrFRs2.RC, kbfrPFs1.RC, kbfrPFs2.RC [c722026](https://github.com/dispoclavier/azerty-dcs/commit/c7220265c0a9197d7b372bc5dfd04c496ca6c454)
 		* Corriger les noms de dossier des pilotes de disposition. creadispo.cmd, creadispo-projet.txt [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770), [8e82cf0](https://github.com/dispoclavier/azerty-dcs/commit/8e82cf0599e4d9ea370f275899ede237a6eed33c), [c722026](https://github.com/dispoclavier/azerty-dcs/commit/c7220265c0a9197d7b372bc5dfd04c496ca6c454)
-* Builds :
-	* 7.1.0+9 [c722026](https://github.com/dispoclavier/azerty-dcs/commit/c7220265c0a9197d7b372bc5dfd04c496ca6c454)
+* Build : 7.1.0+9 [c722026](https://github.com/dispoclavier/azerty-dcs/commit/c7220265c0a9197d7b372bc5dfd04c496ca6c454)
 
 ## 7.1.0-beta.1 (2026-11-06)
 
@@ -52,21 +50,19 @@ Mise à jour pour macOS des dispositions développées pour Windows, portées so
 * Installation :
 	* Sous Windows :
 		* Corriger les noms de dossier des pilotes de disposition. creadispo.cmd, creadispo-projet.txt [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770), [8e82cf0](https://github.com/dispoclavier/azerty-dcs/commit/8e82cf0599e4d9ea370f275899ede237a6eed33c), [c722026](https://github.com/dispoclavier/azerty-dcs/commit/c7220265c0a9197d7b372bc5dfd04c496ca6c454)
-* Builds :
-	* 7.1.0+1 [268fc12](https://github.com/dispoclavier/azerty-dcs/commit/268fc12894b080fb7e8012bf8f1800843a148b11)
+* Build : 7.1.0+1 [268fc12](https://github.com/dispoclavier/azerty-dcs/commit/268fc12894b080fb7e8012bf8f1800843a148b11)
 
 ## 7.1.0-beta.0 (2026-11-05)
 
 Contient les modifications ci-dessous sauf celles ci-dessus
 
-* Builds :
-	* 7.1.0+0 [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
+* Build : 7.1.0+0 [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
 
 ## 7.1.0 (projet)
 
 Double frappe d’accent circonflexe pour les "œ" U+0153 et "æ" U+00E6 et d’autres lettres dans le groupe 1 en plus du hatchek des langues d’Europe
 
-Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 lettres latines, 7 diacritiques et 65 symboles mathématiques
+En cours : Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 lettres latines, 7 diacritiques et 65 symboles mathématiques
 
 Contournement du bogue de Windows au niveau 7 en mode ASCII
 
