@@ -57,7 +57,10 @@ Mise à jour pour macOS des dispositions développées pour Windows, portées so
 
 ## 7.1.0-beta.0 (2026-11-05)
 
-Contient toutes les modifications pour la future 7.1.0 sauf celles ci-dessus.
+Contient les modifications ci-dessous sauf celles ci-dessus
+
+* Builds :
+	* 7.1.0+0 [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
 
 ## 7.1.0 (projet)
 
