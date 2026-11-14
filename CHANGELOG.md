@@ -21,7 +21,7 @@ Mise à jour pour macOS des dispositions développées pour Windows, portées so
 * Transformations :
 	* Accent circonflexe :
 		* Double frappe :
-			* Redonder "ʿ" U+02BF par "M" à la place de "ʔ" U+0294, redondé dans hatchek par "?". compose-3.yml [e09fad0](https://github.com/dispoclavier/azerty-dcs/commit/e09fad05957133582a5bafa80d18d86ea01fba72)
+			* Redonder "ʿ" U+02BF par "M" à la place de "ʔ" U+0294, redondé par "?". compose-3.yml [e09fad0](https://github.com/dispoclavier/azerty-dcs/commit/e09fad05957133582a5bafa80d18d86ea01fba72)
 	* Hatchek :
 		* Redonder "ʔ" U+0294 par "?". ibidem
 * Builds :
