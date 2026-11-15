@@ -16,6 +16,12 @@ Prise en charge par touches mortes pour Linux et macOS, des émojis additionnels
 
 Mise à jour pour macOS des dispositions développées pour Windows, portées sous macOS puis sous Linux, rétroportées sous Windows et complétées pour Windows et pour Linux
 
+## 7.1.0-beta.4 (2026-11-15)
+
+* Disposition :
+	* Mode ASCII :
+		* Permuter "\" U+005C, qui va sur B10, et "|" U+007C, qui va sur B08. dispocla.cpp, kbcomazerty.c, kbcomredispo.c
+
 ## 7.1.0-beta.3 (2026-11-09)
 
 * Transformations :
@@ -67,8 +73,10 @@ En cours : Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères
 Contournement du bogue de Windows au niveau 7 en mode ASCII
 
 * Disposition :
-	* Redonder "@" U+0040 au niveau 3 de E11 en mode ASCII à la place de "°" U+00B0. dispocla.cpp, kbfrPFs-allo.c, kbbrFRs-allo.c, kbfrAFs-allo.c, kbfrFRr-allo.c, kbfrFRs-allo.c [3848955](https://github.com/dispoclavier/azerty-dcs/commit/384895532843bd8be5bec1bf1b8d206b54ff2ea7)
-	* Permuter les niveaux 6 et 7 en mode ASCII sur les touches B07 et B08. dispocla.cpp, kbcomazerty.c, kbcomredispo.c [54bc0b9](https://github.com/dispoclavier/azerty-dcs/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884)
+	* Mode ASCII :
+		* Permuter "\" U+005C, qui va sur B10, et "|" U+007C, qui va sur B08. dispocla.cpp, kbcomazerty.c, kbcomredispo.c
+		* Redonder "@" U+0040 au niveau 3 de E11 à la place de "°" U+00B0. dispocla.cpp, kbfrPFs-allo.c, kbbrFRs-allo.c, kbfrAFs-allo.c, kbfrFRr-allo.c, kbfrFRs-allo.c [3848955](https://github.com/dispoclavier/azerty-dcs/commit/384895532843bd8be5bec1bf1b8d206b54ff2ea7)
+		* Permuter les niveaux 6 et 7 sur les touches B07 et B08. dispocla.cpp, kbcomazerty.c, kbcomredispo.c [54bc0b9](https://github.com/dispoclavier/azerty-dcs/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884)
 * Composition :
 	* Émulation de codes Alt :
 		* Déboguer « ¦+249␣ » en mettant "∙" U+2219 à la place de "·" U+00B7. compose-1.yml [5aede36](https://github.com/dispoclavier/azerty-dcs/commit/5aede36579ef870a404988c80359e12ffec87ebb), [e1a60a1](https://github.com/dispoclavier/azerty-dcs/commit/e1a60a1a8890e680af097e3ca7f4a988f04a4a85)

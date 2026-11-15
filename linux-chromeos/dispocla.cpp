@@ -1,4 +1,4 @@
-//                       Date: 2026-11-07T1514+0100
+//                       Date: 2026-11-15T1748+0100
 //        Operating file name: dispocla
 //                   Encoding: UTF-8
 //                       Type: text/XKB configuration
@@ -1369,7 +1369,7 @@ xkb_symbols "kbfrFRs" {
 	key <AB08> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
 		[              period,               UEF62,           semicolon,           semicolon,     dead_belowcomma,           semicolon,              U1F631,              U1F4E3 ],
-		[              period,           backslash,           semicolon,           semicolon,     dead_belowcomma,          punctspace,               UEF7A,              U1F4E2 ]
+		[              period,                 bar,           semicolon,           semicolon,     dead_belowcomma,          punctspace,               UEF7A,              U1F4E2 ]
 	}; // UEF62 ' ;' spaced out with NBTSP; UEF7A '&#'; U1F631 😱 FACE SCREAMING IN FEAR 2nd-top sad face emoji; U1F4E3 📣 CHEERING MEGAPHONE emoji; U1F4E2 📢 PUBLIC ADDRESS LOUDSPEAKER emoji
 
 	key.type[Group1] = "EIGHT_LEVELS_PUNCTUATION_GROUP1";
@@ -1383,7 +1383,7 @@ xkb_symbols "kbfrFRs" {
 	key <AB10> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
 		[      periodcentered,               UEF60,             section,              exclam,       dead_belowdot,             section,              U1F494,           backslash ],
-		[           semicolon,                 bar,              exclam,              exclam,       dead_belowdot,             section,              U1F609,           backslash ]
+		[           semicolon,           backslash,              exclam,              exclam,       dead_belowdot,             section,              U1F609,           backslash ]
 	}; // UEF60 ' !' spaced out with NBTSP; U1F494 💔 BROKEN HEART 16th-ranking emoji; U1F609 😉 WINKING FACE 24th-ranking emoji
 
 	key.type[Group1] = "EIGHT_LEVELS_LEVEL1_CONTROL";
