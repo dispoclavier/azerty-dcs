@@ -20,7 +20,8 @@ Mise à jour pour macOS des dispositions développées pour Windows, portées so
 
 * Disposition :
 	* Mode ASCII :
-		* Permuter "\" U+005C, qui va sur B10, et "|" U+007C, qui va sur B08. dispocla.cpp, kbcomazerty.c, kbcomredispo.c
+		* Permuter "\" U+005C, qui va sur B10, et "|" U+007C, qui va sur B08. dispocla.cpp, kbcomazerty.c, kbcomredispo.c [acf7926](https://github.com/dispoclavier/azerty-dcs/commit/acf79265649f40ffe1586ce8261b7ef51582c0d6)
+* Build : 7.1.0+11 [acf7926](https://github.com/dispoclavier/azerty-dcs/commit/acf79265649f40ffe1586ce8261b7ef51582c0d6)
 
 ## 7.1.0-beta.3 (2026-11-09)
 
@@ -74,7 +75,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 
 * Disposition :
 	* Mode ASCII :
-		* Permuter "\" U+005C, qui va sur B10, et "|" U+007C, qui va sur B08. dispocla.cpp, kbcomazerty.c, kbcomredispo.c
+		* Permuter "\" U+005C, qui va sur B10, et "|" U+007C, qui va sur B08. dispocla.cpp, kbcomazerty.c, kbcomredispo.c [acf7926](https://github.com/dispoclavier/azerty-dcs/commit/acf79265649f40ffe1586ce8261b7ef51582c0d6)
 		* Redonder "@" U+0040 au niveau 3 de E11 à la place de "°" U+00B0. dispocla.cpp, kbfrPFs-allo.c, kbbrFRs-allo.c, kbfrAFs-allo.c, kbfrFRr-allo.c, kbfrFRs-allo.c [3848955](https://github.com/dispoclavier/azerty-dcs/commit/384895532843bd8be5bec1bf1b8d206b54ff2ea7)
 		* Permuter les niveaux 6 et 7 sur les touches B07 et B08. dispocla.cpp, kbcomazerty.c, kbcomredispo.c [54bc0b9](https://github.com/dispoclavier/azerty-dcs/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884)
 * Composition :
@@ -251,6 +252,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 	* 7.1.0+8 [5aea525](https://github.com/dispoclavier/azerty-dcs/commit/5aea525c4132678307748fd19c0fd2ce396771c7)
 	* 7.1.0+9 [c722026](https://github.com/dispoclavier/azerty-dcs/commit/c7220265c0a9197d7b372bc5dfd04c496ca6c454)
 	* 7.1.0+10 [e09fad0](https://github.com/dispoclavier/azerty-dcs/commit/e09fad05957133582a5bafa80d18d86ea01fba72)
+	* 7.1.0+11 [acf7926](https://github.com/dispoclavier/azerty-dcs/commit/acf79265649f40ffe1586ce8261b7ef51582c0d6)
 
 ## 7.0.1 (projet)
 
