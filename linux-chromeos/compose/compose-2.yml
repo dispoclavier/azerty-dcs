@@ -79,13 +79,13 @@
 #
 #   As a result, semantics of paired punctuation may be switched compared to
 #   en_US.UTF-8/Compose. For example, the multikey equivalent of dead_breve
-#   in en_US.UTF-8/Compose goes <Multi_key><a><parenleft>, while in new-school
-#   input composition this becomes <Multi_key><parenright><a>.
+#   in en_US.UTF-8/Compose goes ‹Multi_key›‹a›‹parenleft›, while in new-school
+#   input composition this becomes ‹Multi_key›‹parenright›‹a›.
 #
 #   The Multi_key-modifier-baseletter scheme is not proper to new school.
 #   Already en_US.UTF-8/Compose has a prepended "U" with a shape-based
-#   mnemonic: <Multi_key><U><a>, as well as a prepended initial:
-#   <Multi_key><b><a>.
+#   mnemonic: ‹Multi_key›‹U›‹a›, as well as a prepended initial:
+#   ‹Multi_key›‹b›‹a›.
 #
 #   While that change alone would not warrant a thorough overhaul, more tweaks
 #   are required, such as supporting superscript and subscript by repurposing
@@ -110,7 +110,7 @@
 #   "^" and "_" need to be freed up for super- and subscript/smallcap, applying
 #   the parentheses-breve scheme to circumflex and hacek, macron and diaeresis.
 #   For example, new-school multikey sequences include « ¦^ » for superscript,
-#   « ¦< » for circumflex accent, w« ¦> » for hacek, « ¦| » for macron, « ¦: »
+#   « ¦< » for circumflex accent, « ¦> » for hacek, « ¦| » for macron, « ¦: »
 #   for diaeresis, following the logic that many multikey equivalents match
 #   diacritics rotated 90° to the left. By contrast, « ¦" » becomes a multikey
 #   equivalent of the double acute accent (an acute diaeresis), consistently
@@ -446,46 +446,46 @@
 #   See #   Multikey sequence notation
 #   See # # Multikey equivalents
 #
-#   <UEFD0> : "①"   *dead_group, for 12 additional groups; « ¦# ».
+#   ‹UEFD0› : "①"   *dead_group, for 12 additional groups; « ¦# ».
 #                   See #*# GROUP_1
 #
-#   <UEFD1> : "^"   *dead_superscript, used in phonetics and for abbreviation
+#   ‹UEFD1› : "^"   *dead_superscript, used in phonetics and for abbreviation
 #                   indicators, also on live keys; « ¦^ ».
 #                   See #*# SUPERSCRIPT
 #                   See dispocla.cpp ## Superscript letters
 #                   See #*# CIRCUMFLEX
 #
-#   <UEFD2> : "_"   *dead_subscript is required for phonetics and traditionally
+#   ‹UEFD2› : "_"   *dead_subscript is required for phonetics and traditionally
 #                   includes small caps; « ¦_ ».
 #                   See #*# SUBSCRIPT
 #
-#   <UEFD3> : "ẻ"   *dead_abovehook, required to prevent conflicts of dead_hook
+#   ‹UEFD3› : "ẻ"   *dead_abovehook, required to prevent conflicts of dead_hook
 #                   with hook above; « ¦] ».
 #                   See #*# HOOK_ABOVE
 #                   See #*# HOOK
 #
-#   <UEFD4> : "ɖ"   *dead_retroflexhook, required to unload the overloaded
+#   ‹UEFD4› : "ɖ"   *dead_retroflexhook, required to unload the overloaded
 #                   dead_hook, and for consistency with the new-school multikey
 #                   scheme benefitting from brace symmetry; « ¦} ».
 #                   See #*# RETROFLEX_HOOK
 #                   See #*# HOOK
 #
-#   <UEFD5> : "ᴚ"   *dead_turned, technically easiest transform; ~70 instances;
+#   ‹UEFD5› : "ᴚ"   *dead_turned, technically easiest transform; ~70 instances;
 #                   « ¦% ».
 #                   See #*# TURNED
 #                   double-press: inverted (20) or sideways (8) in Latin;
 #                   inverted and sideways have an empty intersection; « ¦%% ».
 #                   See #^# INVERTED
 #
-#   <UEFD6> : "ᴙ"   *dead_reversed, second-most frequent transform;
+#   ‹UEFD6› : "ᴙ"   *dead_reversed, second-most frequent transform;
 #                   ~50 instances in Latin; « ¦\ ».
 #                   See #*# REVERSED
 #
-#   <UEFD7> : "⚐"   *dead_flag is the Regional Indicator Symbols dead key, with
+#   ‹UEFD7› : "⚐"   *dead_flag is the Regional Indicator Symbols dead key, with
 #                   additional "double" and "equal" semantics; « ¦= ».
 #                   See #*# FLAG
 #
-#   <UEFD8> : "ħ"   *dead_bar for barred letters, with the meaning of a
+#   ‹UEFD8› : "ħ"   *dead_bar for barred letters, with the meaning of a
 #                   horizontal line through, as opposed to the diagonal or
 #                   oblique line through, referred to as stroke; « ¦- ».
 #                   See # # Bar and stroke diacritics
@@ -594,8 +594,8 @@
 #
 #:# Legacy dead keys for Non-Belgian AZERTY
 #
-#   <UEFD9> : "~"  *dead_legacytilde  Legacy tilde dead key: key E02, level 4.
-#   <UEFDA> : "`"  *dead_legacygrave  Legacy grave dead key: key E07, level 4.
+#   ‹UEFD9› : "~"  *dead_legacytilde  Legacy tilde dead key: key E02, level 4.
+#   ‹UEFDA› : "`"  *dead_legacygrave  Legacy grave dead key: key E07, level 4.
 #
 #   To improve backward compatibility, two legacy dead keys are required for
 #   tilde and grave accent at level 4 of E02 and E07, for a more usual dead key
@@ -734,7 +734,7 @@
 #   The ruleset "symmetrizeChainedDeadKeys" goes into user settings, has the
 #   "@" prefix for subsequent multikey equivalent generation built in, and
 #   supports the use cases actually occurring in this file.
-#   See outils/settings.json
+#   See outils/settings.json:symmetrizeChainedDeadKeys
 #   See # # Multikey equivalents
 #
 #
@@ -771,8 +771,8 @@
 #   level 1.
 #
 #   This is part of the dead key enhancement based on considering each dead key
-#   a group selector activating the "<dead key> group": "circumflex group", or
-#   "dead_circumflex group", for example.
+#   a group selector activating the "[dead key] group": "circumflex group", or
+#   "‹dead_circumflex› group", for example.
 #
 #   Common quotation marks:                              single, double
 #
@@ -946,25 +946,25 @@
 #   For natively unsupported dead keys, a keysym candidate is proposed as well.
 #   See # # Dead keys not included in keysymdef.h
 #
-#   <dead_abovedot>                                     "ṗ" U1E57 LATIN SMALL LETTER P WITH DOT ABOVE
-#   <dead_abovering>                                    "å" U00E5 LATIN SMALL LETTER A WITH RING ABOVE
-#   <dead_abovering><dead_abovering>                    "ḁ" U1E01 LATIN SMALL LETTER A WITH RING BELOW
-#   <dead_acute>                                        "ó" U00F3 LATIN SMALL LETTER O WITH ACUTE
-#   <dead_belowcomma>                                   "ș" U0219 LATIN SMALL LETTER S WITH COMMA BELOW
-#   <dead_belowdot>                                     "ḅ" U1E05 LATIN SMALL LETTER B WITH DOT BELOW
-#   <dead_belowdot><dead_belowdot>                      "ƞ" U019E LATIN SMALL LETTER N WITH LONG RIGHT LEG
-#   <dead_breve>                                        "ŏ" U014F LATIN SMALL LETTER O WITH BREVE
-#   <dead_caron>                                        "ȟ" U021F LATIN SMALL LETTER H WITH CARON
-#   <dead_cedilla>                                      "ç" U00E7 LATIN SMALL LETTER C WITH CEDILLA
-#   <dead_circumflex>                                   "ê" U00EA LATIN SMALL LETTER E WITH CIRCUMFLEX
-#   <dead_circumflex><dead_circumflex>                  "ḙ" U1E19 LATIN SMALL LETTER E WITH CIRCUMFLEX BELOW
-#   <dead_currency>                                     "¤" U00A4 CURRENCY SIGN
-#   <dead_diaeresis>                                    "ë" U00EB LATIN SMALL LETTER E WITH DIAERESIS
-#   <dead_diaeresis><dead_diaeresis>                    "ṳ" U1E73 LATIN SMALL LETTER U WITH DIAERESIS BELOW
-#   <dead_doubleacute>                                  "ű" U0171 LATIN SMALL LETTER U WITH DOUBLE ACUTE
-#   <dead_grave>                                        "ò" U00F2 LATIN SMALL LETTER O WITH GRAVE
-#   <dead_grave><dead_grave>                            "ȕ" U0215 LATIN SMALL LETTER U WITH DOUBLE GRAVE
-#   <dead_greek>                                        "⚪" U26AA MEDIUM WHITE CIRCLE (an emoji)
+#   ‹dead_abovedot›                                     "ṗ" U1E57 LATIN SMALL LETTER P WITH DOT ABOVE
+#   ‹dead_abovering›                                    "å" U00E5 LATIN SMALL LETTER A WITH RING ABOVE
+#   ‹dead_abovering›‹dead_abovering›                    "ḁ" U1E01 LATIN SMALL LETTER A WITH RING BELOW
+#   ‹dead_acute›                                        "ó" U00F3 LATIN SMALL LETTER O WITH ACUTE
+#   ‹dead_belowcomma›                                   "ș" U0219 LATIN SMALL LETTER S WITH COMMA BELOW
+#   ‹dead_belowdot›                                     "ḅ" U1E05 LATIN SMALL LETTER B WITH DOT BELOW
+#   ‹dead_belowdot›‹dead_belowdot›                      "ƞ" U019E LATIN SMALL LETTER N WITH LONG RIGHT LEG
+#   ‹dead_breve›                                        "ŏ" U014F LATIN SMALL LETTER O WITH BREVE
+#   ‹dead_caron›                                        "ȟ" U021F LATIN SMALL LETTER H WITH CARON
+#   ‹dead_cedilla›                                      "ç" U00E7 LATIN SMALL LETTER C WITH CEDILLA
+#   ‹dead_circumflex›                                   "ê" U00EA LATIN SMALL LETTER E WITH CIRCUMFLEX
+#   ‹dead_circumflex›‹dead_circumflex›                  "ḙ" U1E19 LATIN SMALL LETTER E WITH CIRCUMFLEX BELOW
+#   ‹dead_currency›                                     "¤" U00A4 CURRENCY SIGN
+#   ‹dead_diaeresis›                                    "ë" U00EB LATIN SMALL LETTER E WITH DIAERESIS
+#   ‹dead_diaeresis›‹dead_diaeresis›                    "ṳ" U1E73 LATIN SMALL LETTER U WITH DIAERESIS BELOW
+#   ‹dead_doubleacute›                                  "ű" U0171 LATIN SMALL LETTER U WITH DOUBLE ACUTE
+#   ‹dead_grave›                                        "ò" U00F2 LATIN SMALL LETTER O WITH GRAVE
+#   ‹dead_grave›‹dead_grave›                            "ȕ" U0215 LATIN SMALL LETTER U WITH DOUBLE GRAVE
+#   ‹dead_greek›                                        "⚪" U26AA MEDIUM WHITE CIRCLE (an emoji)
 #
 #       The "Greek letter" dead key is required by the French keyboard standard
 #       (NF Z71-300:2026, page 18, section 6.2.5; page 7, introduction, bottom;
@@ -974,41 +974,41 @@
 #       it is the circled dead key alongside, and can thus have a related dead
 #       character. For diplomatic reasons, it could be advisable to stick with
 #       a Greek letter:
-#       <dead_greek>                       "ε" U03B5 GREEK SMALL LETTER EPSILON
+#       ‹dead_greek›                       "ε" U03B5 GREEK SMALL LETTER EPSILON
 #       But with respect to user-friendliness for people unfamiliar with the
 #       Greek script, who would be bothered by the presence of Greek letters on
 #       French keymaps (be it as a dead character), a circle emoji is picked
 #       instead.
 #
-#   <dead_hook>                                         "ɱ" U0271 LATIN SMALL LETTER M WITH HOOK
-#   <dead_horn>                                         "ơ" U01A1 LATIN SMALL LETTER O WITH HORN
-#   <dead_invertedbreve>                                "ȏ" U020F LATIN SMALL LETTER O WITH INVERTED BREVE
-#   <dead_macron>                                       "ō" U014D LATIN SMALL LETTER O WITH MACRON
-#   <dead_macron><dead_macron>                          "ḇ" U1E07 LATIN SMALL LETTER B WITH LINE BELOW
-#   <dead_ogonek>                                       "ǫ" U01EB LATIN SMALL LETTER O WITH OGONEK
-#   <dead_stroke>                                       "ø" U00F8 LATIN SMALL LETTER O WITH STROKE
-#   <dead_tilde>                                        "ẽ" U1EBD LATIN SMALL LETTER E WITH TILDE
-#   <dead_tilde><dead_tilde>                            "ḛ" U1E1B LATIN SMALL LETTER E WITH TILDE BELOW
-#   <UEFD0>                  <*dead_group>              "①" U2460 CIRCLED DIGIT ONE
-#   <UEFD0><UEFD0>           <*dead_group2>             "②" U2461 CIRCLED DIGIT TWO
-#   <UEFD0><3>               <*dead_group3>             "③" U2462 CIRCLED DIGIT THREE
-#   <UEFD0><4>               <*dead_group4>             "④" U2463 CIRCLED DIGIT FOUR
-#   <UEFD0><5>               <*dead_group5>             "⑤" U2464 CIRCLED DIGIT FIVE
-#   <UEFD0><6>               <*dead_group6>             "⑥" U2465 CIRCLED DIGIT SIX
-#   <UEFD0><7>               <*dead_group7>             "⑦" U2466 CIRCLED DIGIT SEVEN
-#   <UEFD0><8>               <*dead_group8>             "⑧" U2467 CIRCLED DIGIT EIGHT
-#   <UEFD0><9>               <*dead_group9>             "⑨" U2468 CIRCLED DIGIT NINE
-#   <UEFD0><0>               <*dead_group10>            "⑩" U2469 CIRCLED NUMBER TEN
-#   <UEFD0><1>               <*dead_group11>            "⑪" U246A CIRCLED NUMBER ELEVEN
-#   <UEFD0><2>               <*dead_group12>            "⑫" U246B CIRCLED NUMBER TWELVE
-#   <UEFD1>                  <*dead_superscript>        "^" U005E CIRCUMFLEX ACCENT
-#   <UEFD2>                  <*dead_subscript>          "_" U005F LOW LINE
-#   <UEFD3>                  <*dead_abovehook>          "ỏ" U1ECF LATIN SMALL LETTER O WITH HOOK ABOVE
-#   <UEFD4>                  <*dead_retroflexhook>      "ɖ" U0256 LATIN SMALL LETTER D WITH TAIL
-#   <UEFD5>                  <*dead_turned>             "ɐ" U0250 LATIN SMALL LETTER TURNED A
-#   <UEFD6>                  <*dead_reversed>           "ᴙ" U1D19 LATIN LETTER SMALL CAPITAL REVERSED R
-#   <UEFD7>                  <*dead_flag>               "⚐" U2690 WHITE FLAG
-#   <UEFD8>                  <*dead_bar>                "ɍ" U024D LATIN SMALL LETTER R WITH STROKE
+#   ‹dead_hook›                                         "ɱ" U0271 LATIN SMALL LETTER M WITH HOOK
+#   ‹dead_horn›                                         "ơ" U01A1 LATIN SMALL LETTER O WITH HORN
+#   ‹dead_invertedbreve›                                "ȏ" U020F LATIN SMALL LETTER O WITH INVERTED BREVE
+#   ‹dead_macron›                                       "ō" U014D LATIN SMALL LETTER O WITH MACRON
+#   ‹dead_macron›‹dead_macron›                          "ḇ" U1E07 LATIN SMALL LETTER B WITH LINE BELOW
+#   ‹dead_ogonek›                                       "ǫ" U01EB LATIN SMALL LETTER O WITH OGONEK
+#   ‹dead_stroke›                                       "ø" U00F8 LATIN SMALL LETTER O WITH STROKE
+#   ‹dead_tilde›                                        "ẽ" U1EBD LATIN SMALL LETTER E WITH TILDE
+#   ‹dead_tilde›‹dead_tilde›                            "ḛ" U1E1B LATIN SMALL LETTER E WITH TILDE BELOW
+#   ‹UEFD0›                    dead_group               "①" U2460 CIRCLED DIGIT ONE
+#   ‹UEFD0›‹UEFD0›             dead_group2              "②" U2461 CIRCLED DIGIT TWO
+#   ‹UEFD0›‹3›                 dead_group3              "③" U2462 CIRCLED DIGIT THREE
+#   ‹UEFD0›‹4›                 dead_group4              "④" U2463 CIRCLED DIGIT FOUR
+#   ‹UEFD0›‹5›                 dead_group5              "⑤" U2464 CIRCLED DIGIT FIVE
+#   ‹UEFD0›‹6›                 dead_group6              "⑥" U2465 CIRCLED DIGIT SIX
+#   ‹UEFD0›‹7›                 dead_group7              "⑦" U2466 CIRCLED DIGIT SEVEN
+#   ‹UEFD0›‹8›                 dead_group8              "⑧" U2467 CIRCLED DIGIT EIGHT
+#   ‹UEFD0›‹9›                 dead_group9              "⑨" U2468 CIRCLED DIGIT NINE
+#   ‹UEFD0›‹0›                 dead_group10             "⑩" U2469 CIRCLED NUMBER TEN
+#   ‹UEFD0›‹1›                 dead_group11             "⑪" U246A CIRCLED NUMBER ELEVEN
+#   ‹UEFD0›‹2›                 dead_group12             "⑫" U246B CIRCLED NUMBER TWELVE
+#   ‹UEFD1›                    dead_superscript         "^" U005E CIRCUMFLEX ACCENT
+#   ‹UEFD2›                    dead_subscript           "_" U005F LOW LINE
+#   ‹UEFD3›                    dead_abovehook           "ỏ" U1ECF LATIN SMALL LETTER O WITH HOOK ABOVE
+#   ‹UEFD4›                    dead_retroflexhook       "ɖ" U0256 LATIN SMALL LETTER D WITH TAIL
+#   ‹UEFD5›                    dead_turned              "ɐ" U0250 LATIN SMALL LETTER TURNED A
+#   ‹UEFD6›                    dead_reversed            "ᴙ" U1D19 LATIN LETTER SMALL CAPITAL REVERSED R
+#   ‹UEFD7›                    dead_flag                "⚐" U2690 WHITE FLAG
+#   ‹UEFD8›                    dead_bar                 "ɍ" U024D LATIN SMALL LETTER R WITH STROKE
 #
 #       The bar dead key has "ɍ" U024D as a base character for French mnemonics
 #       based on "raie", the French word for "bar", and "rayé", French for the
@@ -1016,9 +1016,9 @@
 #       often mistranslated as “barré” meaning "with stroke".
 #       See #*# BAR
 #
-#   <UEFD8><UEFD8>           <*dead_bar><*dead_bar>     "ⱡ" U2C61 LATIN SMALL LETTER L WITH DOUBLE BAR
-#   <UEFD9>                  <*dead_legacytilde>        "~" U007E TILDE
-#   <UEFDA>                  <*dead_legacygrave>        "`" U0060 GRAVE ACCENT
+#   ‹UEFD8›‹UEFD8›             dead_bar dead_bar        "ⱡ" U2C61 LATIN SMALL LETTER L WITH DOUBLE BAR
+#   ‹UEFD9›                    dead_legacytilde         "~" U007E TILDE
+#   ‹UEFDA›                    dead_legacygrave         "`" U0060 GRAVE ACCENT
 #
 #   Chained dead keys require as many dead characters as dead keys involved.
 #   These are set in the transpiler only.

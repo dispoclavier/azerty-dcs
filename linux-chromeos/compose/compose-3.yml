@@ -52,10 +52,10 @@
 #   This is the full list of composed letters unsupported for the sake of Ê key
 #   emulation:
 #
-#       <dead_circumflex><M> : "M̂" # U004D U0302 LATIN CAPITAL LETTER M WITH CIRCUMFLEX: Min Nan
-#       <dead_circumflex><m> : "m̂" # U006D U0302 LATIN SMALL LETTER M WITH CIRCUMFLEX: Min Nan
-#       <dead_circumflex><N> : "N̂" # U004E U0302 LATIN CAPITAL LETTER N WITH CIRCUMFLEX: Min Nan
-#       <dead_circumflex><n> : "n̂" # U006E U0302 LATIN SMALL LETTER N WITH CIRCUMFLEX: Min Nan
+#       ‹dead_circumflex›‹M› : "M̂" # U004D U0302 LATIN CAPITAL LETTER M WITH CIRCUMFLEX: Min Nan
+#       ‹dead_circumflex›‹m› : "m̂" # U006D U0302 LATIN SMALL LETTER M WITH CIRCUMFLEX: Min Nan
+#       ‹dead_circumflex›‹N› : "N̂" # U004E U0302 LATIN CAPITAL LETTER N WITH CIRCUMFLEX: Min Nan
+#       ‹dead_circumflex›‹n› : "n̂" # U006E U0302 LATIN SMALL LETTER N WITH CIRCUMFLEX: Min Nan
 #
 #   By courtesy of FrathWiki.
 #   https://www.frathwiki.com/Circumflex
@@ -105,7 +105,7 @@
 #   See DIN 2137-01:2023-08
 #   See E DIN 2137-1:2020-11
 #
-#   In en_US.UTF-8/Compose, that the superscript digits by <dead_circumflex>
+#   In en_US.UTF-8/Compose, that the superscript digits by ‹dead_circumflex›
 #   feature comes from, the superscript dead key is missing, due to keysymdef.h
 #   lacking a *dead_superscript or equivalent keysym.
 #   See # # Notes on Unicode support
@@ -114,7 +114,7 @@
 #   However, the multikey equivalents of this way to input superscript digits
 #   cannot be supported, due to conflicts with "❤" U2764 as of "³" U00B3, or
 #   with the less frequent "♥" U2665, as of "⁸" U2078 if using the new sequence
-#   <Multi_key><less><8> introduced for the support of "♥" U2665.
+#   ‹Multi_key›‹less›‹8› introduced for the support of "♥" U2665.
 #   See # # Heart emoji
 #   See # # Multikey equivalents
 #
@@ -136,11 +136,11 @@
 #   Followed by Çç, dead_circumflex is a shortcut to Ññ for Breton and Spanish.
 #
 #   U017F LATIN SMALL LETTER LONG S, in group 3 of s, has an additional input
-#   method by <dead_circumflex><f>, thanks to French not having any word with
+#   method by ‹dead_circumflex›‹f›, thanks to French not having any word with
 #   an "êf" digraph.
 #
 #   As "B" has not been encoded with circumflex, and no French word includes
-#   any "êb" digraph, <dead_circumflex><B> and <dead_circumflex><b> may be used
+#   any "êb" digraph, ‹dead_circumflex›‹B› and <dead_circumflex><b> may be used
 #   as shortcuts for anything. "B" mnemonics suggest U WITH BREVE "Ŭ" U016C,
 #   "ŭ" U016D. Likewise, the "U" mnemonic is a valuable reason to make use of
 #   Ugrave for the same output (by lack of something else for the time being).
@@ -5311,19 +5311,19 @@
 #   Additionally, this group-1 scheme improves backward compatibility.
 #
 #   In any event and for convenience, the micro sign is thus in group 1 of the
-#   greater-than* double angle quotation mark, that has a live key position on
+#   “greater-than” double angle quotation mark, that has a live key position on
 #   the same key C12 as the group dead key on unremapped layouts of this family
 #   and as the micro sign on French AZERTY. "»" U00BB is at level 5 of regular
-#   layouts, while "<NBTSP>»" UEF65 is at level 2. So is the pound sign in
-#   group 1 of the greater-than* single angle quotation mark on D12.
+#   layouts, while "[NBTSP]»" ‹UEF65› is at level 2. So is the pound sign in
+#   group 1 of the “greater-than” single angle quotation mark on D12.
 #
 #   For consistency, the nearby percent sign, on key C11 of French AZERTY, is
 #   given a similar facility, and the multicharacter strings of spaced-out
 #   guillemets with an NBTSP inside (after/before) are supported, too. So is
-#   the pound sign on key D12 based on the greater-than* single angle quotation
-#   mark "›" U203A, while the nearby diaeresis gets its spacing clone only, for
-#   feasability on XCompose not supporting chained dead keys. The asciicircum,
-#   dollar sign and generic currency sign as printed on keycaps are supported
+#   the pound sign on key D12 based on the “greater-than” single angle
+#   quotation mark "›" U203A, while the nearby diaeresis gets its spacing clone
+#   only, for feasability on XCompose not supporting chained dead keys. The
+#   "^", "$" and generic currency sign "¤" as printed on keycaps are supported
 #   altogether, and even the equals sign on E12 and the ampersand on E01. But
 #   it stops here, and this fully works on unremapped layouts only, assuming
 #   that remapping defeats the point in backward compatibility.
@@ -5333,7 +5333,7 @@
 #     "<" U003C LESS-THAN SIGNs or ">" U003E GREATER-THAN SIGNs, while their
 #     other attributes (left, right, opening, closing) depend on the context
 #     they are used in: a left-to-right script or a right-to-left script as of
-#     the pointing direction, and the language as of the opening or closing
+#     the pointing direction, and the language as of the opening/closing
 #     semantics. The same holds true with single symbols for the single angle
 #     quotation marks "‹" U2039 and "›" U203A.
 #
@@ -7238,16 +7238,15 @@
 # # C05 minus
 #
 #   "‐" U2010 HYPHEN is not in group 1 of minus, because it is a duplicate of
-#   "-" U002D HYPHEN-MINUS. For completeness, it is in group 12 of minus, where
-#   it should not do too much harm.
+#   "-" U002D HYPHEN-MINUS. For completeness, it is tucked in group 10.
 #   See #   Hyphens
-#   See # # B05 equal
+#   See #   Discussion of the hyphen encoding
 #
 #   In CLDR, "➖" U2796 HEAVY MINUS SIGN is the range syntax mark.
 #   https://github.com/unicode-org/cldr/blob/9f25bc73c08d43293a83b7699b73135ef3218769/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L72
 #   https://github.com/unicode-org/cldr/blob/main/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L72
-#   See C08 bracketleft
-#   See C09 bracketright
+#   See # # C09 bracketleft
+#   See # # C10 bracketright
 #
 <UEFD0>                                                                                    <minus> : "∓" U2213 # MINUS-OR-PLUS SIGN math
 <Multi_key><numbersign>                                                                    <minus> : "∓" U2213 # MINUS-OR-PLUS SIGN math
@@ -8707,51 +8706,51 @@
 #   Shortcut
 #
 #   As "Œ" U0152, "œ" U0153 is heavily used in French, and "Æ" U00C6, "æ" U00E6
-#   is also used in French, these are also in <dead_circumflex> double press.
+#   is also used in French, these are also in ‹dead_circumflex› double press.
 #   Consistently, this feature is extended to all base letters except "c", "d",
 #   "e", "g", "k", "l", "n", "r", "s", "t", "z".
 #
-#   As a consequence, because "ʿ" U02BF is supported in group 1 of <l> without
-#   the <dead_circumflex> double press alternative, it is in <dead_circumflex>
-#   double press by <M>, where "ʾ" U02BE is by <m>, while group 1 of <M> keeps
-#   supporting "ʔ" U0294 as a group-1 alternative to group 2 of <q> and <Q>,
-#   and <dead_circumflex> double press supports it by <question> as part of the
-#   <dead_caron> content.
+#   As a consequence, because "ʿ" U02BF is supported in group 1 of ‹l› without
+#   the ‹dead_circumflex› double press alternative, it is in ‹dead_circumflex›
+#   double press by ‹M›, where "ʾ" U02BE is by ‹m›, while group 1 of ‹M› keeps
+#   supporting "ʔ" U0294 as a group-1 alternative to group 2 of ‹q› and ‹Q›,
+#   and ‹dead_circumflex› double press supports it by ‹question› as part of the
+#   ‹dead_caron› content.
 #   See #*# HACEK
 #
-#   The resulting <dead_circumflex> double press non-hatchek output by the
+#   The resulting ‹dead_circumflex› double press non-hatchek output by the
 #   base alphabet is:
 #
-#       <A> : "Æ" U00C6
-#       <a> : "æ" U00E6
-#       <B> : "Ɖ" U0189
-#       <b> : "ɖ" U0256
-#       <F> : "Ƒ" U0191
-#       <f> : "ƒ" U0192
-#       <H> : "Ə" U018F
-#       <h> : "ə" U0259
-#       <I> : "Ɩ" U0196
-#       <i> : "ɩ" U0269
-#       <J> : "Ĳ" U0132
-#       <j> : "ĳ" U0133
-#       <M> : "ʿ" U02BF
-#       <m> : "ʾ" U02BE
-#       <O> : "Œ" U0152
-#       <o> : "œ" U0153
-#       <P> : "·" U00B7
-#       <p> : "·" U00B7
-#       <Q> : "Ɂ" U0241
-#       <q> : "ɂ" U0242
-#       <U> : "Ʋ" U01B2
-#       <u> : "ʋ" U028B
-#       <V> : "℣" U2123
-#       <v> : "℟" U211F
-#       <W> : "Ʃ" U01A9
-#       <w> : "ʃ" U0283
-#       <X> : "Ɛ" U0190
-#       <x> : "ɛ" U025B
-#       <Y> : "Ʊ" U01B1
-#       <y> : "ʊ" U028A
+#       ‹A› : "Æ" U00C6
+#       ‹a› : "æ" U00E6
+#       ‹B› : "Ɖ" U0189
+#       ‹b› : "ɖ" U0256
+#       ‹F› : "Ƒ" U0191
+#       ‹f› : "ƒ" U0192
+#       ‹H› : "Ə" U018F
+#       ‹h› : "ə" U0259
+#       ‹I› : "Ɩ" U0196
+#       ‹i› : "ɩ" U0269
+#       ‹J› : "Ĳ" U0132
+#       ‹j› : "ĳ" U0133
+#       ‹M› : "ʿ" U02BF
+#       ‹m› : "ʾ" U02BE
+#       ‹O› : "Œ" U0152
+#       ‹o› : "œ" U0153
+#       ‹P› : "·" U00B7
+#       ‹p› : "·" U00B7
+#       ‹Q› : "Ɂ" U0241
+#       ‹q› : "ɂ" U0242
+#       ‹U› : "Ʋ" U01B2
+#       ‹u› : "ʋ" U028B
+#       ‹V› : "℣" U2123
+#       ‹v› : "℟" U211F
+#       ‹W› : "Ʃ" U01A9
+#       ‹w› : "ʃ" U0283
+#       ‹X› : "Ɛ" U0190
+#       ‹x› : "ɛ" U025B
+#       ‹Y› : "Ʊ" U01B1
+#       ‹y› : "ʊ" U028A
 #
 #   See #^# HACEK and GROUP_1 input facilities by CIRCUMFLEX
 #
@@ -14881,7 +14880,7 @@
 #   Group 10 of the base alphabet: Sans-serif, also bold, italic, bold italic
 #
 #   The mnemonic for sans-serif in group 10 is based on the input of group 10
-#   starting with <*dead_group><0>, and the almost-synonymity of "0" and "sans"
+#   starting with dead_group‹0›, and the almost-synonymity of "0" and "sans"
 #   as in "0 sugar" for "no isolated sugar" (usually worded as “no added sugar”
 #   to insinuate that sugar is intrinsically isolated, a false assumption).
 #   See # # Sans-serif Latin alphabet
