@@ -16,6 +16,9 @@ Prise en charge par touches mortes pour Linux et macOS, des émojis additionnels
 
 Mise à jour pour macOS des dispositions développées pour Windows, portées sous macOS puis sous Linux, rétroportées sous Windows et complétées pour Windows et pour Linux
 
+## 7.1.0-beta.5 (2026-11-18)
+
+
 ## 7.1.0-beta.4 (2026-11-15)
 
 * Disposition :
@@ -228,6 +231,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 * Installation :
 	* Sous Windows :
 		* Corriger les métadonnées dans les pilotes de disposition. kbbrFRs1.RC, kbbrFRs2.RC, kbfrAFs1.RC, kbfrAFs2.RC, kbfrdcs1.RC, kbfrdcs2.RC, kbfrFRr1.RC, kbfrFRr2.RC, kbfrFRs1.RC, kbfrFRs2.RC, kbfrPFs1.RC, kbfrPFs2.RC [c722026](https://github.com/dispoclavier/azerty-dcs/commit/c7220265c0a9197d7b372bc5dfd04c496ca6c454)
+		* Arrêter la distribution des clones de drivers. kbcommon-1.c, creadispo-projet.txt, kbbrFRs.C, kbbrFRs.klc, kbbrFRs.RC, kbbrFRs1.C, kbbrFRs1.klc, kbbrFRs1.RC, kbfrAFs.C, kbfrAFs.klc, kbfrAFs.RC, kbfrAFs1.C, kbfrAFs1.klc, kbfrAFs1.RC, kbfrdcs.C, kbfrdcs.klc, kbfrdcs.RC, kbfrdcs1.C, kbfrdcs1.klc, kbfrdcs1.RC, kbfrFRr.C, kbfrFRr.klc, kbfrFRr.RC, kbfrFRr1.C, kbfrFRr1.klc, kbfrFRr1.RC, kbfrFRr2.C, kbfrFRr2.klc, kbfrFRr2.RC, kbfrFRs.C, kbfrFRs.klc, kbfrFRs.RC, kbfrFRs1.C, kbfrFRs1.klc, kbfrFRs1.RC, kbfrPFs.C, kbfrPFs.klc, kbfrPFs.RC, kbfrPFs1.C, kbfrPFs1.klc, kbfrPFs1.RC []()
 		* Corriger les noms de dossier des pilotes de disposition. creadispo.cmd, creadispo-projet.txt [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770), [8e82cf0](https://github.com/dispoclavier/azerty-dcs/commit/8e82cf0599e4d9ea370f275899ede237a6eed33c), [c722026](https://github.com/dispoclavier/azerty-dcs/commit/c7220265c0a9197d7b372bc5dfd04c496ca6c454)
 		* Corriger l’en-tête du script de build pilotant KbdUTool. creadispo.cmd [e09fad0](https://github.com/dispoclavier/azerty-dcs/commit/e09fad05957133582a5bafa80d18d86ea01fba72)
 * Documentation :
@@ -253,6 +257,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 	* 7.1.0+9 [c722026](https://github.com/dispoclavier/azerty-dcs/commit/c7220265c0a9197d7b372bc5dfd04c496ca6c454)
 	* 7.1.0+10 [e09fad0](https://github.com/dispoclavier/azerty-dcs/commit/e09fad05957133582a5bafa80d18d86ea01fba72)
 	* 7.1.0+11 [acf7926](https://github.com/dispoclavier/azerty-dcs/commit/acf79265649f40ffe1586ce8261b7ef51582c0d6)
+	* 7.1.0+12
 
 ## 7.0.1 (projet)
 

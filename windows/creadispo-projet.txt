@@ -10,15 +10,13 @@ Les descriptions affichées dans la Barre des langues sont définies dans les fi
                       Nom du projet ou du produit=AZERTY-DCS
         Nom de l’éventuelle source header commune=kbcommon
 -----------------------------------------------------------------------------------------
-kbfrdcs1;AZERTY-DCS
+kbfrdcs;AZERTY-DCS
+kbfrdcs1;AZERTY-DCS-compat
 kbfrdcs2;AZERTY-DCS-clone
-kbfrFRs1;AZERTY-DCS-retouché
-kbfrFRs2;AZERTY-DCS-retouché-clone
-kbbrFRs1;Breton-AZERTY-DCS
-kbbrFRs2;Breton-AZERTY-DCS-clone
-kbfrAFs1;Afrique-AZERTY-DCS
-kbfrAFs2;Afrique-AZERTY-DCS-clone
-kbfrPFs1;Polynésie-AZERTY-DCS
-kbfrPFs2;Polynésie-AZERTY-DCS-clone
-kbfrFRr1;AZERTY-DCS-redisposé
+kbfrFRs;AZERTY-DCS-retouché
+kbbrFRs;Breton-AZERTY-DCS
+kbfrAFs;Afrique-AZERTY-DCS
+kbfrPFs;Polynésie-AZERTY-DCS
+kbfrFRr;AZERTY-DCS-redisposé
+kbfrFRr1;AZERTY-DCS-redisposé-compat
 kbfrFRr2;AZERTY-DCS-redisposé-clone

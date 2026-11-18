@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Duplicate kbfrFRs1.C                    7.1.0+12.1 Wed 2026-11-18T1314+0100
 * Tweak include order for consistency      7.0.0.0.0 Tue 2026-08-25T1814+0200
 * Rename kbfrFRs.C to kbfrFRs1.C           6.0.9.8.0 Thu 2025-10-02T1511+0200
 * Move alloc table to kbfrFRs-allo.c       6.0.8.0.0 Thu 2025-09-25T1836+0200

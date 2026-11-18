@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Duplicate kbfrFRr1.C                    7.1.0+12.1 Wed 2026-11-18T1255+0100
 * Tweak include order for consistency      7.0.0.0.0 Tue 2026-08-25T1815+0200
 * Rename kbfrFRsr.C to kbfrFRr1.C          6.0.9.8.0 Thu 2025-10-02T1439+0200
 * Move alloc table to kbfrFRsr-allo.c      6.0.8.0.0 Thu 2025-09-25T1836+0200
@@ -123,8 +124,7 @@
 
 static ALLOC_SECTION_LDATA LIGATURE16 aLigature[] = {
 
-  {VK_ESCAPE ,3 ,' ' ,'f' ,'r' ,'_' ,'F' ,'R' ,'_' ,'r' ,'e' ,'d' ,'i' ,'s' ,'p' ,'o' ,'s' ,0x00e9 },
-                 // The first code unit of long multiunit ligatures may not be output, hence the leading space.
+  {VK_ESCAPE ,3 ,'f' ,'r' ,'F' ,'R' ,'_' ,'D' ,'C' ,'S' ,'r' ,'e' ,'d' ,'i' ,'s' ,'p' ,'o' ,0x2081 },
 
   #include "kbligredispo.c"
   #include "kbligatures.c"

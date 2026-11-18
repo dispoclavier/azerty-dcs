@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Discontinue the layout driver clones    7.1.0+12.1 Wed 2026-11-18T1926+0100
 * Document the Right Shift bug on key B02  7.0.0.0.6 Wed 2026-09-02T1700+0200
 * Update VK to VK_PA1 for modifier 0x20    7.0.0.0.0 Thu 2026-08-27T0150+0200
 * Reinstate VK_OEM_AX as modifier 0x10     6.2.9.1.0 Wed 2026-04-08T2104+0200
@@ -29,7 +30,7 @@
 * Add partial file kbcommon.c              6.0.3.1.0 Wed 2025-08-20T2113+0200
 *
 * Known bugs are documented in this file.
-* See ## Known bugs
+* See * ## Known bugs
 *
 \*****************************************************************************/
 
@@ -602,8 +603,13 @@ static ALLOC_SECTION_LDATA MODIFIERS CharModifiers = {
 *
 * ### Dead key bug
 *
-* The fix is to activate a spare clone of the keyboard layout, or to reboot the
-* computer if that is not too troublesome, or the spare drivers are used up.
+* Status: Resolved in practice, as it seems irrelevant to Windows 11.
+*
+* The fix was to activate a spare clone of the keyboard layout or to reboot the
+* computer.
+*
+* 5 months of Windows 11 use without this bug led to discontinuing the clone
+* drivers starting with version 7.1.0-beta.5.
 *
 *
 * Description
@@ -639,7 +645,7 @@ static ALLOC_SECTION_LDATA MODIFIERS CharModifiers = {
 * it seemed okay. It ended up turning crazy days later (2025-08-27T1133+0200).
 *
 * The bug occurred again at some point in build 6.0.7.00. While holding down
-# the comma key, the output turned like so:
+* the comma key, the output turned like so:
 *
 *     ḙ,ḙ,ȟ,ȟ,ḙ,ȟ,ȟ,ȟ,ȟ,ȟ,ḙ,ȟ,ḙ,ȟ,ḙ,ḙ,ḙ,ȟ,ȟ,ḙ,ȟ,ȟ,ḙ,ḙ,ȟ,ȟ,ḙ,ȟ,ḙ,ḙ,ḙ,ȟ,ḙ,ḙ,ḙ,ȟ,ȟ,ȟ,ȟ,ȟ,ḙ,ḙ,ḙ,ȟ,ȟ,ḙ,ḙ,ȟ,ȟ,ȟ,ȟ,ȟ,ḙ,ḙ,ȟ,
 *     2025-09-15T0241+0200
@@ -673,12 +679,12 @@ static ALLOC_SECTION_LDATA MODIFIERS CharModifiers = {
 * in KbdTables. This is phase 1 of keyboard driver debugging.
 * See kbcommon-3.c
 *
-* Build 6.0.8.00 (2025-09-25T1858+0200 was readily released as version 6.0.8
+* Build 6.0.8.00 (2025-09-25T1858+0200) was readily released as version 6.0.8
 * (2025-09-25T2143+0200) but experienced a dead key blackout as its first bug
 * as soon as on 2025-09-29T1004+0200 (and the Windows key too broke down a few
 * minutes later (2025-09-29T1032+0200)). A reboot fixed it all.
 *
-* As a consequence,,starting with version 6.0.9, phase 2 was ramped up, with
+* As a consequence, starting with version 6.0.9, phase 2 was ramped up, with
 * a clone of the main layout and of its remapped variant.
 *
 * kbfrFRs is renamed to kbfrFRs1 and duplicated as kbfrFRs2, and kbfrFRsr
