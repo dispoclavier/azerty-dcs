@@ -21,7 +21,7 @@ Mise à jour pour macOS des dispositions développées pour Windows, portées so
 * Installation :
 	* Sous Windows :
 		* Arrêter la distribution des clones de drivers. kbcommon-1.c, creadispo-projet.txt, kbbrFRs.C, kbbrFRs.klc, kbbrFRs.RC, kbbrFRs1.C, kbbrFRs1.klc, kbbrFRs1.RC, kbfrAFs.C, kbfrAFs.klc, kbfrAFs.RC, kbfrAFs1.C, kbfrAFs1.klc, kbfrAFs1.RC, kbfrdcs.C, kbfrdcs.klc, kbfrdcs.RC, kbfrdcs1.C, kbfrdcs1.klc, kbfrdcs1.RC, kbfrFRr.C, kbfrFRr.klc, kbfrFRr.RC, kbfrFRr1.C, kbfrFRr1.klc, kbfrFRr1.RC, kbfrFRr2.C, kbfrFRr2.klc, kbfrFRr2.RC, kbfrFRs.C, kbfrFRs.klc, kbfrFRs.RC, kbfrFRs1.C, kbfrFRs1.klc, kbfrFRs1.RC, kbfrPFs.C, kbfrPFs.klc, kbfrPFs.RC, kbfrPFs1.C, kbfrPFs1.klc, kbfrPFs1.RC [72dfd92](https://github.com/dispoclavier/azerty-dcs/commit/72dfd9257284ca386e2b891f990120447de93037)
-* Build : 7.1.0+12 [72dfd92](https://github.com/dispoclavier/azerty-dcs/commit/72dfd9257284ca386e2b891f990120447de93037
+* Build : 7.1.0+12 [72dfd92](https://github.com/dispoclavier/azerty-dcs/commit/72dfd9257284ca386e2b891f990120447de93037)
 
 ## 7.1.0-beta.4 (2026-11-15)
 
