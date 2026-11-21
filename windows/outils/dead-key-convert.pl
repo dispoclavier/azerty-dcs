@@ -5,7 +5,7 @@
 # 2025-12-23T0450+0100
 # 2025-12-31T1259+0100
 # 2026-03-16T1433+0100
-# 2026-10-17T1141+0200
+# 2026-11-20T2331+0100
 # = last modified
 #
 # This “dead key converter” generates DEADTRANS macro calls for Windows and is
@@ -430,7 +430,7 @@ my @virtual_dead_characters = (
 	'<!acute><!stroke>➔01FE',#<dead_acute><dead_stroke>
 	'<!acute><!tilde>➔1E4C',#<dead_acute><dead_tilde>
 	'<!bar><!abovedot>➔0284',#<UEFD8><dead_abovedot>
-	'<!bar><!bar>➔A78A',#<UEFD8><UEFD8>
+	'<!bar><!bar>➔2C61',#<UEFD8><UEFD8>
 	'<!bar><!bar><!bar>➔02C2',#<UEFD8><UEFD8><UEFD8>
 	'<!bar><!bar><!group>➔A767',#<UEFD8><UEFD8><UEFD0>
 	'<!bar><!bar><!hook>➔0286',#<UEFD8><UEFD8><dead_hook>
@@ -897,7 +897,7 @@ my @virtual_dead_characters = (
 	'<!tilde><!macron>➔022D',#<dead_tilde><dead_macron>
 	'<!tilde><!stroke>➔2244',#<dead_tilde><dead_stroke>
 	'<!tilde><!superscript>➔2245',#<dead_tilde><UEFD1>
-	'<!tilde><!tilde>➔02F7',#<dead_tilde><dead_tilde>
+	'<!tilde><!tilde>➔1E1B',#<dead_tilde><dead_tilde>
 	'<!tilde><!tilde><!tilde>➔AB38',#<dead_tilde><dead_tilde><dead_tilde>
 	'<!tilde><!tilde><!turned>➔223F',#<dead_tilde><dead_tilde><UEFD5>
 	'<!tilde><!turned>➔223D',#<dead_tilde><UEFD5>
@@ -1495,8 +1495,8 @@ sub get_dead_character {
 	$deadkey =~ s/^<!tilde>$/00F5/;
 	$deadkey =~ s/^<!greek>$/26AA/;
 	$deadkey =~ s/^<!acute>$/00E1/;
-	$deadkey =~ s/^<!hook>$/0192/;
-	$deadkey =~ s/^<!retroflexhook>$/0273/;
+	$deadkey =~ s/^<!hook>$/0188/;
+	$deadkey =~ s/^<!retroflexhook>$/027D/;
 	$deadkey =~ s/^<!abovedot>$/1E57/;
 	$deadkey =~ s/^<!group>$/2460/;
 	$deadkey =~ s/^<!currency>$/00A4/;

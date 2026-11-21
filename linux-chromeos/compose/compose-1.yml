@@ -1,7 +1,7 @@
 #                      Scope: Part 1 of Compose.yml
 #                       Date: See Compose.yml
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.1.0+13" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+14" # See #   End of line comments
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
 #                Description: Multicharacter, multikey and dead key configuration
@@ -539,8 +539,8 @@
 #      narrow space occurring around punctuation characters in French
 #      typography, which is called an “espace fine insécable.”
 #
-#   This text is unchanged in version 17.0.0, available in HTML as cited above.
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-6/#G26915
+#   This text is unchanged in version 18.0.0, available in HTML as cited above.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-6/#G26915
 #
 #   In UAX #14, it started with the “Proposed Update Unicode Standard Annex #14
 #   Unicode Line Breaking Algorithm”, Unicode 5.1 Draft 3, 2008-03-07.
@@ -568,8 +568,8 @@
 #   However, higher level protocols and tailoring are inacceptable options when
 #   considered for the purpose of digitally representing natural languages, the
 #   more as the Unicode Standard specifies that it encodes plain text.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-2/#G642
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=45
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-2/#G642
 #
 #
 #   No-break thin space in CLDR
@@ -1168,7 +1168,7 @@
 #   recommendation as of supporting composed letters by dead keys. These
 #   sequences are configured in this file so as to have all sequences in a
 #   single place with special formatting in the dead key tables.
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-5/#G1076
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-5/#G1076
 #   See # # Notes for maintenance
 #
 #
@@ -2684,12 +2684,12 @@
 #   As a consequence, U002D HYPHEN-MINUS stands out among ASCII punctuation in
 #   that its usage is sort of deprecated, if not discouraged in current writing
 #   in favor of its homoglyph U2010.
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-6/#G6120
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-6/#G6120
 #
 #   This however is counterbalanced in the section about mathematical symbols,
 #   where the ASCII hyphen is categorized as a punctuation and opposed to the
 #   minus sign as a math symbol, thus implicitly doing away with the duplicate.
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-22/#G58950
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G58950
 #
 #   The Unicode Character Database in XML shows that U2010 is a duplicate of
 #   U002D, encoded for an extrinsic undocumented reason discussed below.
@@ -2906,7 +2906,7 @@
 #   indented. The advice to use FIGURE DASH for interval notation disregards
 #   the official recommendation to use EN DASH for that purpose since the very
 #   first version of the Unicode Core Specification.
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-6/#G6120
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-6/#G6120
 #   https://web.archive.org/web/20210224183416/http://www.technicalauthoring.com/wiki/index.php/Figure_dash
 #
 #
@@ -5581,7 +5581,7 @@
 #
 #   The General Category "Symbol, other" (So) does not preclude a symbol from
 #   being a math symbol, despite there is the dedicated "Symbol, math" (Sm).
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-4/#G134153
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-4/#G134153
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=199
 #
 #   Indeed, both Sm and So are only informative, not normative. The reason why
@@ -7100,6 +7100,7 @@
 #
 #   "∶" U2236 RATIO is disunified from the colon with the rationale that
 #   unlike the punctuation, it is visibly padded as a relational operator.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G58950
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=903&zoom=100,0,500
 #
 #   Additionally, its vertical alignment matches digits, not the x height.
@@ -7120,8 +7121,8 @@
 #
 #   ASCII tilde "~" and "∼" U223C TILDE OPERATOR have different glyphs in some
 #   fonts. Consistently, they are disunified.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G58950
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=903&zoom=100,0,500
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-22/#G58950
 #
 <Multi_key><asciitilde>                                                                    <space> : "∼" U223C # TILDE OPERATOR
 <Multi_key><asciitilde>                                                             <nobreakspace> : "∼" U223C # TILDE OPERATOR
@@ -9344,7 +9345,7 @@
 #   By contrast, disunifying "⧵" U29F5 from the semantically overloaded
 #   backslash "\" U005C is so straightforward it goes unmentioned in TUS,
 #   Table 22-5. Mathematical Operators Disunified from Punctuation.
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-22/#G58950
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G58950
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=903&zoom=100,0,500
 #
 #   Fonts may give the duplicate a slight difference in slant. One example is
@@ -9583,7 +9584,7 @@
 #   from. Yet mathematical operators disunified from Latin-1 operators are
 #   not documented like in Table 22-5. Mathematical Operators Disunified
 #   from Punctuation.
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-22/#G58950
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G58950
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=903&zoom=100,0,500
 #
 <Multi_key><space><x>                                                                              : "⨯" U2A2F # VECTOR OR CROSS PRODUCT

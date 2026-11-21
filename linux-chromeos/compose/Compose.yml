@@ -1,7 +1,7 @@
 # START_additions_XCompose_Dispoclavier (please do not delete this keyword - ne pas effacer ce mot-clé s.v.p.)
-#                       Date: 2026-11-20T1959+0100
+#                       Date: 2026-11-21T0605+0100
 #                    Version: See # # Output of version number
-<UEFA0>                     : "version 7.1.0+13" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+14" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
@@ -539,8 +539,8 @@
 #      narrow space occurring around punctuation characters in French
 #      typography, which is called an “espace fine insécable.”
 #
-#   This text is unchanged in version 17.0.0, available in HTML as cited above.
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-6/#G26915
+#   This text is unchanged in version 18.0.0, available in HTML as cited above.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-6/#G26915
 #
 #   In UAX #14, it started with the “Proposed Update Unicode Standard Annex #14
 #   Unicode Line Breaking Algorithm”, Unicode 5.1 Draft 3, 2008-03-07.
@@ -568,8 +568,8 @@
 #   However, higher level protocols and tailoring are inacceptable options when
 #   considered for the purpose of digitally representing natural languages, the
 #   more as the Unicode Standard specifies that it encodes plain text.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-2/#G642
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=45
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-2/#G642
 #
 #
 #   No-break thin space in CLDR
@@ -1168,7 +1168,7 @@
 #   recommendation as of supporting composed letters by dead keys. These
 #   sequences are configured in this file so as to have all sequences in a
 #   single place with special formatting in the dead key tables.
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-5/#G1076
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-5/#G1076
 #   See # # Notes for maintenance
 #
 #
@@ -2684,12 +2684,12 @@
 #   As a consequence, U002D HYPHEN-MINUS stands out among ASCII punctuation in
 #   that its usage is sort of deprecated, if not discouraged in current writing
 #   in favor of its homoglyph U2010.
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-6/#G6120
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-6/#G6120
 #
 #   This however is counterbalanced in the section about mathematical symbols,
 #   where the ASCII hyphen is categorized as a punctuation and opposed to the
 #   minus sign as a math symbol, thus implicitly doing away with the duplicate.
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-22/#G58950
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G58950
 #
 #   The Unicode Character Database in XML shows that U2010 is a duplicate of
 #   U002D, encoded for an extrinsic undocumented reason discussed below.
@@ -2906,7 +2906,7 @@
 #   indented. The advice to use FIGURE DASH for interval notation disregards
 #   the official recommendation to use EN DASH for that purpose since the very
 #   first version of the Unicode Core Specification.
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-6/#G6120
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-6/#G6120
 #   https://web.archive.org/web/20210224183416/http://www.technicalauthoring.com/wiki/index.php/Figure_dash
 #
 #
@@ -5581,7 +5581,7 @@
 #
 #   The General Category "Symbol, other" (So) does not preclude a symbol from
 #   being a math symbol, despite there is the dedicated "Symbol, math" (Sm).
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-4/#G134153
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-4/#G134153
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=199
 #
 #   Indeed, both Sm and So are only informative, not normative. The reason why
@@ -7100,6 +7100,7 @@
 #
 #   "∶" U2236 RATIO is disunified from the colon with the rationale that
 #   unlike the punctuation, it is visibly padded as a relational operator.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G58950
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=903&zoom=100,0,500
 #
 #   Additionally, its vertical alignment matches digits, not the x height.
@@ -7120,8 +7121,8 @@
 #
 #   ASCII tilde "~" and "∼" U223C TILDE OPERATOR have different glyphs in some
 #   fonts. Consistently, they are disunified.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G58950
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=903&zoom=100,0,500
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-22/#G58950
 #
 <Multi_key><asciitilde>                                                                    <space> : "∼" U223C # TILDE OPERATOR
 <Multi_key><asciitilde>                                                             <nobreakspace> : "∼" U223C # TILDE OPERATOR
@@ -9344,7 +9345,7 @@
 #   By contrast, disunifying "⧵" U29F5 from the semantically overloaded
 #   backslash "\" U005C is so straightforward it goes unmentioned in TUS,
 #   Table 22-5. Mathematical Operators Disunified from Punctuation.
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-22/#G58950
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G58950
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=903&zoom=100,0,500
 #
 #   Fonts may give the duplicate a slight difference in slant. One example is
@@ -9583,7 +9584,7 @@
 #   from. Yet mathematical operators disunified from Latin-1 operators are
 #   not documented like in Table 22-5. Mathematical Operators Disunified
 #   from Punctuation.
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-22/#G58950
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G58950
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=903&zoom=100,0,500
 #
 <Multi_key><space><x>                                                                              : "⨯" U2A2F # VECTOR OR CROSS PRODUCT
@@ -16552,8 +16553,8 @@
 #   Latin-15, but other symbols were replaced too, while a diacritic remained.
 #
 #   The Unicode Standard states in §7.9 that it is not clear whether diacritics
-#   were combining or standalone.
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-7/#G18173
+#   in ISO/IEC 8859-1 were combining or standalone.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-7/#G18173
 #
 #   Unicode added U02D8..U02DD to the Latin-1 diacritics merely for roundtrip
 #   compatibility with pre-existing character sets.
@@ -16562,7 +16563,7 @@
 #   or terminators (macOS) in dead keys is not possible consistently throughout
 #   and is a reason why many keyboard layouts are not streamlined, and dead key
 #   behavior is inconsistent. The most outstanding example is a dedicated "ê"
-#   key, when "ê" is better supported by configuring the circumflex accent dead
+#   key, when "ê" can be supported by configuring the circumflex accent dead
 #   key accordingly, with "ê" U00EA as a dead character. Other examples include
 #   unrelated dead characters for hook and horn and for almost all chained dead
 #   keys, when using diacriticized letters instead makes the user experience
@@ -16591,7 +16592,7 @@
 # # Dead characters
 #
 #   On Windows, each dead key has a mandatory and unique dead character,
-#   through which it exists in the C source, while on MacOS, dead keys have
+#   through which it exists in the C sources, while on MacOS, dead keys have
 #   identifier strings, and the optional character related to a dead key is
 #   merely a UX feature called "terminator". Both OSes output it when the base
 #   character is not listed with the current dead key, prior to outputting the
@@ -16650,24 +16651,15 @@
 #
 #   The topmost reason for picking the dead character from the dead key output
 #   is that an "Ê" key emulation on the circumflex accent dead key requires "ê"
-#   as a dead character in dead_circumflex, and so does the "Ç" key emulation
-#   require "ç" in dead_cedilla. But this is limited to Windows.
+#   as a dead character in ‹dead_circumflex›, and so does the "Ç" key emulation
+#   require "ç" in ‹dead_cedilla›. The way this works is limited to Windows,
+#   but on Linux and on macOS this works even better, without dead characters.
 #   See #*# CIRCUMFLEX
 #   See #*# CEDILLA
 #
-#   For dead_tilde, the dead character base letter is "e" for consistency with
-#   dead_belowtilde, that is precomposed only with "e", "i", "u", and for
-#   equity, as opposed to picking one of "ã", "ñ", "õ", and thus favoring
-#   either Portuguese or Spanish. The "ẽ" also makes for a consistent mnemonic,
-#   as "tilde" ends in "e".
-#   See #*# TILDE
-#   See #^# MIDDLE_TILDE
 #
-#   For user experience, portability and documentation, a list of
-#   dead character candidates is provided here.
-#
-#   For natively unsupported dead keys, a keysym candidate is proposed as well.
-#   See # # Dead keys not included in keysymdef.h
+#   For user experience, portability and documentation, a list of dead
+#   character candidates is provided here.
 #
 #   ‹dead_abovedot›                                     "ṗ" U1E57 LATIN SMALL LETTER P WITH DOT ABOVE
 #   ‹dead_abovering›                                    "å" U00E5 LATIN SMALL LETTER A WITH RING ABOVE
@@ -16678,12 +16670,15 @@
 #   ‹dead_belowdot›‹dead_belowdot›                      "ƞ" U019E LATIN SMALL LETTER N WITH LONG RIGHT LEG
 #   ‹dead_breve›                                        "ŏ" U014F LATIN SMALL LETTER O WITH BREVE
 #   ‹dead_caron›                                        "ȟ" U021F LATIN SMALL LETTER H WITH CARON
+#
+#       The dead character for dead_caron is mnemonic for hacek or hatchek.
+#       See #*# HACEK
+#
 #   ‹dead_cedilla›                                      "ç" U00E7 LATIN SMALL LETTER C WITH CEDILLA
 #   ‹dead_circumflex›                                   "ê" U00EA LATIN SMALL LETTER E WITH CIRCUMFLEX
-#   ‹dead_circumflex›‹dead_circumflex›                  "ḙ" U1E19 LATIN SMALL LETTER E WITH CIRCUMFLEX BELOW
 #   ‹dead_currency›                                     "¤" U00A4 CURRENCY SIGN
 #   ‹dead_diaeresis›                                    "ë" U00EB LATIN SMALL LETTER E WITH DIAERESIS
-#   ‹dead_diaeresis›‹dead_diaeresis›                    "ṳ" U1E73 LATIN SMALL LETTER U WITH DIAERESIS BELOW
+#   ‹dead_diaeresis›‹dead_diaeresis›‹dead_diaeresis›    "ṳ" U1E73 LATIN SMALL LETTER U WITH DIAERESIS BELOW
 #   ‹dead_doubleacute›                                  "ű" U0171 LATIN SMALL LETTER U WITH DOUBLE ACUTE
 #   ‹dead_grave›                                        "ò" U00F2 LATIN SMALL LETTER O WITH GRAVE
 #   ‹dead_grave›‹dead_grave›                            "ȕ" U0215 LATIN SMALL LETTER U WITH DOUBLE GRAVE
@@ -16703,15 +16698,20 @@
 #       French keymaps (be it as a dead character), a circle emoji is picked
 #       instead.
 #
-#   ‹dead_hook›                                         "ɱ" U0271 LATIN SMALL LETTER M WITH HOOK
+#   ‹dead_hook›                                         "ƈ" U0188 LATIN SMALL LETTER C WITH HOOK
 #   ‹dead_horn›                                         "ơ" U01A1 LATIN SMALL LETTER O WITH HORN
 #   ‹dead_invertedbreve›                                "ȏ" U020F LATIN SMALL LETTER O WITH INVERTED BREVE
 #   ‹dead_macron›                                       "ō" U014D LATIN SMALL LETTER O WITH MACRON
 #   ‹dead_macron›‹dead_macron›                          "ḇ" U1E07 LATIN SMALL LETTER B WITH LINE BELOW
 #   ‹dead_ogonek›                                       "ǫ" U01EB LATIN SMALL LETTER O WITH OGONEK
 #   ‹dead_stroke›                                       "ø" U00F8 LATIN SMALL LETTER O WITH STROKE
-#   ‹dead_tilde›                                        "ẽ" U1EBD LATIN SMALL LETTER E WITH TILDE
+#   ‹dead_tilde›                                        "õ" U00F5 LATIN SMALL LETTER O WITH TILDE
 #   ‹dead_tilde›‹dead_tilde›                            "ḛ" U1E1B LATIN SMALL LETTER E WITH TILDE BELOW
+#
+#
+#   For natively unsupported dead keys, a keysym candidate is proposed as well.
+#   See # # Dead keys not included in keysymdef.h
+#
 #   ‹UEFD0›                    dead_group               "①" U2460 CIRCLED DIGIT ONE
 #   ‹UEFD0›‹UEFD0›             dead_group2              "②" U2461 CIRCLED DIGIT TWO
 #   ‹UEFD0›‹3›                 dead_group3              "③" U2462 CIRCLED DIGIT THREE
@@ -16727,7 +16727,7 @@
 #   ‹UEFD1›                    dead_superscript         "^" U005E CIRCUMFLEX ACCENT
 #   ‹UEFD2›                    dead_subscript           "_" U005F LOW LINE
 #   ‹UEFD3›                    dead_abovehook           "ỏ" U1ECF LATIN SMALL LETTER O WITH HOOK ABOVE
-#   ‹UEFD4›                    dead_retroflexhook       "ɖ" U0256 LATIN SMALL LETTER D WITH TAIL
+#   ‹UEFD4›                    dead_retroflexhook       "ɽ" U027D LATIN SMALL LETTER R WITH TAIL
 #   ‹UEFD5›                    dead_turned              "ɐ" U0250 LATIN SMALL LETTER TURNED A
 #   ‹UEFD6›                    dead_reversed            "ᴙ" U1D19 LATIN LETTER SMALL CAPITAL REVERSED R
 #   ‹UEFD7›                    dead_flag                "⚐" U2690 WHITE FLAG
@@ -16743,8 +16743,10 @@
 #   ‹UEFD9›                    dead_legacytilde         "~" U007E TILDE
 #   ‹UEFDA›                    dead_legacygrave         "`" U0060 GRAVE ACCENT
 #
+#
 #   Chained dead keys require as many dead characters as dead keys involved.
-#   These are set in the transpiler only.
+#   These are set in the transpiler, and a few outstanding examples are
+#   provided here.
 #   See windows/outils/dead-key-convert.pl
 #
 #   The multikey sequences by contrast are built using generic dead characters
@@ -16773,7 +16775,7 @@
 #      handwriting sequence, in which users type the base character first,
 #      followed by the accents or other nonspacing marks (see Figure 5-4).
 #
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-5/#G1076
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-5/#G1076
 #   https://unicode.org/mail-arch/unicode-ml/y2016-m11/0046.html
 #
 #   As a consequence, keyboard layouts should feature dead keys as well as easy
@@ -26641,8 +26643,8 @@
 #
 #   See # # Dead characters
 #
-<dead_hook><dead_hook><dead_hook><dead_hook>                                                       : "ƒ" U0192 # LATIN SMALL LETTER F WITH HOOK
-<Multi_key><braceleft><braceleft><braceleft><braceleft>                                            : "ƒ" U0192 # LATIN SMALL LETTER F WITH HOOK
+<dead_hook><dead_hook><dead_hook><dead_hook>                                                       : "ƈ" U0188 # LATIN SMALL LETTER C WITH HOOK
+<Multi_key><braceleft><braceleft><braceleft><braceleft>                                            : "ƈ" U0188 # LATIN SMALL LETTER C WITH HOOK
 #
 #
 #*# RETROFLEX_HOOK
@@ -27218,8 +27220,8 @@
 #
 #   See # # Dead characters
 #
-<UEFD4><UEFD4><UEFD4><UEFD4>                                                                       : "ɳ" U0273 # LATIN SMALL LETTER N WITH RETROFLEX HOOK
-<Multi_key><braceright><braceright><braceright><braceright>                                        : "ɳ" U0273 # LATIN SMALL LETTER N WITH RETROFLEX HOOK
+<UEFD4><UEFD4><UEFD4><UEFD4>                                                                       : "ɽ" U027D # LATIN SMALL LETTER R WITH TAIL
+<Multi_key><braceright><braceright><braceright><braceright>                                        : "ɽ" U027D # LATIN SMALL LETTER R WITH TAIL
 #
 #
 #*# GROUP_1 placeholder
@@ -28186,7 +28188,7 @@
 #   All barred letters occurring in orthographies have their precomposed form
 #   encoded in Unicode, due to the rendering challenge of overlay diacritics.
 #   https://www.frathwiki.com/Bar
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-2/#G27986
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-2/#G27986
 #
 #   The unicase glottal stop with stroke, meaning with bar, is supported in its
 #   upright form "ʡ" U02A1 by "7", by "?", by "q", and by apostrophe and
@@ -37769,6 +37771,7 @@
 #   FIGURE DASH is not supported on live key to prevent its misuse for interval
 #   notation, a use case that "–" U2013 EM DASH is recommended for, as vertical
 #   alignment issues are to be handled at font level.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-6/#G6120
 #   https://www.unicode.org/versions/Unicode15.0.0/ch06.pdf#G6120
 #   https://en.wikipedia.org/wiki/Dash#Figure_dash
 #   https://en.wikipedia.org/wiki/Dash#En_dash
@@ -38910,6 +38913,7 @@
 #   "∼" U223C TILDE OPERATOR disunified from ASCII tilde. Both U223C and U007E
 #   display exactly the same, and semantics are also unambiguous. Therefore,
 #   U223C is not supported in group 1 of asciitilde.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G58950
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=903&zoom=100,0,500
 #
 #   "☥" U2625 ANKH replaces the SKULL AND CROSSBONES emoji "☠" U2620. This is
@@ -38973,15 +38977,22 @@
 #
 #   Group 1 has "◌" U25CC as the usual pick for the dotted circle, a generic
 #   base character for combining diacritics in documentation.
+#   * Combining diacritics:
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-2/#G1708
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=80
+#   * Dotted circle: the line above:
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-3/#G2459
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=132&zoom=100,0,410
-#   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=950
 #
 #   Since v1.7.0, dead_greek is also mapped at level 3 instead of the at sign
 #   on D06, level 3. The at sign is supported on E11, level 1, making its D06,
 #   level 3 instance redundant, so that this position is available for an easy
 #   dead_greek duplicate. As a consequence, for the symbol groups, dead_greek
 #   works as an alias base character.
+#
+#   As "⚪" U26AA is the dead character and dead key identifier of the
+#   Greek-or-circled dead key, it has an easy shortcut by triple press.
+#   See #^# GREEK_OR_CIRCLED_DK_ID
 #
 <UEFD0>                                                                                       <at> : "◌" U25CC # DOTTED CIRCLE, generic base character for combining diacritics
 <Multi_key><numbersign>                                                                       <at> : "◌" U25CC # DOTTED CIRCLE, generic base character for combining diacritics
@@ -40821,22 +40832,26 @@
 #   https://web.stanford.edu/class/cs140/projects/pintos/specs/kbd/scancodes-7.html
 #
 #   U200B ZERO WIDTH SPACE has an alternate, more intuitive and more familiar
-#   acronym: WNJ, for WORD NON-JOINER.
+#   acronym: WNJ, for WORD NON-JOINER (not to be confused with the cursive
+#   non-joiner ZERO WIDTH NON-JOINER U200C).
 #   https://unicode-org.atlassian.net/browse/CLDR-16631?focusedCommentId=169819
 #   https://www.unicode.org/mail-arch/unicode-ml/y2007-m11/0119.html
 #   https://github.com/unicode-org/cldr/blob/2b08423c8502f499b334eef17488c730adcd3a6c/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L32
 #   https://github.com/unicode-org/cldr/blob/main/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L32
 #
-#   U200B ZERO WIDTH SPACE also has an intuitive, to-the-point French name:
-#   CÉSURE CONDITIONNELLE, break opportunity. In Latin script, it is useful in
-#   long URLs expected to line-wrap after slashes but not doing so in not fully
-#   Unicode conformant browsers.
+#   As U200B ZERO WIDTH SPACE acts as a break opportunity, it is useful when
+#   rendering long URLs expected to line-wrap after slashes but not doing so in
+#   not fully Unicode conformant applications, with the caveat that it must not
+#   end up in the actual URL.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-23/#G20303
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=944
 #   https://unicode.org/reports/tr14/#SY
 #
-#   This WNJ is also on live key, level 4 of the space bar.
+#   This WNJ is also on live key, at level 4 of the space bar, where it is used
+#   as a base character for high surrogates.
 #   See dispocla.cpp ## Format controls
 #   See dispocla.cpp key <SPCE>
+#   See kbdeadtrans.c * High surrogates
 #
 #   U2002 and U2003 are at level 1 for usability, although these spaces were
 #   originally intended to be no-break. That brings the need to move their two
@@ -44684,7 +44699,7 @@
 #
 #   Unicode warns that “[t]he characters in this block are intended for use
 #   only in mathematical or technical notation, and not in nontechnical text.”
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-22/#G15993
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G15993
 #
 #   However, in search engines, these characters are fully equivalent to the
 #   Latin base alphabet, even when entered in double quotes, to account for the

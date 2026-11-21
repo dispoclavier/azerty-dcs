@@ -5396,6 +5396,7 @@
 #   FIGURE DASH is not supported on live key to prevent its misuse for interval
 #   notation, a use case that "–" U2013 EM DASH is recommended for, as vertical
 #   alignment issues are to be handled at font level.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-6/#G6120
 #   https://www.unicode.org/versions/Unicode15.0.0/ch06.pdf#G6120
 #   https://en.wikipedia.org/wiki/Dash#Figure_dash
 #   https://en.wikipedia.org/wiki/Dash#En_dash
@@ -6537,6 +6538,7 @@
 #   "∼" U223C TILDE OPERATOR disunified from ASCII tilde. Both U223C and U007E
 #   display exactly the same, and semantics are also unambiguous. Therefore,
 #   U223C is not supported in group 1 of asciitilde.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G58950
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=903&zoom=100,0,500
 #
 #   "☥" U2625 ANKH replaces the SKULL AND CROSSBONES emoji "☠" U2620. This is
@@ -6600,15 +6602,22 @@
 #
 #   Group 1 has "◌" U25CC as the usual pick for the dotted circle, a generic
 #   base character for combining diacritics in documentation.
+#   * Combining diacritics:
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-2/#G1708
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=80
+#   * Dotted circle: the line above:
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-3/#G2459
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=132&zoom=100,0,410
-#   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=950
 #
 #   Since v1.7.0, dead_greek is also mapped at level 3 instead of the at sign
 #   on D06, level 3. The at sign is supported on E11, level 1, making its D06,
 #   level 3 instance redundant, so that this position is available for an easy
 #   dead_greek duplicate. As a consequence, for the symbol groups, dead_greek
 #   works as an alias base character.
+#
+#   As "⚪" U26AA is the dead character and dead key identifier of the
+#   Greek-or-circled dead key, it has an easy shortcut by triple press.
+#   See #^# GREEK_OR_CIRCLED_DK_ID
 #
 <UEFD0>                                                                                       <at> : "◌" U25CC # DOTTED CIRCLE, generic base character for combining diacritics
 <Multi_key><numbersign>                                                                       <at> : "◌" U25CC # DOTTED CIRCLE, generic base character for combining diacritics
@@ -8448,22 +8457,26 @@
 #   https://web.stanford.edu/class/cs140/projects/pintos/specs/kbd/scancodes-7.html
 #
 #   U200B ZERO WIDTH SPACE has an alternate, more intuitive and more familiar
-#   acronym: WNJ, for WORD NON-JOINER.
+#   acronym: WNJ, for WORD NON-JOINER (not to be confused with the cursive
+#   non-joiner ZERO WIDTH NON-JOINER U200C).
 #   https://unicode-org.atlassian.net/browse/CLDR-16631?focusedCommentId=169819
 #   https://www.unicode.org/mail-arch/unicode-ml/y2007-m11/0119.html
 #   https://github.com/unicode-org/cldr/blob/2b08423c8502f499b334eef17488c730adcd3a6c/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L32
 #   https://github.com/unicode-org/cldr/blob/main/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L32
 #
-#   U200B ZERO WIDTH SPACE also has an intuitive, to-the-point French name:
-#   CÉSURE CONDITIONNELLE, break opportunity. In Latin script, it is useful in
-#   long URLs expected to line-wrap after slashes but not doing so in not fully
-#   Unicode conformant browsers.
+#   As U200B ZERO WIDTH SPACE acts as a break opportunity, it is useful when
+#   rendering long URLs expected to line-wrap after slashes but not doing so in
+#   not fully Unicode conformant applications, with the caveat that it must not
+#   end up in the actual URL.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-23/#G20303
 #   https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf#page=944
 #   https://unicode.org/reports/tr14/#SY
 #
-#   This WNJ is also on live key, level 4 of the space bar.
+#   This WNJ is also on live key, at level 4 of the space bar, where it is used
+#   as a base character for high surrogates.
 #   See dispocla.cpp ## Format controls
 #   See dispocla.cpp key <SPCE>
+#   See kbdeadtrans.c * High surrogates
 #
 #   U2002 and U2003 are at level 1 for usability, although these spaces were
 #   originally intended to be no-break. That brings the need to move their two
@@ -12311,7 +12324,7 @@
 #
 #   Unicode warns that “[t]he characters in this block are intended for use
 #   only in mathematical or technical notation, and not in nontechnical text.”
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-22/#G15993
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-22/#G15993
 #
 #   However, in search engines, these characters are fully equivalent to the
 #   Latin base alphabet, even when entered in double quotes, to account for the

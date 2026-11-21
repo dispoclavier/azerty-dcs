@@ -829,8 +829,8 @@
 #   Latin-15, but other symbols were replaced too, while a diacritic remained.
 #
 #   The Unicode Standard states in §7.9 that it is not clear whether diacritics
-#   were combining or standalone.
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-7/#G18173
+#   in ISO/IEC 8859-1 were combining or standalone.
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-7/#G18173
 #
 #   Unicode added U02D8..U02DD to the Latin-1 diacritics merely for roundtrip
 #   compatibility with pre-existing character sets.
@@ -839,7 +839,7 @@
 #   or terminators (macOS) in dead keys is not possible consistently throughout
 #   and is a reason why many keyboard layouts are not streamlined, and dead key
 #   behavior is inconsistent. The most outstanding example is a dedicated "ê"
-#   key, when "ê" is better supported by configuring the circumflex accent dead
+#   key, when "ê" can be supported by configuring the circumflex accent dead
 #   key accordingly, with "ê" U00EA as a dead character. Other examples include
 #   unrelated dead characters for hook and horn and for almost all chained dead
 #   keys, when using diacriticized letters instead makes the user experience
@@ -868,7 +868,7 @@
 # # Dead characters
 #
 #   On Windows, each dead key has a mandatory and unique dead character,
-#   through which it exists in the C source, while on MacOS, dead keys have
+#   through which it exists in the C sources, while on MacOS, dead keys have
 #   identifier strings, and the optional character related to a dead key is
 #   merely a UX feature called "terminator". Both OSes output it when the base
 #   character is not listed with the current dead key, prior to outputting the
@@ -927,24 +927,15 @@
 #
 #   The topmost reason for picking the dead character from the dead key output
 #   is that an "Ê" key emulation on the circumflex accent dead key requires "ê"
-#   as a dead character in dead_circumflex, and so does the "Ç" key emulation
-#   require "ç" in dead_cedilla. But this is limited to Windows.
+#   as a dead character in ‹dead_circumflex›, and so does the "Ç" key emulation
+#   require "ç" in ‹dead_cedilla›. The way this works is limited to Windows,
+#   but on Linux and on macOS this works even better, without dead characters.
 #   See #*# CIRCUMFLEX
 #   See #*# CEDILLA
 #
-#   For dead_tilde, the dead character base letter is "e" for consistency with
-#   dead_belowtilde, that is precomposed only with "e", "i", "u", and for
-#   equity, as opposed to picking one of "ã", "ñ", "õ", and thus favoring
-#   either Portuguese or Spanish. The "ẽ" also makes for a consistent mnemonic,
-#   as "tilde" ends in "e".
-#   See #*# TILDE
-#   See #^# MIDDLE_TILDE
 #
-#   For user experience, portability and documentation, a list of
-#   dead character candidates is provided here.
-#
-#   For natively unsupported dead keys, a keysym candidate is proposed as well.
-#   See # # Dead keys not included in keysymdef.h
+#   For user experience, portability and documentation, a list of dead
+#   character candidates is provided here.
 #
 #   ‹dead_abovedot›                                     "ṗ" U1E57 LATIN SMALL LETTER P WITH DOT ABOVE
 #   ‹dead_abovering›                                    "å" U00E5 LATIN SMALL LETTER A WITH RING ABOVE
@@ -955,12 +946,15 @@
 #   ‹dead_belowdot›‹dead_belowdot›                      "ƞ" U019E LATIN SMALL LETTER N WITH LONG RIGHT LEG
 #   ‹dead_breve›                                        "ŏ" U014F LATIN SMALL LETTER O WITH BREVE
 #   ‹dead_caron›                                        "ȟ" U021F LATIN SMALL LETTER H WITH CARON
+#
+#       The dead character for dead_caron is mnemonic for hacek or hatchek.
+#       See #*# HACEK
+#
 #   ‹dead_cedilla›                                      "ç" U00E7 LATIN SMALL LETTER C WITH CEDILLA
 #   ‹dead_circumflex›                                   "ê" U00EA LATIN SMALL LETTER E WITH CIRCUMFLEX
-#   ‹dead_circumflex›‹dead_circumflex›                  "ḙ" U1E19 LATIN SMALL LETTER E WITH CIRCUMFLEX BELOW
 #   ‹dead_currency›                                     "¤" U00A4 CURRENCY SIGN
 #   ‹dead_diaeresis›                                    "ë" U00EB LATIN SMALL LETTER E WITH DIAERESIS
-#   ‹dead_diaeresis›‹dead_diaeresis›                    "ṳ" U1E73 LATIN SMALL LETTER U WITH DIAERESIS BELOW
+#   ‹dead_diaeresis›‹dead_diaeresis›‹dead_diaeresis›    "ṳ" U1E73 LATIN SMALL LETTER U WITH DIAERESIS BELOW
 #   ‹dead_doubleacute›                                  "ű" U0171 LATIN SMALL LETTER U WITH DOUBLE ACUTE
 #   ‹dead_grave›                                        "ò" U00F2 LATIN SMALL LETTER O WITH GRAVE
 #   ‹dead_grave›‹dead_grave›                            "ȕ" U0215 LATIN SMALL LETTER U WITH DOUBLE GRAVE
@@ -980,15 +974,20 @@
 #       French keymaps (be it as a dead character), a circle emoji is picked
 #       instead.
 #
-#   ‹dead_hook›                                         "ɱ" U0271 LATIN SMALL LETTER M WITH HOOK
+#   ‹dead_hook›                                         "ƈ" U0188 LATIN SMALL LETTER C WITH HOOK
 #   ‹dead_horn›                                         "ơ" U01A1 LATIN SMALL LETTER O WITH HORN
 #   ‹dead_invertedbreve›                                "ȏ" U020F LATIN SMALL LETTER O WITH INVERTED BREVE
 #   ‹dead_macron›                                       "ō" U014D LATIN SMALL LETTER O WITH MACRON
 #   ‹dead_macron›‹dead_macron›                          "ḇ" U1E07 LATIN SMALL LETTER B WITH LINE BELOW
 #   ‹dead_ogonek›                                       "ǫ" U01EB LATIN SMALL LETTER O WITH OGONEK
 #   ‹dead_stroke›                                       "ø" U00F8 LATIN SMALL LETTER O WITH STROKE
-#   ‹dead_tilde›                                        "ẽ" U1EBD LATIN SMALL LETTER E WITH TILDE
+#   ‹dead_tilde›                                        "õ" U00F5 LATIN SMALL LETTER O WITH TILDE
 #   ‹dead_tilde›‹dead_tilde›                            "ḛ" U1E1B LATIN SMALL LETTER E WITH TILDE BELOW
+#
+#
+#   For natively unsupported dead keys, a keysym candidate is proposed as well.
+#   See # # Dead keys not included in keysymdef.h
+#
 #   ‹UEFD0›                    dead_group               "①" U2460 CIRCLED DIGIT ONE
 #   ‹UEFD0›‹UEFD0›             dead_group2              "②" U2461 CIRCLED DIGIT TWO
 #   ‹UEFD0›‹3›                 dead_group3              "③" U2462 CIRCLED DIGIT THREE
@@ -1004,7 +1003,7 @@
 #   ‹UEFD1›                    dead_superscript         "^" U005E CIRCUMFLEX ACCENT
 #   ‹UEFD2›                    dead_subscript           "_" U005F LOW LINE
 #   ‹UEFD3›                    dead_abovehook           "ỏ" U1ECF LATIN SMALL LETTER O WITH HOOK ABOVE
-#   ‹UEFD4›                    dead_retroflexhook       "ɖ" U0256 LATIN SMALL LETTER D WITH TAIL
+#   ‹UEFD4›                    dead_retroflexhook       "ɽ" U027D LATIN SMALL LETTER R WITH TAIL
 #   ‹UEFD5›                    dead_turned              "ɐ" U0250 LATIN SMALL LETTER TURNED A
 #   ‹UEFD6›                    dead_reversed            "ᴙ" U1D19 LATIN LETTER SMALL CAPITAL REVERSED R
 #   ‹UEFD7›                    dead_flag                "⚐" U2690 WHITE FLAG
@@ -1020,8 +1019,10 @@
 #   ‹UEFD9›                    dead_legacytilde         "~" U007E TILDE
 #   ‹UEFDA›                    dead_legacygrave         "`" U0060 GRAVE ACCENT
 #
+#
 #   Chained dead keys require as many dead characters as dead keys involved.
-#   These are set in the transpiler only.
+#   These are set in the transpiler, and a few outstanding examples are
+#   provided here.
 #   See windows/outils/dead-key-convert.pl
 #
 #   The multikey sequences by contrast are built using generic dead characters
@@ -1050,7 +1051,7 @@
 #      handwriting sequence, in which users type the base character first,
 #      followed by the accents or other nonspacing marks (see Figure 5-4).
 #
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-5/#G1076
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-5/#G1076
 #   https://unicode.org/mail-arch/unicode-ml/y2016-m11/0046.html
 #
 #   As a consequence, keyboard layouts should feature dead keys as well as easy
@@ -10918,8 +10919,8 @@
 #
 #   See # # Dead characters
 #
-<dead_hook><dead_hook><dead_hook><dead_hook>                                                       : "ƒ" U0192 # LATIN SMALL LETTER F WITH HOOK
-<Multi_key><braceleft><braceleft><braceleft><braceleft>                                            : "ƒ" U0192 # LATIN SMALL LETTER F WITH HOOK
+<dead_hook><dead_hook><dead_hook><dead_hook>                                                       : "ƈ" U0188 # LATIN SMALL LETTER C WITH HOOK
+<Multi_key><braceleft><braceleft><braceleft><braceleft>                                            : "ƈ" U0188 # LATIN SMALL LETTER C WITH HOOK
 #
 #
 #*# RETROFLEX_HOOK
@@ -11495,8 +11496,8 @@
 #
 #   See # # Dead characters
 #
-<UEFD4><UEFD4><UEFD4><UEFD4>                                                                       : "ɳ" U0273 # LATIN SMALL LETTER N WITH RETROFLEX HOOK
-<Multi_key><braceright><braceright><braceright><braceright>                                        : "ɳ" U0273 # LATIN SMALL LETTER N WITH RETROFLEX HOOK
+<UEFD4><UEFD4><UEFD4><UEFD4>                                                                       : "ɽ" U027D # LATIN SMALL LETTER R WITH TAIL
+<Multi_key><braceright><braceright><braceright><braceright>                                        : "ɽ" U027D # LATIN SMALL LETTER R WITH TAIL
 #
 #
 #*# GROUP_1 placeholder
@@ -12463,7 +12464,7 @@
 #   All barred letters occurring in orthographies have their precomposed form
 #   encoded in Unicode, due to the rendering challenge of overlay diacritics.
 #   https://www.frathwiki.com/Bar
-#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-2/#G27986
+#   https://www.unicode.org/versions/Unicode18.0.0/core-spec/chapter-2/#G27986
 #
 #   The unicase glottal stop with stroke, meaning with bar, is supported in its
 #   upright form "ʡ" U02A1 by "7", by "?", by "q", and by apostrophe and

@@ -18,6 +18,12 @@ Prise en charge par touches mortes pour Linux et macOS, des émojis additionnels
 
 Mise à jour pour macOS des dispositions développées pour Windows, portées sous macOS puis sous Linux, rétroportées sous Windows et complétées pour Windows et pour Linux
 
+## 7.1.0-beta.6 (2026-11-20)
+
+* Disposition :
+	* AZERTY DCS : Mouvoir "∶" U+2236 de C08_4 sur B09_4 à la place de "⁄" U+2044, qui va sur D06_4 à la place de "⁤" U+2064, qui va sur D05_4 à la place de "​" U+200B, qui va sur C08_4 à la place laissée par "∶" U+2236. kbfrdcs-common.c, azerty-dcs.ods [4bf7fef](https://github.com/dispoclavier/azerty-dcs/commit/4bf7fefce5f2fbb49cf22ffbaddbc370bb88e303)
+* Build : 7.1.0+13 [4bf7fef](https://github.com/dispoclavier/azerty-dcs/commit/4bf7fefce5f2fbb49cf22ffbaddbc370bb88e303)
+
 ## 7.1.0-beta.5 (2026-11-18)
 
 * Installation :
@@ -84,7 +90,7 @@ En cours : Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères
 Contournement du bogue de Windows au niveau 7 en mode ASCII
 
 * Disposition :
-	* AZERTY DCS : Mouvoir "∶" U+2236 de C08_4 sur B09_4 à la place de "⁄" U+2044, qui va sur D06_4 à la place de "⁤" U+2064, qui va sur D05_4 à la place de "​" U+200B, qui va sur C08_4 à la place laissée par "∶" U+2236. kbfrdcs-common.c, azerty-dcs.ods []()
+	* AZERTY DCS : Mouvoir "∶" U+2236 de C08_4 sur B09_4 à la place de "⁄" U+2044, qui va sur D06_4 à la place de "⁤" U+2064, qui va sur D05_4 à la place de "​" U+200B, qui va sur C08_4 à la place laissée par "∶" U+2236. kbfrdcs-common.c, azerty-dcs.ods [4bf7fef](https://github.com/dispoclavier/azerty-dcs/commit/4bf7fefce5f2fbb49cf22ffbaddbc370bb88e303)
 	* Mode ASCII :
 		* Permuter "\" U+005C, qui va sur B10_2, et "|" U+007C, qui va sur B08_2. dispocla.cpp, kbcomazerty.c, kbcomredispo.c [acf7926](https://github.com/dispoclavier/azerty-dcs/commit/acf79265649f40ffe1586ce8261b7ef51582c0d6)
 		* Redonder "@" U+0040 sur E11_3 à la place de "°" U+00B0. dispocla.cpp, kbfrPFs-allo.c, kbbrFRs-allo.c, kbfrAFs-allo.c, kbfrFRr-allo.c, kbfrFRs-allo.c [3848955](https://github.com/dispoclavier/azerty-dcs/commit/384895532843bd8be5bec1bf1b8d206b54ff2ea7)
@@ -165,6 +171,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 		* Point en chef et accent grave : Ajouter "᫞" U+1ADE à la place de "᷀" U+1DC0, qui va par "%". ibidem
 		* Ligne verticale en chef et double accent aigu : Ajouter "᫭" U+1AED. ibidem
 	* Crosse :
+		* Changer le caractère mort de "ƒ" U+0192 en "ƈ" U+0188. kbfrdcs-common.c, kbcomazerty.c, kbcomredispo.c, dead-key-convert.pl
 		* Ajouter "𝽨" U+1DF68, "𝽩" U+1DF69. compose-2.yml [8660a75](https://github.com/dispoclavier/nouvel-azerty/commit/8660a7560a67c84df765a25748ce4e11fd51b20d), [8026430](https://github.com/dispoclavier/azerty-dcs/commit/8026430e22cee6ed650616e75a7316803ca2ce05), [e75719e](https://github.com/dispoclavier/azerty-dcs/commit/e75719e314bfe0d115a6839986df89d5ba348abe), [0f05e25](https://github.com/dispoclavier/azerty-dcs/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
 		* Redonder "ɚ" U+025A à la place de "ɝ" U+025D, qui est dans les groupes 1 à 3. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-dcs/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
 		* Mouvoir ici "ꭒ" U+AB52, qui était dans crochet palatal. ibidem
@@ -179,6 +186,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 			* Ajouter "𝽰" U+1DF70, "𝽺" U+1DF7A, "𝽻" U+1DF7B. compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-dcs/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 			* Fioriture et tourné : Ajouter "𝽗" U+1DF57. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-dcs/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 	* Crochet rétroflexe :
+		* Changer le caractère mort de "ɳ" U+0273 en "ɽ" U+027D. kbfrdcs-common.c, kbcomazerty.c, kbcomredispo.c, dead-key-convert.pl
 		* Compléter la prise en charge de "𝼅" U+1DF05. compose-2.yml [204af1b](https://github.com/dispoclavier/azerty-dcs/commit/204af1be45c5e0fb3afe300549a9c0e95a08fd00)
 		* Corriger la prise en charge de "𝼅" U+1DF05, "𝼙" U+1DF19. ibidem
 		* Crochet palatal :
@@ -251,7 +259,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 	* Corriger le descripteur de "​" U+200B en "ESPACE INVISIBLE". ressource/Udescripteurs.txt [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
 	* Corriger et mettre à jour des annotations. compose-2.yml [121266d](https://github.com/dispoclavier/azerty-dcs/commit/121266d39bcdb174c479f36737a97b2a69af1fd4), compose-3.yml [c722026](https://github.com/dispoclavier/azerty-dcs/commit/c7220265c0a9197d7b372bc5dfd04c496ca6c454), [eb35d00](https://github.com/dispoclavier/azerty-dcs/commit/eb35d00b1119c9c82cc3f14ca906f81d3580116d), compose-1.yml, compose-2.yml, compose-3.yml [54bc0b9](https://github.com/dispoclavier/azerty-dcs/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884), [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86), [204af1b](https://github.com/dispoclavier/azerty-dcs/commit/204af1be45c5e0fb3afe300549a9c0e95a08fd00), [8b28bc6](https://github.com/dispoclavier/azerty-dcs/commit/8b28bc6f90eab5954f5068bb47f60fd57fc7daff), [959f22c](https://github.com/dispoclavier/azerty-dcs/commit/959f22c2ba5e88c1aaa314ab1151841eb5a87227), [c3b1b1f](https://github.com/dispoclavier/azerty-dcs/commit/c3b1b1f20fe1d9d142883ece53328171c8789aca)
 	* Déboguer, corriger et mettre à jour la note du contenu des touches mortes. linux-chromeos/compose/readme.md [ee883c0](https://github.com/dispoclavier/azerty-dcs/commit/ee883c04381848b3ff1cd3b31aa68fa8a63517f1), [7161591](https://github.com/dispoclavier/azerty-dcs/commit/71615916e684caa94cb668b18b05316c0adbbdcb)
-	* Corriger le journal des modifications. CHANGELOG.md [1f7e36d](https://github.com/dispoclavier/azerty-dcs/commit/1f7e36dd0102d8939aa11c348b956208deabd94a), [bad275d](https://github.com/dispoclavier/azerty-dcs/commit/bad275df45f67c5f0297155875b0b375267140f2)
+	* Corriger le journal des modifications. CHANGELOG.md [1f7e36d](https://github.com/dispoclavier/azerty-dcs/commit/1f7e36dd0102d8939aa11c348b956208deabd94a), [bad275d](https://github.com/dispoclavier/azerty-dcs/commit/bad275df45f67c5f0297155875b0b375267140f2), [4bf7fef](https://github.com/dispoclavier/azerty-dcs/commit/4bf7fefce5f2fbb49cf22ffbaddbc370bb88e303)
 * Builds :
 	* 7.1.0+0 [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
 	* 7.1.0+1 [268fc12](https://github.com/dispoclavier/azerty-dcs/commit/268fc12894b080fb7e8012bf8f1800843a148b11)
@@ -266,6 +274,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 	* 7.1.0+10 [e09fad0](https://github.com/dispoclavier/azerty-dcs/commit/e09fad05957133582a5bafa80d18d86ea01fba72)
 	* 7.1.0+11 [acf7926](https://github.com/dispoclavier/azerty-dcs/commit/acf79265649f40ffe1586ce8261b7ef51582c0d6)
 	* 7.1.0+12 [72dfd92](https://github.com/dispoclavier/azerty-dcs/commit/72dfd9257284ca386e2b891f990120447de93037)
+	* 7.1.0+13 [4bf7fef](https://github.com/dispoclavier/azerty-dcs/commit/4bf7fefce5f2fbb49cf22ffbaddbc370bb88e303)
 
 ## 7.0.1 (projet)
 
