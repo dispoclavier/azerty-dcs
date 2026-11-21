@@ -18,6 +18,15 @@ Prise en charge par touches mortes pour Linux et macOS, des émojis additionnels
 
 Mise à jour pour macOS des dispositions développées pour Windows, portées sous macOS puis sous Linux, rétroportées sous Windows et complétées pour Windows et pour Linux
 
+## 7.1.0-beta.7 (2026-11-21)
+
+* Transformations :
+	* Crosse :
+		* Changer le caractère mort de "ƒ" U+0192 en "ƈ" U+0188. kbfrdcs-common.c, kbcomazerty.c, kbcomredispo.c, dead-key-convert.pl [282bf93](https://github.com/dispoclavier/azerty-dcs/commit/282bf93a1a4cc6403c31e8868cd099ba146014dc)
+	* Crochet rétroflexe :
+		* Changer le caractère mort de "ɳ" U+0273 en "ɽ" U+027D. kbfrdcs-common.c, kbcomazerty.c, kbcomredispo.c, dead-key-convert.pl [282bf93](https://github.com/dispoclavier/azerty-dcs/commit/282bf93a1a4cc6403c31e8868cd099ba146014dc)
+* Build : 7.1.0+14 [282bf93](https://github.com/dispoclavier/azerty-dcs/commit/282bf93a1a4cc6403c31e8868cd099ba146014dc)
+
 ## 7.1.0-beta.6 (2026-11-20)
 
 * Disposition :
@@ -171,7 +180,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 		* Point en chef et accent grave : Ajouter "᫞" U+1ADE à la place de "᷀" U+1DC0, qui va par "%". ibidem
 		* Ligne verticale en chef et double accent aigu : Ajouter "᫭" U+1AED. ibidem
 	* Crosse :
-		* Changer le caractère mort de "ƒ" U+0192 en "ƈ" U+0188. kbfrdcs-common.c, kbcomazerty.c, kbcomredispo.c, dead-key-convert.pl
+		* Changer le caractère mort de "ƒ" U+0192 en "ƈ" U+0188. kbfrdcs-common.c, kbcomazerty.c, kbcomredispo.c, dead-key-convert.pl [282bf93](https://github.com/dispoclavier/azerty-dcs/commit/282bf93a1a4cc6403c31e8868cd099ba146014dc)
 		* Ajouter "𝽨" U+1DF68, "𝽩" U+1DF69. compose-2.yml [8660a75](https://github.com/dispoclavier/nouvel-azerty/commit/8660a7560a67c84df765a25748ce4e11fd51b20d), [8026430](https://github.com/dispoclavier/azerty-dcs/commit/8026430e22cee6ed650616e75a7316803ca2ce05), [e75719e](https://github.com/dispoclavier/azerty-dcs/commit/e75719e314bfe0d115a6839986df89d5ba348abe), [0f05e25](https://github.com/dispoclavier/azerty-dcs/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
 		* Redonder "ɚ" U+025A à la place de "ɝ" U+025D, qui est dans les groupes 1 à 3. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-dcs/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
 		* Mouvoir ici "ꭒ" U+AB52, qui était dans crochet palatal. ibidem
@@ -186,7 +195,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 			* Ajouter "𝽰" U+1DF70, "𝽺" U+1DF7A, "𝽻" U+1DF7B. compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-dcs/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 			* Fioriture et tourné : Ajouter "𝽗" U+1DF57. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-dcs/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 	* Crochet rétroflexe :
-		* Changer le caractère mort de "ɳ" U+0273 en "ɽ" U+027D. kbfrdcs-common.c, kbcomazerty.c, kbcomredispo.c, dead-key-convert.pl
+		* Changer le caractère mort de "ɳ" U+0273 en "ɽ" U+027D. kbfrdcs-common.c, kbcomazerty.c, kbcomredispo.c, dead-key-convert.pl [282bf93](https://github.com/dispoclavier/azerty-dcs/commit/282bf93a1a4cc6403c31e8868cd099ba146014dc)
 		* Compléter la prise en charge de "𝼅" U+1DF05. compose-2.yml [204af1b](https://github.com/dispoclavier/azerty-dcs/commit/204af1be45c5e0fb3afe300549a9c0e95a08fd00)
 		* Corriger la prise en charge de "𝼅" U+1DF05, "𝼙" U+1DF19. ibidem
 		* Crochet palatal :
@@ -275,6 +284,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 	* 7.1.0+11 [acf7926](https://github.com/dispoclavier/azerty-dcs/commit/acf79265649f40ffe1586ce8261b7ef51582c0d6)
 	* 7.1.0+12 [72dfd92](https://github.com/dispoclavier/azerty-dcs/commit/72dfd9257284ca386e2b891f990120447de93037)
 	* 7.1.0+13 [4bf7fef](https://github.com/dispoclavier/azerty-dcs/commit/4bf7fefce5f2fbb49cf22ffbaddbc370bb88e303)
+	* 7.1.0+14 [282bf93](https://github.com/dispoclavier/azerty-dcs/commit/282bf93a1a4cc6403c31e8868cd099ba146014dc)
 
 ## 7.0.1 (projet)
 
