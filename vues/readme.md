@@ -6,6 +6,8 @@ AZERTY DCS
 AZERTY DCS à capitales verrouillées
 ![AZERTY DCS à capitales verrouillées](https://dispoclavier.com/img/azerty-dcs-verrcap.png)
 
+Plus explicite et plus facile à consulter, le [tableau de l’AZERTY DCS](https://dispoclavier.com/doc/azerty-dcs/) est issu de [2 feuilles de calcul](https://github.com/dispoclavier/azerty-dcs/tree/main/vues/dispositions).
+
 ## Variante retouchée de base
 
 AZERTY DCS retouché en mode français
