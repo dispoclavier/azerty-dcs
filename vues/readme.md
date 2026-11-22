@@ -4,7 +4,7 @@ AZERTY DCS
 ![AZERTY DCS](https://dispoclavier.com/img/azerty-dcs.png)
 
 AZERTY DCS à capitales verrouillées
-![AZERTY DCS à capitales verrouillées](https://dispoclavier.com/img/azerty-dcs-verrcaps.png)
+![AZERTY DCS à capitales verrouillées](https://dispoclavier.com/img/azerty-dcs-verrcap.png?v=2)
 
 Plus explicite et plus facile à consulter, le [tableau de l’AZERTY DCS](https://dispoclavier.com/doc/azerty-dcs/) est issu de [2 feuilles de calcul](https://github.com/dispoclavier/azerty-dcs/tree/main/vues/dispositions).
 
