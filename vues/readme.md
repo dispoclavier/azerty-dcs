@@ -28,5 +28,3 @@ AZERTY DCS redisposé en mode français
 ![AZERTY DCS redisposé en mode français](https://dispoclavier.com/img/azerty-dcs-redispose.png)
 
 Ces fichiers servent de code source dans le [Keyboard Layout Editor](https://keyboard-layout-editor.com) de [Ian Prest](https://github.com/ijprest).
-
-<small>L’absence du tableau censé envelopper les tableaux des rangées de touches est une erreur de syntaxe JSON incorrigible dans ces fichiers.</small>
