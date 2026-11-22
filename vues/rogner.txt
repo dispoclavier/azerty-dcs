@@ -1,0 +1,26 @@
+vues de disposition
+
+captures d’écran
+Keyboard Layout Editor
+https://www.keyboard-layout-editor.com/#/
+
+
+taille 1513 × 530 pixels
+
+marge-haute 12
+marge-gauche 12
+marge-droite 13
+marge-basse 13
+
+
+procédure :
+
+zoom 125 %
+faire défiler vers la gauche
+faire défiler vers le haut
+cliquer en dehors
+capture d’écran
+
+dans Paint.NET
+sélection rectangulaire de 33, 452 à 1545, 981
+rogner
