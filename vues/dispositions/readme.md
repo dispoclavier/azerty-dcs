@@ -1,9 +1,6 @@
 # Dispositions
 
-Les 2 premières feuilles d’`azerty-dcs.ods` sont en ligne sur [dispoclavier.com/doc/azerty-dcs/](https://dispoclavier.com/doc/azerty-dcs/), mais le classeur `azerty-dcs.ods` contient un peu plus :
-
-* la disposition de l’AZERTY DCS dans les onglets `kbfrdcs` et `kbfrdcs‑VerrCap`
-* le mode par défaut d’une variante retouchée encore plus utilisable dans l’onglet `kbfrFRs` (en instance de mise à jour et complétion)
+Les 2 feuilles d’`azerty-dcs.ods` mises bout à bout sont en ligne sur [dispoclavier.com/doc/azerty-dcs/](https://dispoclavier.com/doc/azerty-dcs/).
 
 ## Téléchargement
 
