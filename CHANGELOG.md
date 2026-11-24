@@ -92,14 +92,45 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 
 ## 7.1.0 (projet)
 
-Double frappe d’accent circonflexe pour les "œ" U+0153 et "æ" U+00E6 et d’autres lettres dans le groupe 1 en plus du hatchek des langues d’Europe
+### Extension de la double frappe d’accent circonflexe
 
-En cours : Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 lettres latines, 7 diacritiques et 65 symboles mathématiques
+* "Œ" U+0152, "œ" U+0153, "Æ" U+00C6, "æ" U+00E6
+* guillemets fermants "”" U+201D, "’" U+2019 (aussi sur touche vive AltGr + K)
+* d’autres lettres dans le groupe 1
+* hatchek des langues d’Europe (préexistant)
 
-Contournement du bogue de Windows au niveau 7 en mode ASCII
+### Remaniement de l’AZERTY DCS
+
+* Les touches mortes point en chef ‹ ṗ › et indice ‹ ↓ › passent du niveau 4 au niveau 3
+* Les touches mortes exposant ‹ ↑ › et indice ‹ ↓ › changent de caractère mort
+* La touche morte monétaire passe de la touche "S" sur la touche "E"
+* Les points de suspension "…" U+2026 entrent en synergie avec "[" U+005B sur la touche "5"
+* Le sélecteur de variante texte "︎" U+EF0E est redondé sur touche vive pour compléter le sélecteur de variante émoji "️" U+FE0F.
+
+### Mise à niveau (en cours)
+
+* 161 lettres latines d’Unicode 18.0
+* 65 symboles mathématiques historiques d’Unicode 18.0
+* 7 diacritiques d’Unicode 18.0
+
+### Débogage
+
+* Contournement du bogue de Windows au niveau 7 en mode ASCII
+
+### Modifications
 
 * Disposition :
-	* AZERTY DCS : Mouvoir "∶" U+2236 de C08_4 sur B09_4 à la place de "⁄" U+2044, qui va sur D06_4 à la place de "⁤" U+2064, qui va sur D05_4 à la place de "​" U+200B, qui va sur C08_4 à la place laissée par "∶" U+2236. kbfrdcs-common.c, azerty-dcs.ods [4bf7fef](https://github.com/dispoclavier/azerty-dcs/commit/4bf7fefce5f2fbb49cf22ffbaddbc370bb88e303)
+	* AZERTY DCS :
+		* Mouvoir la touche morte symbole monétaire de C02_4 sur D03_4 à la place du sélecteur de variante émoji "️" U+FE0F, qui va sur D08_4 et qui est dans la touche morte tilde par "€" ou "\"".
+		* Redonder "―" U+2015 sur C02_4 à la place laissée par la touche morte symbole monétaire.
+		* Mouvoir "∶" U+2236 de C08_4 sur B09_4 à la place de "⁄" U+2044, qui va sur D06_4 à la place de "⁤" U+2064, qui va sur D05_4 à la place de "​" U+200B, qui va sur C08_4 à la place laissée par "∶" U+2236. kbfrdcs-common.c, azerty-dcs.ods [4bf7fef](https://github.com/dispoclavier/azerty-dcs/commit/4bf7fefce5f2fbb49cf22ffbaddbc370bb88e303)
+		* Mouvoir "…" U+2026 de C07_3 sur D06_3 (pour la synergie avec "[" sur E05_3) à la place de la touche morte grec-ou-cerclé, qui va sur D09_3 "O" à la place de "⇒" U+21D2, qui va sur C07_3 à la place laissée par "…" U+2026.
+		* Mouvoir "′" U+2032 de D08_3 sur C09_3 à la place de "[" U+005B, qui est sur E05_3.
+		* Descendre la touche morte point en chef de D08_4 sur D08_3 à la place laissée par "′" U+2032.
+		* Mouvoir "″" U+2033 de D07_3 sur C10_3 à la place de "]" U+005D, qui est sur E11_3.
+		* Descendre la touche morte indice de D07_4 sur D07_3 à la place laissée par "″" U+2033.
+		* Mouvoir "‾" U+203E de D01_4 sur D07_4 à la place laissée par la touche morte indice.
+		* Redonder sur D01_4 le sélecteur de variante texte "︎" U+EF0E, qui est dans la touche morte tilde par "~".
 	* Mode ASCII :
 		* Permuter "\" U+005C, qui va sur B10_2, et "|" U+007C, qui va sur B08_2. dispocla.cpp, kbcomazerty.c, kbcomredispo.c [acf7926](https://github.com/dispoclavier/azerty-dcs/commit/acf79265649f40ffe1586ce8261b7ef51582c0d6)
 		* Redonder "@" U+0040 sur E11_3 à la place de "°" U+00B0. dispocla.cpp, kbfrPFs-allo.c, kbbrFRs-allo.c, kbfrAFs-allo.c, kbfrFRr-allo.c, kbfrFRs-allo.c [3848955](https://github.com/dispoclavier/azerty-dcs/commit/384895532843bd8be5bec1bf1b8d206b54ff2ea7)
@@ -125,6 +156,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 		* Ajouter "꭬" U+AB6C dans le groupe 5 de "R" à la place de "ꭅ" U+AB45, qui va dans le groupe 4 de "R" à la place de "℟" U+211F, qui va dans le groupe 4 de "I" à la place de "ℹ" U+2139, qui est dans le groupe 4 de "i". ibidem
 	* Groupes des symboles : Groupes de "_" : Groupe 1 : Redonder "⧸" U+29F8 à la place de "∕" U+2215. compose-3.yml [8b28bc6](https://github.com/dispoclavier/azerty-dcs/commit/8b28bc6f90eab5954f5068bb47f60fd57fc7daff)
 	* Exposant :
+		* Changer le caractère mort de "^" en "↑" U+2191.
 		* Redonder "⁄" U+2044. compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-dcs/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
 		* Exposant et tourné :
 			* Ajouter "𐞻" U+107BB. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
@@ -166,6 +198,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 		* Ajouter "𝽾" U+1DF7E, "𝽿" U+1DF7F. compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-dcs/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 		* Réfléchi et crochet palatal : Ajouter "𝼺" U+1DF3A. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-dcs/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 	* Indice-ou-petite-capitale :
+		* Changer le caractère mort de "_" en "↓" U+2193.
 		* Redonder "⁄" U+2044. compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-dcs/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
 		* Ajouter "𝿐" U+1DFD0 (dans le groupe 1). ibidem
 		* Ajouter "₝" U+209D, "₞" U+209E, "₟" U+209F. compose-2.yml [bad275d](https://github.com/dispoclavier/azerty-dcs/commit/bad275df45f67c5f0297155875b0b375267140f2)
@@ -174,6 +207,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 		* Indice-ou-petite-capitale et crochet palatal : Ajouter "𝼰" U+1DF30. compose-2.yml [faf42af](https://github.com/dispoclavier/azerty-dcs/commit/faf42afc24d1e89772b026fe55b94ccb27d7330f), [faf42af](https://github.com/dispoclavier/azerty-dcs/commit/faf42afc24d1e89772b026fe55b94ccb27d7330f)
 		* Indice-ou-petite-capitale et rayé : Ajouter "𝽃" U+1DF43. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-dcs/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 		* Indice-ou-petite-capitale et macron : Ajouter "ꭆ" U+AB46, qui était dans indice-ou-petite-capitale et crosse. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
+		* Souscrit : Mouvoir "̳" U+0333 par "&", "‗" U+2017 par "_".
 	* Point en chef :
 		* Groupe 8 : Ajouter "𝚤" U+1D6A4, "𝚥" U+1D6A5. compose-2.yml [4bafcb8](https://github.com/dispoclavier/azerty-dcs/commit/4bafcb85dda96a66aee32d34d4fe873f2214425e)
 		* Point en chef et accent aigu : Ajouter "᫟" U+1ADF à la place de "᷁" U+1DC1, qui va par "%". compose-2.yml [5a35ff6](https://github.com/dispoclavier/azerty-dcs/commit/5a35ff6105e9c00847d2f36547fe84c8aed09e82)
@@ -235,11 +269,15 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII
 		* Ajouter "𝾐" U+1DF90 (dans le groupe 1). compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-dcs/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
 	* Rond en chef : Ajouter "꭭" U+AB6D. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Accent circonflexe :
-		* Déboguer "·" U+00B7, "‧" U+2027, "⋅" U+22C5. compose-3.yml [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
+		* Visibilisation :
+			* Déboguer "·" U+00B7, "‧" U+2027, "⋅" U+22C5. compose-3.yml [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
+			* Corriger les chaînes de sortie pour "·" U+00B7, "‧" U+2027, "⋅" U+22C5, "️" U+FE0F.
+			* Ajouter le sélecteur de variante texte "︎" U+EF0E.
 		* Double frappe :
 			* Redonder "Æ" U+00C6, "æ" U+00E6, "Œ" U+0152, "œ" U+0153 à la place de "Ǎ" U+01CD, "ǎ" U+01CE, "Ǒ" U+01D1, "ǒ" U+01D2, qui sont dans hatchek. compose-3.yml [959f22c](https://github.com/dispoclavier/azerty-dcs/commit/959f22c2ba5e88c1aaa314ab1151841eb5a87227), kbdeadtrans-deadkeys.c [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
 			* Redonder "Ɖ" U+0189 par "B", "ɖ" U+0256 par "b", "Ƒ" U+0191 par "F", "ƒ" U+0192 par "f", "Ə" U+018F par "H", "ə" U+0259 par "h", "Ɩ" U+0196 par "I", "ɩ" U+0269 par "i", "Ĳ" U+0132 par "J", "ĳ" U+0133 par "j", "ʔ" U+0294 par "M", "ʾ" U+02BE par "m", "·" U+00B7 par "P", "·" U+00B7 par "p", "Ɂ" U+0241 par "Q", "ɂ" U+0242 par "q", "Ʋ" U+01B2 par "U", "ʋ" U+028B par "u", "℣" U+2123 par "V", "℟" U+211F par "v", "Ʃ" U+01A9 par "W", "ʃ" U+0283 par "w", "Ɛ" U+0190 par "X", "ɛ" U+025B par "x", "Ʊ" U+01B1 par "Y", "ʊ" U+028A par "y". compose-3.yml [8e82cf0](https://github.com/dispoclavier/azerty-dcs/commit/8e82cf0599e4d9ea370f275899ede237a6eed33c)
 			* Redonder "ʿ" U+02BF par "M" à la place de "ʔ" U+0294, redondé dans hatchek par "?". compose-3.yml [e09fad0](https://github.com/dispoclavier/azerty-dcs/commit/e09fad05957133582a5bafa80d18d86ea01fba72)
+			* Redonder "”" U+201D par "\"", "’" U+2019 par "'".
 	* Hatchek :
 		* Redonder "ʔ" U+0294 par "?". ibidem
 		* Hatchek et accent aigu : Ajouter "᫬" U+1AEC. compose-3.yml [5a35ff6](https://github.com/dispoclavier/azerty-dcs/commit/5a35ff6105e9c00847d2f36547fe84c8aed09e82)

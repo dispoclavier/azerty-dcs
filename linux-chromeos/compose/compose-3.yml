@@ -237,7 +237,7 @@
 #   For a smoother user experience, invisible characters mapped on live keys,
 #   except "​" U200B (used as a base character for the diacritic, alongside
 #   space), have a visible alias that displays when the circumflex dead key is
-#   pressed before, because this is the most outstanding and easiest accessible
+#   pressed before, because this is the most prominent and easiest accessible
 #   dead key on all French keyboard layouts.
 #
 #   This feature is extended to include the three confusable mid-height dots
@@ -253,15 +253,16 @@
 #   only the dot operator "⋅" U22C5 does not share its representative "×" U00D7
 #   with any other character.
 #
-#   "&" U0026 AMPERSAND           ➔ "‍" U200D ZERO WIDTH JOINER
-#   "+" U002B PLUS SIGN           ➔ "⁤" U2064 INVISIBLE PLUS
-#   "," U002C COMMA               ➔ "⁣" U2063 INVISIBLE SEPARATOR
-#   "-" U002D HYPHEN-MINUS        ➔ "­" U00AD SOFT HYPHEN
-#   "-" U002D HYPHEN-MINUS        ➔ "‧" U2027 HYPHENATION POINT
-#   "|" U007C VERTICAL LINE       ➔ "‌" U200C ZERO WIDTH NON-JOINER
-#   "|" U007C VERTICAL LINE       ➔ "·" U00B7 MIDDLE DOT
-#   "×" U00D7 MULTIPLICATION SIGN ➔ "⋅" U22C5 DOT OPERATOR
-#   "☺" U263A WHITE SMILING FACE  ➔ "️" UFE0F VARIATION SELECTOR-16 emoji variation selector
+#   "&" U0026 AMPERSAND              ➔ "‍" U200D ZERO WIDTH JOINER
+#   "+" U002B PLUS SIGN              ➔ "⁤" U2064 INVISIBLE PLUS
+#   "," U002C COMMA                  ➔ "⁣" U2063 INVISIBLE SEPARATOR
+#   "-" U002D HYPHEN-MINUS           ➔ "­" U00AD SOFT HYPHEN
+#   "-" U002D HYPHEN-MINUS           ➔ "‧" U2027 HYPHENATION POINT
+#   "|" U007C VERTICAL LINE          ➔ "‌" U200C ZERO WIDTH NON-JOINER
+#   "|" U007C VERTICAL LINE          ➔ "·" U00B7 MIDDLE DOT
+#   "×" U00D7 MULTIPLICATION SIGN    ➔ "⋅" U22C5 DOT OPERATOR
+#   "A" U0041 LATIN CAPITAL LETTER A ➔ "︎" UFE0E VARIATION SELECTOR-15 text variation selector
+#   "☺" U263A WHITE SMILING FACE     ➔ "️" UFE0F VARIATION SELECTOR-16 emoji variation selector
 #
 <dead_circumflex>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
 <Multi_key><less>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
@@ -509,12 +510,12 @@
 <Multi_key><less>                                                                          <U0186> : "Ɔ̂" # U0186 U0302 LATIN CAPITAL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
 <dead_circumflex>                                                                          <U0254> : "ɔ̂" # U0254 U0302 LATIN SMALL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
 <Multi_key><less>                                                                          <U0254> : "ɔ̂" # U0254 U0302 LATIN SMALL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
-<dead_circumflex>                                                                          <U00AD> : "trait_d’union_conditionnel" # SOFT HYPHEN
-<Multi_key><less>                                                                          <U00AD> : "trait_d’union_conditionnel" # SOFT HYPHEN
+<dead_circumflex>                                                                          <U00AD> : "trait_d_union_conditionnel" # SOFT HYPHEN
+<Multi_key><less>                                                                          <U00AD> : "trait_d_union_conditionnel" # SOFT HYPHEN
 #@<dead_circumflex>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
 #@<Multi_key><less>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
-<dead_circumflex>                                                                          <U00B7> : "point médian \"·\"" # MIDDLE DOT
-<Multi_key><less>                                                                          <U00B7> : "point médian \"·\"" # MIDDLE DOT
+<dead_circumflex>                                                                          <U00B7> : "point_médian" # MIDDLE DOT
+<Multi_key><less>                                                                          <U00B7> : "point_médian" # MIDDLE DOT
 #@<dead_circumflex>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
 #@<Multi_key><less>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
 <dead_circumflex>                                                                          <U200C> : "antiliant" # ZERO WIDTH NON-JOINER
@@ -525,8 +526,8 @@
 <Multi_key><less>                                                                          <U200D> : "liant" # ZERO WIDTH JOINER
 #@<dead_circumflex>                                                                        <U200D> : "&" U0026 # AMPERSAND
 #@<Multi_key><less>                                                                        <U200D> : "&" U0026 # AMPERSAND
-<dead_circumflex>                                                                          <U2027> : "point d’hyphénation \"‧\"" # HYPHENATION POINT
-<Multi_key><less>                                                                          <U2027> : "point d’hyphénation \"‧\"" # HYPHENATION POINT
+<dead_circumflex>                                                                          <U2027> : "point_d_hyphénation" # HYPHENATION POINT
+<Multi_key><less>                                                                          <U2027> : "point_d_hyphénation" # HYPHENATION POINT
 #@<dead_circumflex>                                                                        <U2027> : "-" U002D # HYPHEN-MINUS
 #@<Multi_key><less>                                                                        <U2027> : "-" U002D # HYPHEN-MINUS
 <dead_circumflex>                                                                          <U2063> : "séparateur_invisible" # INVISIBLE SEPARATOR
@@ -537,12 +538,16 @@
 <Multi_key><less>                                                                          <U2064> : "signe_plus_invisible" # INVISIBLE PLUS
 #@<dead_circumflex>                                                                        <U2064> : "+" U002B # PLUS SIGN
 #@<Multi_key><less>                                                                        <U2064> : "+" U002B # PLUS SIGN
-<dead_circumflex>                                                                          <U22C5> : "opérateur point \"⋅\"" # DOT OPERATOR
-<Multi_key><less>                                                                          <U22C5> : "opérateur point \"⋅\"" # DOT OPERATOR
+<dead_circumflex>                                                                          <U22C5> : "opérateur_point" # DOT OPERATOR
+<Multi_key><less>                                                                          <U22C5> : "opérateur_point" # DOT OPERATOR
 #@<dead_circumflex>                                                                        <U22C5> : "×" U00D7 # MULTIPLICATION SIGN
 #@<Multi_key><less>                                                                        <U22C5> : "×" U00D7 # MULTIPLICATION SIGN
-<dead_circumflex>                                                                          <UFE0F> : "style_émoji_(sélecteur_de_variante)" # VARIATION SELECTOR-16 emoji variation selector
-<Multi_key><less>                                                                          <UFE0F> : "style_émoji_(sélecteur_de_variante)" # VARIATION SELECTOR-16 emoji variation selector
+<dead_circumflex>                                                                          <UFE0E> : "sélecteur_de_variante_style_texte" # VARIATION SELECTOR-15 text variation selector
+<Multi_key><less>                                                                          <UFE0E> : "sélecteur_de_variante_style_texte" # VARIATION SELECTOR-15 text variation selector
+#@<dead_circumflex>                                                                        <UFE0E> : "A" U0041 # LATIN CAPITAL LETTER A
+#@<Multi_key><less>                                                                        <UFE0E> : "A" U0041 # LATIN CAPITAL LETTER A
+<dead_circumflex>                                                                          <UFE0F> : "sélecteur_de_variante_style_émoji" # VARIATION SELECTOR-16 emoji variation selector
+<Multi_key><less>                                                                          <UFE0F> : "sélecteur_de_variante_style_émoji" # VARIATION SELECTOR-16 emoji variation selector
 #@<dead_circumflex>                                                                        <UFE0F> : "☺" U263A # WHITE SMILING FACE
 #@<Multi_key><less>                                                                        <UFE0F> : "☺" U263A # WHITE SMILING FACE
 #
@@ -1189,11 +1194,16 @@
 #   double press, extending the logic that multiple dead key presses shift
 #   diacritics around, to consider that they may also turn them.
 #
-#   The other base letters, notably "a", "A" and "o", "O", are used to
-#   duplicate the letter group 1.
+#   By contrast, "a", "A" and "o", "O" as well as other base letters are used
+#   to duplicate the letter group 1.
 #   See #+# GROUP_1
 #
 #   Chaining is supported only with the group dead key.
+#
+#   For the same purpose, "’" U2019 and "”" U201D supported in ‹dead_acute› are
+#   also supported in ‹dead_caron› so as to get them into ‹dead_circumflex›
+#   double press for a consistent quotation mark input method also where
+#   ‹dead_acute› is at level 3.
 #
 #   For portability, the full dead key content is supported, as well as
 #   multikey, even though that does not make sense.
@@ -1214,6 +1224,22 @@
 <Multi_key><greater>                                                                       <U202F> : "ˇ" U02C7 # CARON
 <dead_circumflex><dead_circumflex>                                                         <U202F> : "ˇ" U02C7 # CARON
 <Multi_key><less><less>                                                                    <U202F> : "ˇ" U02C7 # CARON
+<dead_caron>                                                                            <quotedbl> : "”" U201D # RIGHT DOUBLE QUOTATION MARK, double comma quotation mark
+<Multi_key><greater>                                                                    <quotedbl> : "”" U201D # RIGHT DOUBLE QUOTATION MARK, double comma quotation mark
+<dead_circumflex><dead_circumflex>                                                      <quotedbl> : "”" U201D # RIGHT DOUBLE QUOTATION MARK, double comma quotation mark
+<Multi_key><less><less>                                                                 <quotedbl> : "”" U201D # RIGHT DOUBLE QUOTATION MARK, double comma quotation mark
+<dead_caron>                                                                            <EuroSign> : "”" U201D # RIGHT DOUBLE QUOTATION MARK, double comma quotation mark
+<Multi_key><greater>                                                                    <EuroSign> : "”" U201D # RIGHT DOUBLE QUOTATION MARK, double comma quotation mark
+<dead_circumflex><dead_circumflex>                                                      <EuroSign> : "”" U201D # RIGHT DOUBLE QUOTATION MARK, double comma quotation mark
+<Multi_key><less><less>                                                                 <EuroSign> : "”" U201D # RIGHT DOUBLE QUOTATION MARK, double comma quotation mark
+<dead_caron>                                                                          <apostrophe> : "’" U2019 # RIGHT SINGLE QUOTATION MARK, single comma quotation mark
+#   Multikey conflicts with "᫬" U1AEC.                                                <apostrophe> : "’" U2019 # RIGHT SINGLE QUOTATION MARK, single comma quotation mark
+<dead_circumflex><dead_circumflex>                                                    <apostrophe> : "’" U2019 # RIGHT SINGLE QUOTATION MARK, single comma quotation mark
+<Multi_key><less><less>                                                               <apostrophe> : "’" U2019 # RIGHT SINGLE QUOTATION MARK, single comma quotation mark
+<dead_caron>                                                                <rightsinglequotemark> : "’" U2019 # RIGHT SINGLE QUOTATION MARK, single comma quotation mark
+<Multi_key><greater>                                                        <rightsinglequotemark> : "’" U2019 # RIGHT SINGLE QUOTATION MARK, single comma quotation mark
+<dead_circumflex><dead_circumflex>                                          <rightsinglequotemark> : "’" U2019 # RIGHT SINGLE QUOTATION MARK, single comma quotation mark
+<Multi_key><less><less>                                                     <rightsinglequotemark> : "’" U2019 # RIGHT SINGLE QUOTATION MARK, single comma quotation mark
 <dead_caron>                                                                                 <bar> : "⸷" U2E37 # DAGGER WITH RIGHT GUARD
 #   Multikey conflicts with "⋫" U22EB.                                                       <bar> : "⸷" U2E37 # DAGGER WITH RIGHT GUARD
 <dead_circumflex><dead_circumflex>                                                           <bar> : "⸷" U2E37 # DAGGER WITH RIGHT GUARD

@@ -1063,6 +1063,9 @@
 #   character nobreakspace, while space yields a legacy spacing character if
 #   available (not for dead_hook, dead_belowcomma, dead_doubleacute properly).
 #
+#
+#   Input method
+#
 #   In ISO/IEC 9995-11:2026, combining diacritics are supported using dead key
 #   double press, while space yields a legacy spacing character if available,
 #   and if not, another useful and mnemonic spacing character, as specified.
@@ -1129,7 +1132,14 @@
 #   repurposed to yield spacing diacritics as does en_US.UTF-8/Compose with
 #   ordinary space.
 #
-#   "¤" U00A4 # CURRENCY SIGN is an exception to the rule.
+#   This scheme does not apply to ‹dead_currency›, nor does it apply to
+#   *dead_superscript ‹UEFD1› and *dead_subscript ‹UEFD2›.
+#   See #*# SUPERSCRIPT
+#   See #*# SUBSCRIPT
+#   See #*# CURRENCY
+#
+#
+#   Composed letters
 #
 #   The XCompose compiler does not parse results defined as multiple keysyms.
 #   Composed letters must be defined as literal strings without keysyms.
@@ -1265,7 +1275,7 @@
 #   See #*# INVERTED_BREVE
 #
 #
-#   Letters
+#   Letters in *dead_superscript
 #
 #   In CLDR, French has ordinal indicators "ᵈ", "ᵉ", "ʳ", "ˢ" since v34 (2018).
 #   https://github.com/unicode-org/cldr/blob/release-34/common/main/fr.xml#L1421
@@ -1321,7 +1331,7 @@
 #   semantics and is therefore eligible for plain text support in Unicode.
 #
 #
-#   Vertical line
+#   Vertical line in *dead_superscript
 #
 #   Followed by apostrophe or rightsinglequotemark, dead_superscript yields
 #   modifier letter vertical line "ˈ" U02C8 consistently with its combining
@@ -1331,7 +1341,7 @@
 #   See "̍" U030D
 #
 #
-#   Double apostrophe
+#   Double apostrophe in *dead_superscript
 #
 #   Followed by quotedbl or EuroSign, dead_superscript yields modifier letter
 #   double apostrophe, that unlike its single counterpart is not supported in
@@ -1341,7 +1351,7 @@
 #   See "̎" U030E
 #
 #
-#   Asterism
+#   Asterism in *dead_superscript
 #
 #   Followed by asterisk, *dead_superscript provides an intuitive shortcut for
 #   "⁂" U2042 ASTERISM, with mnemonics based on the ASCII circumflex, no longer
@@ -1349,7 +1359,7 @@
 #   See #*# CIRCUMFLEX
 #
 #
-#   Overlines
+#   Overlines in *dead_superscript
 #
 #   Followed by underscore, *dead_superscript provides an intuitive shortcut
 #   for the overline "‾" U203E that is also supported on live key.
@@ -1359,7 +1369,7 @@
 #   for "﹋" UFE4B WAVY OVERLINE.
 #
 #
-#   Punctuation-shaped letters
+#   Punctuation-shaped letters in *dead_superscript
 #
 #   The letter apostrophe "ʼ" U02BC is what *dead_superscript yields by comma,
 #   the raised colon "˸" U02F8 and the raised exclamation mark "ꜝ" UA71D have
@@ -1368,7 +1378,7 @@
 #   See #*# DOT_ABOVE
 #
 #
-#   Math-shaped symbols
+#   Math symbols and similar in *dead_superscript
 #
 #   Plus, parentheses, equal and the minus sign have their superscript form
 #   "⁺" U207A, "⁽" U207D, "⁾" U207E, "⁼" U207C, "⁻" U207B with straightforward
@@ -1387,25 +1397,22 @@
 #   See # # Superscript or subscript signs, symbol, punctuation
 #
 #
-#   Diacritic
+#   Diacritic in *dead_superscript
 #
-#   To populate the diacritic slot, "̅" U0305 COMBINING OVERLINE is included,
-#   with a mnemonic referring to "̲" U0332 COMBINING LOW LINE that fills this
-#   slot in *dead_subscript, rather than duplicates of the set of circumflexes
-#   already provided in dead_circumflex.
+#   Consistently with ‹dead_currency›, the diacritic and spacing clone slots
+#   are populated with the iconic "↑" U2191 matching this dead key’s Windows
+#   dead character.
+#   See #*# CURRENCY
 #   See #*# SUBSCRIPT
 #
-#   Consistently, the spacing clone is "‾" U203E, supported on live key, too.
-#   See dispocla.cpp ## Overscore
-#
-<UEFD1>                                                                                    <space> : "̅" U0305 # COMBINING OVERLINE
-#   Multikey conflicts with "∧" U2227.                                                     <space> : "̅" U0305 # COMBINING OVERLINE
-<UEFD1>                                                                                    <U200B> : "̅" U0305 # COMBINING OVERLINE
-<Multi_key><asciicircum>                                                                   <U200B> : "̅" U0305 # COMBINING OVERLINE
-<UEFD1>                                                                             <nobreakspace> : "‾" U203E # OVERLINE
-#   Multikey conflicts with "∧" U2227.                                              <nobreakspace> : "‾" U203E # OVERLINE
-<UEFD1>                                                                                    <U202F> : "‾" U203E # OVERLINE
-<Multi_key><asciicircum>                                                                   <U202F> : "‾" U203E # OVERLINE
+<UEFD1>                                                                                    <space> : "↑" U2191 # UPWARDS ARROW
+#   Multikey conflicts with "∧" U2227.                                                     <space> : "↑" U2191 # UPWARDS ARROW
+<UEFD1>                                                                                    <U200B> : "↑" U2191 # UPWARDS ARROW
+<Multi_key><asciicircum>                                                                   <U200B> : "↑" U2191 # UPWARDS ARROW
+<UEFD1>                                                                             <nobreakspace> : "↑" U2191 # UPWARDS ARROW
+#   Multikey conflicts with "∧" U2227.                                              <nobreakspace> : "↑" U2191 # UPWARDS ARROW
+<UEFD1>                                                                                    <U202F> : "↑" U2191 # UPWARDS ARROW
+<Multi_key><asciicircum>                                                                   <U202F> : "↑" U2191 # UPWARDS ARROW
 <UEFD1>                                                                                 <quotedbl> : "ˮ" U02EE # MODIFIER LETTER DOUBLE APOSTROPHE
 <Multi_key><asciicircum>                                                                <quotedbl> : "ˮ" U02EE # MODIFIER LETTER DOUBLE APOSTROPHE
 <UEFD1>                                                                                 <EuroSign> : "ˮ" U02EE # MODIFIER LETTER DOUBLE APOSTROPHE
@@ -3976,6 +3983,13 @@
 #   as part of the lenience streamlining the user experience.
 #
 #
+#   Diacritic in *dead_superscript UEFD1 double press
+#
+#   Consistently with ‹dead_currency› and with double press, the diacritic and
+#   spacing clone slots are populated with the iconic "⇑" U21D1.
+#   See #*# CURRENCY
+#
+#
 #   Diacritic
 #
 #   The diacritic replicates the scheme used for combining below with "̿" U033F
@@ -3984,14 +3998,14 @@
 #   supported, too, with underscore as a base character.
 #   See #^# COMBINING_BELOW
 #
-<UEFD1><UEFD1>                                                                             <space> : "̿" U033F # COMBINING DOUBLE OVERLINE
-#   Multikey conflicts with "⋄" U22C4.                                                     <space> : "̿" U033F # COMBINING DOUBLE OVERLINE
-<UEFD1><UEFD1>                                                                             <U200B> : "̿" U033F # COMBINING DOUBLE OVERLINE
-<Multi_key><asciicircum><asciicircum>                                                      <U200B> : "̿" U033F # COMBINING DOUBLE OVERLINE
-<UEFD1><UEFD1>                                                                      <nobreakspace> : "﹌" UFE4C # DOUBLE WAVY OVERLINE
-#   Multikey conflicts with "⋄" U22C4.                                              <nobreakspace> : "﹌" UFE4C # DOUBLE WAVY OVERLINE
-<UEFD1><UEFD1>                                                                             <U202F> : "﹌" UFE4C # DOUBLE WAVY OVERLINE
-<Multi_key><asciicircum><asciicircum>                                                      <U202F> : "﹌" UFE4C # DOUBLE WAVY OVERLINE
+<UEFD1><UEFD1>                                                                             <space> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
+#   Multikey conflicts with "⋄" U22C4.                                                     <space> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
+<UEFD1><UEFD1>                                                                             <U200B> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
+<Multi_key><asciicircum><asciicircum>                                                      <U200B> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
+<UEFD1><UEFD1>                                                                      <nobreakspace> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
+#   Multikey conflicts with "⋄" U22C4.                                              <nobreakspace> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
+<UEFD1><UEFD1>                                                                             <U202F> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
+<Multi_key><asciicircum><asciicircum>                                                      <U202F> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
 <UEFD1><UEFD1>                                                                       <asciicircum> : "᪳" U1AB3 # COMBINING DOWNWARDS ARROW
 <Multi_key><asciicircum><asciicircum>                                                <asciicircum> : "᪳" U1AB3 # COMBINING DOWNWARDS ARROW
 <UEFD1><UEFD1>                                                                           <percent> : "᫫" U1AEB # COMBINING DOUBLE RIGHTWARDS ARROW ABOVE
@@ -4342,8 +4356,8 @@
 #
 #   See # # Dead characters
 #
-<UEFD1><UEFD1><UEFD1>                                                                              : "^" U005E # CIRCUMFLEX ACCENT
-#   Multikey conflicts with "᪳" U1AB3.                                                             : "^" U005E # CIRCUMFLEX ACCENT
+<UEFD1><UEFD1><UEFD1>                                                                              : "↑" U2191 # UPWARDS ARROW
+#   Multikey conflicts with "᪳" U1AB3.                                                              : "↑" U2191 # UPWARDS ARROW
 #
 #
 #*# TURNED
@@ -8785,10 +8799,6 @@
 #   See #*# DOT_BELOW
 #   See # # C01 numbersign
 #
-#   The associated diacritic "̲" U0332 and its spacing clone, ASCII "_" U005F,
-#   are built on the underscore theme hinted by the subscript’s TeX command.
-#   See #*# SUPERSCRIPT
-#
 #
 #   Math symbols in *dead_subscript
 #
@@ -8800,14 +8810,23 @@
 #   in the math section.
 #   See # # Superscript or subscript signs, symbol, punctuation
 #
-<UEFD2>                                                                                    <space> : "̲" U0332 # COMBINING LOW LINE
-<Multi_key><underscore>                                                                    <space> : "̲" U0332 # COMBINING LOW LINE
-<UEFD2>                                                                                    <U200B> : "̲" U0332 # COMBINING LOW LINE
-<Multi_key><underscore>                                                                    <U200B> : "̲" U0332 # COMBINING LOW LINE
-<UEFD2>                                                                             <nobreakspace> : "_" U005F # LOW LINE
-<Multi_key><underscore>                                                             <nobreakspace> : "_" U005F # LOW LINE
-<UEFD2>                                                                                    <U202F> : "_" U005F # LOW LINE
-<Multi_key><underscore>                                                                    <U202F> : "_" U005F # LOW LINE
+#
+#   Diacritic in *dead_subscript
+#
+#   Consistently with ‹dead_currency›, the diacritic and spacing clone slots
+#   are populated with the iconic "↓" U2193 matching this dead key’s Windows
+#   dead character.
+#   See #*# CURRENCY
+#   See #*# SUPERSCRIPT
+#
+<UEFD2>                                                                                    <space> : "↓" U2193 # DOWNWARDS ARROW
+<Multi_key><underscore>                                                                    <space> : "↓" U2193 # DOWNWARDS ARROW
+<UEFD2>                                                                                    <U200B> : "↓" U2193 # DOWNWARDS ARROW
+<Multi_key><underscore>                                                                    <U200B> : "↓" U2193 # DOWNWARDS ARROW
+<UEFD2>                                                                             <nobreakspace> : "↓" U2193 # DOWNWARDS ARROW
+<Multi_key><underscore>                                                             <nobreakspace> : "↓" U2193 # DOWNWARDS ARROW
+<UEFD2>                                                                                    <U202F> : "↓" U2193 # DOWNWARDS ARROW
+<Multi_key><underscore>                                                                    <U202F> : "↓" U2193 # DOWNWARDS ARROW
 <UEFD2>                                                                                <parenleft> : "₍" U208D # SUBSCRIPT LEFT PARENTHESIS
 <Multi_key><underscore>                                                                <parenleft> : "₍" U208D # SUBSCRIPT LEFT PARENTHESIS
 <UEFD2>                                                                               <parenright> : "₎" U208E # SUBSCRIPT RIGHT PARENTHESIS
@@ -9457,19 +9476,20 @@
 #   https://www.unicode.org/L2/L2014/14169r-dialect-latin.pdf
 #
 #
-#   Diacritic
+#   Diacritic in *dead_subscript UEFD2 double press
 #
-#   The diacritic and its spacing clone build on the underscore theme combined
-#   with the "double" theme coming in from double press: "̳" U0333, "‗" U2017.
+#   Consistently with ‹dead_currency› and with double press, the diacritic and
+#   spacing clone slots are populated with the iconic "⇓" U21D3.
+#   See #*# CURRENCY
 #
-<UEFD2><UEFD2>                                                                             <space> : "̳" U0333 # COMBINING DOUBLE LOW LINE
-<Multi_key><underscore><underscore>                                                        <space> : "̳" U0333 # COMBINING DOUBLE LOW LINE
-<UEFD2><UEFD2>                                                                             <U200B> : "̳" U0333 # COMBINING DOUBLE LOW LINE
-<Multi_key><underscore><underscore>                                                        <U200B> : "̳" U0333 # COMBINING DOUBLE LOW LINE
-<UEFD2><UEFD2>                                                                      <nobreakspace> : "‗" U2017 # DOUBLE LOW LINE
-<Multi_key><underscore><underscore>                                                 <nobreakspace> : "‗" U2017 # DOUBLE LOW LINE
-<UEFD2><UEFD2>                                                                             <U202F> : "‗" U2017 # DOUBLE LOW LINE
-<Multi_key><underscore><underscore>                                                        <U202F> : "‗" U2017 # DOUBLE LOW LINE
+<UEFD2><UEFD2>                                                                             <space> : "⇓" U21D3 # DOWNWARDS DOUBLE ARROW
+<Multi_key><underscore><underscore>                                                        <space> : "⇓" U21D3 # DOWNWARDS DOUBLE ARROW
+<UEFD2><UEFD2>                                                                             <U200B> : "⇓" U21D3 # DOWNWARDS DOUBLE ARROW
+<Multi_key><underscore><underscore>                                                        <U200B> : "⇓" U21D3 # DOWNWARDS DOUBLE ARROW
+<UEFD2><UEFD2>                                                                      <nobreakspace> : "⇓" U21D3 # DOWNWARDS DOUBLE ARROW
+<Multi_key><underscore><underscore>                                                 <nobreakspace> : "⇓" U21D3 # DOWNWARDS DOUBLE ARROW
+<UEFD2><UEFD2>                                                                             <U202F> : "⇓" U21D3 # DOWNWARDS DOUBLE ARROW
+<Multi_key><underscore><underscore>                                                        <U202F> : "⇓" U21D3 # DOWNWARDS DOUBLE ARROW
 <UEFD2><UEFD2>                                                                       <asciicircum> : "͖" U0356 # COMBINING RIGHT ARROWHEAD AND UP ARROWHEAD BELOW
 <Multi_key><underscore><underscore>                                                  <asciicircum> : "͖" U0356 # COMBINING RIGHT ARROWHEAD AND UP ARROWHEAD BELOW
 <UEFD2><UEFD2>                                                                           <percent> : "͢" U0362 # COMBINING DOUBLE RIGHTWARDS ARROW BELOW
@@ -9482,6 +9502,10 @@
 <Multi_key><underscore><underscore>                                                   <apostrophe> : "̩" U0329 # COMBINING VERTICAL LINE BELOW: Yoruba, German dialectology
 <UEFD2><UEFD2>                                                              <rightsinglequotemark> : "̩" U0329 # COMBINING VERTICAL LINE BELOW: Yoruba, German dialectology
 <Multi_key><underscore><underscore>                                         <rightsinglequotemark> : "̩" U0329 # COMBINING VERTICAL LINE BELOW: Yoruba, German dialectology
+<UEFD2><UEFD2>                                                                        <underscore> : "‗" U2017 # DOUBLE LOW LINE
+<Multi_key><underscore><underscore>                                                   <underscore> : "‗" U2017 # DOUBLE LOW LINE
+<UEFD2><UEFD2>                                                                         <ampersand> : "̳" U0333 # COMBINING DOUBLE LOW LINE
+<Multi_key><underscore><underscore>                                                    <ampersand> : "̳" U0333 # COMBINING DOUBLE LOW LINE
 <UEFD2><UEFD2>                                                                            <dollar> : "᪽" U1ABD # COMBINING PARENTHESES BELOW
 <Multi_key><underscore><underscore>                                                       <dollar> : "᪽" U1ABD # COMBINING PARENTHESES BELOW
 <UEFD2><UEFD2>                                                                         <parenleft> : "᫃" U1AC3 # COMBINING LEFT PARENTHESIS BELOW LEFT
@@ -9616,8 +9640,8 @@
 #
 #   See # # Dead characters
 #
-<UEFD2><UEFD2><UEFD2>                                                                              : "_" U005F # LOW LINE
-#   Multikey conflicts with "̲" U0332.                                                              : "_" U005F # LOW LINE
+<UEFD2><UEFD2><UEFD2>                                                                              : "↓" U2193 # DOWNWARDS ARROW
+#   Multikey conflicts with "̲" U0332.                                                              : "↓" U2193 # DOWNWARDS ARROW
 #
 #
 #*# DOT_ABOVE
@@ -11517,14 +11541,15 @@
 #
 #   This is 100% sideways compatible with en_US.UTF-8/Compose, except for the
 #   double press, used to activate the CURRENCY_EXTENDED dead key, rather than
-#   to yield the generic currency sign "¤" U00A4.
+#   to yield the generic currency sign "¤" U00A4, output on triple press as of
+#   multipress support.
+#   See #^# SUPERSCRIPT_DK_ID
 #
-#   The generic currency sign "¤" U00A4 however is extensively supported, with
-#   both the two breaking and the two no-break spaces as base characters, both
-#   after single and double press, and by case insensitive <Multi_key><x><o>
-#   sequences as sideways compatible multikey equivalents.
+#   This generic currency symbol "¤" U00A4 is extensively supported, with both
+#   the two breaking and the two no-break spaces as base characters, both after
+#   single and double press.
 #   See #^# CURRENCY_EXTENDED
-#   See # # Currency symbols by ISO codes
+#   See #^# Currency symbols
 #
 #   Letters "J", "j", "Q", "q", "V", "v", "X", "x", "Z", "z" are unused in
 #   en_US.UTF-8/Compose dead_currency, while nine symbols are left over among
@@ -11565,6 +11590,9 @@
 #
 #   "₵" U20B5 # CEDI SIGN has Ccedilla as a base character too, for consistency
 #   with en_US.UTF-8/Compose.
+#
+#
+#   Math symbols in dead_currency
 #
 #   Integral symbols are also supported, based on "S" mnemonic, with the
 #   corresponding digits as base characters. Likewise, contour integrals

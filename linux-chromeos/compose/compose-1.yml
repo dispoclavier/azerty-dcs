@@ -1,7 +1,7 @@
 #                      Scope: Part 1 of Compose.yml
 #                       Date: See Compose.yml
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.1.0+14" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+15" # See #   End of line comments
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
 #                Description: Multicharacter, multikey and dead key configuration
@@ -3437,8 +3437,9 @@
 #   See #*# MACRON
 #   See #*# STROKE
 #
-#   The generic currency symbol "¤" U00A4 is supported by case insensitive X O
-#   sequences. Reverse sequences conflict with mathematical symbols.
+#   The generic currency symbol "¤" U00A4 is supported by case sensitive
+#   mixed-case sequences. Unicase and reverse sequences conflict with
+#   mathematical symbols.
 #
 <Multi_key><A><equal>                                                                              : "₳" U20B3 # AUSTRAL SIGN
 <Multi_key><C><bar>                                                                                : "₵" U20B5 # CEDI SIGN

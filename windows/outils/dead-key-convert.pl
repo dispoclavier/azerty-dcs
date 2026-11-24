@@ -5,7 +5,7 @@
 # 2025-12-23T0450+0100
 # 2025-12-31T1259+0100
 # 2026-03-16T1433+0100
-# 2026-11-20T2331+0100
+# 2026-11-23T2030+0100
 # = last modified
 #
 # This “dead key converter” generates DEADTRANS macro calls for Windows and is
@@ -1488,7 +1488,7 @@ sub get_dead_character {
 	my ( $deadkey ) = @_;
 
 	# Single-press dead keys (33).
-	$deadkey =~ s/^<!superscript>$/^/;
+	$deadkey =~ s/^<!superscript>$/2191/;
 	$deadkey =~ s/^<!turned>$/0250/;
 	$deadkey =~ s/^<!doubleacute>$/0151/;
 	$deadkey =~ s/^<!reversed>$/1D19/;
@@ -1504,7 +1504,7 @@ sub get_dead_character {
 	$deadkey =~ s/^<!breve>$/0115/;
 	$deadkey =~ s/^<!bar>$/024D/;
 	$deadkey =~ s/^<!horn>$/01A1/;
-	$deadkey =~ s/^<!subscript>$/_/;
+	$deadkey =~ s/^<!subscript>$/2193/;
 	$deadkey =~ s/^<!ogonek>$/01EB/;
 	$deadkey =~ s/^<!abovehook>$/1EBB/;
 	$deadkey =~ s/^<!macron>$/0101/;
