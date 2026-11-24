@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Update dead characters                  7.1.0+16.0 Mon 2026-11-24T1539+0100
 * Rule out separate multikey equivalents   6.2.4.0.0 Tue 2026-03-03T0949+0100
 * Support infinite group dead key presses  6.2.1.0.0 Wed 2026-01-28T1105+0100
 * Update the done cursor for 6.2.0         6.2.0.0.0 Tue 2026-01-27T2110+0100
@@ -127,18 +128,18 @@ static ALLOC_SECTION_LDATA DEADKEY aDeadKey[] = {
 /*<!dead_doubleacute>  */ DEADTRANS( 0x200B ,0x0151 ,0xD83D ,0x0000 ), // High surrogate for ornamental quotation marks
 /*<!dead_flag>         */ DEADTRANS( 0x200B ,0x2690 ,0xD83C ,0x0000 ), // High surrogate for flag letters, squared letters
 /*<!dead_grave>        */ DEADTRANS( 0x200B ,0x00F2 ,0xD837 ,0x0000 ), // High surrogate for Latin
-/*<!dead_greek>        */ DEADTRANS( 0x200B ,0x03B5 ,0xD83C ,0x0000 ), // High surrogate for flag letters, squared letters
+/*<!dead_greek>        */ DEADTRANS( 0x200B ,0x26AA ,0xD83C ,0x0000 ), // High surrogate for flag letters, squared letters
 /*<!dead_group>        */ DEADTRANS( 0x200B ,0x2460 ,0xD835 ,0x0000 ), // High surrogate for mathematical alphanumeric symbols
-/*<!dead_hook>         */ DEADTRANS( 0x200B ,0x0192 ,0xD837 ,0x0000 ), // High surrogate for Latin
+/*<!dead_hook>         */ DEADTRANS( 0x200B ,0x0188 ,0xD837 ,0x0000 ), // High surrogate for Latin
 /*<!dead_horn>         */ DEADTRANS( 0x200B ,0x01A1 ,0xD837 ,0x0000 ), // High surrogate for Latin
 /*<!dead_invertedbreve>*/ DEADTRANS( 0x200B ,0x0213 ,0xD837 ,0x0000 ), // High surrogate for Latin
 /*<!dead_macron>       */ DEADTRANS( 0x200B ,0x0101 ,0xD837 ,0x0000 ), // High surrogate for Latin
 /*<!dead_ogonek>       */ DEADTRANS( 0x200B ,0x01EB ,0xD837 ,0x0000 ), // High surrogate for Latin
-/*<!dead_retroflexhook>*/ DEADTRANS( 0x200B ,0x0273 ,0xD837 ,0x0000 ), // High surrogate for Latin
+/*<!dead_retroflexhook>*/ DEADTRANS( 0x200B ,0x027D ,0xD837 ,0x0000 ), // High surrogate for Latin
 /*<!dead_reversed>     */ DEADTRANS( 0x200B ,0x1D19 ,0xD837 ,0x0000 ), // High surrogate for Latin
 /*<!dead_stroke>       */ DEADTRANS( 0x200B ,0x00F8 ,0xD83E ,0x0000 ), // High surrogate for wide-headed arrows
-/*<!dead_subscript>    */ DEADTRANS( 0x200B ,L'_'   ,0xD837 ,0x0000 ), // High surrogate for Latin
-/*<!dead_superscript>  */ DEADTRANS( 0x200B ,L'^'   ,0xD801 ,0x0000 ), // High surrogate for modifier letters
+/*<!dead_subscript>    */ DEADTRANS( 0x200B ,0x2193 ,0xD837 ,0x0000 ), // High surrogate for Latin
+/*<!dead_superscript>  */ DEADTRANS( 0x200B ,0x2191 ,0xD801 ,0x0000 ), // High surrogate for modifier letters
 /*<!dead_tilde>        */ DEADTRANS( 0x200B ,0x00F5 ,0xD837 ,0x0000 ), // High surrogate for Latin
 /*<!dead_turned>       */ DEADTRANS( 0x200B ,0x0250 ,0xD807 ,0x0000 ), // High surrogate for U+11FB0 "𑾰" LISU LETTER YHA
 

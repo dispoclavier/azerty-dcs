@@ -5,18 +5,40 @@
 # 2025-12-23T0450+0100
 # 2025-12-31T1259+0100
 # 2026-03-16T1433+0100
-# 2026-11-23T2030+0100
+# 2026-11-24T2008+0100
 # = last modified
 #
 # This “dead key converter” generates DEADTRANS macro calls for Windows and is
 # therefore part of the toolset for Windows, although it runs on the dead key
 # configuration file for Linux, Compose.yml, like a couple of other scripts.
 #
+# This script executes the two replace rulesets included in settings.json and
+# documented in Compose.yml, and sorting is improved.
+# https://alvinalexander.com/perl/perl-array-sort-sorting-string-case-insensitive/
+# See Compose.yml # # Notes for maintenance
+#
+#
+# Dead characters
+#
+# In the subroutine get_dead_character the dead characters in the substitutions
+# must be in sync with those used in the DEADTRANS macro calls set up to output
+# a set of high surrogates in kbdeatrans.c * High surrogates
+#
+#
+# Source code syntax requirements
+#
 # Lines parsed for single character output by dead keys or by multikey must
 # contain the output as a literal followed by a code point and at least a
 # trailing "#" even when there is no character name or anything else as a
 # comment. This is consistent with what the XCompose parser seems to expect,
 # most notably the trailing hash, as documented in Compose.yml.
+#
+#   All lines containing a compose sequence also contain a comment before the
+#   end of line, for safety, as it happened that sequences without a trailing
+#   numbersign were ignored, and appending a hash fixed the bug. However, EOL
+#   comments are specified as optional.
+#   https://www.x.org/releases/X11R7.5/doc/man/man5/Compose.5.html
+#
 # See Compose.yml #   End of line comments
 #
 # Multicharacter output is not processed, due to the defective DEADTRANS macro
@@ -26,11 +48,6 @@
 # the high surrogate is mentioned in the EOL comment and can be input using
 # typically the same dead key followed by U200B on Shift + AltGr + Spacebar.
 # See # SMP characters
-#
-# This script executes the two replace rulesets included in settings.json and
-# documented in Compose.yml, and sorting is improved.
-# https://alvinalexander.com/perl/perl-array-sort-sorting-string-case-insensitive/
-# See Compose.yml # # Notes for maintenance
 #
 #
 # Dead key chains
@@ -58,6 +75,9 @@
 # See Compose.yml # # SUPERSCRIPT&SUBSCRIPT&BREVE
 # See Compose.yml # # SUBSCRIPT&BREVE
 # See Compose.yml # # SUBSCRIPT&BAR
+#
+#
+# Greek dead key support
 #
 # The sequences ending in dead_greek are required because dead_greek is
 # duplicated on the position of the at sign on the ASCII symbol map, key D06.
@@ -141,12 +161,12 @@ my $support_all_multikey_equivalents    = !1;
 #
 # SMP characters
 #
-# 2 145 dead key sequences yield Latin letters or mathematical symbols encoded
-# in the SMP that Windows is unable to output in one go by a dead key. As a
+# 2 600+ dead key sequences yield Latin letters or mathematical symbols encoded
+# in the SMP, that Windows is unable to output in one go by a dead key. As a
 # workaround, the dead key output is restricted to the low surrogate. An input
-# method for the high surrogates is provided separately at the root of related
-# dead keys, with U+200B ZERO WIDTH SPACE as a base character, in synergy with
-# most dead keys, at level 4 of the space bar in French mode.
+# method for the high surrogates is provided separately with the base character
+# U+200B ZERO WIDTH SPACE, at level 4 of the space bar in French mode, in
+# synergy with the persistent dead key map.
 #
 # The 8 required high surrogates are:
 #
@@ -1726,6 +1746,7 @@ foreach my $line ( @dead_key_out ) {
 			} else {
 				$input_string = $input;
 				$input_string =~ s/\\?(.)/$1/;
+				$delim        = '"';
 				if ( $input_string =~ /^"$/ ) {
 					$delim = "'";
 				}
@@ -1793,6 +1814,7 @@ foreach my $line ( @multikey_out ) {
 			} else {
 				$input_string = $input;
 				$input_string =~ s/\\?(.)/$1/;
+				$delim        = '"';
 				if ( $input_string =~ /^"$/ ) {
 					$delim = "'";
 				}
@@ -1833,7 +1855,7 @@ foreach my $line ( @multikey_out ) {
 				$deadkey    = $1;
 				$input      = $2;
 				$deadchar   = get_multikey_dead_character( $deadkey );
-				$input      =~ s/<(.+)>/$input/;
+				$input      =~ s/<(.+)>/$1/;
 				$input      = dekeysym( $input );
 				$print      = '/*' . $line . ( " " x ( 65 - length( $line ) ) )
 				               . "*/ DEADTRANS( " . format_character( $input ) . "\t," . format_character( $deadchar )
