@@ -5,7 +5,7 @@
 # 2025-12-23T0450+0100
 # 2025-12-31T1259+0100
 # 2026-03-16T1433+0100
-# 2026-11-24T2008+0100
+# 2026-11-25T0452+0100
 # = last modified
 #
 # This “dead key converter” generates DEADTRANS macro calls for Windows and is
@@ -14,7 +14,9 @@
 #
 # This script executes the two replace rulesets included in settings.json and
 # documented in Compose.yml, and sorting is improved.
+# By courtesy of Alvin Alexander.
 # https://alvinalexander.com/perl/perl-array-sort-sorting-string-case-insensitive/
+# See # Case insensitive sorting
 # See Compose.yml # # Notes for maintenance
 #
 #
@@ -221,7 +223,7 @@ my $support_all_multikey_equivalents    = !1;
 no warnings 'uninitialized';
 #
 #
-# Using old-style file handles.
+# Using old-style file handles
 use strict;
 use warnings;
 use utf8;
@@ -394,7 +396,7 @@ sub dekeysym {
 
 my @virtual_dead_characters = (
 
-	# Intermediate dead key chains (779).
+	# Intermediate dead key chains (779)
 	'<!abovedot><!abovedot>➔02C8',#<dead_abovedot><dead_abovedot>
 	'<!abovedot><!abovedot><!acute>➔02C7',#<dead_abovedot><dead_abovedot><dead_acute>
 	'<!abovedot><!abovedot><!acute><!grave>➔02B7',#<dead_abovedot><dead_abovedot><dead_acute><dead_grave>
@@ -1175,7 +1177,7 @@ my @virtual_dead_characters = (
 	'<!doubleacute><!abovedot><!abovedot>➔00D6',
 	'<!doubleacute><!abovedot>➔00DC',
 
-	# Polytonic and monotonic Greek (256).
+	# Polytonic and monotonic Greek (256)
 	'<!abovehook><!greek>➔1FBD',#<UEFD3><dead_greek>
 	'<!acute><!belowdot><!breve><!greek>➔1F84',#<dead_acute><dead_belowdot><dead_breve><dead_greek>
 	'<!acute><!belowdot><!greek>➔1FB4',#<dead_acute><dead_belowdot><dead_greek>
@@ -1433,7 +1435,7 @@ my @virtual_dead_characters = (
 	'<!invertedbreve><!greek><!grave><!belowdot>➔1F3B',#<dead_invertedbreve><dead_greek><dead_grave><dead_belowdot>
 	'<!macron><!greek>➔1F3D',#<dead_macron><dead_greek>
 
-	# Latin dead key chains for Greek (54).
+	# Latin dead key chains for Greek (54)
 	'<!acute><!belowdot><!breve>➔2500',
 	'<!acute><!belowdot>➔2501',
 	'<!acute><!belowdot><!invertedbreve>➔2502',
@@ -1491,7 +1493,7 @@ my @virtual_dead_characters = (
 
 );
 
-# Generates the required chained dead keys.
+# Generates the required chained dead keys
 foreach my $item ( @virtual_dead_characters ) {
 	$deadkey  = substr( $item, 0, -5 );
 	$deadkey  =~ m/(<.+>)(<.+>)/;
@@ -1504,10 +1506,17 @@ foreach my $item ( @virtual_dead_characters ) {
 				. "\t," . format_character( get_dead_character( $deadkey ) ) . "\t,0x0001), // Virtual dead key’s intermediate chain link\n";
 }
 
+#
+# Dead characters
+#
+# In these substitutions, the dead characters must be in sync with those used
+# in the DEADTRANS macro calls set up to output a set of high surrogates in
+# kbdeatrans.c * High surrogates
+#
 sub get_dead_character {
 	my ( $deadkey ) = @_;
 
-	# Single-press dead keys (33).
+	# Regular single-press dead keys (30)
 	$deadkey =~ s/^<!superscript>$/2191/;
 	$deadkey =~ s/^<!turned>$/0250/;
 	$deadkey =~ s/^<!doubleacute>$/0151/;
@@ -1538,9 +1547,13 @@ sub get_dead_character {
 	$deadkey =~ s/^<!belowdot>$/1E05/;
 	$deadkey =~ s/^<!diaeresis>$/00EB/;
 	$deadkey =~ s/^<!belowcomma>$/0219/;
+
+	# Multikey
+	$deadkey =~ s/^<!M>$/00A6/;
+
+	# Legacy single-press dead keys
 	$deadkey =~ s/^<!legacygrave>$/`/;
 	$deadkey =~ s/^<!legacytilde>$/~/;
-	$deadkey =~ s/^<!M>$/00A6/;
 
 	foreach my $item ( @virtual_dead_characters ) {
 		if ( substr( $item, 0, -5 ) eq $deadkey ) {
@@ -1555,7 +1568,7 @@ sub get_dead_character {
 sub get_multikey_dead_character {
 	my ( $multikey ) = @_;
 
-	$multikey =~ s/^<!M>$/00A6/; # The Multikey.
+	$multikey =~ s/^<!M>$/00A6/; # The Multikey
 
 	unless ( $multikey eq '00A6' ) {
 		foreach my $item ( @multikey_dchars ) {
@@ -1568,17 +1581,18 @@ sub get_multikey_dead_character {
 	return $multikey;
 }
 
-# Processes the source.
+# Processes the source
 print( "Parsing $input_path in progress ---\n" );
 print CONSOLE ( "Parsing $input_path in progress ---\n" );
 
 while ( my $line = <INPUT> ) {
 	if ( $line =~ /START_GREEK/ ) {
 
-		# To include polytonic Greek, comment this out.
+		# To include polytonic Greek, comment this out:
 		# $parse_on = !1;
 
-		# Multikey equivalents of dead keys are output separately.
+		# Multikey equivalents are skipped so as to stay below
+		# the Windows layout driver file size threshold.
 		$parse_equivalents = !0;
 	}
 	if ( $line =~ /START_LATIN_BY_DEAD_KEYS/ ) {
@@ -1586,26 +1600,26 @@ while ( my $line = <INPUT> ) {
 	}
 
 	if ( $parse_on ) {
-		unless ( $line =~ /^#[^@]/         # Annotations, without Windows-specific.
-			|| $line =~ /^<[^>]+> * :/       # Multicharacter output for live keys.
-			|| $line =~ /# [Aa]vailable\.?$/ # Empty slots in letter groups.
-			|| $line =~ /<KP_/               # Keypad equivalents, a Linux feature.
+		unless ( $line =~ /^#[^@]/                   # Annotations, without Windows-specifics
+			|| $line =~ /^<[^>]+> * :/       # Multicharacter output for live keys
+			|| $line =~ /# [Aa]vailable\.?$/ # Empty slots in letter groups
+			|| $line =~ /<KP_/               # Keypad equivalents, a Linux feature
 		) {
 
-			# Remove the Windows-specific prefix.
+			# Remove the Windows-specific prefix
 			$line =~ s/^#@//;
 
-			# Collapse spaces.
+			# Collapse spaces
 			$line =~ s/ {2,}/ /g;
 
-			# Concatenate keysyms.
+			# Concatenate keysyms
 			$line =~ s/> </></g;
 
-			# Simplify dead key names and prepare for sorting.
+			# Simplify dead key names and prepare for sorting
 			$line =~ s/<dead_/<!/g;
 			$line =~ s/<Multi_key/<!M/g;
 
-			# Decode keysyms.
+			# Decode keysyms
 			$line =~ s/<UEFD0>/<!group>/g;
 			$line =~ s/<UEFD1>/<!superscript>/g;
 			$line =~ s/<UEFD2>/<!subscript>/g;
@@ -1622,21 +1636,23 @@ while ( my $line = <INPUT> ) {
 			$line =~ s/<U0186>/<Oopen>/g;
 			$line =~ s/<U0254>/<oopen>/g;
 
-			# Prepare for sorting, shorten, further decode.
+			# Prepare for sorting, shorten, further decode
 			$line =~ s/<EuroSign>/<\%quotEuroSign>/g;
 			$line =~ s/<section>/<\%excsection>/g;
 			$line =~ s/<rightsinglequotemark>/<\%aprightsingquotmark>/g;
 			$line =~ s/<ascii(circum|tilde)>/<\%$1>/g;
 			$line =~ s/<numbersign>/<\%hash>/g;
 			$line =~ s/<(ampersand|apostrophe|asterisk|at|backslash|bar|braceleft|braceright|bracketleft|bracketright
-									|colon|comma|dollar|equal|exclam|grave|greater|less|minus|parenleft|parenright
-									|percent|period|plus|question|quotedbl|semicolon|slash|underscore)>/<\%$1>/gx;
+				|colon|comma|dollar|equal|exclam|grave|greater|less|minus|parenleft|parenright
+				|percent|period|plus|question|quotedbl|semicolon|slash|underscore)>/<\%$1>/gx;
+
+			# Prefix, shorten or decode spaces
 			$line =~ s/<(space)>/<~$1>/g;
 			$line =~ s/<nobreak(space)>/<~nb$1>/g;
 			$line =~ s/<U202F>/<~nbthinspace>/g;
 			$line =~ s/<U200B>/<~spacezerowidth>/g;
 
-			# Store dead keys and multikey in 2 arrays.
+			# Store dead keys and multikey in 2 arrays
 			if ( $line =~ /^(#@)?<!M>/ ) {
 				if ( $parse_equivalents eq !0 ) {
 					if ( $line =~ /^(#@)?<!M><[^>]+><[^>]+>[^<]/ && $support_simple_multikey_equivalents eq !0 ) {
@@ -1648,7 +1664,7 @@ while ( my $line = <INPUT> ) {
 					push( @multikey_out, $line );
 				}
 
-				# Add to catalog.
+				# Add to catalog
 				$line =~ m/(<.+>).+/;
 				push( @multikey_parsed, $1 );
 
@@ -1661,7 +1677,7 @@ while ( my $line = <INPUT> ) {
 print( "Parsing $input_path complete.\n" );
 print CONSOLE ( "Parsing $input_path complete.\n" );
 
-# Add missing links to multikey chains.
+# Add missing links to multikey chains
 print( "Adding missing links to multikey chains in progress ---\n" );
 print CONSOLE ( "Adding missing links to multikey chains in progress ---\n" );
 print( "multikey_parsed has " . @multikey_parsed . " elements.\n" );
@@ -1671,7 +1687,6 @@ foreach my $entry ( @multikey_parsed ) {
 	do {
 		$entry =~ m/^(<.+>)<.+>$/;
 		$preceding = $1;
-		# This should work better than "unless ( grep { /^\Q$preceding$/ } @multikey_complete ) {".
 		my $ok = !1;
 		foreach my $item ( @multikey_complete ) {
 			if ( $item eq $preceding ) {
@@ -1689,8 +1704,7 @@ foreach my $entry ( @multikey_parsed ) {
 print( "Adding missing links to multikey chains complete.\n" );
 print CONSOLE ( "Adding missing links to multikey chains complete.\n" );
 
-# Case insensitive sorting.
-# By courtesy of https://alvinalexander.com/perl/perl-array-sort-sorting-string-case-insensitive/
+# Case insensitive sorting
 print( "Case insensitive sorting in progress ---\n" );
 print CONSOLE ( "Case insensitive sorting in progress ---\n" );
 @dead_key_out      = sort { "\L$a" cmp "\L$b" } @dead_key_out;
@@ -1699,24 +1713,24 @@ print CONSOLE ( "Case insensitive sorting in progress ---\n" );
 print( "Case insensitive sorting complete.\n" );
 print CONSOLE ( "Case insensitive sorting complete.\n" );
 
-# Define the multikey dead characters.
+# Define the multikey dead characters
 print( "Defining the multikey dead characters in progress ---\n" );
 print CONSOLE ( "Defining the multikey dead characters in progress ---\n" );
 foreach my $entry ( @multikey_complete ) {
 	$deadkey = $entry;
 	push( @multikey_dchars, $entry . '➔' . $dead_hex );
 	++$dead_dec;
-	$dead_hex = sprintf( "%X", $dead_dec ); # To hex.
+	$dead_hex = sprintf( "%X", $dead_dec ); # To hex
 }
 print( "Defining the multikey dead characters complete.\n" );
 print CONSOLE ( "Defining the multikey dead characters complete.\n" );
 
-# Process single-character dead key output without multicharacter input.
+# Process single-character dead key output without multicharacter input
 print( "Processing the dead key output in progress ---\n" );
 print CONSOLE ( "Processing the dead key output in progress ---\n" );
 foreach my $line ( @dead_key_out ) {
-	if ( $line =~ /" U[0-9A-F]{4,5}/ ) { # Single-character output.
-		unless ( $line =~ /<UEF/ ) {       # Multicharacter input.
+	if ( $line =~ /" U[0-9A-F]{4,5}/ ) {     # Single-character output
+		unless ( $line =~ /<UEF/ ) { # Multicharacter input
 			$line          =~ m/(<.+>)(<.+>) *: *"(.)" *U([0-9A-F]{4,5}) *# *(.*)/u;
 			$deadkey       = $1;
 			$input         = $2;
@@ -1726,7 +1740,7 @@ foreach my $line ( @dead_key_out ) {
 
 			$deadchar = get_dead_character( $deadkey );
 
-			# Register unsupported keysym.
+			# Register unsupported keysym
 			if ( $deadchar =~ /^<.+>$/ ) {
 				unless ( grep { $_ eq "\t'" . $deadchar . "➔'," } @unsupported ) {
 					push( @unsupported, "\t'" . $deadchar . "➔'," );
@@ -1734,13 +1748,13 @@ foreach my $line ( @dead_key_out ) {
 				$deadchar = 'dead';
 			}
 
-			# Get input code for DEADTRANS call.
+			# Get input code for DEADTRANS call
 			$input = get_dead_character( $input );
 			$input =~ s/<(.+)>/$1/;
 			$input =~ s/U([0-9A-F]{4})/$1/;
 			$input = dekeysym( $input );
 
-			# Get input character for annotation.
+			# Get input character for annotation
 			if ( $input =~ /[0-9A-F]{4}/ ) {
 				$input_string = chr( hex( $input ) );
 			} else {
@@ -1752,7 +1766,7 @@ foreach my $line ( @dead_key_out ) {
 				}
 			}
 
-			# Convert SMP characters to surrogate pairs.
+			# Convert SMP characters to surrogate pairs
 			if ( $output_code =~ /[0-9A-F]{5}/ ) {
 				$high_su = sprintf( "%X", ( 55232 + int( hex( $output_code ) / 1024 ) ) );
 				unless ( grep { $_ eq $high_su } @high_surrogates ) {
@@ -1770,7 +1784,7 @@ foreach my $line ( @dead_key_out ) {
 				++$full;
 			}
 
-			# Generate annotated DEADTRANS call.
+			# Generate annotated DEADTRANS call
 			$print = '/*' . $deadkey . ( " " x ( 65 - length( $deadkey ) ) ) . "*/ DEADTRANS( " . format_character( $input )
 							. "\t," . format_character( $deadchar ) . "\t,0x" . $output_code . "\t,0x0000), // " . $high_out . $delim
 							. $input_string . $delim . ' ➔ "' . $output_string . '" ' . $uplus_output . $comment . "\n";
@@ -1786,12 +1800,12 @@ foreach my $line ( @dead_key_out ) {
 print( "Processing the dead key output complete.\n" );
 print CONSOLE ( "Processing the dead key output complete.\n" );
 
-# Process single-character multikey output without multicharacter input.
+# Process single-character multikey output without multicharacter input
 print( "Processing the multikey output in progress ---\n" );
 print CONSOLE ( "Processing the multikey output in progress ---\n" );
 foreach my $line ( @multikey_out ) {
-	if ( $line =~ /" U[0-9A-F]{4,5}/ ) { # Single-character output.
-		unless ( $line =~ /<UEF/ ) {       # Multicharacter input.
+	if ( $line =~ /" U[0-9A-F]{4,5}/ ) {     # Single-character output
+		unless ( $line =~ /<UEF/ ) { # Multicharacter input
 			$line          =~ m/((<.+>)(<.+>)) *: *"(.)" U([0-9A-F]{4,5}) *# *(.*)/u;
 			$full_chain    = $1;
 			$deadkey       = $2;
@@ -1802,13 +1816,13 @@ foreach my $line ( @multikey_out ) {
 
 			$deadchar = get_multikey_dead_character( $deadkey );
 
-			# Get input code for DEADTRANS call.
+			# Get input code for DEADTRANS call
 			$input = get_dead_character( $input );
 			$input =~ s/<(.+)>/$1/;
 			$input =~ s/U([0-9A-F]{4})/$1/;
 			$input = dekeysym( $input );
 
-			# Get input character for annotation.
+			# Get input character for annotation
 			if ( $input =~ /[0-9A-F]{4}/ ) {
 				$input_string = chr( hex( $input ) );
 			} else {
@@ -1820,7 +1834,7 @@ foreach my $line ( @multikey_out ) {
 				}
 			}
 
-			# Convert SMP characters to surrogate pairs.
+			# Convert SMP characters to surrogate pairs
 			if ( $output_code =~ /[0-9A-F]{5}/ ) {
 				$high_su = sprintf( "%X", ( 55232 + int( hex( $output_code ) / 1024 ) ) );
 				unless ( grep { $_ eq $high_su } @high_surrogates ) {
@@ -1873,7 +1887,7 @@ print CONSOLE ( "Processing the multikey output complete.\n" );
 
 print MULTIKEY @multikey_print;
 
-# Print report to a file.
+# Print report to a file
 print( "Printing the reports in progress ---\n" );
 print CONSOLE ( "Printing the reports in progress ---\n" );
 if ( @unsupported == 0 ) {
