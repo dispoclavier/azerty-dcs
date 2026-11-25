@@ -129,24 +129,24 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 
 ### Extension de la double frappe d’accent circonflexe
 
-* "Œ" U+0152, "œ" U+0153, "Æ" U+00C6, "æ" U+00E6
+* "Œ" U+0152, "œ" U+0153, "Æ" U+00C6, "æ" U+00E6 (aussi dans la touche morte groupe)
 * guillemets fermants "”" U+201D, "’" U+2019 (aussi sur touche vive AltGr + K)
-* d’autres lettres dans le groupe 1
+* Ɖ, ɖ, Ƒ, ƒ, Ə, ə, Ɩ, ɩ, Ĳ, ĳ, ʿ, ʾ, Ɂ, ɂ, Ʋ, ʋ, ℣, ℟, Ʃ, ʃ, Ɛ, ɛ, Ʊ, ʊ, ʔ du groupe 1
 * hatchek des langues d’Europe (préexistant)
 
 ### Remaniement de l’AZERTY DCS
 
-* Les touches mortes point en chef ‹ ṗ › et indice ‹ ↓ › passent du niveau 4 au niveau 3
 * Les touches mortes exposant ‹ ↑ › et indice ‹ ↓ › changent de caractère mort
+* Les touches mortes point en chef ‹ ṗ › et indice ‹ ↓ › passent du niveau 4 au niveau 3
 * La touche morte monétaire passe de la touche "S" sur la touche "E"
-* Les points de suspension "…" U+2026 entrent en synergie avec "[" U+005B sur la touche "5"
-* Le sélecteur de variante texte "︎" U+EF0E est redondé sur touche vive pour compléter le sélecteur de variante émoji "️" U+FE0F.
+* La touche morte grec-ou-cerclé passe de la touche "Y" sur la touche "O"
+* Les points de suspension "…" U+2026 passent sur la touche "Y" en synergie avec "["
 
 ### Mise à niveau (en cours)
 
 * 161 lettres latines d’Unicode 18.0
 * 65 symboles mathématiques historiques d’Unicode 18.0
-* 7 diacritiques d’Unicode 18.0
+* 7 diacritiques et 8 autres caractères d’Unicode 18.0
 
 ### Débogage
 
@@ -329,7 +329,7 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 		* Corriger le caractère de base de "᫜" U+1ADC de "^" en "`". ibidem
 	* Sous Windows :
 		* Mouvoir le transpilateur de linux-chromeos/outils/ à windows/outils/. dead-key-convert.pl [d6924ec](https://github.com/dispoclavier/azerty-dcs/commit/d6924ecc352f0f935ea22d57afd3c63a45dcabeb)
-		* Déboguer le transpilateur. dead-key-convert.pl [9f245c6](https://github.com/dispoclavier/azerty-dcs/commit/9f245c6cf933865afc50f450e99201daa7b46218), [0dc2d32](https://github.com/dispoclavier/azerty-dcs/commit/0dc2d3214afd7c30a0a059926351260a6522646b), [7cfba74](https://github.com/dispoclavier/azerty-dcs/commit/7cfba74c1c560dbe11a5cf169eba8cc5afcff81e)
+		* Déboguer le transpilateur. dead-key-convert.pl [9f245c6](https://github.com/dispoclavier/azerty-dcs/commit/9f245c6cf933865afc50f450e99201daa7b46218), [0dc2d32](https://github.com/dispoclavier/azerty-dcs/commit/0dc2d3214afd7c30a0a059926351260a6522646b), [7cfba74](https://github.com/dispoclavier/azerty-dcs/commit/7cfba74c1c560dbe11a5cf169eba8cc5afcff81e), [8267e8d](https://github.com/dispoclavier/azerty-dcs/commit/8267e8d5365262cdfacfa5e131b6445657446f9e)
 * Installation :
 	* Sous Windows :
 		* Corriger les métadonnées dans les pilotes de disposition. kbbrFRs1.RC, kbbrFRs2.RC, kbfrAFs1.RC, kbfrAFs2.RC, kbfrdcs1.RC, kbfrdcs2.RC, kbfrFRr1.RC, kbfrFRr2.RC, kbfrFRs1.RC, kbfrFRs2.RC, kbfrPFs1.RC, kbfrPFs2.RC [c722026](https://github.com/dispoclavier/azerty-dcs/commit/c7220265c0a9197d7b372bc5dfd04c496ca6c454)
