@@ -3989,15 +3989,6 @@
 #   spacing clone slots are populated with the iconic "⇑" U21D1.
 #   See #*# CURRENCY
 #
-#
-#   Diacritic
-#
-#   The diacritic replicates the scheme used for combining below with "̿" U033F
-#   as the exact counterpart of "̳" U0333, while "﹌" UFE4C as a spacing clone
-#   is less fortunate than "‗" U2017. Its single counterpart "﹋" UFE4B is
-#   supported, too, with underscore as a base character.
-#   See #^# COMBINING_BELOW
-#
 <UEFD1><UEFD1>                                                                             <space> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
 #   Multikey conflicts with "⋄" U22C4.                                                     <space> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
 <UEFD1><UEFD1>                                                                             <U200B> : "⇑" U21D1 # UPWARDS DOUBLE ARROW
@@ -4373,7 +4364,7 @@
 #   For intuitivity, the Polynesian ʻeta, Hawaiʻian ʻokina can also be input as
 #   if it were a turned rightsinglequotemark despite being a letter. Apostrophe
 #   is also supported as a base character for this input method.
-#   See # # D07 apostrophe
+#   See # # C08 apostrophe
 #
 #   As "ɟ" U025F LATIN SMALL LETTER DOTLESS J WITH STROKE is “typographically a
 #   turned f, but better thought of as a form of j” (Unicode Code Charts), it
@@ -6046,7 +6037,7 @@
 #   "⧹" U29F9. The digit is consistent with the number of leading spaces of
 #   multikey sequences, #0 is duplicated on #4 for convenience, and the
 #   fullwidth "＼" UFF3C is supported too, as #5, in case a space-padded
-#   backslash meets special requirements:
+#   backslash meets special requirements.
 #
 #       0  "∖" U2216
 #       1  "⧹" U29F9
@@ -6060,14 +6051,17 @@
 #   See #*# STROKE
 #   See #*# MACRON
 #
+#
+#   Circled arrow
+#
 #   "⮈" U2B88 is supported with greater as a base character due to the
 #   presence of "⮊" U2B8A in group 11 of greater.
 #
 #
 #   Diacritic in *dead_reversed
 #
-#   As a diacritic, "̔" U0314 COMBINING REVERSED COMMA ABOVE is included, along
-#   with its spacing counterpart "ʽ" U02BD.
+#   As a diacritic, "̔" U0314 COMBINING REVERSED COMMA ABOVE is included,
+#   matching its spacing counterpart "ʽ" U02BD.
 #
 <UEFD6>                                                                                    <space> : "̔" U0314 # COMBINING REVERSED COMMA ABOVE
 #   Multikey conflicts with "∖" U2216.                                                     <space> : "̔" U0314 # COMBINING REVERSED COMMA ABOVE
@@ -9502,8 +9496,6 @@
 <Multi_key><underscore><underscore>                                                   <apostrophe> : "̩" U0329 # COMBINING VERTICAL LINE BELOW: Yoruba, German dialectology
 <UEFD2><UEFD2>                                                              <rightsinglequotemark> : "̩" U0329 # COMBINING VERTICAL LINE BELOW: Yoruba, German dialectology
 <Multi_key><underscore><underscore>                                         <rightsinglequotemark> : "̩" U0329 # COMBINING VERTICAL LINE BELOW: Yoruba, German dialectology
-<UEFD2><UEFD2>                                                                        <underscore> : "‗" U2017 # DOUBLE LOW LINE
-<Multi_key><underscore><underscore>                                                   <underscore> : "‗" U2017 # DOUBLE LOW LINE
 <UEFD2><UEFD2>                                                                         <ampersand> : "̳" U0333 # COMBINING DOUBLE LOW LINE
 <Multi_key><underscore><underscore>                                                    <ampersand> : "̳" U0333 # COMBINING DOUBLE LOW LINE
 <UEFD2><UEFD2>                                                                            <dollar> : "᪽" U1ABD # COMBINING PARENTHESES BELOW
@@ -9530,6 +9522,8 @@
 <Multi_key><underscore><underscore>                                                         <less> : "͔" U0354 # COMBINING LEFT ARROWHEAD BELOW
 <UEFD2><UEFD2>                                                                           <greater> : "͕" U0355 # COMBINING RIGHT ARROWHEAD BELOW
 <Multi_key><underscore><underscore>                                                      <greater> : "͕" U0355 # COMBINING RIGHT ARROWHEAD BELOW
+<UEFD2><UEFD2>                                                                             <equal> : "‗" U2017 # DOUBLE LOW LINE
+<Multi_key><underscore><underscore>                                                        <equal> : "‗" U2017 # DOUBLE LOW LINE
 <UEFD2><UEFD2>                                                                            <period> : "᪺" U1ABA # COMBINING STRONG CENTRALIZATION STROKE BELOW
 <Multi_key><underscore><underscore>                                                       <period> : "᪺" U1ABA # COMBINING STRONG CENTRALIZATION STROKE BELOW
 <UEFD2><UEFD2>                                                                                 <1> : "᪽" U1ABD # COMBINING PARENTHESES BELOW
@@ -13091,7 +13085,7 @@
 #
 #   "—" U2014 EM DASH could be supported in this high bar dead key to get the
 #   closest possible to sideways compatibility with en_US.UTF-8/Compose, given
-#   this has a multikey sequence for it: <Multi_key><minus><minus><minus>.
+#   that this has a multikey sequence: ‹Multi_key›‹minus›‹minus›‹minus›.
 #   However, for consistency with the UCS, a sequence with a triple minus and
 #   a final period is used for "―" U2015 HORIZONTAL BAR, because as a
 #   four-per-three-em dash, this may have a length of three quarters of an em
@@ -15778,10 +15772,10 @@
 #
 #   As the glottal letters new for Unicode 12.0 are diacriticized with a
 #   spiritus lenis, Greek psili, they are here in a dedicated virtual dead key,
-#   based on the hook above as looking closest. However, given the psili is
-#   considered a comma above, and has been encoded consistently, these letters
-#   are also part of the virtual dead key based on dead_belowcomma double press
-#   with a set of duplicates in dead_belowcomma for convenience.
+#   based on the hook above as looking closest. However, given that the psili
+#   is considered a comma above, and has been encoded consistently, these
+#   letters are also part of the virtual dead key based on dead_belowcomma
+#   double press with a set of duplicates in dead_belowcomma for convenience.
 #   https://en.wikipedia.org/wiki/Smooth_breathing
 #   See #^# COMMA_ABOVE
 #   See #*# COMMA_BELOW
@@ -15884,7 +15878,7 @@
 #   "⧸" U29F8. The digit is consistent with the number of leading spaces of
 #   multikey sequences, #0 is duplicated on #4 for convenience, and the
 #   fullwidth "／" UFF0F is supported too, as #5, in case a space-padded
-#   slash meets special requirements:
+#   slash meets special requirements.
 #
 #       0  "∕" U2215
 #       1  "⧸" U29F8

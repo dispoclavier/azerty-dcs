@@ -1,7 +1,7 @@
 #                      Scope: Part 1 of Compose.yml
 #                       Date: See Compose.yml
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.1.0+16" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+17" # See #   End of line comments
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
 #                Description: Multicharacter, multikey and dead key configuration
@@ -326,8 +326,7 @@
 #   For readability, inline literal multikey sequences are bracketed with
 #   French-style (no-break thin) space padded double angle quotation marks,
 #   because ‹quotedbl›, ‹grave›, ‹period›, ‹comma› and other ASCII symbols
-#   likely to occur next to multikey sequences, may also be part of multikey
-#   seqences.
+#   likely to occur next to multikey sequences may also be part of them.
 #
 #   The padding space is NBTSP for convenience and consistency. By contrast,
 #   the plus sign after modifier key notations is not NBTSP-padded (although
@@ -394,17 +393,18 @@
 #   https://github.com/unicode-org/cldr/blob/release-21/common/main/br.xml#L650
 #
 #   The variants for Breton and French "kbbrFRs" and "kbbrFRsr" have the Breton
-#   trigraph at Base level and Shift level of key E01. All variants, including
-#   the base variant and the remapped variants, support the Breton trigraph on
-#   (Shift +) AltGr + AltFr + A, key D01 as on the CʼHWERTY keyboard layout. On
-#   Linux and macOS, this is Caps Lock sensitive, too.
-#
-#   The letter apostrophe in isolation is additionally in group 1 of apostrophe
-#   and rightsinglequotemark.
+#   trigraph at Base level and Shift level of key E01.
 #   See dispocla.cpp xkb_symbols "kbbrFRs"
 #   See dispocla.cpp xkb_symbols "kbbrFRsr"
+#
+#   All variants, including the base variant and the remapped variants, support
+#   the Breton trigraph on (Shift +) AltGr + AltFr + A, key D01 as on the
+#   CʼHWERTY keyboard layout. On Linux and macOS, this is Caps Lock sensitive.
+#   See # # C08 apostrophe
+#
+#   Additionally, the letter apostrophe in isolation is in group 1 of
+#   ‹apostrophe› and ‹rightsinglequotemark›.
 #   See dispocla.cpp key <AD01>
-#   See # # D08 apostrophe
 #
 #   To ensure regular support, the Breton trigraph is configured here.
 #
@@ -523,7 +523,7 @@
 #   https://www.unicode.org/reports/tr14/tr14-57.html
 #
 #   Unlike FIGURE SPACE, that currently can be safely ignored as useless if it
-#   were not for completeness (in the space group 7), the no-break thin space
+#   were not for completeness (in the ‹space› group 7), the no-break thin space
 #   is actively maintained and benefits from some substantial improvements.
 #   The corrected Unicode position is found in UAX #14 since 2008, in TUS
 #   since 2014: The Unicode Standard, version 7.0.0, 2014, p. 265, section 6.2,
@@ -814,18 +814,19 @@
 #
 # # Punctuation spacing for French using U2009 TSP, UFEFF ZWNBSP
 #
-#   This is a workaround for an acceptable fallback, given in most fonts NBTSP
-#   has the same width as THIN SPACE, and THIN SPACE has line breaking class BA
-#   (break after). UFEFF ZERO WIDTH NO-BREAK SPACE is the BYTE ORDER MARK, and
-#   using it as a line break preventer is only a legacy workaround in case the
-#   recommended, more recent U2060 WORD JOINER (Unicode 3.2, 2002) is not yet
-#   supported. Hence the indefinite “a word joiner” in L2/19-286, section 20.
+#   This is a workaround for an acceptable fallback, given that in most fonts,
+#   NBTSP has the same width as THIN SPACE, and THIN SPACE has line breaking
+#   class BA (break after). UFEFF ZERO WIDTH NO-BREAK SPACE is the BYTE ORDER
+#   MARK, and using it as a line break preventer is only a legacy workaround in
+#   case the recommended, more recent U2060 WORD JOINER (Unicode 3.2, 2002) is
+#   not yet supported. Hence the indefinite “a word joiner” in L2/19-286,
+#   section 20.
 #   https://www.unicode.org/L2/L2019/19286-script-recs.pdf#page=14
 #
 #   This fallback works everywhere U2009 THIN SPACE and UFEFF ZERO WIDTH
 #   NO-BREAK SPACE are supported.
 #
-#   The Draw Spaces plugin of GEdit consistently represents THIN SPACE like
+#   The Draw Spaces plugin for GEdit consistently represents THIN SPACE like
 #   normal SPACE, given that U2009 THIN SPACE is breaking.
 #   https://gedit-text-editor.org/user-manuals/gedit/plugin-draw-spaces.html
 #
@@ -868,19 +869,20 @@
 <UEF8F> : "&gt;"   # closing pointy bracket U003E [5]
 #
 #   [1] Escaping ampersand is required both in XML and in HTML.
-#   [2] Escaping single quote is required in XML if used to enclose values, but
-#       HTML 4 does not support this escape.
-#   [3] Escaping double quote is required in XML if used to enclose values.
-#   [4] Points to the left or to the right depending on writing direction. This
-#       escape is required both in XML and in HTML.
-#   [5] Points to the right or to the left depending on writing direction. This
-#       escape is required in XML. In HTML it is not, but it should be used, at
-#       least in argument values.
+#   [2] Escaping single quote is required in XML if single quote is used to
+#       enclose values, but HTML 4 does not support this escape.
+#   [3] Escaping double quote is required in XML if double quote is used to
+#       enclose values.
+#   [4] Points to the left or to the right depending on writing direction.
+#       This escape is required both in XML and in HTML.
+#   [5] Points to the right or to the left depending on writing direction.
+#       This escape is required in XML. In HTML it is not, but it should be
+#       used, at least in argument values.
 #
 #
 # # Punctuation spacing for French using U2009 THIN SPACE, U2060 WORD JOINER
 #
-#   This is an acceptable fallback, given in most fonts NBTSP has the same
+#   This is an acceptable fallback, given that in most fonts NBTSP has the same
 #   width as THIN SPACE, and THIN SPACE has line breaking class Break After.
 #   https://www.unicode.org/L2/L2019/19286-script-recs.pdf#page=14
 #
@@ -978,15 +980,15 @@
 #   See #   End of line comments
 #
 #<UEFA1> : "Français France disposition de clavier semi-automatique – kbfrFRs " #
-<UEFA1> : "Français France semi-automatique – kbfrFRs " #
+<UEFA1> : "AZERTY DCS retouché – kbfrFRs " #
 #<UEFA2> : "Breton et français disposition de clavier semi-automatique – kbbrFRs " #
-<UEFA2> : "Breton et français semi-automatique – kbbrFRs " #
+<UEFA2> : "Breton AZERTY DCS – kbbrFRs " #
 #<UEFA3> : "Polynésie française disposition de clavier semi-automatique – kbfrPFs " #
-<UEFA3> : "Polynésie française semi-automatique – kbfrPFs " #
+<UEFA3> : "Polynésie française AZERTY DCS – kbfrPFs " #
 #<UEFA4> : "Afrique francophone disposition de clavier semi-automatique – kbfrAFs " #
-<UEFA4> : "Afrique francophone semi-automatique – kbfrAFs " #
+<UEFA4> : "Afrique francophone AZERTY DCS – kbfrAFs " #
 #<UEFA5> : "Français Belgique disposition de clavier semi-automatique – kbfrBEs " #
-<UEFA5> : "Français Belgique semi-automatique – kbfrBEs " #
+<UEFA5> : "Français Belgique AZERTY DCS – kbfrBEs " #
 #<UEFA6> : "Canadien multilingue disposition de clavier semi-automatique – kbfrCAms " #
 <UEFA6> : "Canadien multilingue semi-automatique – kbfrCAms " #
 #<UEFA7> : "Français Canada disposition de clavier semi-automatique – kbfrCAs " #
@@ -994,15 +996,15 @@
 #<UEFA8> : "Français Suisse disposition de clavier semi-automatique – kbfrCHs " #
 <UEFA8> : "Français Suisse semi-automatique – kbfrCHs " #
 #<UEFA9> : "Français France disposition de clavier semi-automatique redisposée – kbfrFRr " #
-<UEFA9> : "Français France semi-automatique redisposée – kbfrFRr " #
+<UEFA9> : "AZERTY DCS redisposé – kbfrFRr " #
 #<UEFAA> : "Breton et français disposition de clavier semi-automatique redisposée – kbbrFRr " #
-<UEFAA> : "Breton et français semi-automatique redisposée – kbbrFRr " #
+<UEFAA> : "Breton AZERTY DCS redisposé – kbbrFRr " #
 #<UEFAB> : "Polynésie française disposition de clavier semi-automatique redisposée – kbfrPFr " #
-<UEFAB> : "Polynésie française semi-automatique redisposée – kbfrPFr " #
+<UEFAB> : "Polynésie française AZERTY DCS redisposé – kbfrPFr " #
 #<UEFAC> : "Afrique francophone disposition de clavier semi-automatique redisposée – kbfrAFr " #
-<UEFAC> : "Afrique francophone semi-automatique redisposée – kbfrAFr " #
+<UEFAC> : "Afrique francophone AZERTY DCS redisposé – kbfrAFr " #
 #<UEFAD> : "Français disposition de clavier déboguée complétée semi-automatique – kbfrdcs" #
-<UEFAD> : "Français AZERTY DCS – kbfrdcs" #
+<UEFAD> : "AZERTY DCS – kbfrdcs" #
 <UEFAE> : "" #
 <UEFAF> : "" #
 #
@@ -1034,7 +1036,7 @@
 ### Multikey sequences
 #
 #   In this file, the reference for XCompose sequences is en_US.UTF-8/Compose,
-#   as it is used — and has been designed — in France.
+#   as it is used and has been designed in France.
 #   https://xorg.freedesktop.org/releases/current/doc/libX11/i18n/compose/en_US.UTF-8.html
 #
 #
@@ -1064,11 +1066,10 @@
 #   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-2.yml
 #   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-3.yml
 #
-#   The colon alignment in column 100 is based on longest multikey sequences
-#   in terms of keysym chain string length.
-#   See # # SUPERSCRIPT&CURL&GROUP_4
-#   See "𐞉" U10789
-#   See "𐞫" U107AB
+#   Lines starting with "#@" provide Windows-specific alternative output, as
+#   this file is also the source code for the XCompose-to-C transpiler and for
+#   dead key and multikey HTML tables.
+#   See # # Notes about documentation
 #
 #   For maintainability, there is no space between the leading keysyms, but
 #   part of the keysyms may be aligned to the end for readability, and there
@@ -1080,10 +1081,11 @@
 #   omitted in the documentation.
 #   See # # Maintenance of letter groups
 #
-#   Lines starting with "#@" provide Windows-specific alternative output, as
-#   this file is also the source code for the XCompose-to-C transpiler and for
-#   dead key and multikey HTML tables.
-#   See # # Notes about documentation
+#   The colon alignment in column 100 is based on longest multikey sequences
+#   in terms of keysym chain string length.
+#   See # # SUPERSCRIPT&CURL&GROUP_4
+#   See "𐞉" U10789
+#   See "𐞫" U107AB
 #
 #   At comment lines without a URL, column 80 is usually empty (except for
 #   commented-out sequences), as comments are not longer than 75 characters
@@ -2241,8 +2243,8 @@
 #   "⩪" U2A6A, "⫃" U2AC3, "⫄" U2AC4, and distinguishing these would screw them
 #   up (by requiring a double leading space), it is discarded, and support for
 #   spaces by dead keys is moved to the space groups altogether.
-#   See # # A03-level_1 space
-#   See # # A03-level_3 nobreakspace
+#   See # # A03_1 space
+#   See # # A03_3 nobreakspace
 #
 #
 #^# Tone marks
@@ -2519,7 +2521,7 @@
 #   support of turned punctuation in symbol group 1, either with the unspaced
 #   upright marks as base characters, or with the spaced-out exclamation mark
 #   UEF60 and the spaced-out question mark UEF63.
-#   See # # B07-level_3 question
+#   See # # B07_3 question
 #   See # # B08-level_3 exclam
 #   See # # Turned punctuation marks for Spanish
 #   See # # Punctuation spacing for French, regular with U202F NBTSP
@@ -4284,7 +4286,7 @@
 #   Previously, the heart emoji logic was followed through, supporting the full
 #   set of filled suits (emoji "♥" U2665, "♣" U2663, "♦" U2666, "♠" U2660) and
 #   outlined suits (non-emoji "♡" U2661, "♧" U2667, "♢" U2662, "♤" U2664).
-#   See # # B07-level_1 comma
+#   See # # B07_1 comma
 #   See # # CIRCUMFLEX&GROUP_2
 #   See # # Miscellaneous Symbols in block U2600 used in mathematics
 #
@@ -10524,7 +10526,7 @@
 #
 #   Although the circle is small, the letter may also be uppercase, so as to
 #   streamline the user experience by not requiring pointless precision, given
-#   the full casing pair is available with a triple leading space.
+#   that the full casing pair is available with a triple leading space.
 #   See #   Leading space
 #   See #   Streamlining
 #

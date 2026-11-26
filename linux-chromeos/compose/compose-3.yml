@@ -150,7 +150,7 @@
 #
 #   Followed by comma, dead_circumflex provides an additional input method for
 #   "ʼ" U02BC MODIFIER LETTER APOSTROPHE.
-#   See # # D07 apostrophe
+#   See # # C08 apostrophe
 #
 #   Followed by period, dead_circumflex is a shortcut to the middle dot
 #   "·" U00B7, with mnemonics based on the superscript semantics of its
@@ -159,7 +159,7 @@
 #
 #   Followed by semicolon, dead_circumflex is a shortcut to the hyphenation
 #   point "‧" U2027.
-#   See # # B08-level_1 period
+#   See # # B08_1 period
 #
 #   Followed by colon, dead_circumflex is a shortcut to the horizontal ellipsis
 #   "…" U2026.
@@ -600,7 +600,7 @@
 #   Groups 2 through 5 of dead_circumflex support the outlined counterparts of
 #   "♥" U2665 BLACK HEART SUIT, "♣" U2663 BLACK CLUB SUIT, "♦" U2666 BLACK
 #   DIAMOND SUIT and "♠" U2660 BLACK SPADE SUIT.
-#   See # # B07-level_1 comma
+#   See # # B07_1 comma
 #
 <dead_circumflex>                                                         <UEFD0><UEFD0><quotedbl> : "🙶" U1F676 # SANS-SERIF HEAVY DOUBLE TURNED COMMA QUOTATION MARK ORNAMENT
 <Multi_key><less>                                               <numbersign><numbersign><quotedbl> : "🙶" U1F676 # SANS-SERIF HEAVY DOUBLE TURNED COMMA QUOTATION MARK ORNAMENT
@@ -1195,18 +1195,19 @@
 #   diacritics around, to consider that they may also turn them.
 #
 #   By contrast, "a", "A" and "o", "O" as well as other base letters are used
-#   to duplicate the letter group 1.
+#   to duplicate the letter group 1, where a number of other shortcuts using
+#   ‹dead_circumflex› double press in ‹dead_caron› are documented.
 #   See #+# GROUP_1
 #
 #   Chaining is supported only with the group dead key.
 #
 #   For the same purpose, "’" U2019 and "”" U201D supported in ‹dead_acute› are
 #   also supported in ‹dead_caron› so as to get them into ‹dead_circumflex›
-#   double press for a consistent quotation mark input method also where
-#   ‹dead_acute› is at level 3.
+#   double press for a consistent quotation mark input method also on keyboard
+#   layouts where ‹dead_acute› is at level 3.
 #
 #   For portability, the full dead key content is supported, as well as
-#   multikey, even though that does not make sense.
+#   multikey, even though multikey does not make sense in these instances.
 #
 <dead_caron>                                                                               <space> : "̌" U030C # COMBINING CARON
 <Multi_key><greater>                                                                       <space> : "̌" U030C # COMBINING CARON
@@ -1490,6 +1491,14 @@
 <Multi_key><greater>                                                                       <U0254> : "ɔ̌" # U0254 U030C LATIN SMALL LETTER OPEN O WITH CARON: Languages in Togo
 <dead_circumflex><dead_circumflex>                                                         <U0254> : "ɔ̌" # U0254 U030C LATIN SMALL LETTER OPEN O WITH CARON: Languages in Togo
 <Multi_key><less><less>                                                                    <U0254> : "ɔ̌" # U0254 U030C LATIN SMALL LETTER OPEN O WITH CARON: Languages in Togo
+<dead_caron>                                                                            <ccedilla> : "℣" U2123 # VERSICLE
+<Multi_key><greater>                                                                    <ccedilla> : "℣" U2123 # VERSICLE
+<dead_circumflex><dead_circumflex>                                                      <ccedilla> : "℣" U2123 # VERSICLE
+<Multi_key><less><less>                                                                 <ccedilla> : "℣" U2123 # VERSICLE
+<dead_caron>                                                                              <agrave> : "℟" U211F # RESPONSE
+<Multi_key><greater>                                                                      <agrave> : "℟" U211F # RESPONSE
+<dead_circumflex><dead_circumflex>                                                        <agrave> : "℟" U211F # RESPONSE
+<Multi_key><less><less>                                                                   <agrave> : "℟" U211F # RESPONSE
 #
 #
 # # HACEK&GROUP_1
@@ -5125,7 +5134,7 @@
 #   These word boundary preventing characters are needed in Breton and in
 #   Polynesian languages. Consistently, both are in group 1 of a symbol:
 #   apostrophe and rightsinglequotemark, or grave, respectively.
-#   See # # D07 apostrophe
+#   See # # C08 apostrophe
 #   See # # B06 grave
 #
 #   Alternative input methods based on comma, using diacritical dead keys,
@@ -5142,7 +5151,7 @@
 #   spacing, these spaced-out punctuation marks UEF60 and UEF63 are supported
 #   as base characters alongside.
 #   See # # Punctuation spacing for French, regular with U202F NBTSP
-#   See # # B07-level_3 question
+#   See # # B07_3 question
 #   See # # B08-level_3 exclam
 #
 <UEFD0>                                                                                    <UEF60> : "¡" U00A1 # INVERTED EXCLAMATION MARK
@@ -7460,14 +7469,15 @@
 #
 # # C08 apostrophe
 #
-#   For a straightforward user experience, rightsinglequotemark is synced with
-#   apostrophe so as to work as an alias throughout, as done for math symbols.
-#   See #   Alternative keysyms
-#
 #   Letter apostrophe "ʼ" U02BC, used in Breton, is here in group 1 of
-#   apostrophe and rightsinglequotemark. Its turned counterpart "ʻ" U02BB is
-#   similarly supported in group 1 of grave.
+#   ‹apostrophe› and ‹rightsinglequotemark›. Its turned counterpart "ʻ" U02BB
+#   is similarly supported in group 1 of ‹grave›.
 #   See # # B06 grave
+#
+#   For a straightforward user experience, ‹rightsinglequotemark› is synced
+#   with ‹apostrophe› so as to work as an alias throughout, as done for math
+#   symbols.
+#   See #   Alternative keysyms
 #
 <UEFD0>                                                                               <apostrophe> : "ʼ" U02BC # MODIFIER LETTER APOSTROPHE
 <Multi_key><numbersign>                                                               <apostrophe> : "ʼ" U02BC # MODIFIER LETTER APOSTROPHE
@@ -7974,7 +7984,7 @@
 #   intuitivity, but an easier alternative is dead_circumflex double press
 #   followed by comma.
 #   See #*# HACEK
-#   See # # D07 apostrophe
+#   See # # C08 apostrophe
 #
 #   The "❄" U2744 emoji was previously in group 7 with an alphabetic mnemonic
 #   in French based on "neige" and this key’s letter "N", but it was moved to
@@ -8041,7 +8051,7 @@
 <Multi_key><numbersign><KP_2>                                                              <grave> : "⟂" U27C2 # PERPENDICULAR math
 #
 #
-# # B07-level_1 comma
+# # B07_1 comma
 #
 #   Frequency requires the two hearts to be in the topmost groups, with U2764
 #   HEAVY BLACK HEART (red heart) in group 1 for being the most-used emoji in
@@ -8107,7 +8117,7 @@
 <Multi_key><numbersign><KP_2>                                                              <comma> : "⚐" U2690 # WHITE FLAG
 #
 #
-# # B07-level_3 question
+# # B07_3 question
 #
 <UEFD0>                                                                                 <question> : "¿" U00BF # INVERTED QUESTION MARK
 <Multi_key><numbersign>                                                                 <question> : "¿" U00BF # INVERTED QUESTION MARK
@@ -8159,7 +8169,7 @@
 <Multi_key><numbersign><KP_2>                                                           <question> : "♇" U2647 # PLUTO
 #
 #
-# # B08-level_1 period
+# # B08_1 period
 #
 #   This is only a small subset of the many vertically centered dots in Unicode
 #   as discussed in:
@@ -8227,7 +8237,7 @@
 <Multi_key><numbersign><KP_2>                                                         <KP_Decimal> : "⁘" U2058 # FOUR DOT PUNCTUATION
 #
 #
-# # B08-level_3 semicolon
+# # B08_3 semicolon
 #
 #   The (full) triangular colon is about 40 times more frequent than its half.
 #   Consistently, "ː" U02D0 is in group 1, "ˑ" U02D1 in group 2. Mnemonics may
@@ -8477,7 +8487,7 @@
 #   See ### Symbol groups
 #
 #
-# # A03-level_1 space
+# # A03_1 space
 #
 #   ISO A03 should be the left Thumb Shift, Oyayubi Shifuto in Japanese.
 #   https://web.stanford.edu/class/cs140/projects/pintos/specs/kbd/scancodes-7.html
@@ -8573,7 +8583,7 @@
 <Multi_key><numbersign><KP_2>                                                              <space> : "　" U3000 # IDEOGRAPHIC SPACE
 #
 #
-# # A03-level_3 nobreakspace
+# # A03_3 nobreakspace
 #
 #   Except U2000 and U2001, originally intended to be breaking, these space
 #   characters could be followed by WORD JOINER so as to convert them to
@@ -8753,8 +8763,14 @@
 #   the ‹dead_circumflex› double press alternative, it is in ‹dead_circumflex›
 #   double press by ‹M›, where "ʾ" U02BE is by ‹m›, while group 1 of ‹M› keeps
 #   supporting "ʔ" U0294 as a group-1 alternative to group 2 of ‹q› and ‹Q›,
-#   and ‹dead_circumflex› double press supports it by ‹question› as part of the
-#   ‹dead_caron› content.
+#   while ‹dead_circumflex› double press supports it by ‹question› as part of
+#   the ‹dead_caron› content.
+#   See #*# HACEK
+#
+#   This scheme supporting "Ɛ" U0190, "ɛ" U025B by its regular group-1 base
+#   characters "X", "x" is unbalanced because "Ɔ" U0186, "ɔ" U0254 is by "C",
+#   "c". Therefore, ‹dead_circumflex double press uses "V", "v" instead and
+#   moves "℣" U2123 and "℟" U211F to ‹ccedilla› and ‹agrave›.
 #   See #*# HACEK
 #
 #   The resulting ‹dead_circumflex› double press non-hatchek output by the
@@ -8782,8 +8798,8 @@
 #       ‹q› : "ɂ" U0242
 #       ‹U› : "Ʋ" U01B2
 #       ‹u› : "ʋ" U028B
-#       ‹V› : "℣" U2123
-#       ‹v› : "℟" U211F
+#       ‹V› : "Ɔ" U0186
+#       ‹v› : "ɔ" U0254
 #       ‹W› : "Ʃ" U01A9
 #       ‹w› : "ʃ" U0283
 #       ‹X› : "Ɛ" U0190
@@ -8923,12 +8939,12 @@
 <Multi_key><less><less>                                                                        <u> : "ʋ" U028B # LATIN SMALL LETTER V WITH HOOK
 <UEFD0>                                                                                        <V> : "℣" U2123 # VERSICLE
 <Multi_key><numbersign>                                                                        <V> : "℣" U2123 # VERSICLE
-<dead_circumflex><dead_circumflex>                                                             <V> : "℣" U2123 # VERSICLE
-<Multi_key><less><less>                                                                        <V> : "℣" U2123 # VERSICLE
+<dead_circumflex><dead_circumflex>                                                             <V> : "Ɔ" U0186 # LATIN CAPITAL LETTER OPEN O
+<Multi_key><less><less>                                                                        <V> : "Ɔ" U0186 # LATIN CAPITAL LETTER OPEN O
 <UEFD0>                                                                                        <v> : "℟" U211F # RESPONSE
 <Multi_key><numbersign>                                                                        <v> : "℟" U211F # RESPONSE
-<dead_circumflex><dead_circumflex>                                                             <v> : "℟" U211F # RESPONSE
-<Multi_key><less><less>                                                                        <v> : "℟" U211F # RESPONSE
+<dead_circumflex><dead_circumflex>                                                             <v> : "ɔ" U0254 # LATIN SMALL LETTER OPEN O
+<Multi_key><less><less>                                                                        <v> : "ɔ" U0254 # LATIN SMALL LETTER OPEN O
 <UEFD0>                                                                                        <W> : "Ʃ" U01A9 # LATIN CAPITAL LETTER ESH
 <Multi_key><numbersign>                                                                        <W> : "Ʃ" U01A9 # LATIN CAPITAL LETTER ESH
 <dead_circumflex><dead_circumflex>                                                             <W> : "Ʃ" U01A9 # LATIN CAPITAL LETTER ESH
@@ -8985,7 +9001,7 @@
 #   https://forum.glyphsapp.com/t/ldotaccent-takes-periodcentered-not-dot-accent/1058/3
 #   See #+# GROUP_1
 #   See # # D08 ampersand
-#   See # # B08-level_1 period
+#   See # # B08_1 period
 #   See #*# DOT_ABOVE
 #   See #*# CIRCUMFLEX
 #   See #*# SUPERSCRIPT
@@ -14698,7 +14714,7 @@
 #
 #   For convenience, " " U2007 FIGURE SPACE is also supported, as its width is
 #   consistent with the monospace typeface style.
-#   See # # A03-level_1 space
+#   See # # A03_1 space
 #
 <UEFD0><9><period>                                                                         <space> : " " U2007 # FIGURE SPACE
 <Multi_key><numbersign><9><period>                                                         <space> : " " U2007 # FIGURE SPACE
