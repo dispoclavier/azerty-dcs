@@ -228,9 +228,11 @@
 #   See #   "Ê" key emulation
 #   See "᫏" U1ACF
 #
-#   The double diacritic "᷍" U1DCD has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   The double diacritic "᷍" U1DCD has ‹dollar› as a mnemonic base character,
+#   whereas ‹emdash› is not supported in this role, for the sake of the
+#   visibilization and distinction feature relying on ‹dead_circumflex›, where
+#   it is expected to output an em dash consistently with its full length.
+#   See #   Hinting invisible and confusable characters
 #
 #   The base letter for "̂" U0302 is ‹space› only, not ‹U200B›, so as to not
 #   override the visibilization feature documented below, the better as this
@@ -315,8 +317,6 @@
 <Multi_key><less>                                                                     <braceright> : "⟩" U27E9 # MATHEMATICAL RIGHT ANGLE BRACKET
 <dead_circumflex>                                                                         <dollar> : "᷍" U1DCD # COMBINING DOUBLE CIRCUMFLEX ABOVE
 <Multi_key><less>                                                                         <dollar> : "᷍" U1DCD # COMBINING DOUBLE CIRCUMFLEX ABOVE
-<dead_circumflex>                                                                         <emdash> : "᷍" U1DCD # COMBINING DOUBLE CIRCUMFLEX ABOVE
-<Multi_key><less>                                                                         <emdash> : "᷍" U1DCD # COMBINING DOUBLE CIRCUMFLEX ABOVE
 <dead_circumflex>                                                                      <parenleft> : "⁽" U207D # SUPERSCRIPT LEFT PARENTHESIS
 #   Multikey conflicts with "ἇ" U1F07, "Ἇ" U1F0F, "ἧ" U1F27, "Ἧ" U1F2F, "ἷ" U1F37, […] <parenleft> : "⁽" U207D # SUPERSCRIPT LEFT PARENTHESIS
 <dead_circumflex>                                                                     <parenright> : "⁾" U207E # SUPERSCRIPT RIGHT PARENTHESIS

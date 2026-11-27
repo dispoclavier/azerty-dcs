@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Debug em dash visibilization            7.1.0+21.0 Fri 2026-11-27T2035+0100
 * Visibilize 4 dashes and minus sign      7.1.0+20.0 Fri 2026-11-27T1708+0100
 * Visibilize zero-width space             7.1.0+19.0 Fri 2026-11-27T0546+0100
 * Visibilize zero-width space             7.1.0+18.0 Thu 2026-11-26T1258+0100
@@ -3307,7 +3308,6 @@
 /*<!circumflex>                                                    */ DEADTRANS( 0x00E9	,0x00EA	,0x1EBF	,0x0000), // "é" ➔ "ế" U+1EBF LATIN SMALL LETTER E WITH CIRCUMFLEX AND ACUTE
 /*<!circumflex>                                                    */ DEADTRANS( 0x00C8	,0x00EA	,0x1EC0	,0x0000), // "È" ➔ "Ề" U+1EC0 LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND GRAVE
 /*<!circumflex>                                                    */ DEADTRANS( 0x00E8	,0x00EA	,0x1EC1	,0x0000), // "è" ➔ "ề" U+1EC1 LATIN SMALL LETTER E WITH CIRCUMFLEX AND GRAVE
-/*<!circumflex>                                                    */ DEADTRANS( 0x2014	,0x00EA	,0x1DCD	,0x0000), // "—" ➔ "᷍" U+1DCD COMBINING DOUBLE CIRCUMFLEX ABOVE
 /*<!circumflex>                                                    */ DEADTRANS( L'F'	,0x00EA	,0x0053	,0x0000), // "F" ➔ "S" U+0053 LATIN CAPITAL LETTER S
 /*<!circumflex>                                                    */ DEADTRANS( L'f'	,0x00EA	,0x017F	,0x0000), // "f" ➔ "ſ" U+017F LATIN SMALL LETTER LONG S
 /*<!circumflex>                                                    */ DEADTRANS( L'G'	,0x00EA	,0x011C	,0x0000), // "G" ➔ "Ĝ" U+011C LATIN CAPITAL LETTER G WITH CIRCUMFLEX

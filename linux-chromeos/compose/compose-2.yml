@@ -6580,7 +6580,8 @@
 #
 #   The double diacritic "͠" U0360 has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #   Combining tilde halves above – "︢" UFE22, "︣" UFE23 – are supported on all
 #   fully available base letters for a streamlined user experience. Halves of
@@ -11875,7 +11876,8 @@
 #
 #   The double diacritic "͡" U0361 has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #
 #   Spacing clone of dead_invertedbreve
@@ -12043,7 +12045,8 @@
 #
 #   The double diacritic "᷼" U1DFC has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #
 #   Spacing clones
@@ -12122,7 +12125,8 @@
 #
 #   The double diacritic "͝" U035D has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #   The combining candrabindu "̐" U0310 has a shortcut by period.
 #
@@ -12375,7 +12379,8 @@
 #
 #   The double diacritic "͜" U035C has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #
 #   Spacing clones
@@ -13746,7 +13751,8 @@
 #
 #   The double diacritic "͞" U035E has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #   Combining macron halves above – "︤" UFE24, "︥" UFE25 – are supported on all
 #   unconflicting and fully available base letters for a streamlined user
@@ -14578,7 +14584,8 @@
 #
 #   The double diacritic "͟" U035F has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #   Combining macron halves below "︫" UFE2B, "︬" UFE2C are supported on "W"
 #   as well as on all other available base letters, consistently with

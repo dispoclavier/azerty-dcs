@@ -1,7 +1,7 @@
 # START_additions_XCompose_Dispoclavier (please do not delete this keyword - ne pas effacer ce mot-clé s.v.p.)
-#                       Date: 2026-11-27T1922+0100
+#                       Date: 2026-11-27T2026+0100
 #                    Version: See # # Output of version number
-<UEFA0>                     : "version 7.1.0+20" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+21" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
 #                Description: Multicharacter, multikey and dead key definitions
@@ -22307,7 +22307,8 @@
 #
 #   The double diacritic "͠" U0360 has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #   Combining tilde halves above – "︢" UFE22, "︣" UFE23 – are supported on all
 #   fully available base letters for a streamlined user experience. Halves of
@@ -27602,7 +27603,8 @@
 #
 #   The double diacritic "͡" U0361 has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #
 #   Spacing clone of dead_invertedbreve
@@ -27770,7 +27772,8 @@
 #
 #   The double diacritic "᷼" U1DFC has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #
 #   Spacing clones
@@ -27849,7 +27852,8 @@
 #
 #   The double diacritic "͝" U035D has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #   The combining candrabindu "̐" U0310 has a shortcut by period.
 #
@@ -28102,7 +28106,8 @@
 #
 #   The double diacritic "͜" U035C has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #
 #   Spacing clones
@@ -29473,7 +29478,8 @@
 #
 #   The double diacritic "͞" U035E has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #   Combining macron halves above – "︤" UFE24, "︥" UFE25 – are supported on all
 #   unconflicting and fully available base letters for a streamlined user
@@ -30305,7 +30311,8 @@
 #
 #   The double diacritic "͟" U035F has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   input methods across all dead keys featuring a double diacritic except
+#   ‹dead_circumflex›.
 #
 #   Combining macron halves below "︫" UFE2B, "︬" UFE2C are supported on "W"
 #   as well as on all other available base letters, consistently with
@@ -32628,9 +32635,11 @@
 #   See #   "Ê" key emulation
 #   See "᫏" U1ACF
 #
-#   The double diacritic "᷍" U1DCD has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic.
+#   The double diacritic "᷍" U1DCD has ‹dollar› as a mnemonic base character,
+#   whereas ‹emdash› is not supported in this role, for the sake of the
+#   visibilization and distinction feature relying on ‹dead_circumflex›, where
+#   it is expected to output an em dash consistently with its full length.
+#   See #   Hinting invisible and confusable characters
 #
 #   The base letter for "̂" U0302 is ‹space› only, not ‹U200B›, so as to not
 #   override the visibilization feature documented below, the better as this
@@ -32715,8 +32724,6 @@
 <Multi_key><less>                                                                     <braceright> : "⟩" U27E9 # MATHEMATICAL RIGHT ANGLE BRACKET
 <dead_circumflex>                                                                         <dollar> : "᷍" U1DCD # COMBINING DOUBLE CIRCUMFLEX ABOVE
 <Multi_key><less>                                                                         <dollar> : "᷍" U1DCD # COMBINING DOUBLE CIRCUMFLEX ABOVE
-<dead_circumflex>                                                                         <emdash> : "᷍" U1DCD # COMBINING DOUBLE CIRCUMFLEX ABOVE
-<Multi_key><less>                                                                         <emdash> : "᷍" U1DCD # COMBINING DOUBLE CIRCUMFLEX ABOVE
 <dead_circumflex>                                                                      <parenleft> : "⁽" U207D # SUPERSCRIPT LEFT PARENTHESIS
 #   Multikey conflicts with "ἇ" U1F07, "Ἇ" U1F0F, "ἧ" U1F27, "Ἧ" U1F2F, "ἷ" U1F37, […] <parenleft> : "⁽" U207D # SUPERSCRIPT LEFT PARENTHESIS
 <dead_circumflex>                                                                     <parenright> : "⁾" U207E # SUPERSCRIPT RIGHT PARENTHESIS

@@ -1,7 +1,7 @@
 #                      Scope: Part 1 of Compose.yml
 #                       Date: See Compose.yml
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.1.0+20" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+21" # See #   End of line comments
 #                   Encoding: UTF-8
 #                Description: Multicharacter, multikey and dead key definitions
 #                   Platform: Linux using XKB with XCompose**
