@@ -391,6 +391,7 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 	* 7.1.0+16 [7cfba74](https://github.com/dispoclavier/azerty-dcs/commit/7cfba74c1c560dbe11a5cf169eba8cc5afcff81e)
 	* 7.1.0+17 [42d1f5f](https://github.com/dispoclavier/azerty-dcs/commit/42d1f5f0695739058b0a4f67b8e46acc48198ec2)
 	* 7.1.0+18 [5dbe0b3](https://github.com/dispoclavier/azerty-dcs/commit/5dbe0b3f564267c2ec9154a706f31711c0e8c062)
+	* 7.1.0+19
 
 ## 7.0.1 (projet)
 

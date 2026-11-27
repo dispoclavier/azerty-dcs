@@ -1,7 +1,7 @@
 # START_additions_XCompose_Dispoclavier (please do not delete this keyword - ne pas effacer ce mot-clé s.v.p.)
-#                       Date: 2026-11-27T0257+0100
+#                       Date: 2026-11-27T0640+0100
 #                    Version: See # # Output of version number
-<UEFA0>                     : "version 7.1.0+18" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+19" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
@@ -32419,17 +32419,18 @@
 #   Unlike en_US.UTF-8/Compose misled by the caret’s character name to make it
 #   the circumflex dead key’s multikey equivalent, new-school input composition
 #   is consistent with the longstanding practice using "^" as the superscript
-#   indicator, and assigns dead_circumflex the less keysym instead, extending
-#   the logic used with parentheses for breve and its inverted counterpart.
+#   indicator, and assigns ‹dead_circumflex› the ‹less› keysym instead,
+#   extending the logic used with parentheses for breve and its inverted
+#   counterpart.
 #   See #*# SUPERSCRIPT
 #   See #*# BREVE
 #   See #*# INVERTED_BREVE
 #
 #
-#   Quotation marks in dead_circumflex
+#   Quotation marks in ‹dead_circumflex›
 #
-#   Followed by quotedbl, EuroSign, apostrophe or rightsinglequotemark,
-#   dead_circumflex yields turned high curly quotation marks U2018, U201C
+#   Followed by ‹quotedbl›, ‹EuroSign›, ‹apostrophe› or ‹rightsinglequotemark›,
+#   ‹dead_circumflex› yields turned high curly quotation marks U2018, U201C
 #   (opening or closing). One conflicting multikey equivalent is commented out
 #   and replaced with a dedicated sequence.
 #   See # # Quotation mark input method
@@ -32439,7 +32440,7 @@
 #   "Ê" key emulation
 #
 #   The polygrams "êk", "êl", "êm", "ên", "êp", "êqu", "êr", "êt", "êv", "êch"
-#   make dead_circumflex behave like an Ê key in most cases by using the fact
+#   make ‹dead_circumflex› behave like an Ê key in most cases by using the fact
 #   that the letters k, l, m, n, p, q, r, t, v, x do not exist as precomposed
 #   letters with circumflex accent, and most of these are not in usage either
 #   with combining circumflex as known composed letters. Those that are, will
@@ -32472,7 +32473,7 @@
 #   See #*# CEDILLA
 #
 #
-#   Superscripts in dead_circumflex
+#   Superscripts in ‹dead_circumflex›
 #
 #   For the sake of usability and meeting predictable user expectations, that
 #   also have been escalated to the level of standards support, superscript
@@ -32527,7 +32528,7 @@
 #   See #*# SUPERSCRIPT
 #
 #
-#   Shortcuts in dead_circumflex
+#   Shortcuts in ‹dead_circumflex›
 #
 #   For consistency with the French AZERTY keyboard layout, in French mode,
 #   dead_circumflex is in the benefit of an unshifted position. Hence its use
@@ -32572,14 +32573,14 @@
 #   See #   Interrobang
 #
 #
-#   Dagger in dead_circumflex
+#   Dagger in ‹dead_circumflex›
 #
 #   Followed by bar, dead_circumflex yields the left-guard dagger "⸶" U2E36,
 #   consistently with dead_caron yielding its right-guard couterpart.
 #   See #*# HACEK
 #
 #
-#   Asterisks in dead_circumflex
+#   Asterisks in ‹dead_circumflex›
 #
 #   "⁂" U2042 ASTERISM is also expected to be supported by dead_circumflex,
 #   additionally to its support in the symbol groups and by dead_abovering.
@@ -32587,7 +32588,7 @@
 #   See #*# RING_ABOVE
 #
 #
-#   Per mille in dead_circumflex
+#   Per mille in ‹dead_circumflex›
 #
 #   Since per mille "‰" U2030 and per myriad "‱" U2031 are not widely used, due
 #   to their confusability and limited availability, they are relegated to the
@@ -32595,13 +32596,13 @@
 #   groups 1 and 2.
 #   See # # D02 percent
 #
-#   However, per mille has shortcuts in dead_acute and in dead_circumflex, and
+#   However, per mille has shortcuts in dead_acute and in ‹dead_circumflex›, and
 #   per myriad has one in dead_diaeresis.
 #   See #*# ACUTE
 #   See #*# DIAERESIS
 #
 #
-#   Math symbols in dead_circumflex
+#   Math symbols in ‹dead_circumflex›
 #
 #   Consistently with other dead keys supporting diacriticized math symbols,
 #   plus yields "⨣" U2A23, asciitilde yields "⩯" U2A6F, at and multiply yield
@@ -32618,7 +32619,7 @@
 #   dead_circumflex instance.
 #
 #
-#   Diacritics in dead_circumflex
+#   Diacritics in ‹dead_circumflex›
 #
 #   The doubled diacritic "᪰" U1AB0 COMBINING DOUBLED CIRCUMFLEX ACCENT has
 #   case insensitive "d" as base characters, with alphabetic mnemonics,
@@ -32630,6 +32631,11 @@
 #   The double diacritic "᷍" U1DCD has emdash as a mnemonic base character, and
 #   dollar as an ASCII alternative with "double" mnemonics, for consistent
 #   input methods across all dead keys featuring a double diacritic.
+#
+#   The base letter for "̂" U0302 is ‹space› only, not ‹U200B›, so as to not
+#   override the visibilization feature documented below, the better as this
+#   is the only useful way to input this diacritic, due to the base level
+#   mapping of the circumflex dead key on French keyboard layouts.
 #
 #
 #   Making invisible characters visible
@@ -32666,8 +32672,6 @@
 #
 <dead_circumflex>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
 <Multi_key><less>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
-<dead_circumflex>                                                                          <U200B> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
-<Multi_key><less>                                                                          <U200B> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
 <dead_circumflex>                                                                   <nobreakspace> : "^" U005E # CIRCUMFLEX ACCENT
 <Multi_key><less>                                                                   <nobreakspace> : "^" U005E # CIRCUMFLEX ACCENT
 <dead_circumflex>                                                                          <U202F> : "ˆ" U02C6 # MODIFIER LETTER CIRCUMFLEX ACCENT
@@ -36527,8 +36531,8 @@
 #
 #   Quotation marks
 #
-#   Followed by quotedbl, EuroSign, apostrophe or rightsinglequotemark,
-#   dead_diaeresis yields low, opening, curly quotation marks U201A, U201E.
+#   Followed by ‹quotedbl›, ‹EuroSign›, ‹apostrophe› or ‹rightsinglequotemark›,
+#   ‹dead_diaeresis› yields low, opening, curly quotation marks U201A, U201E.
 #   A conflicting multikey equivalent is commented out and replaced with a
 #   dedicated sequence.
 #   See # # Quotation mark input method
@@ -36537,37 +36541,38 @@
 #
 #   Shortcuts
 #
-#   For usability, in French mode, dead_diaeresis is in the benefit of an
+#   For usability, in French mode, ‹dead_diaeresis› is in the benefit of an
 #   unshifted position. Hence its use for various shortcuts.
 #
-#   By diacriticized base letters, dead_diaeresis yields "Ǜ" U01DB, "ǜ" U01DC
+#   By diacriticized base letters, ‹dead_diaeresis› yields "Ǜ" U01DB, "ǜ" U01DC
 #   by "Ù", "ù", but also "Å" U00C5, "å" U00E5 by "À", "à", and "Ø" U00D8,
 #   "ø" U00F8 by "Ç", "ç" for convenience.
 #   See # # Oslash for Danish, Norwegian and other languages
 #
 #   The long s "ſ" U017F has shortcuts by "z" and by "$", and the sharp s
 #   "ẞ" U1E9E, "ß" U00DF has one by "S", "s" because it may be expected in
-#   dead_diaeresis, additionally to being in group 1 of "S", "s" and thus well
-#   supported, unlike the long s, in group 3 of "s" due to its antiquation.
+#   ‹dead_diaeresis›, additionally to being in group 1 of "S", "s" and thus
+#   well supported, unlike the long s, in group 3 of "s" due to its
+#   antiquation.
 #
 #   The "≠" U2260 has a shortcut by "Z" with a graphic mnemonic, and so has the
-#   horizontal ellipsis "…" U2026 by period, although it is on live key.
+#   horizontal ellipsis "…" U2026 by ‹period›, although it is on live key.
 #   See dispocla.cpp key <AC11>
 #
 #
 #   Superscripts
 #
-#   As dead_circumflex is lacking the multikey equivalents, dead_diaeresis is a
-#   full-support alternative.
+#   As ‹dead_circumflex› is lacking the multikey equivalents, ‹dead_diaeresis›
+#   is a full-support alternative.
 #   See #*# CIRCUMFLEX
 #
 #
 #   Asterisk symbols
 #
-#   For intuitivity, with asterisk as a base character, dead_diaeresis yields
-#   "⁑" U2051, consistently with dead_circumflex and *dead_superscript for
-#   "⁂" U2042 ASTERISM. "⁑" U2051, "⁂" U2042 and "⁎" U204E are also in
-#   dead_abovering.
+#   For intuitivity, with ‹asterisk› as a base character, ‹dead_diaeresis›
+#   yields "⁑" U2051, consistently with ‹dead_circumflex› and *dead_superscript
+#   for "⁂" U2042 ASTERISM. "⁑" U2051, "⁂" U2042 and "⁎" U204E are also in
+#   ‹dead_abovering›.
 #   See #*# RING_ABOVE
 #   See #*# CIRCUMFLEX
 #   See #*# SUPERSCRIPT
@@ -36581,8 +36586,8 @@
 #   the groups 1 and 2.
 #   See # # D02 percent
 #
-#   However, per myriad has a shortcut in dead_acute, and per mille has two in
-#   dead_diaeresis and in dead_circumflex.
+#   However, per myriad has a shortcut in ‹dead_acute›, and per mille has two
+#   in ‹dead_diaeresis› and in ‹dead_circumflex›.
 #   See #*# ACUTE
 #   See #*# CIRCUMFLEX
 #
