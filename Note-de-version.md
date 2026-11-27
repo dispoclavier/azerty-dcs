@@ -1,8 +1,8 @@
-# 7.1.0-beta.10 (2026-11-27) préversion
+# 7.1.0-beta.11 (2026-11-27) préversion
 
 ## AZERTY DCS
 
-L’AZERTY zéro prise de tête est disponible en préversion. Au niveau logiciel c’est fonctionnel, mais tout n’est pas complet (documentation, prise en charge d’Unicode), d’où cette « version beta » (actuellement le build 7.1.0+19).
+L’AZERTY zéro prise de tête est disponible en préversion. Au niveau logiciel c’est fonctionnel, mais tout n’est pas complet (documentation, prise en charge d’Unicode), d’où cette « version beta » (actuellement le build 7.1.0+21).
 
 DCS, c’est "débogué, complété, semi-automatique".
 
@@ -23,18 +23,23 @@ DCS, c’est "débogué, complété, semi-automatique".
   * Sur 30 des 31 touches mortes, on peut appuyer plusieurs (2, 3 ou 4) fois pour voir le caractère mort de base.
   * La touche morte groupe, en AltGr sur accent circonflexe/tréma et sur Maj + AltGr + Q (pour la synergie avec les touches mortes en Maj + AltGr), sous Windows, parcourt les 12 groupes indéfiniment, mais faire suivre un chiffre de 0 à 9 permet d’abréger, avec 0 à 2 pour les groupes 10 à 12.
   * Les caractères invisibles ou homoglyphes sont rendus visibles ou distinguibles quand ils sont précédés de la touche morte accent circonflexe :
-    * "-" : le trait d’union conditionnel sur Maj + AltGr + 5, entre deux parties d’un mot long
+    * "-" : le trait d’union conditionnel sur Maj + AltGr + 5, pour ajouter une coupure de ligne
     * "+" : le signe plus invisible sur Maj + AltGr + T, entre la partie entière et le numérateur, suivi de la barre de fraction sur Maj + AltGr + Y et du dénominateur
     * "☺" : le sélecteur de variante émoji sur Maj + AltGr + I, après un symbole au format texte pour en faire un émoji
     * "A" : le sélecteur de variante texte sur Maj + AltGr + A, après un émoji pour en faire un symbole au format texte
-    * "␣" : l’espace invisible sur Maj + AltGr + K
+    * "␣" : l’espace invisible sur Maj + AltGr + K, pour ajouter des retours à la ligne et insérer des demi-codets hauts
     * "|" : l’antiliant sur AltGr + W, entre deux lettres pour éviter une ligature
     * "|" : le point médian "·" sur AltGr + R
     * "-" : le point d’hyphénation "‧" sur AltGr + Z
     * "×" : l’opérateur point "⋅" sur AltGr + C
-  * Quand une touche morte sort un demi-codet bas, celui-ci est généralement facile à compléter en le faisant précéder du demi-codet haut dans la même touche morte suivie de l’espace invisible sur Maj + AltGr + K : "𐞥" ⇐ AltGr + A (touche morte exposant), Maj + AltGr + K (espace invisible), AltGr + A (touche morte exposant), Q (minuscule q).
+    * "⊝" : le trait d’union insécable sur Maj + AltGr + 6, pour éviter une coupure de ligne
+    * "½" : le tiret demi-cadratin "–" sur AltGr + S et sur Maj + AltGr + 3
+    * "1" : le tiret cadratin "—" sur AltGr + Q et sur Maj + AltGr + 4
+    * "¾" : le tiret trois-quarts-de-cadratin "―" sur Maj + AltGr + S et sur Maj + AltGr + 8, barre horizontale ou de citation
+    * "⁒" : le signe moins "−" sur AltGr + B, assorti au signe plus "+" sur Maj + ⟦+=}⟧
+  * Quand une touche morte sort un demi-codet bas, celui-ci est facile à compléter en le faisant précéder du demi-codet haut, généralement dans la même touche morte suivie de l’espace invisible sur Maj + AltGr + K : "𐞥" ⇐ AltGr + A (touche morte exposant), Maj + AltGr + K (espace invisible), AltGr + A (touche morte exposant), Q (minuscule q).
 
-Une [vue d’ensemble en 2 tableaux](https://dispoclavier.com/doc/azerty-dcs/) à base du classeur [azerty-dcs.ods](https://github.com/dispoclavier/azerty-dcs/tree/main/vues/dispositions) est plus facile à consulter que les [vues de disposition](https://github.com/dispoclavier/azerty-dcs/blob/main/vues/readme.md), d’autant plus que le marquage des touches est 100 % respecté. Ces images et feuilles de calcul ne sont pas incluses dans les paquets d’installateurs afin de ne pas les alourdir, car avec les 5 035 séquences de composition et les 7 023 séquences à touches mortes (plus 2 629 séquences en 4 temps avec demi-codet haut), les 4 drivers (dont 2 pour le commun des ordinateurs) pèsent déjà 1 Mo.
+Une [vue d’ensemble en 2 tableaux](https://dispoclavier.com/doc/azerty-dcs/) à base du classeur [azerty-dcs.ods](https://github.com/dispoclavier/azerty-dcs/tree/main/vues/dispositions) est plus facile à consulter que les [vues de disposition](https://github.com/dispoclavier/azerty-dcs/blob/main/vues/readme.md), d’autant plus que le marquage des touches est 100 % respecté. Ces images et feuilles de calcul ne sont pas incluses dans les paquets d’installateurs afin de ne pas les alourdir, car avec les 5 035 séquences de composition et les 7 027 séquences à touches mortes (plus 2 629 séquences en 4 temps avec demi-codet haut), les 4 drivers (dont 2 pour le commun des ordinateurs) pèsent déjà 1 Mo.
 
 L’AZERTY DCS, rétrocompatible, a des variantes retouchées et une variante redisposée, encore plus faciles à utiliser. Certes au prix de quelques disruptions, mais au moins, la virgule et toutes les lettres du français restent à leurs places, et les grandes ponctuations, sur leurs touches (⟦?,⟧, ⟦.;⟧, ⟦/:⟧, ⟦§!⟧), ou elles sont ajoutées à la place de "%" ("« "), "µ" (" »"), "£" (" ›") et de la touche morte tréma ("‹ "), qui prend la place de "(", qui va sur AltGr + D comme "début".
 
