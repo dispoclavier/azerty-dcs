@@ -23,8 +23,8 @@ Mise à jour pour macOS des dispositions développées pour Windows, portées so
 * Transformations :
 	* Accent circonflexe :
 		* Visibilisation :
-			* Ajouter "‑" U+2011, "–" U+2013, "—" U+2014, "―" U+2015, "−" U+2212. compose-3.yml [d7b0730](https://github.com/dispoclavier/azerty-dcs/commit/d7b0730c8d6005686b649c806d155ebe03b82b7c)
-* Build : 7.1.0+20 [d7b0730](https://github.com/dispoclavier/azerty-dcs/commit/d7b0730c8d6005686b649c806d155ebe03b82b7c)
+			* Ajouter "‑" U+2011, "–" U+2013, "—" U+2014, "―" U+2015, "−" U+2212. compose-3.yml [d7b0730](https://github.com/dispoclavier/azerty-dcs/commit/d7b0730c8d6005686b649c806d155ebe03b82b7c), [e81d7dc](https://github.com/dispoclavier/azerty-dcs/commit/e81d7dcfd7bdd1c4d2a5213a68d969b43d83de5b)
+* Build : 7.1.0+21 [e81d7dc](https://github.com/dispoclavier/azerty-dcs/commit/e81d7dcfd7bdd1c4d2a5213a68d969b43d83de5b)
 
 ## 7.1.0-beta.10 (2026-11-27)
 
@@ -342,7 +342,7 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 			* Corriger les chaînes de sortie pour "·" U+00B7, "‧" U+2027, "⋅" U+22C5, "️" U+FE0F. compose-3.yml [9ec559c](https://github.com/dispoclavier/azerty-dcs/commit/9ec559ca852e85c0793446f4fc8369f487bc80f4)
 			* Ajouter le sélecteur de variante texte "︎" U+EF0E. ibidem
 			* Ajouter l’espace invisible "​" U+200B. kbdeadtrans.c, compose-3.yml [5dbe0b3](https://github.com/dispoclavier/azerty-dcs/commit/5dbe0b3f564267c2ec9154a706f31711c0e8c062), [e7dbc0e](https://github.com/dispoclavier/azerty-dcs/commit/e7dbc0e935783881f3e26723653648e652be85dd)
-			* Ajouter "‑" U+2011, "–" U+2013, "—" U+2014, "―" U+2015, "−" U+2212. compose-3.yml [d7b0730](https://github.com/dispoclavier/azerty-dcs/commit/d7b0730c8d6005686b649c806d155ebe03b82b7c)
+			* Ajouter "‑" U+2011, "–" U+2013, "—" U+2014, "―" U+2015, "−" U+2212. compose-3.yml [d7b0730](https://github.com/dispoclavier/azerty-dcs/commit/d7b0730c8d6005686b649c806d155ebe03b82b7c), [e81d7dc](https://github.com/dispoclavier/azerty-dcs/commit/e81d7dcfd7bdd1c4d2a5213a68d969b43d83de5b)
 		* Double frappe :
 			* Redonder "Æ" U+00C6, "æ" U+00E6, "Œ" U+0152, "œ" U+0153 à la place de "Ǎ" U+01CD, "ǎ" U+01CE, "Ǒ" U+01D1, "ǒ" U+01D2, qui sont dans hatchek. compose-3.yml [959f22c](https://github.com/dispoclavier/azerty-dcs/commit/959f22c2ba5e88c1aaa314ab1151841eb5a87227), kbdeadtrans-deadkeys.c [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
 			* Redonder "Ɖ" U+0189 par "B", "ɖ" U+0256 par "b", "Ƒ" U+0191 par "F", "ƒ" U+0192 par "f", "Ə" U+018F par "H", "ə" U+0259 par "h", "Ɩ" U+0196 par "I", "ɩ" U+0269 par "i", "Ĳ" U+0132 par "J", "ĳ" U+0133 par "j", "ʔ" U+0294 par "M", "ʾ" U+02BE par "m", "·" U+00B7 par "P", "·" U+00B7 par "p", "Ɂ" U+0241 par "Q", "ɂ" U+0242 par "q", "Ʋ" U+01B2 par "U", "ʋ" U+028B par "u", "℣" U+2123 par "V", "℟" U+211F par "v", "Ʃ" U+01A9 par "W", "ʃ" U+0283 par "w", "Ɛ" U+0190 par "X", "ɛ" U+025B par "x", "Ʊ" U+01B1 par "Y", "ʊ" U+028A par "y". compose-3.yml [8e82cf0](https://github.com/dispoclavier/azerty-dcs/commit/8e82cf0599e4d9ea370f275899ede237a6eed33c)
@@ -404,6 +404,7 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 	* 7.1.0+18 [5dbe0b3](https://github.com/dispoclavier/azerty-dcs/commit/5dbe0b3f564267c2ec9154a706f31711c0e8c062)
 	* 7.1.0+19 [e7dbc0e](https://github.com/dispoclavier/azerty-dcs/commit/e7dbc0e935783881f3e26723653648e652be85dd)
 	* 7.1.0+20 [d7b0730](https://github.com/dispoclavier/azerty-dcs/commit/d7b0730c8d6005686b649c806d155ebe03b82b7c)
+	* 7.1.0+21 [e81d7dc](https://github.com/dispoclavier/azerty-dcs/commit/e81d7dcfd7bdd1c4d2a5213a68d969b43d83de5b)
 
 ## 7.0.1 (projet)
 
