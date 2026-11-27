@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Visibilize zero-width space             7.1.0+18.0 Thu 2026-11-26T1258+0100
 * Update                                  7.1.0+17.0 Thu 2026-11-26T0241+0100
 * Update dead characters and delimiters   7.1.0+16.0 Tue 2026-11-24T2011+0100
 * Update dead characters super/subscript  7.1.0+15.0 Mon 2026-11-23T2048+0100
@@ -3346,6 +3347,7 @@
 /*<!circumflex>                                                    */ DEADTRANS( 0x202F	,0x00EA	,0x02C6	,0x0000), // " " ➔ "ˆ" U+02C6 MODIFIER LETTER CIRCUMFLEX ACCENT
 /*<!circumflex>                                                    */ DEADTRANS( L' '	,0x00EA	,0x0302	,0x0000), // " " ➔ "̂" U+0302 COMBINING CIRCUMFLEX ACCENT
 /*<!circumflex>                                                    */ DEADTRANS( 0x200B	,0x00EA	,0x0302	,0x0000), // "​" ➔ "̂" U+0302 COMBINING CIRCUMFLEX ACCENT
+/*<!circumflex>                                                    */ DEADTRANS( 0x200B	,0x00EA	,0x2423	,0x0000), // "​" ➔ "␣" U+2423 OPEN BOX
 /*<!currency><!abovering>                                          */ DEADTRANS( L'1'	,0x2232	,0x222E	,0x0000), // "1" ➔ "∮" U+222E CONTOUR INTEGRAL
 /*<!currency><!abovering>                                          */ DEADTRANS( L'2'	,0x2232	,0x222F	,0x0000), // "2" ➔ "∯" U+222F SURFACE INTEGRAL
 /*<!currency><!abovering>                                          */ DEADTRANS( L'3'	,0x2232	,0x2230	,0x0000), // "3" ➔ "∰" U+2230 VOLUME INTEGRAL

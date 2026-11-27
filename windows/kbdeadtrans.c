@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Remove circumflex accent high surrogate 7.1.0+18.0 Thu 2026-11-26T1155+0100
 * Update dead characters                  7.1.0+16.0 Mon 2026-11-24T1539+0100
 * Rule out separate multikey equivalents   6.2.4.0.0 Tue 2026-03-03T0949+0100
 * Support infinite group dead key presses  6.2.1.0.0 Wed 2026-01-28T1105+0100
@@ -122,7 +123,7 @@ static ALLOC_SECTION_LDATA DEADKEY aDeadKey[] = {
 /*<!dead_breve>        */ DEADTRANS( 0x200B ,0x0115 ,0xD833 ,0x0000 ), // High surrogate for mathematical arrows
 /*<!dead_caron>        */ DEADTRANS( 0x200B ,0x021F ,0xD837 ,0x0000 ), // High surrogate for Latin
 /*<!dead_cedilla>      */ DEADTRANS( 0x200B ,0x00E7 ,0xD837 ,0x0000 ), // High surrogate for Latin
-/*<!dead_circumflex>   */ DEADTRANS( 0x200B ,0x00EA ,0xD83D ,0x0000 ), // High surrogate for ornamental quotation marks
+/*<!dead_circumflex>   */                                              // Used to visibilize the zero-width space
 /*<!dead_currency>     */ DEADTRANS( 0x200B ,0x00A4 ,0xD837 ,0x0000 ), // High surrogate for Latin
 /*<!dead_diaeresis>    */ DEADTRANS( 0x200B ,0x00EB ,0xD83D ,0x0000 ), // High surrogate for ornamental quotation marks
 /*<!dead_doubleacute>  */ DEADTRANS( 0x200B ,0x0151 ,0xD83D ,0x0000 ), // High surrogate for ornamental quotation marks

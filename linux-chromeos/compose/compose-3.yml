@@ -234,11 +234,10 @@
 #
 #   Making invisible characters visible
 #
-#   For a smoother user experience, invisible characters mapped on live keys,
-#   except "​" U200B (used as a base character for the diacritic, alongside
-#   space), have a visible alias that displays when the circumflex dead key is
-#   pressed before, because this is the most prominent and easiest accessible
-#   dead key on all French keyboard layouts.
+#   For a smoother user experience, invisible characters mapped on live keys
+#   have a visible alias that displays when the circumflex dead key is pressed
+#   before, because this is the most prominent and easiest accessible dead key
+#   on all French keyboard layouts.
 #
 #   This feature is extended to include the three confusable mid-height dots
 #   "·" U00B7, "‧" U2027 and "⋅" U22C5.
@@ -253,6 +252,7 @@
 #   only the dot operator "⋅" U22C5 does not share its representative "×" U00D7
 #   with any other character.
 #
+#   "␣" U2423 OPEN BOX               ➔ "​" U200B ZERO WIDTH SPACE
 #   "&" U0026 AMPERSAND              ➔ "‍" U200D ZERO WIDTH JOINER
 #   "+" U002B PLUS SIGN              ➔ "⁤" U2064 INVISIBLE PLUS
 #   "," U002C COMMA                  ➔ "⁣" U2063 INVISIBLE SEPARATOR
@@ -518,6 +518,10 @@
 <Multi_key><less>                                                                          <U00B7> : "point_médian" # MIDDLE DOT
 #@<dead_circumflex>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
 #@<Multi_key><less>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
+<dead_circumflex>                                                                          <U200B> : "espace_invisible" # ZERO WIDTH SPACE
+<Multi_key><less>                                                                          <U200B> : "espace_invisible" # ZERO WIDTH SPACE
+#@<dead_circumflex>                                                                        <U200B> : "␣" U2423 # OPEN BOX
+#@<Multi_key><less>                                                                        <U200B> : "␣" U2423 # OPEN BOX
 <dead_circumflex>                                                                          <U200C> : "antiliant" # ZERO WIDTH NON-JOINER
 <Multi_key><less>                                                                          <U200C> : "antiliant" # ZERO WIDTH NON-JOINER
 #@<dead_circumflex>                                                                        <U200C> : "|" U007C # VERTICAL LINE
@@ -5010,7 +5014,7 @@
 #   introduced by ISO/IEC 9995.
 #
 #   ASCII symbols and punctuation, space, no-break space:
-#   See ### Symbol groups
+#   See ### Space and symbol groups
 #
 #   Latin base alphabet:
 #   See ### Letter groups
@@ -5125,7 +5129,7 @@
 #   See ### Group dead key introduction
 #
 #   This section is limited to digits and non-ASCII symbols.
-#   See ### Symbol groups
+#   See ### Space and symbol groups
 #   See ### Letter groups
 #
 #
@@ -6078,7 +6082,7 @@
 <Multi_key><numbersign><KP_2>                                                               <KP_9> : "🢅" U1F885 # WIDE-HEADED NORTH EAST VERY HEAVY BARB ARROW
 #
 #
-### Symbol groups
+### Space and symbol groups
 #
 #   The base characters in this section are mapped at level 3, or on unshifted
 #   positions as of comma and period. Symbols and punctuation mapped at level 3
@@ -6171,7 +6175,7 @@
 #   comes after group 1, with "<dead_tilde>" prepended to the base character.
 #
 #
-# # Symbol group overview
+# # Space and symbol group overview
 #
 #   This tab-separated table is copied from a spreadsheet.
 #   Plain text displays best with a 6 character tab width.
@@ -8477,14 +8481,6 @@
 <Multi_key><numbersign><2>                                                               <section> : "⌨" U2328 # KEYBOARD emoji
 <UEFD0><KP_2>                                                                            <section> : "⌨" U2328 # KEYBOARD emoji
 <Multi_key><numbersign><KP_2>                                                            <section> : "⌨" U2328 # KEYBOARD emoji
-#
-#
-### Space groups
-#
-#   Initially a part of the space and symbol groups, or symbol groups for short
-#   (as opposed to the letter groups), the space groups make up a section of
-#   their own since version 7.
-#   See ### Symbol groups
 #
 #
 # # A03_1 space

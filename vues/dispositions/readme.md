@@ -2,7 +2,7 @@
 
 ## AZERTY DCS
 
-Les 2 feuilles d’`azerty-dcs.ods` mises bout à bout sont [en ligne](https://dispoclavier.com/doc/azerty-dcs/).
+Les 2 feuilles d’`azerty-dcs.ods` sont exportées vers `azerty-dcs.xhtml` qui est [en ligne](https://dispoclavier.com/doc/azerty-dcs/).
 
 ### Téléchargement
 
@@ -12,8 +12,8 @@ Les 2 feuilles d’`azerty-dcs.ods` mises bout à bout sont [en ligne](https://d
 
 ## AZERTY DCS retouché
 
-(documentation en instance de mise à jour)
+*documentation en instance de mise à jour*
 
 ## AZERTY DCS redisposé
 
-(documentation en instance de mise à jour)
+*documentation en instance de mise à jour*
