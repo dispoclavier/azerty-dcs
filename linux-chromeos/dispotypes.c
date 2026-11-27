@@ -1,7 +1,6 @@
-//                       Date: 2026-08-29T1327+0200
+//                       Date: 2026-11-27T1802+0100
 //        Operating file name: dispotypes
 //                   Encoding: UTF-8
-//                       Type: text/XKB configuration
 //     Syntactic highlighting: C
 //                Description: XKB key type definitions
 //                   Platform: XKB with XCompose using OSes Linux and ChromeOS*

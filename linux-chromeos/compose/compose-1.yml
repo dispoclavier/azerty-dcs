@@ -1,10 +1,9 @@
 #                      Scope: Part 1 of Compose.yml
 #                       Date: See Compose.yml
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.1.0+19" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+20" # See #   End of line comments
 #                   Encoding: UTF-8
-#                       Type: text/XCompose
-#                Description: Multicharacter, multikey and dead key configuration
+#                Description: Multicharacter, multikey and dead key definitions
 #                   Platform: Linux using XKB with XCompose**
 #     Syntactic highlighting: YAML
 #               Installation: Please see in the all-in-one file Compose.yml.
@@ -5093,8 +5092,8 @@
 #   level, as it is traditionally built into compact keyboards.
 #
 #   Initially intended for Windows users, this Alt + numpad input method
-#   emulation is also available to Linux users and macOS users, so far as this
-#   dead key and multikey configuration is transpiled to C and XML.
+#   emulation is also available to Linux users and macOS users, so far as these
+#   dead key and multikey definitions are transpiled to C and XML.
 #
 #   The purpose of the leading plus is to prevent conflicts with the vulgar
 #   fractions.

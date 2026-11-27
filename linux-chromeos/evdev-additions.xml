@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
 <!--
-                       Date: 2025-07-15T0727+0200
+                       Date: 2026-11-27T1804+0100
           Partial file name: evdev-additions.xml
                    Encoding: UTF-8
-                       Type: text/XML
                 Description: Gnome keyboard layout switch configuration partial
                    Platform: Linux
 

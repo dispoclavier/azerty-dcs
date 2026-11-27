@@ -2,8 +2,7 @@
 #                       Date: See Compose.yml
 #                    Version: See compose-1.yml
 #                   Encoding: UTF-8
-#                       Type: text/XCompose
-#                Description: Multicharacter and multikey configuration
+#                Description: Multicharacter, multikey and dead key definitions
 #                   Platform: XKB with XCompose using OSes Linux and ChromeOS
 #     Syntactic highlighting: YAML
 #               Installation: Please see in the all-in-one file Compose.yml.
@@ -16,7 +15,7 @@
 #
 #   While on Windows and macOS, input composition can be emulated using chained
 #   dead keys, XKB is to emulate dead keys by input composition. This resulting
-#   configuration file is very human readable, and it is easily converted to
+#   definition file is very human readable, and it is easily converted to
 #   documentation.
 #   See # # Notes about documentation
 #
@@ -4370,7 +4369,7 @@
 #   turned f, but better thought of as a form of j” (Unicode Code Charts), it
 #   is supported as such, but for convenience, also as a turned f.
 #
-#   Since the Claudian letter "Ⅎ" U2132 also has a lowercase form "ⅎ" U214E,
+#   As the Claudian letter "Ⅎ" U2132 also has a lowercase form "ⅎ" U214E,
 #   that is intended to meet Unicode casing requirements, the uppercase slot is
 #   used for the related Lisu letter, and the set of Claudian letters is moved
 #   to the double press dead key used for inverted, sideways and other turned.
@@ -14911,7 +14910,7 @@
 #
 #   Per myriad
 #
-#   Since per mille "‰" U2030 and per myriad "‱" U2031 are not widely used, due
+#   As per mille "‰" U2030 and per myriad "‱" U2031 are not widely used, due
 #   to their confusability and limited availability, they are relegated to the
 #   symbol groups 11 and 12, in favor of potentially more useful symbols in the
 #   groups 1 and 2.
@@ -15683,7 +15682,7 @@
 #   Digits yield negative sans-serif circled number dingbats as a shortcut.
 #   See # # CIRCLED_NEGATIVE_SANS
 #
-#   Since the combining hook above has no spacing clone nor any modifier letter
+#   As the combining hook above has no spacing clone nor any modifier letter
 #   looking close to it, both half rings "ʾ" U02BE, "ʿ" U02BF are provided as a
 #   stopgap, with a rationale based on the laterality of the AltFr and AltGr
 #   modifier keys involved in typing these left and right half rings this way.

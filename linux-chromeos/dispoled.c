@@ -1,7 +1,6 @@
-//                       Date: 2026-08-29T1326+0200
+//                       Date: 2026-11-27T1755+0100
 //        Operating file name: dispoled
 //                   Encoding: UTF-8
-//                       Type: text/XKB configuration
 //     Syntactic highlighting: C
 //                Description: Binding Scroll Lock indicator to Group 2
 //                   Platform: XKB with XCompose using OSes Linux and ChromeOS*

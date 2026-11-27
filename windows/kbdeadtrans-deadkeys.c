@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Visibilize 4 dashes and minus sign      7.1.0+20.0 Fri 2026-11-27T1708+0100
 * Visibilize zero-width space             7.1.0+19.0 Fri 2026-11-27T0546+0100
 * Visibilize zero-width space             7.1.0+18.0 Thu 2026-11-26T1258+0100
 * Update                                  7.1.0+17.0 Thu 2026-11-26T0241+0100
@@ -3328,9 +3329,14 @@
 /*<!circumflex>                                                    */ DEADTRANS( 0x00B7	,0x00EA	,0x007C	,0x0000), // "·" ➔ "|" U+007C VERTICAL LINE
 /*<!circumflex>                                                    */ DEADTRANS( 0x200C	,0x00EA	,0x007C	,0x0000), // "‌" ➔ "|" U+007C VERTICAL LINE
 /*<!circumflex>                                                    */ DEADTRANS( 0x200D	,0x00EA	,0x0026	,0x0000), // "‍" ➔ "&" U+0026 AMPERSAND
+/*<!circumflex>                                                    */ DEADTRANS( 0x2011	,0x00EA	,0x229D	,0x0000), // "‑" ➔ "⊝" U+229D CIRCLED DASH
+/*<!circumflex>                                                    */ DEADTRANS( 0x2013	,0x00EA	,0x00BD	,0x0000), // "–" ➔ "½" U+00BD VULGAR FRACTION ONE HALF
+/*<!circumflex>                                                    */ DEADTRANS( 0x2014	,0x00EA	,0x0031	,0x0000), // "—" ➔ "1" U+0031 DIGIT ONE
+/*<!circumflex>                                                    */ DEADTRANS( 0x2015	,0x00EA	,0x00BE	,0x0000), // "―" ➔ "¾" U+00BE VULGAR FRACTION THREE QUARTERS
 /*<!circumflex>                                                    */ DEADTRANS( 0x2027	,0x00EA	,0x002D	,0x0000), // "‧" ➔ "-" U+002D HYPHEN-MINUS
 /*<!circumflex>                                                    */ DEADTRANS( 0x2063	,0x00EA	,0x002C	,0x0000), // "⁣" ➔ "," U+002C COMMA
 /*<!circumflex>                                                    */ DEADTRANS( 0x2064	,0x00EA	,0x002B	,0x0000), // "⁤" ➔ "+" U+002B PLUS SIGN
+/*<!circumflex>                                                    */ DEADTRANS( 0x2212	,0x00EA	,0x2052	,0x0000), // "−" ➔ "⁒" U+2052 COMMERCIAL MINUS SIGN
 /*<!circumflex>                                                    */ DEADTRANS( 0x22C5	,0x00EA	,0x00D7	,0x0000), // "⋅" ➔ "×" U+00D7 MULTIPLICATION SIGN
 /*<!circumflex>                                                    */ DEADTRANS( L'U'	,0x00EA	,0x00DB	,0x0000), // "U" ➔ "Û" U+00DB LATIN CAPITAL LETTER U WITH CIRCUMFLEX
 /*<!circumflex>                                                    */ DEADTRANS( L'u'	,0x00EA	,0x00FB	,0x0000), // "u" ➔ "û" U+00FB LATIN SMALL LETTER U WITH CIRCUMFLEX

@@ -1,7 +1,6 @@
-//                       Date: 2026-11-15T1748+0100
+//                       Date: 2026-11-27T1753+0100
 //        Operating file name: dispocla
 //                   Encoding: UTF-8
-//                       Type: text/XKB configuration
 //     Syntactic highlighting: C
 //                Description: XKB key allocation tables
 //                   Platform: XKB with XCompose using OSes Linux and ChromeOS*
@@ -48,7 +47,7 @@
 //
 //             Uninstallation: Delete those lines, uncomment the rule, remove the file.
 //
-//      Login keyboard layout: The keyboard layout used to log in is configured in
+//      Login keyboard layout: The keyboard layout used to log in is defined in
 //
 //                                 /etc/default/keyboard.
 //
@@ -331,7 +330,7 @@
 // presumably informed the seminal Unicode Standard, designed to maintain full
 // backward compatibility.
 //
-// All layouts in this configuration file support mainstream practice, as used
+// All layouts in this definition file support mainstream practice, as used
 // in the French graphic industry, also referred to as French New School.
 // https://forums.macg.co/threads/typo-caracteres-capitales-accentues.25739/page-5#post-3151119
 //
@@ -1699,8 +1698,8 @@ xkb_symbols "kbfrFRs" {
 	//
 	// ## Customization facility
 	//
-	// Each keyboard layout configured in this file is customizable by the means
-	// of a separate, unoverwritten configuration file, delivered in the folder
+	// Each keyboard layout defined in this file is customizable by the means
+	// of a separate, unoverwritten definition file, delivered in the folder
 	// of the installation script, and included last in order to override default
 	// mappings.
 	//

@@ -1,7 +1,6 @@
-//                       Date: 2026-08-29T1328+0200
+//                       Date: 2026-11-27T1803+0100
 //        Operating file name: evdev
 //                   Encoding: UTF-8
-//                       Type: text/XKB configuration
 //     Syntactic highlighting: C
 //                Description: X key codes to XKB key labels map
 //                   Platform: Linux using XKB with XCompose*

@@ -1,7 +1,6 @@
-//                      Date : 2026-08-29T1325+0200
+//                      Date : 2026-11-27T1754+0100
 //      Nom de fichier final : dispocla_perso
 //                  Encodage : UTF-8
-//                      Type : texte/configuration XKB
 //     Coloration syntaxique : C
 //               Description : tables d’allocation de touches XKB
 //                Plateforme : systèmes d’exploitation Linux et ChromeOS* utilisant XKB avec XCompose

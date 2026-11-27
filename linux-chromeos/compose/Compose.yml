@@ -1,11 +1,10 @@
 # START_additions_XCompose_Dispoclavier (please do not delete this keyword - ne pas effacer ce mot-clé s.v.p.)
-#                       Date: 2026-11-27T0640+0100
+#                       Date: 2026-11-27T1922+0100
 #                    Version: See # # Output of version number
-<UEFA0>                     : "version 7.1.0+19" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+20" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
-#                       Type: text/XCompose
-#                Description: Multicharacter, multikey and dead key configuration
+#                Description: Multicharacter, multikey and dead key definitions
 #                   Platform: Linux using XKB with XCompose**
 #     Syntactic highlighting: YAML
 #
@@ -5093,8 +5092,8 @@
 #   level, as it is traditionally built into compact keyboards.
 #
 #   Initially intended for Windows users, this Alt + numpad input method
-#   emulation is also available to Linux users and macOS users, so far as this
-#   dead key and multikey configuration is transpiled to C and XML.
+#   emulation is also available to Linux users and macOS users, so far as these
+#   dead key and multikey definitions are transpiled to C and XML.
 #
 #   The purpose of the leading plus is to prevent conflicts with the vulgar
 #   fractions.
@@ -15743,7 +15742,7 @@
 #
 #   While on Windows and macOS, input composition can be emulated using chained
 #   dead keys, XKB is to emulate dead keys by input composition. This resulting
-#   configuration file is very human readable, and it is easily converted to
+#   definition file is very human readable, and it is easily converted to
 #   documentation.
 #   See # # Notes about documentation
 #
@@ -20097,7 +20096,7 @@
 #   turned f, but better thought of as a form of j” (Unicode Code Charts), it
 #   is supported as such, but for convenience, also as a turned f.
 #
-#   Since the Claudian letter "Ⅎ" U2132 also has a lowercase form "ⅎ" U214E,
+#   As the Claudian letter "Ⅎ" U2132 also has a lowercase form "ⅎ" U214E,
 #   that is intended to meet Unicode casing requirements, the uppercase slot is
 #   used for the related Lisu letter, and the set of Claudian letters is moved
 #   to the double press dead key used for inverted, sideways and other turned.
@@ -30638,7 +30637,7 @@
 #
 #   Per myriad
 #
-#   Since per mille "‰" U2030 and per myriad "‱" U2031 are not widely used, due
+#   As per mille "‰" U2030 and per myriad "‱" U2031 are not widely used, due
 #   to their confusability and limited availability, they are relegated to the
 #   symbol groups 11 and 12, in favor of potentially more useful symbols in the
 #   groups 1 and 2.
@@ -31410,7 +31409,7 @@
 #   Digits yield negative sans-serif circled number dingbats as a shortcut.
 #   See # # CIRCLED_NEGATIVE_SANS
 #
-#   Since the combining hook above has no spacing clone nor any modifier letter
+#   As the combining hook above has no spacing clone nor any modifier letter
 #   looking close to it, both half rings "ʾ" U02BE, "ʿ" U02BF are provided as a
 #   stopgap, with a rationale based on the laterality of the AltFr and AltGr
 #   modifier keys involved in typing these left and right half rings this way.
@@ -32483,8 +32482,8 @@
 #   As the ISO keyboard standard, part 11, since the 2026 revision supports
 #   superscript signs and parentheses along with digits, these are supported
 #   likewise, as well as the superscript equals sign "⁼" U207C for completeness
-#   and consistency, except the superscript plus sign, as dead_circumflex by
-#   plus is required for "⨣" U2A23 PLUS SIGN WITH CIRCUMFLEX ACCENT ABOVE.
+#   and consistency, except the superscript plus sign, as ‹dead_circumflex› by
+#   ‹plus› is required for "⨣" U2A23 PLUS SIGN WITH CIRCUMFLEX ACCENT ABOVE.
 #   $ee ISO/IEC 9995-11:2026
 #   https://en.wikipedia.org/wiki/ISO/IEC_9995#Dead_keys_on_digits:_Superscripting_and_subscripting
 #   https://en.wikipedia.org/w/index.php?title=ISO/IEC_9995&diff=next&oldid=1319186841#Dead_keys_on_digits:_Superscripting_and_subscripting
@@ -32521,8 +32520,8 @@
 #
 #   For full support including multikey equivalents, the diaeresis dead key may
 #   likely be an acceptable workaround solution for superscript digits, as some
-#   mnemonic, using the traditional French AZERTY mapping of dead_diaeresis on
-#   the same key (D11) as dead_circumflex, in shift position, might not be too
+#   mnemonic, using the traditional French AZERTY mapping of ‹dead_diaeresis› on
+#   the same key (D11) as ‹dead_circumflex›, in shift position, might not be too
 #   far-fetched. Superscript characters are also in the superscript dead key.
 #   See #*# DIAERESIS
 #   See #*# SUPERSCRIPT
@@ -32531,10 +32530,11 @@
 #   Shortcuts in ‹dead_circumflex›
 #
 #   For consistency with the French AZERTY keyboard layout, in French mode,
-#   dead_circumflex is in the benefit of an unshifted position. Hence its use
+#   ‹dead_circumflex› is in the benefit of an unshifted position. Hence its use
 #   for various shortcuts.
 #
-#   Followed by Çç, dead_circumflex is a shortcut to Ññ for Breton and Spanish.
+#   Followed by ‹Ccedilla›, ‹ccedilla›, ‹dead_circumflex› is a shortcut to "Ñ",
+#   "ñ" for Breton and Spanish.
 #
 #   U017F LATIN SMALL LETTER LONG S, in group 3 of s, has an additional input
 #   method by ‹dead_circumflex›‹f›, thanks to French not having any word with
@@ -32546,11 +32546,11 @@
 #   "ŭ" U016D. Likewise, the "U" mnemonic is a valuable reason to make use of
 #   Ugrave for the same output (by lack of something else for the time being).
 #   "U" has not been encoded with circumflex and grave, as opposed to "A"
-#   (by Agrave on key E10), "E" (by Egrave on key E07) and "O" (French AZERTY
-#   does not feature Ograve).
+#   (by ‹Agrave› on key E10), "E" (by ‹Egrave› on key E07) and "O" (French
+#   AZERTY does not feature ‹Ograve›).
 #
-#   Followed by comma, dead_circumflex provides an additional input method for
-#   "ʼ" U02BC MODIFIER LETTER APOSTROPHE.
+#   Followed by ‹comma›, ‹dead_circumflex› provides an additional input method
+#   for "ʼ" U02BC MODIFIER LETTER APOSTROPHE.
 #   See # # C08 apostrophe
 #
 #   Followed by period, dead_circumflex is a shortcut to the middle dot
@@ -32590,14 +32590,14 @@
 #
 #   Per mille in ‹dead_circumflex›
 #
-#   Since per mille "‰" U2030 and per myriad "‱" U2031 are not widely used, due
+#   As per mille "‰" U2030 and per myriad "‱" U2031 are not widely used, due
 #   to their confusability and limited availability, they are relegated to the
 #   symbol groups 11 and 12, in favor of potentially more useful symbols in the
 #   groups 1 and 2.
 #   See # # D02 percent
 #
-#   However, per mille has shortcuts in dead_acute and in ‹dead_circumflex›, and
-#   per myriad has one in dead_diaeresis.
+#   However, per mille has shortcuts in ‹dead_acute› and in ‹dead_circumflex›,
+#   and per myriad has one in ‹dead_diaeresis›.
 #   See #*# ACUTE
 #   See #*# DIAERESIS
 #
@@ -32605,8 +32605,8 @@
 #   Math symbols in ‹dead_circumflex›
 #
 #   Consistently with other dead keys supporting diacriticized math symbols,
-#   plus yields "⨣" U2A23, asciitilde yields "⩯" U2A6F, at and multiply yield
-#   "⨶" U2A36.
+#   ‹plus› yields "⨣" U2A23, ‹asciitilde› yields "⩯" U2A6F, ‹at› and
+#   ‹multiply› yield "⨶" U2A36.
 #
 #   Further, less and greater yield the slanted "⩽" U2A7D and "⩾" U2A7E as a
 #   convenience for French usage. and equal yields "≦" U2266 consistently with
@@ -32638,37 +32638,54 @@
 #   mapping of the circumflex dead key on French keyboard layouts.
 #
 #
-#   Making invisible characters visible
+#   Hinting invisible and confusable characters
 #
-#   For a smoother user experience, invisible characters mapped on live keys
+#   For a smoother user experience, a number of invisible characters and three
+#   mid-height dots mapped on live keys of the DCS AZERTY (where the group dead
+#   key cannot be at level 1, due to the fully backwards compatible key map)
 #   have a visible alias that displays when the circumflex dead key is pressed
-#   before, because this is the most prominent and easiest accessible dead key
-#   on all French keyboard layouts.
+#   prior to the assessed live key, because circumflex is the most prominent
+#   and easy-to-hit dead key on all French keyboard layouts. This feature is
+#   designed for Windows where the defective DEADTRANS macro unable to output
+#   more than a single UTF-16 code unit is still able to hint the semantics.
+#   For this purpose, the ASCII hyphen "-" U002D hints the soft hyphen
+#   "­" U00AD for an invisible character, and the hyphenation point "‧" U2027
+#   for a mid-height dot. Likewise, a pipe "|" U007C stands for both the
+#   cursive non-joiner "‌" U200C and the middle dot "·" U00B7, depending on the
+#   visibility of the live key output. Among the live key mid-height dots, only
+#   the dot operator "⋅" U22C5 does not share its representative "×" U00D7 with
+#   any other character.
 #
-#   This feature is extended to include the three confusable mid-height dots
-#   "·" U00B7, "‧" U2027 and "⋅" U22C5.
+#   This feature is extended to include the four live key dashes "‑" U2011,
+#   "–" U2013, "—" U2014, "―" U2015 and the minus sign "−" U2212.
 #
-#   On Windows however, due to the defective DEADTRANS macro limited to one
-#   single UTF-16 code unit output, this can only be about hinting the
-#   semantics. For this purpose, the ASCII hyphen "-" U002D hints the soft
-#   hyphen "­" U00AD for an invisible character, and the hyphenation point
-#   "‧" U2027 for a mid-height dot. Likewise, a pipe "|" U007C stands for both
-#   the cursive non-joiner "" U200C and the middle dot "·" U00B7, depending on
-#   the visibility of the live key output. Among the live key mid-height dots,
-#   only the dot operator "⋅" U22C5 does not share its representative "×" U00D7
-#   with any other character.
+#   The output after circumflex dead key:  hints  the untransformed live key output:
 #
-#   "␣" U2423 OPEN BOX               ➔ "​" U200B ZERO WIDTH SPACE
-#   "&" U0026 AMPERSAND              ➔ "‍" U200D ZERO WIDTH JOINER
-#   "+" U002B PLUS SIGN              ➔ "⁤" U2064 INVISIBLE PLUS
-#   "," U002C COMMA                  ➔ "⁣" U2063 INVISIBLE SEPARATOR
-#   "-" U002D HYPHEN-MINUS           ➔ "­" U00AD SOFT HYPHEN
-#   "-" U002D HYPHEN-MINUS           ➔ "‧" U2027 HYPHENATION POINT
-#   "|" U007C VERTICAL LINE          ➔ "‌" U200C ZERO WIDTH NON-JOINER
-#   "|" U007C VERTICAL LINE          ➔ "·" U00B7 MIDDLE DOT
-#   "×" U00D7 MULTIPLICATION SIGN    ➔ "⋅" U22C5 DOT OPERATOR
-#   "A" U0041 LATIN CAPITAL LETTER A ➔ "︎" UFE0E VARIATION SELECTOR-15 text variation selector
-#   "☺" U263A WHITE SMILING FACE     ➔ "️" UFE0F VARIATION SELECTOR-16 emoji variation selector
+#   Invisibles:
+#   "-" U002D HYPHEN-MINUS                   ➔ "­" U00AD SOFT HYPHEN
+#   "␣" U2423 OPEN BOX                       ➔ "​" U200B ZERO WIDTH SPACE
+#   "+" U002B PLUS SIGN                      ➔ "⁤" U2064 INVISIBLE PLUS
+#   "A" U0041 LATIN CAPITAL LETTER A         ➔ "︎" UFE0E VARIATION SELECTOR-15 text variation selector
+#   "☺" U263A WHITE SMILING FACE             ➔ "️" UFE0F VARIATION SELECTOR-16 emoji variation selector
+#   "|" U007C VERTICAL LINE                  ➔ "‌" U200C ZERO WIDTH NON-JOINER
+#   "&" U0026 AMPERSAND                      ➔ "‍" U200D ZERO WIDTH JOINER
+#   "," U002C COMMA                          ➔ "⁣" U2063 INVISIBLE SEPARATOR
+#
+#   Mid-height dots:
+#   "|" U007C VERTICAL LINE                  ➔ "·" U00B7 MIDDLE DOT
+#   "-" U002D HYPHEN-MINUS                   ➔ "‧" U2027 HYPHENATION POINT
+#   "×" U00D7 MULTIPLICATION SIGN            ➔ "⋅" U22C5 DOT OPERATOR
+#
+#   Dashes:
+#   "⊝" U229D CIRCLED DASH                   ➔ "‑" U2011 NON-BREAKING HYPHEN
+#   "½" U00BD VULGAR FRACTION ONE HALF       ➔ "–" U2013 EN DASH            
+#   "1" U0031 DIGIT ONE                      ➔ "—" U2014 EM DASH            
+#   "¾" U00BE VULGAR FRACTION THREE QUARTERS ➔ "―" U2015 HORIZONTAL BAR     
+#   "⁒" U2052 COMMERCIAL MINUS SIGN          ➔ "−" U2212 MINUS SIGN         
+#
+#   On systems supporting multiunit output by dead keys in one go, this feature
+#   is enhanced to output a descriptive label in the target locale, French for
+#   instance.
 #
 <dead_circumflex>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
 <Multi_key><less>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
@@ -32914,50 +32931,71 @@
 <Multi_key><less>                                                                          <U0186> : "Ɔ̂" # U0186 U0302 LATIN CAPITAL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
 <dead_circumflex>                                                                          <U0254> : "ɔ̂" # U0254 U0302 LATIN SMALL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
 <Multi_key><less>                                                                          <U0254> : "ɔ̂" # U0254 U0302 LATIN SMALL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
-<dead_circumflex>                                                                          <U00AD> : "trait_d_union_conditionnel" # SOFT HYPHEN
-<Multi_key><less>                                                                          <U00AD> : "trait_d_union_conditionnel" # SOFT HYPHEN
 #@<dead_circumflex>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
 #@<Multi_key><less>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
-<dead_circumflex>                                                                          <U00B7> : "point_médian" # MIDDLE DOT
-<Multi_key><less>                                                                          <U00B7> : "point_médian" # MIDDLE DOT
+<dead_circumflex>                                                                          <U00AD> : "trait_d_union_conditionnel" # SOFT HYPHEN
+<Multi_key><less>                                                                          <U00AD> : "trait_d_union_conditionnel" # SOFT HYPHEN
 #@<dead_circumflex>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
 #@<Multi_key><less>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
-<dead_circumflex>                                                                          <U200B> : "espace_invisible" # ZERO WIDTH SPACE
-<Multi_key><less>                                                                          <U200B> : "espace_invisible" # ZERO WIDTH SPACE
+<dead_circumflex>                                                                          <U00B7> : "point_médian" # MIDDLE DOT
+<Multi_key><less>                                                                          <U00B7> : "point_médian" # MIDDLE DOT
 #@<dead_circumflex>                                                                        <U200B> : "␣" U2423 # OPEN BOX
 #@<Multi_key><less>                                                                        <U200B> : "␣" U2423 # OPEN BOX
-<dead_circumflex>                                                                          <U200C> : "antiliant" # ZERO WIDTH NON-JOINER
-<Multi_key><less>                                                                          <U200C> : "antiliant" # ZERO WIDTH NON-JOINER
+<dead_circumflex>                                                                          <U200B> : "espace_invisible" # ZERO WIDTH SPACE
+<Multi_key><less>                                                                          <U200B> : "espace_invisible" # ZERO WIDTH SPACE
 #@<dead_circumflex>                                                                        <U200C> : "|" U007C # VERTICAL LINE
 #@<Multi_key><less>                                                                        <U200C> : "|" U007C # VERTICAL LINE
-<dead_circumflex>                                                                          <U200D> : "liant" # ZERO WIDTH JOINER
-<Multi_key><less>                                                                          <U200D> : "liant" # ZERO WIDTH JOINER
+<dead_circumflex>                                                                          <U200C> : "antiliant" # ZERO WIDTH NON-JOINER
+<Multi_key><less>                                                                          <U200C> : "antiliant" # ZERO WIDTH NON-JOINER
 #@<dead_circumflex>                                                                        <U200D> : "&" U0026 # AMPERSAND
 #@<Multi_key><less>                                                                        <U200D> : "&" U0026 # AMPERSAND
-<dead_circumflex>                                                                          <U2027> : "point_d_hyphénation" # HYPHENATION POINT
-<Multi_key><less>                                                                          <U2027> : "point_d_hyphénation" # HYPHENATION POINT
+<dead_circumflex>                                                                          <U200D> : "liant" # ZERO WIDTH JOINER
+<Multi_key><less>                                                                          <U200D> : "liant" # ZERO WIDTH JOINER
+#@<dead_circumflex>                                                                        <U2011> : "⊝" U229D # CIRCLED DASH
+#@<Multi_key><less>                                                                        <U2011> : "⊝" U229D # CIRCLED DASH
+<dead_circumflex>                                                                          <U2011> : "trait_d_union_insécable" # NON-BREAKING HYPHEN
+<Multi_key><less>                                                                          <U2011> : "trait_d_union_insécable" # NON-BREAKING HYPHEN
+#@<dead_circumflex>                                                                        <U2013> : "½" U00BD # VULGAR FRACTION ONE HALF
+#@<Multi_key><less>                                                                        <U2013> : "½" U00BD # VULGAR FRACTION ONE HALF
+<dead_circumflex>                                                                          <U2013> : "tiret_demi_cadratin" # EN DASH
+<Multi_key><less>                                                                          <U2013> : "tiret_demi_cadratin" # EN DASH
+#@<dead_circumflex>                                                                        <U2014> : "1" U0031 # DIGIT ONE
+#@<Multi_key><less>                                                                        <U2014> : "1" U0031 # DIGIT ONE
+<dead_circumflex>                                                                          <U2014> : "tiret_cadratin" # EM DASH
+<Multi_key><less>                                                                          <U2014> : "tiret_cadratin" # EM DASH
+#@<dead_circumflex>                                                                        <U2015> : "¾" U00BE # VULGAR FRACTION THREE QUARTERS
+#@<Multi_key><less>                                                                        <U2015> : "¾" U00BE # VULGAR FRACTION THREE QUARTERS
+<dead_circumflex>                                                                          <U2015> : "tiret_trois_quarts_de_cadratin" # HORIZONTAL BAR
+<Multi_key><less>                                                                          <U2015> : "tiret_trois_quarts_de_cadratin" # HORIZONTAL BAR
 #@<dead_circumflex>                                                                        <U2027> : "-" U002D # HYPHEN-MINUS
 #@<Multi_key><less>                                                                        <U2027> : "-" U002D # HYPHEN-MINUS
-<dead_circumflex>                                                                          <U2063> : "séparateur_invisible" # INVISIBLE SEPARATOR
-<Multi_key><less>                                                                          <U2063> : "séparateur_invisible" # INVISIBLE SEPARATOR
+<dead_circumflex>                                                                          <U2027> : "point_d_hyphénation" # HYPHENATION POINT
+<Multi_key><less>                                                                          <U2027> : "point_d_hyphénation" # HYPHENATION POINT
 #@<dead_circumflex>                                                                        <U2063> : "," U002C # COMMA
 #@<Multi_key><less>                                                                        <U2063> : "," U002C # COMMA
-<dead_circumflex>                                                                          <U2064> : "signe_plus_invisible" # INVISIBLE PLUS
-<Multi_key><less>                                                                          <U2064> : "signe_plus_invisible" # INVISIBLE PLUS
+<dead_circumflex>                                                                          <U2063> : "séparateur_invisible" # INVISIBLE SEPARATOR
+<Multi_key><less>                                                                          <U2063> : "séparateur_invisible" # INVISIBLE SEPARATOR
 #@<dead_circumflex>                                                                        <U2064> : "+" U002B # PLUS SIGN
 #@<Multi_key><less>                                                                        <U2064> : "+" U002B # PLUS SIGN
-<dead_circumflex>                                                                          <U22C5> : "opérateur_point" # DOT OPERATOR
-<Multi_key><less>                                                                          <U22C5> : "opérateur_point" # DOT OPERATOR
+<dead_circumflex>                                                                          <U2064> : "signe_plus_invisible" # INVISIBLE PLUS
+<Multi_key><less>                                                                          <U2064> : "signe_plus_invisible" # INVISIBLE PLUS
+#@<dead_circumflex>                                                                        <U2212> : "⁒" U2052 # COMMERCIAL MINUS SIGN
+#@<Multi_key><less>                                                                        <U2212> : "⁒" U2052 # COMMERCIAL MINUS SIGN
+<dead_circumflex>                                                                          <U2212> : "signe_moins" # MINUS SIGN
+<Multi_key><less>                                                                          <U2212> : "signe_moins" # MINUS SIGN
 #@<dead_circumflex>                                                                        <U22C5> : "×" U00D7 # MULTIPLICATION SIGN
 #@<Multi_key><less>                                                                        <U22C5> : "×" U00D7 # MULTIPLICATION SIGN
-<dead_circumflex>                                                                          <UFE0E> : "sélecteur_de_variante_style_texte" # VARIATION SELECTOR-15 text variation selector
-<Multi_key><less>                                                                          <UFE0E> : "sélecteur_de_variante_style_texte" # VARIATION SELECTOR-15 text variation selector
+<dead_circumflex>                                                                          <U22C5> : "opérateur_point" # DOT OPERATOR
+<Multi_key><less>                                                                          <U22C5> : "opérateur_point" # DOT OPERATOR
 #@<dead_circumflex>                                                                        <UFE0E> : "A" U0041 # LATIN CAPITAL LETTER A
 #@<Multi_key><less>                                                                        <UFE0E> : "A" U0041 # LATIN CAPITAL LETTER A
-<dead_circumflex>                                                                          <UFE0F> : "sélecteur_de_variante_style_émoji" # VARIATION SELECTOR-16 emoji variation selector
-<Multi_key><less>                                                                          <UFE0F> : "sélecteur_de_variante_style_émoji" # VARIATION SELECTOR-16 emoji variation selector
+<dead_circumflex>                                                                          <UFE0E> : "sélecteur_de_variante_style_texte" # VARIATION SELECTOR-15 text variation selector
+<Multi_key><less>                                                                          <UFE0E> : "sélecteur_de_variante_style_texte" # VARIATION SELECTOR-15 text variation selector
 #@<dead_circumflex>                                                                        <UFE0F> : "☺" U263A # WHITE SMILING FACE
 #@<Multi_key><less>                                                                        <UFE0F> : "☺" U263A # WHITE SMILING FACE
+<dead_circumflex>                                                                          <UFE0F> : "sélecteur_de_variante_style_émoji" # VARIATION SELECTOR-16 emoji variation selector
+<Multi_key><less>                                                                          <UFE0F> : "sélecteur_de_variante_style_émoji" # VARIATION SELECTOR-16 emoji variation selector
+#
 #
 # # CIRCUMFLEX&GROUP_1
 #
@@ -37832,7 +37870,7 @@
 #   interval notation (a usage that a now archived website recommended it for).
 #   https://web.archive.org/web/20210224183416/http://www.technicalauthoring.com/wiki/index.php/Figure_dash
 #
-#   Since FIGURE DASH occurs in single instances only, it is compatible with
+#   As FIGURE DASH occurs in single instances only, it is compatible with
 #   dead key input, unlike FIGURE SPACE and PUNCTUATION SPACE that are the
 #   tabular digit and punctuation spaces, respectively, and are mapped on live
 #   keys B07 (digitspace) and B08 (punctspace), level 6, in ASCII mode.
@@ -38750,7 +38788,7 @@
 #
 # # D03 quotedbl, EuroSign
 #
-#   Since quotedbl is mapped on the E key in order to be replaced with EuroSign
+#   As quotedbl is mapped on the E key in order to be replaced with EuroSign
 #   for compliance with the related recommendation from the European Commission
 #   to map € on AltGr + E, EuroSign works as a base character as well.
 #   See dispocla.cpp ## Note about EURO SIGN
