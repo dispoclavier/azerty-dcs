@@ -23,7 +23,7 @@ Mise à jour pour macOS des dispositions développées pour Windows, portées so
 * Transformations :
 	* Accent circonflexe :
 		* Visibilisation :
-			* Ajouter l’espace invisible "​" U+200B. [5dbe0b3](https://github.com/dispoclavier/azerty-dcs/commit/5dbe0b3f564267c2ec9154a706f31711c0e8c062)
+			* Ajouter l’espace invisible "​" U+200B. [5dbe0b3](https://github.com/dispoclavier/azerty-dcs/commit/5dbe0b3f564267c2ec9154a706f31711c0e8c062), [e7dbc0e](https://github.com/dispoclavier/azerty-dcs/commit/e7dbc0e935783881f3e26723653648e652be85dd)
 
 ## 7.1.0-beta.9 (2026-11-26)
 
@@ -331,7 +331,7 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 			* Déboguer "·" U+00B7, "‧" U+2027, "⋅" U+22C5. compose-3.yml [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
 			* Corriger les chaînes de sortie pour "·" U+00B7, "‧" U+2027, "⋅" U+22C5, "️" U+FE0F. compose-3.yml [9ec559c](https://github.com/dispoclavier/azerty-dcs/commit/9ec559ca852e85c0793446f4fc8369f487bc80f4)
 			* Ajouter le sélecteur de variante texte "︎" U+EF0E. ibidem
-			* Ajouter l’espace invisible "​" U+200B. kbdeadtrans.c, compose-3.yml [5dbe0b3](https://github.com/dispoclavier/azerty-dcs/commit/5dbe0b3f564267c2ec9154a706f31711c0e8c062)
+			* Ajouter l’espace invisible "​" U+200B. kbdeadtrans.c, compose-3.yml [5dbe0b3](https://github.com/dispoclavier/azerty-dcs/commit/5dbe0b3f564267c2ec9154a706f31711c0e8c062), [e7dbc0e](https://github.com/dispoclavier/azerty-dcs/commit/e7dbc0e935783881f3e26723653648e652be85dd)
 		* Double frappe :
 			* Redonder "Æ" U+00C6, "æ" U+00E6, "Œ" U+0152, "œ" U+0153 à la place de "Ǎ" U+01CD, "ǎ" U+01CE, "Ǒ" U+01D1, "ǒ" U+01D2, qui sont dans hatchek. compose-3.yml [959f22c](https://github.com/dispoclavier/azerty-dcs/commit/959f22c2ba5e88c1aaa314ab1151841eb5a87227), kbdeadtrans-deadkeys.c [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
 			* Redonder "Ɖ" U+0189 par "B", "ɖ" U+0256 par "b", "Ƒ" U+0191 par "F", "ƒ" U+0192 par "f", "Ə" U+018F par "H", "ə" U+0259 par "h", "Ɩ" U+0196 par "I", "ɩ" U+0269 par "i", "Ĳ" U+0132 par "J", "ĳ" U+0133 par "j", "ʔ" U+0294 par "M", "ʾ" U+02BE par "m", "·" U+00B7 par "P", "·" U+00B7 par "p", "Ɂ" U+0241 par "Q", "ɂ" U+0242 par "q", "Ʋ" U+01B2 par "U", "ʋ" U+028B par "u", "℣" U+2123 par "V", "℟" U+211F par "v", "Ʃ" U+01A9 par "W", "ʃ" U+0283 par "w", "Ɛ" U+0190 par "X", "ɛ" U+025B par "x", "Ʊ" U+01B1 par "Y", "ʊ" U+028A par "y". compose-3.yml [8e82cf0](https://github.com/dispoclavier/azerty-dcs/commit/8e82cf0599e4d9ea370f275899ede237a6eed33c)
@@ -391,7 +391,7 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 	* 7.1.0+16 [7cfba74](https://github.com/dispoclavier/azerty-dcs/commit/7cfba74c1c560dbe11a5cf169eba8cc5afcff81e)
 	* 7.1.0+17 [42d1f5f](https://github.com/dispoclavier/azerty-dcs/commit/42d1f5f0695739058b0a4f67b8e46acc48198ec2)
 	* 7.1.0+18 [5dbe0b3](https://github.com/dispoclavier/azerty-dcs/commit/5dbe0b3f564267c2ec9154a706f31711c0e8c062)
-	* 7.1.0+19
+	* 7.1.0+19 [e7dbc0e](https://github.com/dispoclavier/azerty-dcs/commit/e7dbc0e935783881f3e26723653648e652be85dd)
 
 ## 7.0.1 (projet)
 
