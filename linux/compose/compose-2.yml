@@ -3,7 +3,7 @@
 #                    Version: See compose-1.yml
 #                   Encoding: UTF-8
 #                Description: Multicharacter, multikey and dead key definitions
-#                   Platform: XKB with XCompose using OSes Linux and ChromeOS
+#                   Platform: Linux using XKB with XCompose
 #     Syntactic highlighting: YAML
 #               Installation: Please see in the all-in-one file Compose.yml.
 #
@@ -168,7 +168,7 @@
 #   Most multikey equivalents below the dead key sequences have been added by
 #   the script generate-multikey.pl.
 #   See linux-chromeos/outils/generate-multikey.pl
-#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/outils/generate-multikey.pl
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux/outils/generate-multikey.pl
 #
 #
 # # X11 dead keysyms
@@ -1200,7 +1200,7 @@
 #   https://unicode.org/mail-arch/unicode-ml/y2016-m02/0071.html
 #
 #   Sequences with "Ɛ" U0190, "ɛ" U025B, "Ɔ" U0186, "ɔ" U0254 keysyms are for
-#   use on the Francophone Africa semiautomatic keyboard layout "kbfrAFs" and
+#   use on the Francophone Africa AZERTY DCS "kbfrAFs" and
 #   its remapped variant "kbfrAFr" with live keys for open e, also known as
 #   Latin epsilon, and open o.
 #
@@ -6578,10 +6578,7 @@
 #
 #   Diacritics in dead_tilde
 #
-#   The double diacritic "͠" U0360 has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "͠" U0360 has ‹dollar› as a mnemonic base character.
 #
 #   Combining tilde halves above – "︢" UFE22, "︣" UFE23 – are supported on all
 #   fully available base letters for a streamlined user experience. Halves of
@@ -6597,20 +6594,20 @@
 #   consistent user experience across the symbol groups (not sooner than v6.1.0
 #   when the dead key data started being transpiled).
 #
-#   EuroSign and quotedbl yield the emoji style variation selector UFE0F, and
-#   so does asciitilde for text style UFE0E, with alphabetic mnemonics, while
-#   the backslash in-between yields the most common variation selector #1 for
-#   completeness.
+#   ‹EuroSign› and ‹quotedbl› (D03) yield the emoji style variation selector
+#   UFE0F, and so does ‹asciitilde› (D05) for text style UFE0E, with alphabetic
+#   mnemonics, while ‹backslash› in-between yields the most common variation
+#   selector #1 for completeness.
 #
 #   The combining grapheme joiner U034F is called “diacritique invisible
 #   bloquant” in French, and so keeps benefitting from alphabetic mnemonics as
-#   it is yielded by parenleft on the "D" key.
+#   it is yielded by ‹parenleft› on the "D" key.
 #
 #   The mnemonic is still French for the word joiner U2060, called “gluon”, on
-#   key "G" by the minus hyphen, while its legacy equivalent ZWNBSP is again
-#   in-between on key "F" by parenright.
+#   key "G" by the ‹minus› hyphen, while its legacy equivalent ZWNBSP is again
+#   in-between on key "F" by ‹parenright›.
 #
-#   The plain-text page break FORM FEED U000C is also supported, by grave on
+#   The plain-text page break FORM FEED U000C is also supported, by ‹grave› on
 #   the "N" key with alphabetic mnemonics based on “nouvelle page”. (Here like
 #   elsewhere, the multikey equivalent cannot be supported.)
 #
@@ -6634,8 +6631,6 @@
 #   Multikey conflicts with composed "Ɔ̃", "Ǝ̃", "Ɛ̃", "ǝ̃", "ɔ̃", "ɛ̃".              <numbersign> : "⧤" U29E4 # EQUALS SIGN AND SLANTED PARALLEL WITH TILDE ABOVE
 <dead_tilde>                                                                              <dollar> : "͠" U0360 # COMBINING DOUBLE TILDE
 <Multi_key><asciitilde>                                                                   <dollar> : "͠" U0360 # COMBINING DOUBLE TILDE
-<dead_tilde>                                                                              <emdash> : "͠" U0360 # COMBINING DOUBLE TILDE
-<Multi_key><asciitilde>                                                                   <emdash> : "͠" U0360 # COMBINING DOUBLE TILDE
 <dead_tilde>                                                                           <parenleft> : "͏" U034F # COMBINING GRAPHEME JOINER
 <Multi_key><asciitilde>                                                                <parenleft> : "͏" U034F # COMBINING GRAPHEME JOINER
 <dead_tilde>                                                                          <parenright> : "﻿" UFEFF # BYTE ORDER MARK, in legacy usage ZERO WIDTH NO-BREAK SPACE
@@ -11874,10 +11869,7 @@
 #
 #   Double diacritic of dead_invertedbreve
 #
-#   The double diacritic "͡" U0361 has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "͡" U0361 has ‹dollar› as a mnemonic base character.
 #
 #
 #   Spacing clone of dead_invertedbreve
@@ -11897,8 +11889,6 @@
 <Multi_key><parenleft>                                                                     <U202F> : "꭛" UAB5B # MODIFIER BREVE WITH INVERTED BREVE
 <dead_invertedbreve>                                                                      <dollar> : "͡" U0361 # COMBINING DOUBLE INVERTED BREVE
 <Multi_key><parenleft>                                                                    <dollar> : "͡" U0361 # COMBINING DOUBLE INVERTED BREVE
-<dead_invertedbreve>                                                                      <emdash> : "͡" U0361 # COMBINING DOUBLE INVERTED BREVE
-<Multi_key><parenleft>                                                                    <emdash> : "͡" U0361 # COMBINING DOUBLE INVERTED BREVE
 <dead_invertedbreve>                                                                       <equal> : "≘" U2258 # CORRESPONDS TO
 #   Multikey conflicts with "≎" U224E.                                                     <equal> : "≘" U2258 # CORRESPONDS TO
 <dead_invertedbreve>                                                                           <A> : "Ȃ" U0202 # LATIN CAPITAL LETTER A WITH INVERTED BREVE
@@ -12043,10 +12033,7 @@
 #
 #   Double diacritic
 #
-#   The double diacritic "᷼" U1DFC has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "᷼" U1DFC has ‹dollar› as a mnemonic base character.
 #
 #
 #   Spacing clones
@@ -12067,8 +12054,6 @@
 <Multi_key><parenleft><parenleft>                                                          <U202F> : "ᵔ" U1D54 # MODIFIER LETTER SMALL TOP HALF O
 <dead_invertedbreve><dead_invertedbreve>                                                  <dollar> : "᷼" U1DFC # COMBINING DOUBLE INVERTED BREVE BELOW
 <Multi_key><parenleft><parenleft>                                                         <dollar> : "᷼" U1DFC # COMBINING DOUBLE INVERTED BREVE BELOW
-<dead_invertedbreve><dead_invertedbreve>                                                  <emdash> : "᷼" U1DFC # COMBINING DOUBLE INVERTED BREVE BELOW
-<Multi_key><parenleft><parenleft>                                                         <emdash> : "᷼" U1DFC # COMBINING DOUBLE INVERTED BREVE BELOW
 #
 #
 #^# INVERTED_BREVE_DK_ID
@@ -12123,10 +12108,7 @@
 #
 #   Diacritics
 #
-#   The double diacritic "͝" U035D has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "͝" U035D has ‹dollar› as a mnemonic base character.
 #
 #   The combining candrabindu "̐" U0310 has a shortcut by period.
 #
@@ -12140,8 +12122,6 @@
 <Multi_key><parenright>                                                                    <U202F> : "˘" U02D8 # BREVE
 <dead_breve>                                                                              <dollar> : "͝" U035D # COMBINING DOUBLE BREVE
 <Multi_key><parenright>                                                                   <dollar> : "͝" U035D # COMBINING DOUBLE BREVE
-<dead_breve>                                                                              <emdash> : "͝" U035D # COMBINING DOUBLE BREVE
-<Multi_key><parenright>                                                                   <emdash> : "͝" U035D # COMBINING DOUBLE BREVE
 <dead_breve>                                                                            <asterisk> : "⁕" U2055 # FLOWER PUNCTUATION MARK
 <Multi_key><parenright>                                                                 <asterisk> : "⁕" U2055 # FLOWER PUNCTUATION MARK
 <dead_breve>                                                                              <period> : "̐" U0310 # COMBINING CANDRABINDU
@@ -12377,10 +12357,7 @@
 #
 #   Double diacritic
 #
-#   The double diacritic "͜" U035C has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "͜" U035C has ‹dollar› as a mnemonic base character.
 #
 #
 #   Spacing clones
@@ -12403,8 +12380,6 @@
 <Multi_key><parenright><parenright>                                                        <U202F> : "ᵕ" U1D55 # MODIFIER LETTER SMALL BOTTOM HALF O
 <dead_breve><dead_breve>                                                                  <dollar> : "͜" U035C # COMBINING DOUBLE BREVE BELOW
 <Multi_key><parenright><parenright>                                                       <dollar> : "͜" U035C # COMBINING DOUBLE BREVE BELOW
-<dead_breve><dead_breve>                                                                  <emdash> : "͜" U035C # COMBINING DOUBLE BREVE BELOW
-<Multi_key><parenright><parenright>                                                       <emdash> : "͜" U035C # COMBINING DOUBLE BREVE BELOW
 <dead_breve><dead_breve>                                                                       <H> : "Ḫ" U1E2A # LATIN CAPITAL LETTER H WITH BREVE BELOW
 <Multi_key><parenright><parenright>                                                            <H> : "Ḫ" U1E2A # LATIN CAPITAL LETTER H WITH BREVE BELOW
 <dead_breve><dead_breve>                                                                       <h> : "ḫ" U1E2B # LATIN SMALL LETTER H WITH BREVE BELOW
@@ -13749,10 +13724,7 @@
 #   See "︦" UFE26
 #   See "︭" UFE2D
 #
-#   The double diacritic "͞" U035E has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "͞" U035E has ‹dollar› as a mnemonic base character.
 #
 #   Combining macron halves above – "︤" UFE24, "︥" UFE25 – are supported on all
 #   unconflicting and fully available base letters for a streamlined user
@@ -13810,10 +13782,6 @@
 <Multi_key><bar>                                                                          <dollar> : "͞" U035E # COMBINING DOUBLE MACRON
 <dead_diaeresis><dead_diaeresis>                                                          <dollar> : "͞" U035E # COMBINING DOUBLE MACRON
 <Multi_key><colon><colon>                                                                 <dollar> : "͞" U035E # COMBINING DOUBLE MACRON
-<dead_macron>                                                                             <emdash> : "͞" U035E # COMBINING DOUBLE MACRON
-<Multi_key><bar>                                                                          <emdash> : "͞" U035E # COMBINING DOUBLE MACRON
-<dead_diaeresis><dead_diaeresis>                                                          <emdash> : "͞" U035E # COMBINING DOUBLE MACRON
-<Multi_key><colon><colon>                                                                 <emdash> : "͞" U035E # COMBINING DOUBLE MACRON
 <dead_macron>                                                                               <plus> : "∓" U2213 # MINUS-OR-PLUS SIGN
 <Multi_key><bar>                                                                            <plus> : "∓" U2213 # MINUS-OR-PLUS SIGN
 <dead_diaeresis><dead_diaeresis>                                                            <plus> : "∓" U2213 # MINUS-OR-PLUS SIGN
@@ -14582,10 +14550,7 @@
 #   See "︭" UFE2D
 #   See "︦" UFE26
 #
-#   The double diacritic "͟" U035F has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "͟" U035F has ‹dollar› as a mnemonic base character.
 #
 #   Combining macron halves below "︫" UFE2B, "︬" UFE2C are supported on "W"
 #   as well as on all other available base letters, consistently with
@@ -14618,8 +14583,6 @@
 <Multi_key><bar><bar>                                                                  <ampersand> : "︭" UFE2D # COMBINING CONJOINING MACRON BELOW
 <dead_macron><dead_macron>                                                                <dollar> : "͟" U035F # COMBINING DOUBLE MACRON BELOW
 <Multi_key><bar><bar>                                                                     <dollar> : "͟" U035F # COMBINING DOUBLE MACRON BELOW
-<dead_macron><dead_macron>                                                                <emdash> : "͟" U035F # COMBINING DOUBLE MACRON BELOW
-<Multi_key><bar><bar>                                                                     <emdash> : "͟" U035F # COMBINING DOUBLE MACRON BELOW
 <dead_macron><dead_macron>                                                                  <plus> : "±" U00B1 # PLUS-MINUS SIGN
 <Multi_key><bar><bar>                                                                       <plus> : "±" U00B1 # PLUS-MINUS SIGN
 <dead_macron><dead_macron>                                                           <bracketleft> : "⦋" U298B # LEFT SQUARE BRACKET WITH UNDERBAR

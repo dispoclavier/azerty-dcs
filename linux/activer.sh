@@ -330,16 +330,16 @@ function options_de_disposition {
 				echo -e "\n     Tous les retours d’expérience sont les bienvenus."
 				echo      '     S’il manque quoi que ce soit, ou à tout autre sujet relatif,'
 				echo      '     n’hésitez pas à créer un rapport de bogue :'
-				echo      '     https://github.com/dispoclavier/nouvel-azerty/issues'
+				echo      '     https://github.com/dispoclavier/azerty-dcs/issues'
 				echo -e "\n     N’hésitez pas non plus à lancer une discussion :"
-				echo      '     https://github.com/dispoclavier/nouvel-azerty/discussions'
+				echo      '     https://github.com/dispoclavier/azerty-dcs/discussions'
 				echo -e "\n             Bonne utilisation !\n"
 			else
 				echo -e "\n     Cette disposition de clavier n’a pas été activée, car"
 				echo      '     le fichier à activer n’est pas accessible.'
 				echo -e "\n     Le mieux est de télécharger un nouveau paquetage"
 				echo      '     sur la page de la version la plus récente :'
-				echo      '     https://github.com/dispoclavier/nouvel-azerty/releases/latest'
+				echo      '     https://github.com/dispoclavier/azerty-dcs/releases/latest'
 				echo -e "\n     Avec toutes nos excuses pour ce désagrément.\n"
 			fi
 		;;
@@ -436,7 +436,7 @@ if [ -f "$HOME/.config/dispoclavier/activer/der.txt" ] && [ -d "activer" ]; then
 					echo      '     et ensuite de relancer la mise en place de l’automatisme, le'
 					echo      '     tout éventuellement après que vous avez téléchargé un nouveau'
 					echo      '     paquetage sur la page de la version la plus récente :'
-					echo      '     https://github.com/dispoclavier/nouvel-azerty/releases/latest'
+					echo      '     https://github.com/dispoclavier/azerty-dcs/releases/latest'
 					echo -e "\n     Avec toutes nos excuses pour ce désagrément.\n"
 				fi
 			;;
@@ -454,9 +454,9 @@ if [ -f "$HOME/.config/dispoclavier/activer/der.txt" ] && [ -d "activer" ]; then
 				echo -e "\n     Tous les retours d’expérience sont les bienvenus."
 				echo      '     S’il manque quoi que ce soit, ou à tout autre sujet relatif,'
 				echo      '     n’hésitez pas à créer un rapport de bogue :'
-				echo      '     https://github.com/dispoclavier/nouvel-azerty/issues'
+				echo      '     https://github.com/dispoclavier/azerty-dcs/issues'
 				echo -e "\n     N’hésitez pas non plus à lancer une discussion :"
-				echo      '     https://github.com/dispoclavier/nouvel-azerty/discussions'
+				echo      '     https://github.com/dispoclavier/azerty-dcs/discussions'
 				echo -e "\n             Bonne utilisation !\n"
 			;;
 		esac
@@ -485,9 +485,9 @@ elif [ -f "$HOME/.config/dispoclavier/activer/der.$mode" ]; then
 			echo -e "\n     Tous les retours d’expérience sont les bienvenus."
 			echo      '     S’il manque quoi que ce soit, ou à tout autre sujet relatif,'
 			echo      '     n’hésitez pas à créer un rapport de bogue :'
-			echo      '     https://github.com/dispoclavier/nouvel-azerty/issues'
+			echo      '     https://github.com/dispoclavier/azerty-dcs/issues'
 			echo -e "\n     N’hésitez pas non plus à lancer une discussion :"
-			echo      '     https://github.com/dispoclavier/nouvel-azerty/discussions'
+			echo      '     https://github.com/dispoclavier/azerty-dcs/discussions'
 			echo -e "\n             Bonne utilisation !\n"
 		;;
 	esac
@@ -497,6 +497,6 @@ else
 		echo -e "\n     Les dispositions de clavier à activer ne sont pas présentes."
 		echo -e "\n     Le mieux est de télécharger un nouveau paquetage"
 		echo      '     sur la page de la version la plus récente :'
-		echo      '     https://github.com/dispoclavier/nouvel-azerty/releases/latest'
+		echo      '     https://github.com/dispoclavier/azerty-dcs/releases/latest'
 		echo -e "\n     Avec toutes nos excuses pour ce désagrément.\n"
 fi

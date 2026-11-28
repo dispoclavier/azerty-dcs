@@ -1,8 +1,8 @@
 # Un nouvel AZERTY pour Linux
 
-Ce mode d’emploi couvre l’[installation](#installation) et l’[activation](#activation-sans-droits-dadministrateur), et les particularités de l’[utilisation](#utilisation) sous Linux, afin de compléter le [Mode d’emploi commun](https://github.com/dispoclavier/nouvel-azerty/blob/main/readme.md).
+Ce mode d’emploi couvre l’[installation](#installation) et l’[activation](#activation-sans-droits-dadministrateur), et les particularités de l’[utilisation](#utilisation) sous Linux, afin de compléter le [Mode d’emploi commun](https://github.com/dispoclavier/azerty-dcs/blob/main/readme.md).
 
-Ces modes d’emploi complètent à leur tour la page web [Un nouvel AZERTY](https://dispoclavier.com/nouvel-azerty/) et sa [version en PDF](https://dispoclavier.com/doc/un-nouvel-azerty.pdf), la présentation des [touches mortes](https://dispoclavier.com/nouvel-azerty/touches-mortes/), dont une [version en PDF](https://dispoclavier.com/doc/un-nouvel-azerty-touches-mortes.pdf) est aussi disponible en ligne, et qui est assortie de 30 sous-pages, une par touche morte diacritique ou transformationnelle, en particulier celle sur les douze [groupes](https://dispoclavier.com/nouvel-azerty/touches-mortes/groupe/) ([version en PDF](https://dispoclavier.com/doc/un-nouvel-azerty-touche-morte-groupe.pdf)), ainsi que la présentation de la [touche de composition](https://dispoclavier.com/nouvel-azerty/composition/) ([version en PDF](https://dispoclavier.com/doc/un-nouvel-azerty-composition-non-math.pdf)) accompagnée de la liste des [symboles mathématiques](https://dispoclavier.com/nouvel-azerty/composition/symboles-mathematiques/), dont une [version en PDF](https://dispoclavier.com/doc/un-nouvel-azerty-symboles-math.pdf) est pareillement disponible en ligne. Ces cinq PDF sont réunis dans le dossier « Un-nouvel-AZERTY-Documentation-[version].zip ».
+Ces modes d’emploi complètent à leur tour la page web [Un nouvel AZERTY](https://dispoclavier.com/azerty-dcs/) et sa [version en PDF](https://dispoclavier.com/doc/un-nouvel-azerty.pdf), la présentation des [touches mortes](https://dispoclavier.com/azerty-dcs/touches-mortes/), dont une [version en PDF](https://dispoclavier.com/doc/un-nouvel-azerty-touches-mortes.pdf) est aussi disponible en ligne, et qui est assortie de 30 sous-pages, une par touche morte diacritique ou transformationnelle, en particulier celle sur les douze [groupes](https://dispoclavier.com/azerty-dcs/touches-mortes/groupe/) ([version en PDF](https://dispoclavier.com/doc/un-nouvel-azerty-touche-morte-groupe.pdf)), ainsi que la présentation de la [touche de composition](https://dispoclavier.com/azerty-dcs/composition/) ([version en PDF](https://dispoclavier.com/doc/un-nouvel-azerty-composition-non-math.pdf)) accompagnée de la liste des [symboles mathématiques](https://dispoclavier.com/azerty-dcs/composition/symboles-mathematiques/), dont une [version en PDF](https://dispoclavier.com/doc/un-nouvel-azerty-symboles-math.pdf) est pareillement disponible en ligne. Ces cinq PDF sont réunis dans le dossier « Un-nouvel-AZERTY-Documentation-[version].zip ».
 
 ## Alerte d’incompatibilité de Linux Mint
 
@@ -12,15 +12,15 @@ Plus d’informations sous le titre [Linux Mint](#linux-mint) plus bas.
 
 ## Activation sans droits d’administrateur
 
-Télécharger le dossier « Un-nouvel-AZERTY-Linux-[version].zip » sous le titre « Assets », et lancer le script d’activation [activer.sh](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/activer.sh) ou suivre le mode d’emploi dans le fichier [Lisez-moi-svp.pdf](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/Lisez-moi-svp.md) inclus dans ce dossier.
+Télécharger le dossier « Un-nouvel-AZERTY-Linux-[version].zip » sous le titre « Assets », et lancer le script d’activation [activer.sh](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/activer.sh) ou suivre le mode d’emploi dans le fichier [Lisez-moi-svp.pdf](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/Lisez-moi-svp.md) inclus dans ce dossier.
 
 ### Script d’activation : mode d’emploi
 
-Le script d’activation « activer.sh » se trouve sur GitHub ([activer.sh](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/activer.sh)) à la racine du dossier « linux-chromeos/ », ainsi qu’à la racine du paquet distribué « Un-nouvel-AZERTY-Linux-[version].zip ».
+Le script d’activation « activer.sh » se trouve sur GitHub ([activer.sh](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/activer.sh)) à la racine du dossier « linux-chromeos/ », ainsi qu’à la racine du paquet distribué « Un-nouvel-AZERTY-Linux-[version].zip ».
 
 Selon les réglages, on peut lancer ce script en le cliquant ou en le double-cliquant, et de toute manière par la commande « ./activer.sh » après avoir ouvert le dossier dans un terminal.
 
-Ce script commence par sauvegarder la disposition de clavier actuelle, afin de pouvoir par la suite proposer de revenir à la disposition de clavier habituelle. Cela est utile pour rapidement mettre fin à un test, par la même méthode qui a mis ce test en route. Cette option était prévue dès le début quand le seul moyen était l’activation manuelle documentée dans le [Lisez-moi-svp.pdf](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/Lisez-moi-svp.md).
+Ce script commence par sauvegarder la disposition de clavier actuelle, afin de pouvoir par la suite proposer de revenir à la disposition de clavier habituelle. Cela est utile pour rapidement mettre fin à un test, par la même méthode qui a mis ce test en route. Cette option était prévue dès le début quand le seul moyen était l’activation manuelle documentée dans le [Lisez-moi-svp.pdf](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/Lisez-moi-svp.md).
 
 Pour revenir à la disposition de clavier habituelle, on choisit l’option O ou P pour plus d’options, puis H.
 
@@ -28,7 +28,7 @@ Sinon, après avoir appuyé sur Entrée, on peut choisir la variante de disposit
 
 Pour finaliser l’activation, les chaînes de caractères pour touches vives et le contenu des touches mortes sont mis en place dans le dossier personnel, le cas échéant à la suite des séquences de composition existantes.
 
-Par la suite, la disposition de clavier dernièrement utilisée parmi celles incluses dans ce nouvel AZERTY (qui inclut aussi les variantes redisposées) sera réactivée le plus facilement, après un appui sur Entrée. Ce sera la version la plus à jour disponible localement, si le script [activer.sh](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/activer.sh) est lancé depuis un paquetage téléchargé. Sinon ce sera la version dernièrement utilisée, mise en cache dans le dossier personnel, dans un sous-dossier « dispoclavier/activer/ » au sein du sous-dossier caché « .config/ ».
+Par la suite, la disposition de clavier dernièrement utilisée parmi celles incluses dans ce nouvel AZERTY (qui inclut aussi les variantes redisposées) sera réactivée le plus facilement, après un appui sur Entrée. Ce sera la version la plus à jour disponible localement, si le script [activer.sh](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/activer.sh) est lancé depuis un paquetage téléchargé. Sinon ce sera la version dernièrement utilisée, mise en cache dans le dossier personnel, dans un sous-dossier « dispoclavier/activer/ » au sein du sous-dossier caché « .config/ ».
 
 Le script d’activation propose aussi de (semi-)automatiser l’activation à l’ouverture de session selon une méthode uniformisée, utile pour compléter l’installation par l’activation, mais cette fonctionnalité est affectée par le problème mentionné ci-après.
 
@@ -44,11 +44,11 @@ Pour le navigateur de fichiers, dix logiciels sont pris en charge nativement, e
 
 Sous les versions de Linux postérieures à [Ubuntu 16.04](https://releases.ubuntu.com/16.04/) ou équivalent, il ne paraît pas possible d’alterner entre plusieurs dispositions de clavier, mais on peut changer de disposition en désactivant l’ancienne après avoir activé la nouvelle.
 
-Télécharger le dossier « Un-nouvel-AZERTY-Linux-[version].zip » sous le titre « Assets », et lancer le script [installer.sh](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/installer.sh). On peut aussi installer chaque fichier [manuellement](#installation-manuelle).
+Télécharger le dossier « Un-nouvel-AZERTY-Linux-[version].zip » sous le titre « Assets », et lancer le script [installer.sh](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/installer.sh). On peut aussi installer chaque fichier [manuellement](#installation-manuelle).
 
 ### Script d’installation : mode d’emploi
 
-Le script d’installation s’appelle « installer.sh » d’après le verbe français. Il se trouve sur GitHub ([installer.sh](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/installer.sh)) à la racine du dossier « linux-chromeos/ », ainsi qu’à la racine du paquet distribué « Un-nouvel-AZERTY-Linux-[version].zip ».
+Le script d’installation s’appelle « installer.sh » d’après le verbe français. Il se trouve sur GitHub ([installer.sh](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/installer.sh)) à la racine du dossier « linux-chromeos/ », ainsi qu’à la racine du paquet distribué « Un-nouvel-AZERTY-Linux-[version].zip ».
 
 Selon les réglages, on peut lancer ce script en le cliquant ou en le double-cliquant, et de toute manière par la commande « ./installer.sh » après avoir ouvert le dossier dans un terminal.
 
@@ -82,12 +82,12 @@ Pour faciliter ces opérations de fichiers, le plus simple est d’ouvrir une in
 
 Compte tenu de l’[alerte](#alerte-de-d%C3%A9pannage) plus haut, et pour toute éventualité, la procédure d’installation manuelle est la suivante :
 
-1. [Compose.yml](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/compose/Compose.yml) : Prendre le fichier d’un seul tenant, qui se trouve aussi à la racine du dossier « Un-nouvel-AZERTY-Linux-[version].zip », et ajouter son contenu à la fin du fichier « X11/locale/en_US.UTF-8/Compose ».
-2. [dispotypes.c](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/dispotypes.c) : Copier ce fichier vers « /usr/share/X11/xkb/types/dispotypes ».
+1. [Compose.yml](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/Compose.yml) : Prendre le fichier d’un seul tenant, qui se trouve aussi à la racine du dossier « Un-nouvel-AZERTY-Linux-[version].zip », et ajouter son contenu à la fin du fichier « X11/locale/en_US.UTF-8/Compose ».
+2. [dispotypes.c](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/dispotypes.c) : Copier ce fichier vers « /usr/share/X11/xkb/types/dispotypes ».
 3. Dans « /usr/share/X11/xkb/types/complete », ajouter « include "dispotypes" » sur une nouvelle ligne.
-4. [dispocla_perso.cpp](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/dispocla_perso.cpp) : Copier ce fichier vers « /usr/share/X11/xkb/symbols/dispocla_perso ».
-5. [dispocla.cpp](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/dispocla.cpp) : Copier ce fichier vers « /usr/share/X11/xkb/symbols/dispocla ».
-6. [evdev-additions.xml](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/evdev-additions.xml) : Copier l’élément `<layout>` qui commence à la ligne 50, et le coller dans « /usr/share/X11/xkb/rules/evdev.xml » avant la balise `</layoutList>`.
+4. [dispocla_perso.cpp](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/dispocla_perso.cpp) : Copier ce fichier vers « /usr/share/X11/xkb/symbols/dispocla_perso ».
+5. [dispocla.cpp](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/dispocla.cpp) : Copier ce fichier vers « /usr/share/X11/xkb/symbols/dispocla ».
+6. [evdev-additions.xml](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/evdev-additions.xml) : Copier l’élément `<layout>` qui commence à la ligne 50, et le coller dans « /usr/share/X11/xkb/rules/evdev.xml » avant la balise `</layoutList>`.
 7. Dans « /usr/share/X11/xkb/rules/evdev », empêcher le système d’écraser le deuxième groupe vif, en désactivant la ligne :
 
 *		*		=	+%l[2]%(v[2]):2
@@ -96,8 +96,8 @@ Compte tenu de l’[alerte](#alerte-de-d%C3%A9pannage) plus haut, et pour toute 
    
        // * * = +%l[2]%(v[2]):2
 
-8. [evdev.c](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/evdev.c) : Mettre ce fichier à la place de « /usr/share/X11/xkb/keycodes/evdev » après avoir renommé celui-ci. Décommenter le cas échéant les définitions de touches souhaitées concernant Effacement arrière, AltFr et VerrCap.
-9. [dispoled.c](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/dispoled.c) : Copier ce fichier vers « /usr/share/X11/xkb/compat/dispoled ».
+8. [evdev.c](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/evdev.c) : Mettre ce fichier à la place de « /usr/share/X11/xkb/keycodes/evdev » après avoir renommé celui-ci. Décommenter le cas échéant les définitions de touches souhaitées concernant Effacement arrière, AltFr et VerrCap.
+9. [dispoled.c](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/dispoled.c) : Copier ce fichier vers « /usr/share/X11/xkb/compat/dispoled ».
 10. Dans « /usr/share/X11/xkb/compat/complete », ajouter « include "dispoled" » sur une nouvelle ligne.
 11. Veiller à ce que la méthode d’entrée soit XIM. Ce réglage se trouve par exemple (Ubuntu 24.04) dans Système > Pays et langue > Système > Gérer les langues installées > Langue > Système de saisie au clavier [iBus, XIM, Aucun]. Il peut aussi être effectué par la commande « im-config -n xim ».
 
@@ -137,7 +137,7 @@ Sur les vues de disposition de ce nouvel AZERTY, sur le bloc alphabétique et la
 
 Les rectangles avec un code sont soit des touches mortes, comme la touche morte groupe « EFD0 » sur la touche ⟦*⟧, soit des séquences, comme les ponctuations espacées en Majuscule, ou le double zéro « EF6D » sur ⟦B⟧.
 
-Ces touches mortes et ces séquences sont définies dans le répertoire des touches mortes et des séquences Compose(.yml), consultable sur GitHub en trois parties à cause d’une limitation de taille de fichier : [compose-1.yml](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/compose/compose-1.yml) pour les séquences sur touches vives et les séquences de composition, [compose-2.yml](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/compose/compose-2.yml) pour les touches mortes, et [compose-3.yml](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/compose/compose-3.yml) pour les [groupes des symboles](https://dispoclavier.com/nouvel-azerty/touches-mortes/groupe/#1566-groupes-des-symboles) et les [groupes des lettres](https://dispoclavier.com/nouvel-azerty/touches-mortes/groupe/#1566-groupes-des-lettres), qui font partie de la [touche morte groupe](https://dispoclavier.com/nouvel-azerty/touches-mortes/groupe/).
+Ces touches mortes et ces séquences sont définies dans le répertoire des touches mortes et des séquences Compose(.yml), consultable sur GitHub en trois parties à cause d’une limitation de taille de fichier : [compose-1.yml](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-1.yml) pour les séquences sur touches vives et les séquences de composition, [compose-2.yml](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-2.yml) pour les touches mortes, et [compose-3.yml](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-3.yml) pour les [groupes des symboles](https://dispoclavier.com/azerty-dcs/touches-mortes/groupe/#1566-groupes-des-symboles) et les [groupes des lettres](https://dispoclavier.com/azerty-dcs/touches-mortes/groupe/#1566-groupes-des-lettres), qui font partie de la [touche morte groupe](https://dispoclavier.com/azerty-dcs/touches-mortes/groupe/).
 
 ## Systèmes
 
@@ -191,9 +191,9 @@ La nécessité d’invoquer xkbcomp à chaque ouverture de session sous Linux Mi
 
 Les alternatives pour lancer un script au démarrage sont foison, mais elles conviennent uniquement sur les ordinateurs unipersonnels ou en cas d’accord sur la disposition de clavier utilisée.
 
-L’automatisation proposée par le script [activer.sh](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/activer.sh) est cohérente avec xkbcomp, qui active une disposition de clavier pour une session.
+L’automatisation proposée par le script [activer.sh](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/activer.sh) est cohérente avec xkbcomp, qui active une disposition de clavier pour une session.
 
-Après avoir mis en place l’automatisation, le script [activer.sh](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/activer.sh) alerte que l’activation est seulement « censée être automatisée, et en principe, dès l’ouverture de session, la disposition dernièrement utilisée devrait être activée. Mais cela ne fonctionne que pour lancer la commande dans un terminal, voire, accéder au script dans un navigateur de fichiers. Ces deux solutions de dépannage sont aussi prises en charge. Quand vous verrez le navigateur de fichiers à l’ouverture de session, cela signifie que deux tentatives d’activation ont déjà échoué, une silencieuse et une dans le terminal. Dans le navigateur de fichiers, le même script attendra que vous le lanciez manuellement. Ce script ouvrira un terminal, dans lequel il vous confirmera l’activation réussie. »
+Après avoir mis en place l’automatisation, le script [activer.sh](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/activer.sh) alerte que l’activation est seulement « censée être automatisée, et en principe, dès l’ouverture de session, la disposition dernièrement utilisée devrait être activée. Mais cela ne fonctionne que pour lancer la commande dans un terminal, voire, accéder au script dans un navigateur de fichiers. Ces deux solutions de dépannage sont aussi prises en charge. Quand vous verrez le navigateur de fichiers à l’ouverture de session, cela signifie que deux tentatives d’activation ont déjà échoué, une silencieuse et une dans le terminal. Dans le navigateur de fichiers, le même script attendra que vous le lanciez manuellement. Ce script ouvrira un terminal, dans lequel il vous confirmera l’activation réussie. »
 
 Quant au bogue inconnu qui empêche xkbcomp de fonctionner sur invocation par un script lancé par [autostart](https://specifications.freedesktop.org/autostart-spec/latest/), il est peut-être expliqué par un faisceau de témoignages concordants trouvés [ici](https://forums.linuxmint.com/viewtopic.php?p=2373855#p2373855), [ici](https://forums.linuxmint.com/viewtopic.php?p=2376225&sid=0901bdee365911c4549d6dda5362842f#p2376225), [ici](https://forums.linuxmint.com/viewtopic.php?p=2368840#p2368840), [ici](https://forums.linuxmint.com/viewtopic.php?t=414342), [ici](https://ubuntuforums.org/showthread.php?t=2482076), [ici](https://askubuntu.com/questions/437584/xkbcomp-command-at-startup-using-xinitrc), [ici](https://superuser.com/questions/644521/linux-mint-mate-use-xkbcomp-to-load-a-keyboard-layout-on-startup), [ici](https://forum.beyond3d.com/threads/linux-is-a-pile-of-shit.60616/), [ici](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.current.html) et [ici](https://castingoutnines.wordpress.com/2009/07/17/why-i-am-not-a-linux-user-any-more/), mais il faut aussi noter que la [spécification d’Autostart](https://specifications.freedesktop.org/autostart-spec/latest/) est toujours une « ébauche » en chantier, puisque la [version courante](https://specifications.freedesktop.org/autostart-spec/latest/) est la [version 0.5](https://specifications.freedesktop.org/autostart-spec/0.5/) datant de 2006.
 
@@ -217,7 +217,7 @@ Aussi les chromebooks sont-ils invendables à moins d’être bradés.
 
 ## Utilisation
 
-Les fonctionnalités implémentables sous tous les systèmes d’exploitation pris en charge sont présentées dans le [Mode d’emploi commun](https://github.com/dispoclavier/nouvel-azerty/blob/main/readme.md).
+Les fonctionnalités implémentables sous tous les systèmes d’exploitation pris en charge sont présentées dans le [Mode d’emploi commun](https://github.com/dispoclavier/azerty-dcs/blob/main/readme.md).
 
 Ce mode d’emploi complémentaire présente ce qui est particulier à Linux.
 

@@ -1,7 +1,7 @@
 # START_additions_XCompose_Dispoclavier (please do not delete this keyword - ne pas effacer ce mot-clé s.v.p.)
-#                       Date: 2026-11-27T2026+0100
+#                       Date: 2026-11-28T1018+0100
 #                    Version: See # # Output of version number
-<UEFA0>                     : "version 7.1.0+21" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+22" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
 #                Description: Multicharacter, multikey and dead key definitions
@@ -10,23 +10,23 @@
 #
 #               Project name: Dispoclavier
 #                Project URL: https://dispoclavier.com
-#                      Maxim: Simplify typewriting, not French.
-#                    Maxime : Simplifier la dactylographie, pas le français.
-#        English description: Keyboard layouts fit for national, regional and neighbor languages of Francophonie.
-#     Description française : Dispositions de clavier adaptées aux langues nationales, régionales et voisines de la Francophonie.
-#              Target public: General public and developers, editors, journalists, programmers, publishers, scientists, secretaries, translators, typographers, writers.
-#             Destinataires : Grand public et développeurs, écrivains, éditeurs, journalistes, programmeurs, rédacteurs, scientifiques, secrétaires, traducteurs, typographes.
+#                      Maxim: Simplify typewriting, not French
+#                    Maxime : Simplifier la dactylographie, pas le français
+#        English description: Keyboard layouts fit for national, regional and neighbor languages of Francophonie
+#     Description française : Dispositions de clavier adaptées aux langues nationales, régionales et voisines de la Francophonie
+#              Target public: General public and developers, editors, journalists, programmers, publishers, scientists, secretaries, translators, typographers, writers
+#             Destinataires : Grand public et développeurs, écrivains, éditeurs, journalistes, programmeurs, rédacteurs, scientifiques, secrétaires, traducteurs, typographes
 #              Regular names: kb(brFR(s|r)|fr(AF(s|r)|BEs|CA(ms|s)|CHs|dcs|FR(s|r)|PF(s|r)))
-#   Full names, descriptions: kbbrFRs  Breton and French semiautomatic keyboard layout
-#                             kbbrFRr  Breton and French remapped semiautomatic keyboard layout
-#                             kbfrAFs  Francophone Africa semiautomatic keyboard layout
-#                             kbfrAFr  Francophone Africa remapped semiautomatic keyboard layout
-#                             kbfrBEs  French Belgium semiautomatic keyboard layout
-#                             kbfrdcs  French debugged completed semiautomatic keyboard layout
-#                             kbfrFRs  French France semiautomatic keyboard layout
-#                             kbfrFRr  French France remapped semiautomatic keyboard layout
-#                             kbfrPFs  French Polynesia semiautomatic keyboard layout
-#                             kbfrPFr  French Polynesia remapped semiautomatic keyboard layout
+#   Full names, descriptions: kbbrFRs  Breton and French AZERTY DCS
+#                             kbbrFRr  Breton and French remapped AZERTY DCS
+#                             kbfrAFs  Francophone Africa AZERTY DCS
+#                             kbfrAFr  Francophone Africa remapped AZERTY DCS
+#                             kbfrBEs  French Belgium AZERTY DCS
+#                             kbfrdcs  French debugged completed AZERTY DCS
+#                             kbfrFRs  French France AZERTY DCS
+#                             kbfrFRr  French France remapped AZERTY DCS
+#                             kbfrPFs  French Polynesia AZERTY DCS
+#                             kbfrPFr  French Polynesia remapped AZERTY DCS
 #                 (oncoming)  kbfrCAms French Canada multilingual semiautomatic keyboard layout
 #                 (oncoming)  kbfrCAs  French Canada semiautomatic keyboard layout
 #                 (oncoming)  kbfrCAr  French Canada remapped semiautomatic keyboard layout
@@ -268,7 +268,7 @@
 #   For development, maintenance and reference, UnicodeData.txt is formatted by
 #   the script format-UnicodeData-txt.pl.
 #   https://www.unicode.org/Public/UCD/latest/ucd/UnicodeData.txt
-#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/outils/format-UnicodeData-txt.pl
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux/outils/format-UnicodeData-txt.pl
 #
 #   The URL scheme used for the Unicode Code Charts is consistent with tbe
 #   omission of the plus sign in X11 keysyms.
@@ -959,7 +959,7 @@
 #
 #   The "build" number makes sense because this file is also the source code of
 #   the dead key content for Windows.
-#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/readme.md
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux/compose/readme.md
 #   See #                 Legal note:
 #
 #   Version v1.0.0 was released on 2023-07-14T0423+0200.
@@ -1060,10 +1060,10 @@
 #   For display in browsers as full-fledged web pages rather than merely in
 #   plain text, the content of this file needs to be duplicated in 3 partials
 #   maxing at 2GB, due to a file size restriction in GitHub’s web interface on
-#   github.com (not on github.dev).
-#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-1.yml
-#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-2.yml
-#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-3.yml
+#   github.com.
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux/compose/compose-1.yml
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux/compose/compose-2.yml
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux/compose/compose-3.yml
 #
 #   Lines starting with "#@" provide Windows-specific alternative output, as
 #   this file is also the source code for the XCompose-to-C transpiler and for
@@ -1131,7 +1131,7 @@
 #   See ### Mathematical symbols by multikey
 #   See ### Dead keys
 #   See ### Group dead key introduction
-#   https://github.com/dispoclavier/azerty-dcs/tree/main/linux-chromeos/outils
+#   https://github.com/dispoclavier/azerty-dcs/tree/main/linux/outils
 #
 #   Polytonic and monotonic Greek is documented in an extra table since
 #   version 6.1.1 when it was included in the transpilation.
@@ -15895,7 +15895,7 @@
 #   Most multikey equivalents below the dead key sequences have been added by
 #   the script generate-multikey.pl.
 #   See linux-chromeos/outils/generate-multikey.pl
-#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/outils/generate-multikey.pl
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux/outils/generate-multikey.pl
 #
 #
 # # X11 dead keysyms
@@ -16927,7 +16927,7 @@
 #   https://unicode.org/mail-arch/unicode-ml/y2016-m02/0071.html
 #
 #   Sequences with "Ɛ" U0190, "ɛ" U025B, "Ɔ" U0186, "ɔ" U0254 keysyms are for
-#   use on the Francophone Africa semiautomatic keyboard layout "kbfrAFs" and
+#   use on the Francophone Africa AZERTY DCS "kbfrAFs" and
 #   its remapped variant "kbfrAFr" with live keys for open e, also known as
 #   Latin epsilon, and open o.
 #
@@ -22305,10 +22305,7 @@
 #
 #   Diacritics in dead_tilde
 #
-#   The double diacritic "͠" U0360 has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "͠" U0360 has ‹dollar› as a mnemonic base character.
 #
 #   Combining tilde halves above – "︢" UFE22, "︣" UFE23 – are supported on all
 #   fully available base letters for a streamlined user experience. Halves of
@@ -22324,20 +22321,20 @@
 #   consistent user experience across the symbol groups (not sooner than v6.1.0
 #   when the dead key data started being transpiled).
 #
-#   EuroSign and quotedbl yield the emoji style variation selector UFE0F, and
-#   so does asciitilde for text style UFE0E, with alphabetic mnemonics, while
-#   the backslash in-between yields the most common variation selector #1 for
-#   completeness.
+#   ‹EuroSign› and ‹quotedbl› (D03) yield the emoji style variation selector
+#   UFE0F, and so does ‹asciitilde› (D05) for text style UFE0E, with alphabetic
+#   mnemonics, while ‹backslash› in-between yields the most common variation
+#   selector #1 for completeness.
 #
 #   The combining grapheme joiner U034F is called “diacritique invisible
 #   bloquant” in French, and so keeps benefitting from alphabetic mnemonics as
-#   it is yielded by parenleft on the "D" key.
+#   it is yielded by ‹parenleft› on the "D" key.
 #
 #   The mnemonic is still French for the word joiner U2060, called “gluon”, on
-#   key "G" by the minus hyphen, while its legacy equivalent ZWNBSP is again
-#   in-between on key "F" by parenright.
+#   key "G" by the ‹minus› hyphen, while its legacy equivalent ZWNBSP is again
+#   in-between on key "F" by ‹parenright›.
 #
-#   The plain-text page break FORM FEED U000C is also supported, by grave on
+#   The plain-text page break FORM FEED U000C is also supported, by ‹grave› on
 #   the "N" key with alphabetic mnemonics based on “nouvelle page”. (Here like
 #   elsewhere, the multikey equivalent cannot be supported.)
 #
@@ -22361,8 +22358,6 @@
 #   Multikey conflicts with composed "Ɔ̃", "Ǝ̃", "Ɛ̃", "ǝ̃", "ɔ̃", "ɛ̃".              <numbersign> : "⧤" U29E4 # EQUALS SIGN AND SLANTED PARALLEL WITH TILDE ABOVE
 <dead_tilde>                                                                              <dollar> : "͠" U0360 # COMBINING DOUBLE TILDE
 <Multi_key><asciitilde>                                                                   <dollar> : "͠" U0360 # COMBINING DOUBLE TILDE
-<dead_tilde>                                                                              <emdash> : "͠" U0360 # COMBINING DOUBLE TILDE
-<Multi_key><asciitilde>                                                                   <emdash> : "͠" U0360 # COMBINING DOUBLE TILDE
 <dead_tilde>                                                                           <parenleft> : "͏" U034F # COMBINING GRAPHEME JOINER
 <Multi_key><asciitilde>                                                                <parenleft> : "͏" U034F # COMBINING GRAPHEME JOINER
 <dead_tilde>                                                                          <parenright> : "﻿" UFEFF # BYTE ORDER MARK, in legacy usage ZERO WIDTH NO-BREAK SPACE
@@ -27601,10 +27596,7 @@
 #
 #   Double diacritic of dead_invertedbreve
 #
-#   The double diacritic "͡" U0361 has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "͡" U0361 has ‹dollar› as a mnemonic base character.
 #
 #
 #   Spacing clone of dead_invertedbreve
@@ -27624,8 +27616,6 @@
 <Multi_key><parenleft>                                                                     <U202F> : "꭛" UAB5B # MODIFIER BREVE WITH INVERTED BREVE
 <dead_invertedbreve>                                                                      <dollar> : "͡" U0361 # COMBINING DOUBLE INVERTED BREVE
 <Multi_key><parenleft>                                                                    <dollar> : "͡" U0361 # COMBINING DOUBLE INVERTED BREVE
-<dead_invertedbreve>                                                                      <emdash> : "͡" U0361 # COMBINING DOUBLE INVERTED BREVE
-<Multi_key><parenleft>                                                                    <emdash> : "͡" U0361 # COMBINING DOUBLE INVERTED BREVE
 <dead_invertedbreve>                                                                       <equal> : "≘" U2258 # CORRESPONDS TO
 #   Multikey conflicts with "≎" U224E.                                                     <equal> : "≘" U2258 # CORRESPONDS TO
 <dead_invertedbreve>                                                                           <A> : "Ȃ" U0202 # LATIN CAPITAL LETTER A WITH INVERTED BREVE
@@ -27770,10 +27760,7 @@
 #
 #   Double diacritic
 #
-#   The double diacritic "᷼" U1DFC has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "᷼" U1DFC has ‹dollar› as a mnemonic base character.
 #
 #
 #   Spacing clones
@@ -27794,8 +27781,6 @@
 <Multi_key><parenleft><parenleft>                                                          <U202F> : "ᵔ" U1D54 # MODIFIER LETTER SMALL TOP HALF O
 <dead_invertedbreve><dead_invertedbreve>                                                  <dollar> : "᷼" U1DFC # COMBINING DOUBLE INVERTED BREVE BELOW
 <Multi_key><parenleft><parenleft>                                                         <dollar> : "᷼" U1DFC # COMBINING DOUBLE INVERTED BREVE BELOW
-<dead_invertedbreve><dead_invertedbreve>                                                  <emdash> : "᷼" U1DFC # COMBINING DOUBLE INVERTED BREVE BELOW
-<Multi_key><parenleft><parenleft>                                                         <emdash> : "᷼" U1DFC # COMBINING DOUBLE INVERTED BREVE BELOW
 #
 #
 #^# INVERTED_BREVE_DK_ID
@@ -27850,10 +27835,7 @@
 #
 #   Diacritics
 #
-#   The double diacritic "͝" U035D has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "͝" U035D has ‹dollar› as a mnemonic base character.
 #
 #   The combining candrabindu "̐" U0310 has a shortcut by period.
 #
@@ -27867,8 +27849,6 @@
 <Multi_key><parenright>                                                                    <U202F> : "˘" U02D8 # BREVE
 <dead_breve>                                                                              <dollar> : "͝" U035D # COMBINING DOUBLE BREVE
 <Multi_key><parenright>                                                                   <dollar> : "͝" U035D # COMBINING DOUBLE BREVE
-<dead_breve>                                                                              <emdash> : "͝" U035D # COMBINING DOUBLE BREVE
-<Multi_key><parenright>                                                                   <emdash> : "͝" U035D # COMBINING DOUBLE BREVE
 <dead_breve>                                                                            <asterisk> : "⁕" U2055 # FLOWER PUNCTUATION MARK
 <Multi_key><parenright>                                                                 <asterisk> : "⁕" U2055 # FLOWER PUNCTUATION MARK
 <dead_breve>                                                                              <period> : "̐" U0310 # COMBINING CANDRABINDU
@@ -28104,10 +28084,7 @@
 #
 #   Double diacritic
 #
-#   The double diacritic "͜" U035C has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "͜" U035C has ‹dollar› as a mnemonic base character.
 #
 #
 #   Spacing clones
@@ -28130,8 +28107,6 @@
 <Multi_key><parenright><parenright>                                                        <U202F> : "ᵕ" U1D55 # MODIFIER LETTER SMALL BOTTOM HALF O
 <dead_breve><dead_breve>                                                                  <dollar> : "͜" U035C # COMBINING DOUBLE BREVE BELOW
 <Multi_key><parenright><parenright>                                                       <dollar> : "͜" U035C # COMBINING DOUBLE BREVE BELOW
-<dead_breve><dead_breve>                                                                  <emdash> : "͜" U035C # COMBINING DOUBLE BREVE BELOW
-<Multi_key><parenright><parenright>                                                       <emdash> : "͜" U035C # COMBINING DOUBLE BREVE BELOW
 <dead_breve><dead_breve>                                                                       <H> : "Ḫ" U1E2A # LATIN CAPITAL LETTER H WITH BREVE BELOW
 <Multi_key><parenright><parenright>                                                            <H> : "Ḫ" U1E2A # LATIN CAPITAL LETTER H WITH BREVE BELOW
 <dead_breve><dead_breve>                                                                       <h> : "ḫ" U1E2B # LATIN SMALL LETTER H WITH BREVE BELOW
@@ -29476,10 +29451,7 @@
 #   See "︦" UFE26
 #   See "︭" UFE2D
 #
-#   The double diacritic "͞" U035E has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "͞" U035E has ‹dollar› as a mnemonic base character.
 #
 #   Combining macron halves above – "︤" UFE24, "︥" UFE25 – are supported on all
 #   unconflicting and fully available base letters for a streamlined user
@@ -29537,10 +29509,6 @@
 <Multi_key><bar>                                                                          <dollar> : "͞" U035E # COMBINING DOUBLE MACRON
 <dead_diaeresis><dead_diaeresis>                                                          <dollar> : "͞" U035E # COMBINING DOUBLE MACRON
 <Multi_key><colon><colon>                                                                 <dollar> : "͞" U035E # COMBINING DOUBLE MACRON
-<dead_macron>                                                                             <emdash> : "͞" U035E # COMBINING DOUBLE MACRON
-<Multi_key><bar>                                                                          <emdash> : "͞" U035E # COMBINING DOUBLE MACRON
-<dead_diaeresis><dead_diaeresis>                                                          <emdash> : "͞" U035E # COMBINING DOUBLE MACRON
-<Multi_key><colon><colon>                                                                 <emdash> : "͞" U035E # COMBINING DOUBLE MACRON
 <dead_macron>                                                                               <plus> : "∓" U2213 # MINUS-OR-PLUS SIGN
 <Multi_key><bar>                                                                            <plus> : "∓" U2213 # MINUS-OR-PLUS SIGN
 <dead_diaeresis><dead_diaeresis>                                                            <plus> : "∓" U2213 # MINUS-OR-PLUS SIGN
@@ -30309,10 +30277,7 @@
 #   See "︭" UFE2D
 #   See "︦" UFE26
 #
-#   The double diacritic "͟" U035F has emdash as a mnemonic base character, and
-#   dollar as an ASCII alternative with "double" mnemonics, for consistent
-#   input methods across all dead keys featuring a double diacritic except
-#   ‹dead_circumflex›.
+#   The double diacritic "͟" U035F has ‹dollar› as a mnemonic base character.
 #
 #   Combining macron halves below "︫" UFE2B, "︬" UFE2C are supported on "W"
 #   as well as on all other available base letters, consistently with
@@ -30345,8 +30310,6 @@
 <Multi_key><bar><bar>                                                                  <ampersand> : "︭" UFE2D # COMBINING CONJOINING MACRON BELOW
 <dead_macron><dead_macron>                                                                <dollar> : "͟" U035F # COMBINING DOUBLE MACRON BELOW
 <Multi_key><bar><bar>                                                                     <dollar> : "͟" U035F # COMBINING DOUBLE MACRON BELOW
-<dead_macron><dead_macron>                                                                <emdash> : "͟" U035F # COMBINING DOUBLE MACRON BELOW
-<Multi_key><bar><bar>                                                                     <emdash> : "͟" U035F # COMBINING DOUBLE MACRON BELOW
 <dead_macron><dead_macron>                                                                  <plus> : "±" U00B1 # PLUS-MINUS SIGN
 <Multi_key><bar><bar>                                                                       <plus> : "±" U00B1 # PLUS-MINUS SIGN
 <dead_macron><dead_macron>                                                           <bracketleft> : "⦋" U298B # LEFT SQUARE BRACKET WITH UNDERBAR
@@ -32635,11 +32598,7 @@
 #   See #   "Ê" key emulation
 #   See "᫏" U1ACF
 #
-#   The double diacritic "᷍" U1DCD has ‹dollar› as a mnemonic base character,
-#   whereas ‹emdash› is not supported in this role, for the sake of the
-#   visibilization and distinction feature relying on ‹dead_circumflex›, where
-#   it is expected to output an em dash consistently with its full length.
-#   See #   Hinting invisible and confusable characters
+#   The double diacritic "᷍" U1DCD has ‹dollar› as a mnemonic base character.
 #
 #   The base letter for "̂" U0302 is ‹space› only, not ‹U200B›, so as to not
 #   override the visibilization feature documented below, the better as this
@@ -32660,25 +32619,25 @@
 #   For this purpose, the ASCII hyphen "-" U002D hints the soft hyphen
 #   "­" U00AD for an invisible character, and the hyphenation point "‧" U2027
 #   for a mid-height dot. Likewise, a pipe "|" U007C stands for both the
-#   cursive non-joiner "‌" U200C and the middle dot "·" U00B7, depending on the
-#   visibility of the live key output. Among the live key mid-height dots, only
-#   the dot operator "⋅" U22C5 does not share its representative "×" U00D7 with
-#   any other character.
+#   cursive non-joiner (ZWNJ) "‌" U200C and the middle dot "·" U00B7, depending
+#   on the visibility of the live key output. Among the live key mid-height
+#   dots, only the dot operator "⋅" U22C5 does not share its representative
+#   "×" U00D7 with any other character.
 #
 #   This feature is extended to include the four live key dashes "‑" U2011,
 #   "–" U2013, "—" U2014, "―" U2015 and the minus sign "−" U2212.
 #
-#   The output after circumflex dead key:  hints  the untransformed live key output:
+#   Output after circumflex dead key:   hints   Untransformed live key output:
 #
 #   Invisibles:
 #   "-" U002D HYPHEN-MINUS                   ➔ "­" U00AD SOFT HYPHEN
 #   "␣" U2423 OPEN BOX                       ➔ "​" U200B ZERO WIDTH SPACE
-#   "+" U002B PLUS SIGN                      ➔ "⁤" U2064 INVISIBLE PLUS
-#   "A" U0041 LATIN CAPITAL LETTER A         ➔ "︎" UFE0E VARIATION SELECTOR-15 text variation selector
-#   "☺" U263A WHITE SMILING FACE             ➔ "️" UFE0F VARIATION SELECTOR-16 emoji variation selector
 #   "|" U007C VERTICAL LINE                  ➔ "‌" U200C ZERO WIDTH NON-JOINER
 #   "&" U0026 AMPERSAND                      ➔ "‍" U200D ZERO WIDTH JOINER
 #   "," U002C COMMA                          ➔ "⁣" U2063 INVISIBLE SEPARATOR
+#   "+" U002B PLUS SIGN                      ➔ "⁤" U2064 INVISIBLE PLUS
+#   "A" U0041 LATIN CAPITAL LETTER A         ➔ "︎" UFE0E VARIATION SELECTOR-15 text variation selector
+#   "☺" U263A WHITE SMILING FACE             ➔ "️" UFE0F VARIATION SELECTOR-16 emoji variation selector
 #
 #   Mid-height dots:
 #   "|" U007C VERTICAL LINE                  ➔ "·" U00B7 MIDDLE DOT
@@ -32692,9 +32651,9 @@
 #   "¾" U00BE VULGAR FRACTION THREE QUARTERS ➔ "―" U2015 HORIZONTAL BAR     
 #   "⁒" U2052 COMMERCIAL MINUS SIGN          ➔ "−" U2212 MINUS SIGN         
 #
-#   On systems supporting multiunit output by dead keys in one go, this feature
-#   is enhanced to output a descriptive label in the target locale, French for
-#   instance.
+#   On systems where dead keys can output multiple code units at once, this
+#   feature is enhanced to output a descriptive label in the target locale,
+#   French in this instance.
 #
 <dead_circumflex>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
 <Multi_key><less>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
@@ -32938,14 +32897,14 @@
 <Multi_key><less>                                                                          <U0186> : "Ɔ̂" # U0186 U0302 LATIN CAPITAL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
 <dead_circumflex>                                                                          <U0254> : "ɔ̂" # U0254 U0302 LATIN SMALL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
 <Multi_key><less>                                                                          <U0254> : "ɔ̂" # U0254 U0302 LATIN SMALL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
-#@<dead_circumflex>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
-#@<Multi_key><less>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
-<dead_circumflex>                                                                          <U00AD> : "trait_d_union_conditionnel" # SOFT HYPHEN
-<Multi_key><less>                                                                          <U00AD> : "trait_d_union_conditionnel" # SOFT HYPHEN
-#@<dead_circumflex>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
-#@<Multi_key><less>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
-<dead_circumflex>                                                                          <U00B7> : "point_médian" # MIDDLE DOT
-<Multi_key><less>                                                                          <U00B7> : "point_médian" # MIDDLE DOT
+#@<dead_circumflex>                                                                       <hyphen> : "-" U002D # HYPHEN-MINUS
+#@<Multi_key><less>                                                                       <hyphen> : "-" U002D # HYPHEN-MINUS
+<dead_circumflex>                                                                         <hyphen> : "trait_d_union_conditionnel" # U00AD SOFT HYPHEN
+<Multi_key><less>                                                                         <hyphen> : "trait_d_union_conditionnel" # U00AD SOFT HYPHEN
+#@<dead_circumflex>                                                               <periodcentered> : "|" U007C # VERTICAL LINE
+#@<Multi_key><less>                                                               <periodcentered> : "|" U007C # VERTICAL LINE
+<dead_circumflex>                                                                 <periodcentered> : "point_médian" # U00B7 MIDDLE DOT
+#   Multikey conflicts with "⇖" U21D6, "⤡" U2921, "⤣" U2923, "⤧" U2927, […]       <periodcentered> : "point_médian" # U00B7 MIDDLE DOT
 #@<dead_circumflex>                                                                        <U200B> : "␣" U2423 # OPEN BOX
 #@<Multi_key><less>                                                                        <U200B> : "␣" U2423 # OPEN BOX
 <dead_circumflex>                                                                          <U200B> : "espace_invisible" # ZERO WIDTH SPACE
@@ -32962,18 +32921,18 @@
 #@<Multi_key><less>                                                                        <U2011> : "⊝" U229D # CIRCLED DASH
 <dead_circumflex>                                                                          <U2011> : "trait_d_union_insécable" # NON-BREAKING HYPHEN
 <Multi_key><less>                                                                          <U2011> : "trait_d_union_insécable" # NON-BREAKING HYPHEN
-#@<dead_circumflex>                                                                        <U2013> : "½" U00BD # VULGAR FRACTION ONE HALF
-#@<Multi_key><less>                                                                        <U2013> : "½" U00BD # VULGAR FRACTION ONE HALF
-<dead_circumflex>                                                                          <U2013> : "tiret_demi_cadratin" # EN DASH
-<Multi_key><less>                                                                          <U2013> : "tiret_demi_cadratin" # EN DASH
-#@<dead_circumflex>                                                                        <U2014> : "1" U0031 # DIGIT ONE
-#@<Multi_key><less>                                                                        <U2014> : "1" U0031 # DIGIT ONE
-<dead_circumflex>                                                                          <U2014> : "tiret_cadratin" # EM DASH
-<Multi_key><less>                                                                          <U2014> : "tiret_cadratin" # EM DASH
-#@<dead_circumflex>                                                                        <U2015> : "¾" U00BE # VULGAR FRACTION THREE QUARTERS
-#@<Multi_key><less>                                                                        <U2015> : "¾" U00BE # VULGAR FRACTION THREE QUARTERS
-<dead_circumflex>                                                                          <U2015> : "tiret_trois_quarts_de_cadratin" # HORIZONTAL BAR
-<Multi_key><less>                                                                          <U2015> : "tiret_trois_quarts_de_cadratin" # HORIZONTAL BAR
+#@<dead_circumflex>                                                                       <endash> : "½" U00BD # VULGAR FRACTION ONE HALF
+#@<Multi_key><less>                                                                       <endash> : "½" U00BD # VULGAR FRACTION ONE HALF
+<dead_circumflex>                                                                         <endash> : "tiret_demi_cadratin" # U2013 EN DASH
+<Multi_key><less>                                                                         <endash> : "tiret_demi_cadratin" # U2013 EN DASH
+#@<dead_circumflex>                                                                       <emdash> : "1" U0031 # DIGIT ONE
+#@<Multi_key><less>                                                                       <emdash> : "1" U0031 # DIGIT ONE
+<dead_circumflex>                                                                         <emdash> : "tiret_cadratin" # U2014 EM DASH
+<Multi_key><less>                                                                         <emdash> : "tiret_cadratin" # U2014 EM DASH
+#@<dead_circumflex>                                                               <Greek_horizbar> : "¾" U00BE # VULGAR FRACTION THREE QUARTERS
+#@<Multi_key><less>                                                               <Greek_horizbar> : "¾" U00BE # VULGAR FRACTION THREE QUARTERS
+<dead_circumflex>                                                                 <Greek_horizbar> : "tiret_trois_quarts_de_cadratin" # U2015 HORIZONTAL BAR
+<Multi_key><less>                                                                 <Greek_horizbar> : "tiret_trois_quarts_de_cadratin" # U2015 HORIZONTAL BAR
 #@<dead_circumflex>                                                                        <U2027> : "-" U002D # HYPHEN-MINUS
 #@<Multi_key><less>                                                                        <U2027> : "-" U002D # HYPHEN-MINUS
 <dead_circumflex>                                                                          <U2027> : "point_d_hyphénation" # HYPHENATION POINT

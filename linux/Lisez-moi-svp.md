@@ -9,8 +9,8 @@ Grand public et développeurs, écrivains, éditeurs, journalistes, programmeurs
                    Version : 6.2.8
     Version et nᵒ de build : 6.2.8.0
                       Date : 2026-03-24T2154+0100
-              Dépôt GitHub : https://github.com/dispoclavier/nouvel-azerty
-             Documentation : https://dispoclavier.com/nouvel-azerty/
+              Dépôt GitHub : https://github.com/dispoclavier/azerty-dcs
+             Documentation : https://dispoclavier.com/azerty-dcs/
               Licence code : Apache 2.0
           URL licence code : https://www.apache.org/licenses/LICENSE-2.0
           Licence non-code : CC-BY 4.0
@@ -73,7 +73,7 @@ Linux est affecté par un certain nombre de problèmes détaillés dans le Mode-
 
 Lancer le script activer.sh et se laisser guider.
 
-Ce script est documenté dans son en-tête, dans le Mode-d-emploi-sous-Linux.pdf, et [sur GitHub](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/readme.md#script-dactivation-mode-demploi).
+Ce script est documenté dans son en-tête, dans le Mode-d-emploi-sous-Linux.pdf, et [sur GitHub](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/readme.md#script-dactivation-mode-demploi).
 
 #### Activation manuelle
 
@@ -107,11 +107,11 @@ La commande pour désactiver ce nouvel AZERTY et réactiver la disposition préc
 
 Sous les versions de Linux postérieures à [Ubuntu 16.04](https://releases.ubuntu.com/16.04/) ou équivalent, il ne paraît pas possible d’alterner entre plusieurs dispositions de clavier, mais on peut changer de disposition en désactivant l’ancienne après avoir activé la nouvelle.
 
-Télécharger le dossier « Un-nouvel-AZERTY-Linux-[version].zip » sous le titre « Assets », et lancer le script [installer.sh](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/installer.sh). On peut aussi installer chaque fichier [manuellement](#installation-manuelle).
+Télécharger le dossier « Un-nouvel-AZERTY-Linux-[version].zip » sous le titre « Assets », et lancer le script [installer.sh](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/installer.sh). On peut aussi installer chaque fichier [manuellement](#installation-manuelle).
 
 #### Installation par le script installer.sh
 
-Le script d’installation s’appelle « installer.sh » d’après le verbe français. Il se trouve sur GitHub ([installer.sh](https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/installer.sh)) à la racine du dossier « linux-chromeos/ », ainsi qu’à la racine du paquet distribué « Un-nouvel-AZERTY-Linux-[version].zip ».
+Le script d’installation s’appelle « installer.sh » d’après le verbe français. Il se trouve sur GitHub ([installer.sh](https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/installer.sh)) à la racine du dossier « linux-chromeos/ », ainsi qu’à la racine du paquet distribué « Un-nouvel-AZERTY-Linux-[version].zip ».
 
 Selon les réglages, on peut lancer ce script en le cliquant ou en le double-cliquant, et de toute manière par la commande « ./installer.sh » après avoir ouvert le dossier dans un terminal.
 
@@ -155,7 +155,7 @@ Puis ajouter en dessous les séquences qui doivent remplacer des séquences exis
 
 N’hésitez pas à envoyer toutes critiques, conseils d’amélioration et retours d’expérience à l’adresse mail dev[arobase]dispoclavier.com.
 
-N’hésitez pas non plus à [créer un rapport de bogue](https://github.com/dispoclavier/nouvel-azerty/issues) dans
+N’hésitez pas non plus à [créer un rapport de bogue](https://github.com/dispoclavier/azerty-dcs/issues) dans
 le dépôt GitHub de ce nouvel AZERTY, ni à y [lancer une discussion](https://github.com/dispoclavier/nouvel-azerty/discussions).
 
 De nouvelles fonctionnalités peuvent être demandées aussi bien sous forme d’un rapport de bogue que dans une discussion lancée à cet effet.

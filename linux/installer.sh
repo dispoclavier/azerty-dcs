@@ -1,5 +1,5 @@
 #!/bin/bash
-#                       Date : 2025-11-24T0451+0100
+#                       Date : 2026-11-28T0924+0100
 #                    Fichier : installer.sh
 #                   Encodage : UTF-8
 #                       Type : script Bash
@@ -179,9 +179,9 @@ function installer_dispo {
 	echo -e "\n     Tous les retours d’expérience sont les bienvenus."
 	echo      '     S’il manque quoi que ce soit, ou à tout autre propos relatif,'
 	echo -e   "     n’hésitez pas à créer un rapport de bogue :\n"
-	echo      '         https://github.com/dispoclavier/nouvel-azerty/issues'
+	echo      '         https://github.com/dispoclavier/azerty-dcs/issues'
 	echo -e "\n     N’hésitez pas non plus à lancer une discussion :\n"
-	echo      '         https://github.com/dispoclavier/nouvel-azerty/discussions'
+	echo      '         https://github.com/dispoclavier/azerty-dcs/discussions'
 	echo -e "\n\n                       Bonne utilisation !\n\n"
 	confirmation
 }
@@ -287,9 +287,9 @@ function supprimer_dispo {
 		echo      '         et dans ~/.config/dispoclavier/symbols/dispocla_perso.'
 		echo -e "\n     Tous les retours d’expérience sont les bienvenus."
 		echo -e "\n     N’hésitez pas à créer un rapport de bogue :\n"
-		echo      '         https://github.com/dispoclavier/nouvel-azerty/issues'
+		echo      '         https://github.com/dispoclavier/azerty-dcs/issues'
 		echo -e "\n     N’hésitez pas non plus à lancer une discussion :\n"
-		echo      '         https://github.com/dispoclavier/nouvel-azerty/discussions'
+		echo      '         https://github.com/dispoclavier/azerty-dcs/discussions'
 		echo -e "\n\n             Merci d’avoir utilisé Dispoclavier.\n\n"
 		confirmation
 	fi
@@ -882,7 +882,7 @@ if [ "$fonctionne" -eq 1 ]; then
 			fi
 			echo -e "\n     Le mieux est de télécharger un nouveau paquetage"
 			echo      '     sur la page de la version la plus récente :'
-			echo      '     https://github.com/dispoclavier/nouvel-azerty/releases/latest'
+			echo      '     https://github.com/dispoclavier/azerty-dcs/releases/latest'
 			echo -e "\n\n         Avec toutes nos excuses pour ce désagrément.\n\n"
 			confirmation
 		fi

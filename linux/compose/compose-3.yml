@@ -3,7 +3,7 @@
 #                    Version: See compose-1.yml
 #                   Encoding: UTF-8
 #                Description: Multicharacter, multikey and dead key definitions
-#                   Platform: XKB with XCompose using OSes Linux and ChromeOS
+#                   Platform: Linux using XKB with XCompose
 #     Syntactic highlighting: YAML
 #               Installation: Please see in the all-in-one file Compose.yml.
 #
@@ -228,11 +228,7 @@
 #   See #   "Ê" key emulation
 #   See "᫏" U1ACF
 #
-#   The double diacritic "᷍" U1DCD has ‹dollar› as a mnemonic base character,
-#   whereas ‹emdash› is not supported in this role, for the sake of the
-#   visibilization and distinction feature relying on ‹dead_circumflex›, where
-#   it is expected to output an em dash consistently with its full length.
-#   See #   Hinting invisible and confusable characters
+#   The double diacritic "᷍" U1DCD has ‹dollar› as a mnemonic base character.
 #
 #   The base letter for "̂" U0302 is ‹space› only, not ‹U200B›, so as to not
 #   override the visibilization feature documented below, the better as this
@@ -253,25 +249,25 @@
 #   For this purpose, the ASCII hyphen "-" U002D hints the soft hyphen
 #   "­" U00AD for an invisible character, and the hyphenation point "‧" U2027
 #   for a mid-height dot. Likewise, a pipe "|" U007C stands for both the
-#   cursive non-joiner "‌" U200C and the middle dot "·" U00B7, depending on the
-#   visibility of the live key output. Among the live key mid-height dots, only
-#   the dot operator "⋅" U22C5 does not share its representative "×" U00D7 with
-#   any other character.
+#   cursive non-joiner (ZWNJ) "‌" U200C and the middle dot "·" U00B7, depending
+#   on the visibility of the live key output. Among the live key mid-height
+#   dots, only the dot operator "⋅" U22C5 does not share its representative
+#   "×" U00D7 with any other character.
 #
 #   This feature is extended to include the four live key dashes "‑" U2011,
 #   "–" U2013, "—" U2014, "―" U2015 and the minus sign "−" U2212.
 #
-#   The output after circumflex dead key:  hints  the untransformed live key output:
+#   Output after circumflex dead key:   hints   Untransformed live key output:
 #
 #   Invisibles:
 #   "-" U002D HYPHEN-MINUS                   ➔ "­" U00AD SOFT HYPHEN
 #   "␣" U2423 OPEN BOX                       ➔ "​" U200B ZERO WIDTH SPACE
-#   "+" U002B PLUS SIGN                      ➔ "⁤" U2064 INVISIBLE PLUS
-#   "A" U0041 LATIN CAPITAL LETTER A         ➔ "︎" UFE0E VARIATION SELECTOR-15 text variation selector
-#   "☺" U263A WHITE SMILING FACE             ➔ "️" UFE0F VARIATION SELECTOR-16 emoji variation selector
 #   "|" U007C VERTICAL LINE                  ➔ "‌" U200C ZERO WIDTH NON-JOINER
 #   "&" U0026 AMPERSAND                      ➔ "‍" U200D ZERO WIDTH JOINER
 #   "," U002C COMMA                          ➔ "⁣" U2063 INVISIBLE SEPARATOR
+#   "+" U002B PLUS SIGN                      ➔ "⁤" U2064 INVISIBLE PLUS
+#   "A" U0041 LATIN CAPITAL LETTER A         ➔ "︎" UFE0E VARIATION SELECTOR-15 text variation selector
+#   "☺" U263A WHITE SMILING FACE             ➔ "️" UFE0F VARIATION SELECTOR-16 emoji variation selector
 #
 #   Mid-height dots:
 #   "|" U007C VERTICAL LINE                  ➔ "·" U00B7 MIDDLE DOT
@@ -285,9 +281,9 @@
 #   "¾" U00BE VULGAR FRACTION THREE QUARTERS ➔ "―" U2015 HORIZONTAL BAR     
 #   "⁒" U2052 COMMERCIAL MINUS SIGN          ➔ "−" U2212 MINUS SIGN         
 #
-#   On systems supporting multiunit output by dead keys in one go, this feature
-#   is enhanced to output a descriptive label in the target locale, French for
-#   instance.
+#   On systems where dead keys can output multiple code units at once, this
+#   feature is enhanced to output a descriptive label in the target locale,
+#   French in this instance.
 #
 <dead_circumflex>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
 <Multi_key><less>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
@@ -531,14 +527,14 @@
 <Multi_key><less>                                                                          <U0186> : "Ɔ̂" # U0186 U0302 LATIN CAPITAL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
 <dead_circumflex>                                                                          <U0254> : "ɔ̂" # U0254 U0302 LATIN SMALL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
 <Multi_key><less>                                                                          <U0254> : "ɔ̂" # U0254 U0302 LATIN SMALL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
-#@<dead_circumflex>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
-#@<Multi_key><less>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
-<dead_circumflex>                                                                          <U00AD> : "trait_d_union_conditionnel" # SOFT HYPHEN
-<Multi_key><less>                                                                          <U00AD> : "trait_d_union_conditionnel" # SOFT HYPHEN
-#@<dead_circumflex>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
-#@<Multi_key><less>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
-<dead_circumflex>                                                                          <U00B7> : "point_médian" # MIDDLE DOT
-<Multi_key><less>                                                                          <U00B7> : "point_médian" # MIDDLE DOT
+#@<dead_circumflex>                                                                       <hyphen> : "-" U002D # HYPHEN-MINUS
+#@<Multi_key><less>                                                                       <hyphen> : "-" U002D # HYPHEN-MINUS
+<dead_circumflex>                                                                         <hyphen> : "trait_d_union_conditionnel" # U00AD SOFT HYPHEN
+<Multi_key><less>                                                                         <hyphen> : "trait_d_union_conditionnel" # U00AD SOFT HYPHEN
+#@<dead_circumflex>                                                               <periodcentered> : "|" U007C # VERTICAL LINE
+#@<Multi_key><less>                                                               <periodcentered> : "|" U007C # VERTICAL LINE
+<dead_circumflex>                                                                 <periodcentered> : "point_médian" # U00B7 MIDDLE DOT
+#   Multikey conflicts with "⇖" U21D6, "⤡" U2921, "⤣" U2923, "⤧" U2927, […]       <periodcentered> : "point_médian" # U00B7 MIDDLE DOT
 #@<dead_circumflex>                                                                        <U200B> : "␣" U2423 # OPEN BOX
 #@<Multi_key><less>                                                                        <U200B> : "␣" U2423 # OPEN BOX
 <dead_circumflex>                                                                          <U200B> : "espace_invisible" # ZERO WIDTH SPACE
@@ -555,18 +551,18 @@
 #@<Multi_key><less>                                                                        <U2011> : "⊝" U229D # CIRCLED DASH
 <dead_circumflex>                                                                          <U2011> : "trait_d_union_insécable" # NON-BREAKING HYPHEN
 <Multi_key><less>                                                                          <U2011> : "trait_d_union_insécable" # NON-BREAKING HYPHEN
-#@<dead_circumflex>                                                                        <U2013> : "½" U00BD # VULGAR FRACTION ONE HALF
-#@<Multi_key><less>                                                                        <U2013> : "½" U00BD # VULGAR FRACTION ONE HALF
-<dead_circumflex>                                                                          <U2013> : "tiret_demi_cadratin" # EN DASH
-<Multi_key><less>                                                                          <U2013> : "tiret_demi_cadratin" # EN DASH
-#@<dead_circumflex>                                                                        <U2014> : "1" U0031 # DIGIT ONE
-#@<Multi_key><less>                                                                        <U2014> : "1" U0031 # DIGIT ONE
-<dead_circumflex>                                                                          <U2014> : "tiret_cadratin" # EM DASH
-<Multi_key><less>                                                                          <U2014> : "tiret_cadratin" # EM DASH
-#@<dead_circumflex>                                                                        <U2015> : "¾" U00BE # VULGAR FRACTION THREE QUARTERS
-#@<Multi_key><less>                                                                        <U2015> : "¾" U00BE # VULGAR FRACTION THREE QUARTERS
-<dead_circumflex>                                                                          <U2015> : "tiret_trois_quarts_de_cadratin" # HORIZONTAL BAR
-<Multi_key><less>                                                                          <U2015> : "tiret_trois_quarts_de_cadratin" # HORIZONTAL BAR
+#@<dead_circumflex>                                                                       <endash> : "½" U00BD # VULGAR FRACTION ONE HALF
+#@<Multi_key><less>                                                                       <endash> : "½" U00BD # VULGAR FRACTION ONE HALF
+<dead_circumflex>                                                                         <endash> : "tiret_demi_cadratin" # U2013 EN DASH
+<Multi_key><less>                                                                         <endash> : "tiret_demi_cadratin" # U2013 EN DASH
+#@<dead_circumflex>                                                                       <emdash> : "1" U0031 # DIGIT ONE
+#@<Multi_key><less>                                                                       <emdash> : "1" U0031 # DIGIT ONE
+<dead_circumflex>                                                                         <emdash> : "tiret_cadratin" # U2014 EM DASH
+<Multi_key><less>                                                                         <emdash> : "tiret_cadratin" # U2014 EM DASH
+#@<dead_circumflex>                                                               <Greek_horizbar> : "¾" U00BE # VULGAR FRACTION THREE QUARTERS
+#@<Multi_key><less>                                                               <Greek_horizbar> : "¾" U00BE # VULGAR FRACTION THREE QUARTERS
+<dead_circumflex>                                                                 <Greek_horizbar> : "tiret_trois_quarts_de_cadratin" # U2015 HORIZONTAL BAR
+<Multi_key><less>                                                                 <Greek_horizbar> : "tiret_trois_quarts_de_cadratin" # U2015 HORIZONTAL BAR
 #@<dead_circumflex>                                                                        <U2027> : "-" U002D # HYPHEN-MINUS
 #@<Multi_key><less>                                                                        <U2027> : "-" U002D # HYPHEN-MINUS
 <dead_circumflex>                                                                          <U2027> : "point_d_hyphénation" # HYPHENATION POINT

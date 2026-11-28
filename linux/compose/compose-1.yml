@@ -1,32 +1,32 @@
 #                      Scope: Part 1 of Compose.yml
 #                       Date: See Compose.yml
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.1.0+21" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+22" # See #   End of line comments
 #                   Encoding: UTF-8
 #                Description: Multicharacter, multikey and dead key definitions
 #                   Platform: Linux using XKB with XCompose**
 #     Syntactic highlighting: YAML
-#               Installation: Please see in the all-in-one file Compose.yml.
+#               Installation: Please see in the all-in-one file Compose.yml
 #
 #               Project name: Dispoclavier
 #                Project URL: https://dispoclavier.com
-#                      Maxim: Simplify typewriting, not French.
-#                    Maxime : Simplifier la dactylographie, pas le français.
-#        English description: Keyboard layouts fit for national, regional and neighbor languages of Francophonie.
-#     Description française : Dispositions de clavier adaptées aux langues nationales, régionales et voisines de la Francophonie.
-#              Target public: General public and developers, editors, journalists, programmers, publishers, scientists, secretaries, translators, typographers, writers.
-#             Destinataires : Grand public et développeurs, écrivains, éditeurs, journalistes, programmeurs, rédacteurs, scientifiques, secrétaires, traducteurs, typographes.
+#                      Maxim: Simplify typewriting, not French
+#                    Maxime : Simplifier la dactylographie, pas le français
+#        English description: Keyboard layouts fit for national, regional and neighbor languages of Francophonie
+#     Description française : Dispositions de clavier adaptées aux langues nationales, régionales et voisines de la Francophonie
+#              Target public: General public and developers, editors, journalists, programmers, publishers, scientists, secretaries, translators, typographers, writers
+#             Destinataires : Grand public et développeurs, écrivains, éditeurs, journalistes, programmeurs, rédacteurs, scientifiques, secrétaires, traducteurs, typographes
 #              Regular names: kb(brFR(s|r)|fr(AF(s|r)|BEs|CA(ms|s)|CHs|dcs|FR(s|r)|PF(s|r)))
-#   Full names, descriptions: kbbrFRs  Breton and French semiautomatic keyboard layout
-#                             kbbrFRr  Breton and French remapped semiautomatic keyboard layout
-#                             kbfrAFs  Francophone Africa semiautomatic keyboard layout
-#                             kbfrAFr  Francophone Africa remapped semiautomatic keyboard layout
-#                             kbfrBEs  French Belgium semiautomatic keyboard layout
-#                             kbfrdcs  French debugged completed semiautomatic keyboard layout
-#                             kbfrFRs  French France semiautomatic keyboard layout
-#                             kbfrFRr  French France remapped semiautomatic keyboard layout
-#                             kbfrPFs  French Polynesia semiautomatic keyboard layout
-#                             kbfrPFr  French Polynesia remapped semiautomatic keyboard layout
+#   Full names, descriptions: kbbrFRs  Breton and French AZERTY DCS
+#                             kbbrFRr  Breton and French remapped AZERTY DCS
+#                             kbfrAFs  Francophone Africa AZERTY DCS
+#                             kbfrAFr  Francophone Africa remapped AZERTY DCS
+#                             kbfrBEs  French Belgium AZERTY DCS
+#                             kbfrdcs  French debugged completed AZERTY DCS
+#                             kbfrFRs  French France AZERTY DCS
+#                             kbfrFRr  French France remapped AZERTY DCS
+#                             kbfrPFs  French Polynesia AZERTY DCS
+#                             kbfrPFr  French Polynesia remapped AZERTY DCS
 #                 (oncoming)  kbfrCAms French Canada multilingual semiautomatic keyboard layout
 #                 (oncoming)  kbfrCAs  French Canada semiautomatic keyboard layout
 #                 (oncoming)  kbfrCAr  French Canada remapped semiautomatic keyboard layout
@@ -268,7 +268,7 @@
 #   For development, maintenance and reference, UnicodeData.txt is formatted by
 #   the script format-UnicodeData-txt.pl.
 #   https://www.unicode.org/Public/UCD/latest/ucd/UnicodeData.txt
-#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/outils/format-UnicodeData-txt.pl
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux/outils/format-UnicodeData-txt.pl
 #
 #   The URL scheme used for the Unicode Code Charts is consistent with tbe
 #   omission of the plus sign in X11 keysyms.
@@ -959,7 +959,7 @@
 #
 #   The "build" number makes sense because this file is also the source code of
 #   the dead key content for Windows.
-#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/readme.md
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux/compose/readme.md
 #   See #                 Legal note:
 #
 #   Version v1.0.0 was released on 2023-07-14T0423+0200.
@@ -1060,10 +1060,10 @@
 #   For display in browsers as full-fledged web pages rather than merely in
 #   plain text, the content of this file needs to be duplicated in 3 partials
 #   maxing at 2GB, due to a file size restriction in GitHub’s web interface on
-#   github.com (not on github.dev).
-#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-1.yml
-#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-2.yml
-#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux-chromeos/compose/compose-3.yml
+#   github.com.
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux/compose/compose-1.yml
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux/compose/compose-2.yml
+#   https://github.com/dispoclavier/azerty-dcs/blob/main/linux/compose/compose-3.yml
 #
 #   Lines starting with "#@" provide Windows-specific alternative output, as
 #   this file is also the source code for the XCompose-to-C transpiler and for
@@ -1131,7 +1131,7 @@
 #   See ### Mathematical symbols by multikey
 #   See ### Dead keys
 #   See ### Group dead key introduction
-#   https://github.com/dispoclavier/azerty-dcs/tree/main/linux-chromeos/outils
+#   https://github.com/dispoclavier/azerty-dcs/tree/main/linux/outils
 #
 #   Polytonic and monotonic Greek is documented in an extra table since
 #   version 6.1.1 when it was included in the transpilation.

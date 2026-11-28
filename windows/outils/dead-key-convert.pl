@@ -5,7 +5,7 @@
 # 2025-12-23T0450+0100
 # 2025-12-31T1259+0100
 # 2026-03-16T1433+0100
-# 2026-11-25T0452+0100
+# 2026-11-28T0954+0100
 # = last modified
 #
 # This “dead key converter” generates DEADTRANS macro calls for Windows and is
@@ -237,7 +237,7 @@ open( CONSOLE, '>', $console_log_path ) or die $!;
 print( "Opened file $console_log_path.\n" );
 print CONSOLE ( "Opened file $console_log_path.\n" );
 
-my $input_path = '../../linux-chromeos/compose/Compose.yml';
+my $input_path = '../../linux/compose/Compose.yml';
 open( INPUT, '<', $input_path ) or die $!;
 print( "Opened file $input_path.\n" );
 print CONSOLE ( "Opened file $input_path.\n" );

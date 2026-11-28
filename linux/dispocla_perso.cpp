@@ -24,7 +24,7 @@
 //                             inclus dans le paquetage téléchargeable depuis son dépôt
 //                             GitHub à l’adresse suivante :
 //
-//                                 https://github.com/dispoclavier/nouvel-azerty/releases/latest
+//                                 https://github.com/dispoclavier/azerty-dcs/releases/latest
 //
 //                             Car il est inclus dans toutes les dispositions de clavier
 //                             configurées dans /usr/share/X11/xkb/symbols/dispocla
