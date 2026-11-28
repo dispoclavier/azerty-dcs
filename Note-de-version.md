@@ -1,8 +1,8 @@
-# 7.1.0-beta.11 (2026-11-27) préversion
+# 7.1.0-beta.11 (2026-11-28) préversion
 
 ## AZERTY DCS
 
-L’AZERTY zéro prise de tête est disponible en préversion. Au niveau logiciel c’est fonctionnel, mais tout n’est pas complet (documentation, prise en charge d’Unicode), d’où cette « version beta » (actuellement le build 7.1.0+21).
+L’AZERTY zéro prise de tête est disponible en préversion. Au niveau logiciel c’est fonctionnel, mais tout n’est pas complet (documentation, prise en charge d’Unicode), d’où cette « version beta » (actuellement le build 7.1.0+22).
 
 DCS, c’est "débogué, complété, semi-automatique".
 
@@ -14,32 +14,34 @@ DCS, c’est "débogué, complété, semi-automatique".
     * Le point médian est aussi dans la double frappe d’accent circonflexe, par "p" ou "P". (Mieux encore, il est sur AltGr + R.)
     * Car le "^" est bien sur AltGr + ⟦9ç^⟧. Désormais, le tilde ASCII "~" aussi a sa place sur touche vive : AltGr + T ; et le grave ASCII "`" est sur AltGr + G.
     * Du coup, appuyer sur la barre d’espace après une touche morte peut sortir le diacritique.
+  * La touche AltGr est elle aussi déboguée, ce n’est plus un raccourci de Ctrl + Alt. Fini les interférences avec des raccourcis clavier d’applications.
   * Enfin (et ce n’est pas le moins utile des débogages), la touche ⟦²⟧ sort "ᵉ" en Majuscule, "³" en AltGr, et "ʳ" en Maj + AltGr, et elle est sensible au verrouillage des capitales afin que l’indicateur ordinal "ᵉ" reste en synergie avec les chiffres. ("ᵈ" et "ˢ" sont dans la touche morte exposant sur AltGr + A.)
-* « Complété » par la prise en charge de l’écriture latine au niveau d’Unicode 18.0 (sauf 32 digrammes qui restent à ajouter), de 1 125 symboles mathématiques (tous dans la touche morte de composition sur AltGr + ⟦+=}⟧, et certains aussi dans d’autres touches mortes) et de quelques autres dont 155 émojis (la plupart de ceux codés sur moins de 4 octets). Les 26 lettres émojis (pour les sites et navigateurs qui affichent les drapeaux) sont en AltEm, la modificatrice ajoutée sur la touche de verrouillage Majuscule : gardez VerrMaj enfoncée en saisissant le code ISO à 2 lettres en minuscules ; ajoutez l’appui sur Maj pour écrire en lettres émojis isolées (sauf "🇿", "🇸" et "🇽" qui buguent à ce niveau et sont dupliqués après ⟦P⟧, ⟦M⟧ et ⟦N⟧), ou saisissez directement le drapeau de la France sur Maj + VerrMaj + ⟦.;⟧.
+* « Complété » par la prise en charge de l’écriture latine au niveau d’Unicode 18.0, de 1 125 symboles mathématiques (tous dans la touche morte de composition sur AltGr + ⟦+=}⟧, et certains aussi dans d’autres touches mortes) et de quelques autres dont 155 émojis (la plupart de ceux codés sur moins de 4 octets). Les 26 lettres émojis (pour les sites et navigateurs qui affichent les drapeaux) sont en AltEm, la modificatrice ajoutée sur la touche de verrouillage Majuscule : gardez VerrMaj enfoncée en saisissant le code ISO à 2 lettres en minuscules ; ajoutez l’appui sur Maj pour écrire en lettres émojis isolées (sauf "🇿", "🇸" et "🇽" qui buguent à ce niveau et sont dupliqués après ⟦P⟧, ⟦M⟧ et ⟦N⟧), ou saisissez directement le drapeau de la France sur Maj + VerrMaj + ⟦.;⟧.
 * « Semi‑automatique » au sens où, en AltGr sur leurs touches, les grandes ponctuations "?", ";", ":" et "!" sont espacées par la fine insécable, et les guillemets "«", "»", "‹" et "›" le sont – ou pas – en AltGr ou Maj + AltGr sur les six touches qui restent à droite. 
 
-* « Zéro prise de tête » parce que :
-  * Ce qui est marqué sur les touches reste là où c’est marqué.
-  * Sur 30 des 31 touches mortes, on peut appuyer plusieurs (2, 3 ou 4) fois pour voir le caractère mort de base.
-  * La touche morte groupe, en AltGr sur accent circonflexe/tréma et sur Maj + AltGr + Q (pour la synergie avec les touches mortes en Maj + AltGr), sous Windows, parcourt les 12 groupes indéfiniment, mais faire suivre un chiffre de 0 à 9 permet d’abréger, avec 0 à 2 pour les groupes 10 à 12.
-  * Les caractères invisibles ou homoglyphes sont rendus visibles ou distinguibles quand ils sont précédés de la touche morte accent circonflexe :
-    * "-" : le trait d’union conditionnel sur Maj + AltGr + 5, pour ajouter une coupure de ligne
-    * "+" : le signe plus invisible sur Maj + AltGr + T, entre la partie entière et le numérateur, suivi de la barre de fraction sur Maj + AltGr + Y et du dénominateur
-    * "☺" : le sélecteur de variante émoji sur Maj + AltGr + I, après un symbole au format texte pour en faire un émoji
-    * "A" : le sélecteur de variante texte sur Maj + AltGr + A, après un émoji pour en faire un symbole au format texte
-    * "␣" : l’espace invisible sur Maj + AltGr + K, pour ajouter des retours à la ligne et insérer des demi-codets hauts
-    * "|" : l’antiliant sur AltGr + W, entre deux lettres pour éviter une ligature
-    * "|" : le point médian "·" sur AltGr + R
-    * "-" : le point d’hyphénation "‧" sur AltGr + Z
-    * "×" : l’opérateur point "⋅" sur AltGr + C
-    * "⊝" : le trait d’union insécable sur Maj + AltGr + 6, pour éviter une coupure de ligne
-    * "½" : le tiret demi-cadratin "–" sur AltGr + S et sur Maj + AltGr + 3
-    * "1" : le tiret cadratin "—" sur AltGr + Q et sur Maj + AltGr + 4
-    * "¾" : le tiret trois-quarts-de-cadratin "―" sur Maj + AltGr + S et sur Maj + AltGr + 8, barre horizontale ou de citation
-    * "⁒" : le signe moins "−" sur AltGr + B, assorti au signe plus "+" sur Maj + ⟦+=}⟧
-  * Quand une touche morte sort un demi-codet bas, celui-ci est facile à compléter en le faisant précéder du demi-codet haut, généralement dans la même touche morte suivie de l’espace invisible sur Maj + AltGr + K : "𐞥" ⇐ AltGr + A (touche morte exposant), Maj + AltGr + K (espace invisible), AltGr + A (touche morte exposant), Q (minuscule q).
+« Zéro prise de tête » parce que :
 
-Une [vue d’ensemble en 2 tableaux](https://dispoclavier.com/doc/azerty-dcs/) à base du classeur [azerty-dcs.ods](https://github.com/dispoclavier/azerty-dcs/tree/main/vues/dispositions) est plus facile à consulter que les [vues de disposition](https://github.com/dispoclavier/azerty-dcs/blob/main/vues/readme.md), d’autant plus que le marquage des touches est 100 % respecté. Ces images et feuilles de calcul ne sont pas incluses dans les paquets d’installateurs afin de ne pas les alourdir, car avec les 5 035 séquences de composition et les 7 027 séquences à touches mortes (plus 2 629 séquences en 4 temps avec demi-codet haut), les 4 drivers (dont 2 pour le commun des ordinateurs) pèsent déjà 1 Mo.
+* Ce qui est marqué sur les touches reste là où c’est marqué.
+* Sur 30 des 31 touches mortes, on peut appuyer plusieurs (2, 3 ou 4) fois pour voir le caractère mort de base.
+* La touche morte groupe, en AltGr sur accent circonflexe/tréma et sur Maj + AltGr + Q (pour la synergie avec les touches mortes en Maj + AltGr), sous Windows, parcourt les 12 groupes indéfiniment, mais faire suivre un chiffre de 0 à 9 permet d’abréger, avec 0 à 2 pour les groupes 10 à 12.
+* Les caractères invisibles ou homoglyphes sont rendus visibles ou distinguibles quand ils sont précédés de la touche morte accent circonflexe :
+  * "-" : le trait d’union conditionnel sur Maj + AltGr + 5, pour ajouter une coupure de ligne
+  * "+" : le signe plus invisible sur Maj + AltGr + T, entre la partie entière et le numérateur, suivi de la barre de fraction sur Maj + AltGr + Y et du dénominateur
+  * "☺" : le sélecteur de variante émoji sur Maj + AltGr + I, après un symbole au format texte pour en faire un émoji
+  * "A" : le sélecteur de variante texte sur Maj + AltGr + A, après un émoji pour en faire un symbole au format texte
+  * "␣" : l’espace invisible sur Maj + AltGr + K, pour ajouter des retours à la ligne et insérer des demi-codets hauts
+  * "|" : l’antiliant sur AltGr + W, entre deux lettres pour éviter une ligature
+  * "|" : le point médian "·" sur AltGr + R
+  * "-" : le point d’hyphénation "‧" sur AltGr + Z
+  * "×" : l’opérateur point "⋅" sur AltGr + C
+  * "⊝" : le trait d’union insécable sur Maj + AltGr + 6, pour éviter une coupure de ligne
+  * "½" : le tiret demi-cadratin "–" sur AltGr + S et sur Maj + AltGr + 3
+  * "1" : le tiret cadratin "—" sur AltGr + Q et sur Maj + AltGr + 4
+  * "¾" : le tiret trois-quarts-de-cadratin "―" sur Maj + AltGr + S et sur Maj + AltGr + 8, barre horizontale ou de citation
+  * "⁒" : le signe moins "−" sur AltGr + B, assorti au signe plus "+" sur Maj + ⟦+=}⟧
+* Quand une touche morte sort un demi-codet bas, celui-ci est facile à compléter en le faisant précéder du demi-codet haut, généralement dans la même touche morte suivie de l’espace invisible sur Maj + AltGr + K : "𐞥" ⇐ AltGr + A (touche morte exposant), Maj + AltGr + K (espace invisible), AltGr + A (touche morte exposant), Q (minuscule q).
+
+Une [vue d’ensemble en 2 tableaux](https://dispoclavier.com/doc/azerty-dcs/) à base du classeur [azerty-dcs.ods](https://github.com/dispoclavier/azerty-dcs/tree/main/vues/dispositions) est plus facile à consulter que les [vues de disposition](https://github.com/dispoclavier/azerty-dcs/blob/main/vues/readme.md), d’autant plus que le marquage des touches est 100 % respecté. Ces images et feuilles de calcul ne sont pas incluses dans les paquets d’installateurs afin de ne pas les alourdir, car avec les 5 035 séquences de composition et les 7 019 séquences à touches mortes (plus 2 629 séquences en 4 temps avec demi-codet haut), les 4 drivers (dont 2 pour le commun des ordinateurs) pèsent déjà 1 Mo.
 
 L’AZERTY DCS, rétrocompatible, a des variantes retouchées et une variante redisposée, encore plus faciles à utiliser. Certes au prix de quelques disruptions, mais au moins, la virgule et toutes les lettres du français restent à leurs places, et les grandes ponctuations, sur leurs touches (⟦?,⟧, ⟦.;⟧, ⟦/:⟧, ⟦§!⟧), ou elles sont ajoutées à la place de "%" ("« "), "µ" (" »"), "£" (" ›") et de la touche morte tréma ("‹ "), qui prend la place de "(", qui va sur AltGr + D comme "début".
 
