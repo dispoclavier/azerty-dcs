@@ -18,28 +18,28 @@ Prise en charge par touches mortes pour Linux et macOS, des émojis additionnels
 
 Mise à jour pour macOS des dispositions développées pour Windows, portées sous macOS puis sous Linux, rétroportées sous Windows et complétées pour Windows et pour Linux
 
-## 7.1.0-beta.11 (2026-11-27)
+## 7.1.0-beta.11 (2026-11-28)
 
 * Transformations :
 	* Tilde :
-		* Supprimer "—" U+2014 comme caractère de base de "͠" U+0360, qui est par "$".
+		* Supprimer "—" U+2014 comme caractère de base de "͠" U+0360, qui est par "$". compose-2.yml [e70aacd](https://github.com/dispoclavier/azerty-dcs/commit/e70aacd34788be30b0ee03442a818db6dd35ba09)
 	* Brève inversée :
-		* Supprimer "—" U+2014 comme caractère de base de "͡" U+0361, qui est par "$".
+		* Supprimer "—" U+2014 comme caractère de base de "͡" U+0361, qui est par "$". ibidem
 		* Brève inversée souscrite :
-			* Supprimer "—" U+2014 comme caractère de base de "᷼" U+1DFC, qui est par "$".
+			* Supprimer "—" U+2014 comme caractère de base de "᷼" U+1DFC, qui est par "$". ibidem
 	* Brève :
-		* Supprimer "—" U+2014 comme caractère de base de "͝" U+035D, qui est par "$".
+		* Supprimer "—" U+2014 comme caractère de base de "͝" U+035D, qui est par "$". ibidem
 		* Brève souscrite :
-			* Supprimer "—" U+2014 comme caractère de base de "͜" U+035C, qui est par "$".
+			* Supprimer "—" U+2014 comme caractère de base de "͜" U+035C, qui est par "$". ibidem
 	* Macron :
-		* Supprimer "—" U+2014 comme caractère de base de "͞" U+035E, qui est par "$".
+		* Supprimer "—" U+2014 comme caractère de base de "͞" U+035E, qui est par "$". ibidem
 		* Macron souscrit :
-			* Supprimer "—" U+2014 comme caractère de base de "͟" U+035F, qui est par "$".
+			* Supprimer "—" U+2014 comme caractère de base de "͟" U+035F, qui est par "$". ibidem
 	* Accent circonflexe :
-		* Supprimer "—" U+2014 comme caractère de base de "᷍" U+1DCD, qui est par "$".
+		* Supprimer "—" U+2014 comme caractère de base de "᷍" U+1DCD, qui est par "$". compose-3.yml [e81d7dc](https://github.com/dispoclavier/azerty-dcs/commit/e81d7dcfd7bdd1c4d2a5213a68d969b43d83de5b)
 		* Visibilisation :
-			* Ajouter "‑" U+2011, "–" U+2013, "—" U+2014, "―" U+2015, "−" U+2212. compose-3.yml [d7b0730](https://github.com/dispoclavier/azerty-dcs/commit/d7b0730c8d6005686b649c806d155ebe03b82b7c), [e81d7dc](https://github.com/dispoclavier/azerty-dcs/commit/e81d7dcfd7bdd1c4d2a5213a68d969b43d83de5b)
-* Build : 7.1.0+22
+			* Ajouter "‑" U+2011, "–" U+2013, "—" U+2014, "―" U+2015, "−" U+2212. compose-3.yml [d7b0730](https://github.com/dispoclavier/azerty-dcs/commit/d7b0730c8d6005686b649c806d155ebe03b82b7c), ibidem
+* Build : 7.1.0+22 [e70aacd](https://github.com/dispoclavier/azerty-dcs/commit/e70aacd34788be30b0ee03442a818db6dd35ba09)
 
 ## 7.1.0-beta.10 (2026-11-27)
 
@@ -279,7 +279,7 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 		* Ajouter "𝽾" U+1DF7E, "𝽿" U+1DF7F. compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-dcs/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 		* Réfléchi et crochet palatal : Ajouter "𝼺" U+1DF3A. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-dcs/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 	* Tilde :
-		* Supprimer "—" U+2014 comme caractère de base de "͠" U+0360, qui est par "$".
+		* Supprimer "—" U+2014 comme caractère de base de "͠" U+0360, qui est par "$". compose-2.yml [e70aacd](https://github.com/dispoclavier/azerty-dcs/commit/e70aacd34788be30b0ee03442a818db6dd35ba09)
 	* Indice-ou-petite-capitale :
 		* Changer le caractère mort de "_" en "↓" U+2193. compose-2 [9ec559c](https://github.com/dispoclavier/azerty-dcs/commit/9ec559ca852e85c0793446f4fc8369f487bc80f4)
 		* Redonder "⁄" U+2044. compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-dcs/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
@@ -330,14 +330,14 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 		* Ajouter "⃃" U+20C3 par "D" à la place de "֏" U+058F, qui est par "d". ibidem
 		* Ajouter "⃄" U+20C4 par "o" et par "O". ibidem
 	* Brève inversée :
-		* Supprimer "—" U+2014 comme caractère de base de "͡" U+0361, qui est par "$".
+		* Supprimer "—" U+2014 comme caractère de base de "͡" U+0361, qui est par "$". compose-2.yml [e70aacd](https://github.com/dispoclavier/azerty-dcs/commit/e70aacd34788be30b0ee03442a818db6dd35ba09)
 		* Brève inversée souscrite :
-			* Supprimer "—" U+2014 comme caractère de base de "᷼" U+1DFC, qui est par "$".
+			* Supprimer "—" U+2014 comme caractère de base de "᷼" U+1DFC, qui est par "$". ibidem
 	* Brève :
 		* Ajouter groupe 1 pour ajouter "𝽚" U+1DF5A par "a". compose-2.yml [0f05e25](https://github.com/dispoclavier/azerty-dcs/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
-		* Supprimer "—" U+2014 comme caractère de base de "͝" U+035D, qui est par "$".
+		* Supprimer "—" U+2014 comme caractère de base de "͝" U+035D, qui est par "$". compose-2.yml [e70aacd](https://github.com/dispoclavier/azerty-dcs/commit/e70aacd34788be30b0ee03442a818db6dd35ba09)
 		* Brève souscrite :
-			* Supprimer "—" U+2014 comme caractère de base de "͜" U+035C, qui est par "$".
+			* Supprimer "—" U+2014 comme caractère de base de "͜" U+035C, qui est par "$". ibidem
 	* Rayé :
 		* Ajouter "⸠" U+2E20 à la place de "†" U+2020, qui va dans raie haute. compose-2.yml [5aede36](https://github.com/dispoclavier/azerty-dcs/commit/5aede36579ef870a404988c80359e12ffec87ebb), [e1a60a1](https://github.com/dispoclavier/azerty-dcs/commit/e1a60a1a8890e680af097e3ca7f4a988f04a4a85)
 		* Ajouter "⸡" U+2E21 par "!". ibidem
@@ -356,16 +356,16 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 	* Macron :
 		* Ajouter "꟢" U+A7E2 à la place de "ꭆ" U+AB46, qui va dans indice-ou-petite-capitale et macron. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 		* Ajouter "𝽱" U+1DF71, "𝾀" U+1DF80, "𝾁" U+1DF81 (dans les groupes 2 et 3). compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-dcs/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
-		* Supprimer "—" U+2014 comme caractère de base de "͞" U+035E, qui est par "$".
+		* Supprimer "—" U+2014 comme caractère de base de "͞" U+035E, qui est par "$". compose-2.yml [e70aacd](https://github.com/dispoclavier/azerty-dcs/commit/e70aacd34788be30b0ee03442a818db6dd35ba09)
 		* Macron souscrit :
-			* Supprimer "—" U+2014 comme caractère de base de "͟" U+035F, qui est par "$".
+			* Supprimer "—" U+2014 comme caractère de base de "͟" U+035F, qui est par "$". ibidem
 	* Barré :
 		* Ajouter "／" U+FF0F par "5". compose-2.yml [8b28bc6](https://github.com/dispoclavier/azerty-dcs/commit/8b28bc6f90eab5954f5068bb47f60fd57fc7daff)
 		* Ajouter "𝽡" U+1DF61 (dans le groupe 1). compose-2.yml [49de9f2](https://github.com/dispoclavier/azerty-dcs/commit/49de9f2a699de0ec7fe1890acecfec507c98865e)
 		* Ajouter "𝾐" U+1DF90 (dans le groupe 1). compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-dcs/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
 	* Rond en chef : Ajouter "꭭" U+AB6D. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Accent circonflexe :
-		* Supprimer "—" U+2014 comme caractère de base de "᷍" U+1DCD, qui est par "$".
+		* Supprimer "—" U+2014 comme caractère de base de "᷍" U+1DCD, qui est par "$". compose-3.yml [e70aacd](https://github.com/dispoclavier/azerty-dcs/commit/e70aacd34788be30b0ee03442a818db6dd35ba09)
 		* Visibilisation :
 			* Déboguer "·" U+00B7, "‧" U+2027, "⋅" U+22C5. compose-3.yml [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
 			* Corriger les chaînes de sortie pour "·" U+00B7, "‧" U+2027, "⋅" U+22C5, "️" U+FE0F. compose-3.yml [9ec559c](https://github.com/dispoclavier/azerty-dcs/commit/9ec559ca852e85c0793446f4fc8369f487bc80f4)
@@ -401,17 +401,20 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 		* Corriger l’en-tête du script de build pilotant KbdUTool. creadispo.cmd [e09fad0](https://github.com/dispoclavier/azerty-dcs/commit/e09fad05957133582a5bafa80d18d86ea01fba72)
 * Documentation :
 	* Corriger le descripteur de "​" U+200B en "ESPACE INVISIBLE". ressource/Udescripteurs.txt [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86)
-	* Ajouter des vues de disposition. azerty-dcs.json, azerty-dcs-verrcap.json, azerty-dcs.png, azerty-dcs-verrcap.png, azerty-dcs.odt, azerty-dcs.xhtml [b610b03](https://github.com/dispoclavier/azerty-dcs/commit/b610b03b7d09860b84d0cdbd988670ce79404b24), [6a43130](https://github.com/dispoclavier/azerty-dcs/commit/6a43130f2167e34efb2e663578f643b4ffbac108), [7d81980](https://github.com/dispoclavier/azerty-dcs/commit/7d819808b8f26b3f254e14fbb57d180169737519), [4a7953a](https://github.com/dispoclavier/azerty-dcs/commit/4a7953a56c19fd59eb7575dfd297efc5b0bb3c69), [d2025ef](https://github.com/dispoclavier/azerty-dcs/commit/d2025ef1e76a85b8e8150792a10e28a311ae7d3d), [8ba2058](https://github.com/dispoclavier/azerty-dcs/commit/8ba205820f45b773e5b7a68d12ae447e32e11f88), [503f5df](https://github.com/dispoclavier/azerty-dcs/commit/503f5dffe57cf26764997a05aa03110fee8bb5d5), [6cf5016](https://github.com/dispoclavier/azerty-dcs/commit/6cf5016a68ffac84f3d874f468f50b9246c2faba), [15cdaee](https://github.com/dispoclavier/azerty-dcs/commit/15cdaee60da8a7e734b802781a955ca53ad871c8)
-	* Mouvoir les feuilles de calcul des dispositions dans un sous-dossier. vues/dispositions/ [1e43a79](https://github.com/dispoclavier/azerty-dcs/commit/1e43a79853e376ae2a1e9235aac67940f690473f), [36b74f7](https://github.com/dispoclavier/azerty-dcs/commit/36b74f7c3128aba2f8fc47e165380a39e4090f9c), [a1f887e](https://github.com/dispoclavier/azerty-dcs/commit/a1f887efba497f39725e8681027821ec221d9fd1), [47d2656](https://github.com/dispoclavier/azerty-dcs/commit/47d2656403b47bc541ab0a8357374af12c9fa9c5), [cc51c6d](https://github.com/dispoclavier/azerty-dcs/commit/cc51c6dc29841305ac14cb2805714e0f6d6ea728), [1aef752](https://github.com/dispoclavier/azerty-dcs/commit/1aef752c322ec498d95add8026f5e77fcc30e5a1), [0445f82](https://github.com/dispoclavier/azerty-dcs/commit/0445f82f150d224b089b35af6293f28144e17643)
+	* Vues de disposition : ajouter et corriger. azerty-dcs.json, azerty-dcs-verrcap.json, azerty-dcs.png, azerty-dcs-verrcap.png [b610b03](https://github.com/dispoclavier/azerty-dcs/commit/b610b03b7d09860b84d0cdbd988670ce79404b24), [6a43130](https://github.com/dispoclavier/azerty-dcs/commit/6a43130f2167e34efb2e663578f643b4ffbac108), [7d81980](https://github.com/dispoclavier/azerty-dcs/commit/7d819808b8f26b3f254e14fbb57d180169737519), [4a7953a](https://github.com/dispoclavier/azerty-dcs/commit/4a7953a56c19fd59eb7575dfd297efc5b0bb3c69), [d2025ef](https://github.com/dispoclavier/azerty-dcs/commit/d2025ef1e76a85b8e8150792a10e28a311ae7d3d), [8ba2058](https://github.com/dispoclavier/azerty-dcs/commit/8ba205820f45b773e5b7a68d12ae447e32e11f88), [503f5df](https://github.com/dispoclavier/azerty-dcs/commit/503f5dffe57cf26764997a05aa03110fee8bb5d5), [6cf5016](https://github.com/dispoclavier/azerty-dcs/commit/6cf5016a68ffac84f3d874f468f50b9246c2faba), [15cdaee](https://github.com/dispoclavier/azerty-dcs/commit/15cdaee60da8a7e734b802781a955ca53ad871c8), [88fc3ba](https://github.com/dispoclavier/azerty-dcs/commit/88fc3ba569ae06875f905e768cc8e8acb69afba2), [467e4fd](https://github.com/dispoclavier/azerty-dcs/commit/467e4fd3202a000b50828363538d1b34704a9744)
+	* Tableau synoptique :
+		* Mouvoir dans un sous-dossier. vues/dispositions/ [1e43a79](https://github.com/dispoclavier/azerty-dcs/commit/1e43a79853e376ae2a1e9235aac67940f690473f)
+		* Corriger et mettre en ligne. azerty-dcs.odt, azerty-dcs.xhtml [36b74f7](https://github.com/dispoclavier/azerty-dcs/commit/36b74f7c3128aba2f8fc47e165380a39e4090f9c), [a1f887e](https://github.com/dispoclavier/azerty-dcs/commit/a1f887efba497f39725e8681027821ec221d9fd1), [47d2656](https://github.com/dispoclavier/azerty-dcs/commit/47d2656403b47bc541ab0a8357374af12c9fa9c5), [cc51c6d](https://github.com/dispoclavier/azerty-dcs/commit/cc51c6dc29841305ac14cb2805714e0f6d6ea728), [1aef752](https://github.com/dispoclavier/azerty-dcs/commit/1aef752c322ec498d95add8026f5e77fcc30e5a1), [0445f82](https://github.com/dispoclavier/azerty-dcs/commit/0445f82f150d224b089b35af6293f28144e17643), [15cdaee](https://github.com/dispoclavier/azerty-dcs/commit/15cdaee60da8a7e734b802781a955ca53ad871c8), [890a3e2](https://github.com/dispoclavier/azerty-dcs/commit/890a3e20dd6f57a0f56a257e4767a659c19990e1)
+		* Déboguer. azerty-dcs.odt, azerty-dcs.xhtml [890a3e2](https://github.com/dispoclavier/azerty-dcs/commit/890a3e20dd6f57a0f56a257e4767a659c19990e1), [352b04e](https://github.com/dispoclavier/azerty-dcs/commit/352b04edff0b1f0740c7ab7341b178e71ac8ecf7)
 	* Corriger la note de la préversion de l’AZERTY DCS. Note-de-version.md [e0d4748](https://github.com/dispoclavier/azerty-dcs/commit/e0d4748bc41d2ec98522fc1c59af4bf64f5ac65b), [70fcf5b](https://github.com/dispoclavier/azerty-dcs/commit/70fcf5bf730678e46365107fd15e40b5c56f67cf), [68e2be5](https://github.com/dispoclavier/azerty-dcs/commit/68e2be512131b5a376f4510f21c84441a11767b9), [bcb61d0](https://github.com/dispoclavier/azerty-dcs/commit/bcb61d04dfe356c0147ae9b355a811bba152e0b0), [f77c94d](https://github.com/dispoclavier/azerty-dcs/commit/f77c94d004e2b51ec158f0e5556fb3318f75c60b), [00a803d](https://github.com/dispoclavier/azerty-dcs/commit/00a803deedaafe6cc4565e1a80c9b6bddf2d7dfc), [9ee9d22](https://github.com/dispoclavier/azerty-dcs/commit/9ee9d22751abdaefa6b95bd5296c31fb8b923abe), [23e747e](https://github.com/dispoclavier/azerty-dcs/commit/23e747e34b58956b7c19dfb816cc634d51f7e100), [071c7ac](https://github.com/dispoclavier/azerty-dcs/commit/071c7acae8498341d35e3a84f9b91cc7c6bb1cab), [5b23ceb](https://github.com/dispoclavier/azerty-dcs/commit/5b23cebf7fad89f3b161442f979533910426bcfa)
 	* Mettre à jour les descripteurs des dispositions de clavier pour Linux. compose-1.yml [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e), [959f22c](https://github.com/dispoclavier/azerty-dcs/commit/959f22c2ba5e88c1aaa314ab1151841eb5a87227), [42d1f5f](https://github.com/dispoclavier/azerty-dcs/commit/42d1f5f0695739058b0a4f67b8e46acc48198ec2)
 	* Mouvoir les routines d’édition pour VSCode dans un fichier. outils/settings.json [dd95946](https://github.com/dispoclavier/azerty-dcs/commit/dd95946c3292615e56863b0bf482df1a959d0b5e), [3beeabb](https://github.com/dispoclavier/azerty-dcs/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f), [6958e94](https://github.com/dispoclavier/azerty-dcs/commit/6958e94507d0d19547836e338adfd7ab9e9a0e73)
-	* Renommer ‹ linux-chromeos/ › en ‹ linux/ ›. [f4e14f6](https://github.com/dispoclavier/azerty-dcs/commit/f4e14f6837b6ae98246e10f1f8819fa289d53bc7)
+	* Renommer ‹ linux-chromeos/ › en ‹ linux/ ›. [f4e14f6](https://github.com/dispoclavier/azerty-dcs/commit/f4e14f6837b6ae98246e10f1f8819fa289d53bc7), [e70aacd](https://github.com/dispoclavier/azerty-dcs/commit/e70aacd34788be30b0ee03442a818db6dd35ba09)
 	* Déboguer les tailles de fichier pour l’affichage sur GitHub. compose-2.yml, compose-3.yml [fb0a349](https://github.com/dispoclavier/azerty-dcs/commit/fb0a34937cd9c038c089b0b786c547b87d6234e3), generate-deadkey-tables.pl [8fd4f48](https://github.com/dispoclavier/azerty-dcs/commit/8fd4f48e1029aae695ba34e278de587dc9c83feb)
 	* Corriger et mettre à jour des annotations. compose-2.yml [121266d](https://github.com/dispoclavier/azerty-dcs/commit/121266d39bcdb174c479f36737a97b2a69af1fd4), [e82e1c5](https://github.com/dispoclavier/azerty-dcs/commit/e82e1c58708b2ff6c6b406b9b33f51da9071cf80), compose-3.yml [c722026](https://github.com/dispoclavier/azerty-dcs/commit/c7220265c0a9197d7b372bc5dfd04c496ca6c454), [eb35d00](https://github.com/dispoclavier/azerty-dcs/commit/eb35d00b1119c9c82cc3f14ca906f81d3580116d), compose-1.yml, compose-2.yml, compose-3.yml [54bc0b9](https://github.com/dispoclavier/azerty-dcs/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884), [11f95e7](https://github.com/dispoclavier/azerty-dcs/commit/11f95e755b211d43661cda58cd7176df1c46dd86), [204af1b](https://github.com/dispoclavier/azerty-dcs/commit/204af1be45c5e0fb3afe300549a9c0e95a08fd00), [8b28bc6](https://github.com/dispoclavier/azerty-dcs/commit/8b28bc6f90eab5954f5068bb47f60fd57fc7daff), [959f22c](https://github.com/dispoclavier/azerty-dcs/commit/959f22c2ba5e88c1aaa314ab1151841eb5a87227), [c3b1b1f](https://github.com/dispoclavier/azerty-dcs/commit/c3b1b1f20fe1d9d142883ece53328171c8789aca), [9ec559c](https://github.com/dispoclavier/azerty-dcs/commit/9ec559ca852e85c0793446f4fc8369f487bc80f4), [42d1f5f](https://github.com/dispoclavier/azerty-dcs/commit/42d1f5f0695739058b0a4f67b8e46acc48198ec2), [5dbe0b3](https://github.com/dispoclavier/azerty-dcs/commit/5dbe0b3f564267c2ec9154a706f31711c0e8c062), [d7b0730](https://github.com/dispoclavier/azerty-dcs/commit/d7b0730c8d6005686b649c806d155ebe03b82b7c)
 	* Déboguer, corriger et mettre à jour la note du contenu des touches mortes. linux/compose/readme.md [ee883c0](https://github.com/dispoclavier/azerty-dcs/commit/ee883c04381848b3ff1cd3b31aa68fa8a63517f1), [7161591](https://github.com/dispoclavier/azerty-dcs/commit/71615916e684caa94cb668b18b05316c0adbbdcb)
 	* Corriger des erreurs que Gemini a trouvées dans le journal des modifications. CHANGELOG.md [72d4b6e](https://github.com/dispoclavier/azerty-dcs/commit/72d4b6ee2885855d9bb09b358660322239c36149)
-	* Corriger le journal des modifications. CHANGELOG.md [1f7e36d](https://github.com/dispoclavier/azerty-dcs/commit/1f7e36dd0102d8939aa11c348b956208deabd94a), [bad275d](https://github.com/dispoclavier/azerty-dcs/commit/bad275df45f67c5f0297155875b0b375267140f2), [4bf7fef](https://github.com/dispoclavier/azerty-dcs/commit/4bf7fefce5f2fbb49cf22ffbaddbc370bb88e303), [c47594a](https://github.com/dispoclavier/azerty-dcs/commit/c47594a3707da805768ba6703f698eb9ce887d08)
+	* Corriger le journal des modifications. CHANGELOG.md [1f7e36d](https://github.com/dispoclavier/azerty-dcs/commit/1f7e36dd0102d8939aa11c348b956208deabd94a), [bad275d](https://github.com/dispoclavier/azerty-dcs/commit/bad275df45f67c5f0297155875b0b375267140f2), [4bf7fef](https://github.com/dispoclavier/azerty-dcs/commit/4bf7fefce5f2fbb49cf22ffbaddbc370bb88e303), [c47594a](https://github.com/dispoclavier/azerty-dcs/commit/c47594a3707da805768ba6703f698eb9ce887d08), [e70aacd](https://github.com/dispoclavier/azerty-dcs/commit/e70aacd34788be30b0ee03442a818db6dd35ba09)
 * Builds :
 	* 7.1.0+0 [716a58e](https://github.com/dispoclavier/azerty-dcs/commit/716a58e5bfe7c57918c3466b5516d0e4cc4f6770)
 	* 7.1.0+1 [268fc12](https://github.com/dispoclavier/azerty-dcs/commit/268fc12894b080fb7e8012bf8f1800843a148b11)
@@ -435,7 +438,7 @@ Contient les modifications ci-dessous sauf celles ci-dessus
 	* 7.1.0+19 [e7dbc0e](https://github.com/dispoclavier/azerty-dcs/commit/e7dbc0e935783881f3e26723653648e652be85dd)
 	* 7.1.0+20 [d7b0730](https://github.com/dispoclavier/azerty-dcs/commit/d7b0730c8d6005686b649c806d155ebe03b82b7c)
 	* 7.1.0+21 [e81d7dc](https://github.com/dispoclavier/azerty-dcs/commit/e81d7dcfd7bdd1c4d2a5213a68d969b43d83de5b)
-	* 7.1.0+22
+	* 7.1.0+22 [e70aacd](https://github.com/dispoclavier/azerty-dcs/commit/e70aacd34788be30b0ee03442a818db6dd35ba09)
 
 ## 7.0.1 (projet)
 
